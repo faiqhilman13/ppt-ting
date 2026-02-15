@@ -1,0 +1,28 @@
+# Python
+backend/.venv/
+**/__pycache__/
+*.pyc
+.pytest_cache/
+
+# Node
+frontend/node_modules/
+renderer/node_modules/
+frontend/dist/
+
+# Local env
+backend/.env
+
+# Runtime storage artifacts
+storage/templates/
+storage/outputs/
+storage/uploads/
+storage/citations/
+storage/manifests/
+storage/*.db
+
+# Logs
+*.log
+
+# Local tooling / OS
+.vincent/
+.DS_Store

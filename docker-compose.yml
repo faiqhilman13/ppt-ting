@@ -1,0 +1,70 @@
+services:
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+
+  renderer:
+    build: ./renderer
+    ports:
+      - "3001:3001"
+    volumes:
+      - ./storage:/app/storage
+
+  backend:
+    build: ./backend
+    ports:
+      - "8000:8000"
+    env_file:
+      - ./backend/.env
+    environment:
+      - REDIS_URL=redis://redis:6379/0
+      - RENDERER_URL=http://renderer:3001
+      - PUBLIC_BASE_URL=http://localhost:8000
+      - FRONTEND_ORIGIN=http://localhost:5173
+      - DATABASE_URL=sqlite:////app/storage/app.db
+      - STORAGE_ROOT=/app/storage
+    volumes:
+      - ./backend/app:/app/app
+      - ./storage:/app/storage
+    depends_on:
+      - redis
+      - renderer
+
+  worker:
+    build: ./backend
+    env_file:
+      - ./backend/.env
+    environment:
+      - REDIS_URL=redis://redis:6379/0
+      - RENDERER_URL=http://renderer:3001
+      - DATABASE_URL=sqlite:////app/storage/app.db
+      - STORAGE_ROOT=/app/storage
+    command: celery -A app.celery_app.celery_app worker --loglevel=info --include app.tasks
+    volumes:
+      - ./backend/app:/app/app
+      - ./storage:/app/storage
+    depends_on:
+      - redis
+      - renderer
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "5173:5173"
+    environment:
+      - VITE_API_BASE=http://localhost:8000/api
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    depends_on:
+      - backend
+
+  onlyoffice:
+    image: onlyoffice/documentserver:8.1
+    ports:
+      - "8080:80"
+    environment:
+      - JWT_ENABLED=false
+    profiles:
+      - editor
