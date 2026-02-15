@@ -11,6 +11,13 @@ services:
     volumes:
       - ./storage:/app/storage
 
+  scratch-renderer:
+    build: ./scratch-renderer
+    expose:
+      - "3002"
+    volumes:
+      - ./storage:/app/storage
+
   backend:
     build: ./backend
     ports:
@@ -20,6 +27,7 @@ services:
     environment:
       - REDIS_URL=redis://redis:6379/0
       - RENDERER_URL=http://renderer:3001
+      - SCRATCH_RENDERER_URL=http://scratch-renderer:3002
       - PUBLIC_BASE_URL=http://localhost:8000
       - FRONTEND_ORIGIN=http://localhost:5173
       - DATABASE_URL=sqlite:////app/storage/app.db
@@ -30,6 +38,7 @@ services:
     depends_on:
       - redis
       - renderer
+      - scratch-renderer
 
   worker:
     build: ./backend
@@ -38,6 +47,7 @@ services:
     environment:
       - REDIS_URL=redis://redis:6379/0
       - RENDERER_URL=http://renderer:3001
+      - SCRATCH_RENDERER_URL=http://scratch-renderer:3002
       - DATABASE_URL=sqlite:////app/storage/app.db
       - STORAGE_ROOT=/app/storage
     command: celery -A app.celery_app.celery_app worker --loglevel=info --include app.tasks
@@ -47,6 +57,7 @@ services:
     depends_on:
       - redis
       - renderer
+      - scratch-renderer
 
   frontend:
     build: ./frontend

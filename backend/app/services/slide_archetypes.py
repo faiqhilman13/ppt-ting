@@ -29,7 +29,7 @@ ARCHETYPE_RULES: dict[str, dict[str, Any]] = {
         "slot_budgets": {"TITLE": 80, "BULLET": 320},
         "example": {
             "TITLE": "Agenda",
-            "BULLET": "• Current state\n• Strategy options\n• Delivery roadmap\n• Risks and mitigations",
+            "BULLET": "Current state\nStrategy options\nDelivery roadmap\nRisks and mitigations",
         },
     },
     "section_break": {
@@ -46,7 +46,7 @@ ARCHETYPE_RULES: dict[str, dict[str, Any]] = {
         "example": {
             "TITLE": "Build vs Buy for Agent Platform",
             "BODY": "In-house build gives control; managed stack accelerates delivery.",
-            "BULLET": "• Build: custom control, higher implementation overhead\n• Buy: faster rollout, vendor constraints",
+            "BULLET": "Build: custom control, higher implementation overhead\nBuy: faster rollout, vendor constraints",
         },
     },
     "timeline": {
@@ -54,7 +54,7 @@ ARCHETYPE_RULES: dict[str, dict[str, Any]] = {
         "slot_budgets": {"TITLE": 80, "BODY": 280, "BULLET": 330},
         "example": {
             "TITLE": "90-Day Rollout Timeline",
-            "BULLET": "• Weeks 1-2: Discovery and baseline\n• Weeks 3-6: Pilot and validation\n• Weeks 7-12: Scale and governance",
+            "BULLET": "Weeks 1-2: Discovery and baseline\nWeeks 3-6: Pilot and validation\nWeeks 7-12: Scale and governance",
         },
     },
     "kpi": {
@@ -88,7 +88,7 @@ ARCHETYPE_RULES: dict[str, dict[str, Any]] = {
         "slot_budgets": {"TITLE": 80, "BODY": 320, "BULLET": 280},
         "example": {
             "TITLE": "Decision and Next Steps",
-            "BULLET": "• Approve phase-2 rollout\n• Confirm owners and timeline\n• Start governance cadence",
+            "BULLET": "Approve phase-2 rollout\nConfirm owners and timeline\nStart governance cadence",
         },
     },
     "general": {
@@ -156,13 +156,32 @@ def infer_archetype(slots: list[str]) -> str:
     return "general"
 
 
-def slot_budget(archetype: str, slot_name: str) -> int:
+def _dimension_aware_budget(width_inches: float, height_inches: float, font_size_pt: float = 12.0) -> int:
+    if width_inches <= 0 or height_inches <= 0:
+        return 0
+
+    safe_font = max(8.0, min(float(font_size_pt), 36.0))
+    chars_per_inch = (72.0 / safe_font) * 1.8
+    lines = height_inches * (72.0 / (safe_font * 1.2))
+    budget = int(chars_per_inch * width_inches * lines * 0.7)
+    return max(40, budget)
+
+
+def slot_budget(archetype: str, slot_name: str, slot_context: dict[str, Any] | None = None) -> int:
     slot_type = classify_slot(slot_name)
     arch_cfg = ARCHETYPE_RULES.get(archetype, ARCHETYPE_RULES["general"])
     override = arch_cfg.get("slot_budgets", {}).get(slot_type)
-    if override:
-        return int(override)
-    return DEFAULT_SLOT_BUDGETS.get(slot_type, DEFAULT_SLOT_BUDGETS["OTHER"])
+    base_budget = int(override or DEFAULT_SLOT_BUDGETS.get(slot_type, DEFAULT_SLOT_BUDGETS["OTHER"]))
+
+    if slot_context:
+        width = float(slot_context.get("width_inches") or 0.0)
+        height = float(slot_context.get("height_inches") or 0.0)
+        font_size = float(slot_context.get("font_size_pt") or 12.0)
+        dynamic_budget = _dimension_aware_budget(width, height, font_size)
+        if dynamic_budget > 0:
+            return dynamic_budget
+
+    return base_budget
 
 
 def archetype_guidance(archetype: str) -> str:

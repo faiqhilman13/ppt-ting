@@ -24,6 +24,7 @@ The system uses a strict separation of concerns:
   - explicit tokens like `{{TITLE}}`, `{{BODY_1}}`, `{{CITATION}}`
   - auto-binded placeholders when tokens are absent
 - Generate decks from prompt + optional uploaded docs + web research
+- Generate/review deck outlines before content generation (`/api/decks/outline`)
 - Revise existing decks with follow-up prompts
 - Download generated `.pptx`
 - Optional ONLYOFFICE editing flow
@@ -32,9 +33,15 @@ The system uses a strict separation of concerns:
 
 - Docker Desktop running
 - `docker compose` available
-- Optional API keys in `backend/.env` for non-mock providers:
-  - `OPENAI_API_KEY=...`
-  - `ANTHROPIC_API_KEY=...`
+- Optional API keys in `backend/.env`:
+  - `OPENAI_API_KEY=...` (for OpenAI generation)
+  - `ANTHROPIC_API_KEY=...` (for Anthropic generation)
+  - `EXA_API_KEY=...` (for Exa web research + asset metadata)
+  - `OPENAI_MODEL=gpt-5-mini` (default)
+  - `ANTHROPIC_MODEL=claude-sonnet-4-20250514` (default)
+  - `ANTHROPIC_MAX_TOKENS=8192` (default)
+  - `SCRATCH_THEME=default` (`default`/`dark`/`corporate`)
+  - `PPTX_SKILL_ROOT=...` (optional override path to a local `pptx` skill folder)
 
 If no API key is set, backend falls back to deterministic `mock` provider.
 
@@ -99,12 +106,19 @@ docker compose --profile editor up --build
 - `POST /api/decks/generate`
 - `POST /api/decks/{deck_id}/revise`
 - `GET /api/jobs/{job_id}`
+- `GET /api/jobs/{job_id}/events`
 - `GET /api/decks`
 - `GET /api/decks/{deck_id}`
 - `GET /api/decks/{deck_id}/download`
+- `GET /api/decks/{deck_id}/quality/{version}`
 - `POST /api/search`
 - `POST /api/editor/session`
 - `POST /api/editor/callback`
+
+Generation/revision request controls:
+- `agent_mode`: `off | bounded`
+- `quality_profile`: `fast | balanced | high_fidelity`
+- `max_correction_passes`: `0..2` (bounded by server policy)
 
 ## Local Development (Without Docker)
 

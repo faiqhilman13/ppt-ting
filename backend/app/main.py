@@ -1,6 +1,8 @@
 from __future__ import annotations
 
 import json
+import logging
+import re
 from datetime import datetime
 from pathlib import Path
 from uuid import uuid4
@@ -9,12 +11,12 @@ import requests
 from fastapi import Depends, FastAPI, File, Form, HTTPException, Query, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse
-from sqlalchemy import select
+from sqlalchemy import func, select
 from sqlalchemy.orm import Session
 
 from app.config import settings
 from app.db import Base, engine, get_db
-from app.models import Deck, DeckJob, DeckVersion, DocumentAsset, Template
+from app.models import Deck, DeckJob, DeckOutline, DeckVersion, DocumentAsset, JobEvent, QualityReport, Template
 from app.schemas import (
     DeckDetailOut,
     DeckOut,
@@ -23,18 +25,27 @@ from app.schemas import (
     EditorSessionOut,
     EditorSessionRequest,
     GenerateDeckRequest,
+    JobEventOut,
     JobOut,
+    OutlineDeckRequest,
+    OutlineResultOut,
+    QualityReportOut,
     ReviseDeckRequest,
     SearchRequest,
     SearchResult,
+    TemplateCleanupOut,
+    TemplateCleanupRequest,
+    TemplateDeleteOut,
     TemplateOut,
 )
 from app.services.doc_extractor import SUPPORTED_EXTENSIONS, extract_text
 from app.services.editor_service import build_editor_config
+from app.services.job_trace import decode_payload
 from app.services.research_service import search_web
 from app.services.template_service import parse_template_manifest
 from app.storage import make_file_path, read_json, write_json
-from app.tasks import run_generation_job, run_revision_job
+from app.tasks import run_generation_job, run_outline_job, run_revision_job
+from app.tools import register_builtin_tools
 
 app = FastAPI(title=settings.app_name)
 app.add_middleware(
@@ -46,14 +57,82 @@ app.add_middleware(
 )
 
 
+_TEST_TEMPLATE_NAME_RE = re.compile(
+    r"\b(smoke|fidelity|para\s*clone|plain\s*template|test)\b",
+    re.IGNORECASE,
+)
+
+
+class _AccessLogPathFilter(logging.Filter):
+    def filter(self, record: logging.LogRecord) -> bool:
+        if not settings.suppress_job_poll_access_logs:
+            return True
+
+        message = record.getMessage()
+        if '"GET /api/jobs/' in message:
+            return False
+        if '"OPTIONS /api/jobs/' in message:
+            return False
+        return True
+
+
+def _configure_runtime_logging() -> None:
+    level = getattr(logging, str(settings.log_level).upper(), logging.INFO)
+    logging.getLogger("ppt_agent").setLevel(level)
+    logging.getLogger("ppt_agent.jobs").setLevel(level)
+    logging.getLogger("ppt_agent.providers").setLevel(level)
+
+    if settings.suppress_httpx_info_logs:
+        logging.getLogger("httpx").setLevel(logging.WARNING)
+        logging.getLogger("httpcore").setLevel(logging.WARNING)
+        logging.getLogger("openai").setLevel(logging.WARNING)
+        logging.getLogger("anthropic").setLevel(logging.WARNING)
+
+    access_logger = logging.getLogger("uvicorn.access")
+    if settings.suppress_job_poll_access_logs and not any(
+        isinstance(row, _AccessLogPathFilter) for row in access_logger.filters
+    ):
+        access_logger.addFilter(_AccessLogPathFilter())
+
+
 @app.on_event("startup")
 def on_startup():
+    _configure_runtime_logging()
+    register_builtin_tools()
     Base.metadata.create_all(bind=engine)
 
 
 @app.get("/health")
 def health():
     return {"status": "ok"}
+
+
+def _is_internal_template(row: Template) -> bool:
+    return str(row.status or "").lower().startswith("scratch")
+
+
+def _is_test_template(row: Template) -> bool:
+    return bool(_TEST_TEMPLATE_NAME_RE.search(str(row.name or "")))
+
+
+def _is_hidden_template(row: Template) -> bool:
+    return _is_internal_template(row) or _is_test_template(row)
+
+
+def _delete_template_files(*paths: str) -> list[str]:
+    deleted: list[str] = []
+    for raw in paths:
+        if not raw:
+            continue
+        path = Path(raw)
+        if not path.exists() or not path.is_file():
+            continue
+        try:
+            path.unlink()
+            deleted.append(str(path))
+        except OSError:
+            continue
+    return deleted
 
 
 @app.post(f"{settings.api_prefix}/templates", response_model=TemplateOut)
@@ -77,8 +156,96 @@ async def upload_template(name: str = Form(...), file: UploadFile = File(...), d
 
 
 @app.get(f"{settings.api_prefix}/templates", response_model=list[TemplateOut])
-def list_templates(db: Session = Depends(get_db)):
-    return db.scalars(select(Template).order_by(Template.created_at.desc())).all()
+def list_templates(include_hidden: bool = Query(default=False), db: Session = Depends(get_db)):
+    rows = db.scalars(select(Template).order_by(Template.created_at.desc())).all()
+    if include_hidden:
+        return rows
+    return [row for row in rows if not _is_hidden_template(row)]
+
+
+@app.delete(f"{settings.api_prefix}/templates/{{template_id}}", response_model=TemplateDeleteOut)
+def delete_template(template_id: str, db: Session = Depends(get_db)):
+    row = db.get(Template, template_id)
+    if not row:
+        raise HTTPException(status_code=404, detail="Template not found")
+
+    deck_count = db.scalar(
+        select(func.count()).select_from(Deck).where(Deck.template_id == template_id)
+    ) or 0
+    if deck_count:
+        raise HTTPException(
+            status_code=409,
+            detail=f"Template is in use by {deck_count} deck(s) and cannot be deleted.",
+        )
+
+    file_path = row.file_path
+    manifest_path = row.manifest_path
+    db.delete(row)
+    db.commit()
+
+    deleted_files = _delete_template_files(file_path, manifest_path)
+    return TemplateDeleteOut(template_id=template_id, deleted=True, deleted_files=deleted_files)
+
+
+@app.post(f"{settings.api_prefix}/templates/cleanup", response_model=TemplateCleanupOut)
+def cleanup_templates(req: TemplateCleanupRequest, db: Session = Depends(get_db)):
+    rows = db.scalars(select(Template).order_by(Template.created_at.desc())).all()
+    deck_counts = {
+        template_id: count
+        for template_id, count in db.execute(
+            select(Deck.template_id, func.count(Deck.id)).group_by(Deck.template_id)
+        ).all()
+    }
+
+    matched_rows: list[Template] = []
+    skipped: list[dict[str, str]] = []
+    for row in rows:
+        is_internal = _is_internal_template(row)
+        is_test = _is_test_template(row)
+        if not ((req.include_scratch and is_internal) or (req.include_test and is_test)):
+            continue
+
+        deck_count = int(deck_counts.get(row.id, 0))
+        if req.only_unreferenced and deck_count > 0:
+            skipped.append(
+                {
+                    "template_id": row.id,
+                    "name": row.name,
+                    "reason": f"in_use:{deck_count}",
+                }
+            )
+            continue
+
+        matched_rows.append(row)
+
+    matched_ids = [row.id for row in matched_rows]
+    if req.dry_run or not matched_rows:
+        return TemplateCleanupOut(
+            dry_run=req.dry_run,
+            matched_ids=matched_ids,
+            deleted_ids=[],
+            deleted_file_count=0,
+            skipped=skipped,
+        )
+
+    template_files = [(row.file_path, row.manifest_path) for row in matched_rows]
+    deleted_ids: list[str] = []
+    for row in matched_rows:
+        db.delete(row)
+        deleted_ids.append(row.id)
+    db.commit()
+
+    deleted_files: list[str] = []
+    for file_path, manifest_path in template_files:
+        deleted_files.extend(_delete_template_files(file_path, manifest_path))
+
+    return TemplateCleanupOut(
+        dry_run=False,
+        matched_ids=matched_ids,
+        deleted_ids=deleted_ids,
+        deleted_file_count=len(deleted_files),
+        skipped=skipped,
+    )
 
 
 @app.post(f"{settings.api_prefix}/docs", response_model=DocumentOut)
@@ -109,9 +276,10 @@ def list_documents(db: Session = Depends(get_db)):
 
 @app.post(f"{settings.api_prefix}/decks/generate", response_model=JobOut)
 def generate_deck(req: GenerateDeckRequest, db: Session = Depends(get_db)):
-    template = db.get(Template, req.template_id)
-    if not template:
-        raise HTTPException(status_code=404, detail="Template not found")
+    if req.creation_mode == "template":
+        template = db.get(Template, req.template_id)
+        if not template:
+            raise HTTPException(status_code=404, detail="Template not found")
 
     for doc_id in req.doc_ids:
         if not db.get(DocumentAsset, doc_id):
@@ -131,6 +299,53 @@ def generate_deck(req: GenerateDeckRequest, db: Session = Depends(get_db)):
 
     run_generation_job.delay(job.id)
     return job
+
+
+@app.post(f"{settings.api_prefix}/decks/outline", response_model=JobOut)
+def generate_outline(req: OutlineDeckRequest, db: Session = Depends(get_db)):
+    if req.creation_mode == "template":
+        template = db.get(Template, req.template_id)
+        if not template:
+            raise HTTPException(status_code=404, detail="Template not found")
+
+    for doc_id in req.doc_ids:
+        if not db.get(DocumentAsset, doc_id):
+            raise HTTPException(status_code=404, detail=f"Document not found: {doc_id}")
+
+    job = DeckJob(
+        id=str(uuid4()),
+        job_type="outline",
+        status="queued",
+        phase="queued",
+        progress_pct=0,
+        payload_json=req.model_dump_json(),
+    )
+    db.add(job)
+    db.commit()
+    db.refresh(job)
+
+    run_outline_job.delay(job.id)
+    return job
+
+
+@app.get(f"{settings.api_prefix}/decks/outline/{{job_id}}", response_model=OutlineResultOut)
+def get_outline(job_id: str, db: Session = Depends(get_db)):
+    job = db.get(DeckJob, job_id)
+    if not job or job.job_type != "outline":
+        raise HTTPException(status_code=404, detail="Outline job not found")
+
+    row = db.scalar(select(DeckOutline).where(DeckOutline.job_id == job_id))
+    if not row:
+        return OutlineResultOut(job_id=job_id, status=job.status)
+
+    payload = read_json(Path(row.outline_json_path)) if Path(row.outline_json_path).exists() else {}
+    return OutlineResultOut(
+        job_id=job_id,
+        status=job.status,
+        prompt=row.prompt,
+        thesis=payload.get("thesis"),
+        slides=payload.get("slides", []),
+    )
 
 
 @app.post(f"{settings.api_prefix}/decks/{{deck_id}}/revise", response_model=JobOut)
@@ -165,6 +380,36 @@ def get_job(job_id: str, db: Session = Depends(get_db)):
     return job
 
 
+@app.get(f"{settings.api_prefix}/jobs/{{job_id}}/events", response_model=list[JobEventOut])
+def get_job_events(
+    job_id: str,
+    limit: int = Query(default=200, ge=1, le=2000),
+    db: Session = Depends(get_db),
+):
+    job = db.get(DeckJob, job_id)
+    if not job:
+        raise HTTPException(status_code=404, detail="Job not found")
+
+    rows = db.scalars(
+        select(JobEvent)
+        .where(JobEvent.job_id == job_id)
+        .order_by(JobEvent.ts.asc(), JobEvent.id.asc())
+        .limit(limit)
+    ).all()
+    return [
+        JobEventOut(
+            id=row.id,
+            job_id=row.job_id,
+            ts=row.ts,
+            stage=row.stage,
+            event_type=row.event_type,
+            payload=decode_payload(row.payload_json),
+            severity=row.severity,
+        )
+        for row in rows
+    ]
+
+
 @app.get(f"{settings.api_prefix}/decks", response_model=list[DeckOut])
 def list_decks(db: Session = Depends(get_db)):
     return db.scalars(select(Deck).order_by(Deck.updated_at.desc())).all()
@@ -192,6 +437,11 @@ def get_deck(deck_id: str, db: Session = Depends(get_db)):
                 "prompt": v.prompt,
                 "created_at": v.created_at,
                 "is_manual_edit": bool(v.is_manual_edit),
+                "warnings": (
+                    read_json(Path(v.content_json_path)).get("quality_report", {}).get("warnings", [])
+                    if Path(v.content_json_path).exists()
+                    else []
+                ),
             }
             for v in versions
         ],
@@ -214,6 +464,31 @@ def download_deck(deck_id: str, version: int | None = Query(default=None), db: S
         raise HTTPException(status_code=404, detail="Deck file not found")
 
     return FileResponse(path, media_type="application/vnd.openxmlformats-officedocument.presentationml.presentation", filename=path.name)
+
+
+@app.get(f"{settings.api_prefix}/decks/{{deck_id}}/quality/{{version}}", response_model=QualityReportOut)
+def get_quality_report(deck_id: str, version: int, db: Session = Depends(get_db)):
+    deck = db.get(Deck, deck_id)
+    if not deck:
+        raise HTTPException(status_code=404, detail="Deck not found")
+
+    row = db.scalar(
+        select(QualityReport).where(
+            QualityReport.deck_id == deck_id,
+            QualityReport.version == version,
+        )
+    )
+    if not row:
+        raise HTTPException(status_code=404, detail="Quality report not found")
+
+    return QualityReportOut(
+        deck_id=deck_id,
+        version=version,
+        score=row.score,
+        passes_used=row.passes_used,
+        issues=decode_payload(row.issues_json),
+        created_at=row.created_at,
+    )
 
 
 @app.post(f"{settings.api_prefix}/search", response_model=list[SearchResult])
@@ -251,7 +526,7 @@ def editor_callback(payload: EditorCallbackPayload, deck_id: str = Query(...), d
         output_path.write_bytes(response.content)
 
         citations_path = make_file_path("citations", "json", stem=f"{deck.id}-v{next_version}-citations")
-        write_json(citations_path, {"sources": [], "note": "Manual edit via editor callback"})
+        write_json(citations_path, {"sources": [], "assets": [], "note": "Manual edit via editor callback"})
 
         content_path = make_file_path("manifests", "json", stem=f"{deck.id}-v{next_version}-content")
         if Path(latest.content_json_path).exists():

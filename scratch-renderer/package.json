@@ -1,0 +1,12 @@
+{
+  "name": "scratch-renderer",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.0",
+    "pptxgenjs": "^3.12.0"
+  }
+}

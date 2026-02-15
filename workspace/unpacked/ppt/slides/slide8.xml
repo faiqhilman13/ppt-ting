@@ -1,0 +1,1940 @@
+<?xml version="1.0" encoding="ascii"?>
+<p:sld xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mv="urn:schemas-microsoft-com:mac:vml" xmlns:p="http://schemas.openxmlformats.org/presentationml/2006/main" xmlns:c="http://schemas.openxmlformats.org/drawingml/2006/chart" xmlns:dgm="http://schemas.openxmlformats.org/drawingml/2006/diagram" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:pvml="urn:schemas-microsoft-com:office:powerpoint" xmlns:com="http://schemas.openxmlformats.org/drawingml/2006/compatibility" xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" xmlns:p15="http://schemas.microsoft.com/office/powerpoint/2012/main" xmlns:ahyp="http://schemas.microsoft.com/office/drawing/2018/hyperlinkcolor">
+  <p:cSld>
+    <p:spTree>
+      <p:nvGrpSpPr>
+        <p:cNvPr id="493" name="Shape 493"/>
+        <p:cNvGrpSpPr/>
+        <p:nvPr/>
+      </p:nvGrpSpPr>
+      <p:grpSpPr>
+        <a:xfrm>
+          <a:off x="0" y="0"/>
+          <a:ext cx="0" cy="0"/>
+          <a:chOff x="0" y="0"/>
+          <a:chExt cx="0" cy="0"/>
+        </a:xfrm>
+      </p:grpSpPr>
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="494" name="Google Shape;494;p32"/>
+          <p:cNvSpPr txBox="1"/>
+          <p:nvPr>
+            <p:ph type="title"/>
+          </p:nvPr>
+        </p:nvSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="309562" y="222576"/>
+            <a:ext cx="8524875" cy="615553"/>
+          </a:xfrm>
+          <a:prstGeom prst="rect">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:noFill/>
+          <a:ln>
+            <a:noFill/>
+          </a:ln>
+        </p:spPr>
+        <p:txBody>
+          <a:bodyPr anchorCtr="0" anchor="b" bIns="0" lIns="0" spcFirstLastPara="1" rIns="0" wrap="square" tIns="0">
+            <a:spAutoFit/>
+          </a:bodyPr>
+          <a:lstStyle/>
+          <a:p>
+            <a:pPr indent="0" lvl="0" marL="0" rtl="0" algn="l">
+              <a:spcBef>
+                <a:spcPts val="0"/>
+              </a:spcBef>
+              <a:spcAft>
+                <a:spcPts val="0"/>
+              </a:spcAft>
+              <a:buClr>
+                <a:schemeClr val="dk1"/>
+              </a:buClr>
+              <a:buSzPts val="2000"/>
+              <a:buFont typeface="Georgia"/>
+              <a:buNone/>
+            </a:pPr>
+            <a:r>
+              <a:rPr lang="en-US"/>
+              <a:t>The country&#8217;s grassroots still prefer cash especially for low-value transactions &#8211; a habit entrenched in hearts and minds</a:t>
+            </a:r>
+            <a:endParaRPr/>
+          </a:p>
+        </p:txBody>
+      </p:sp>
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="495" name="Google Shape;495;p32"/>
+          <p:cNvSpPr txBox="1"/>
+          <p:nvPr>
+            <p:ph idx="11" type="ftr"/>
+          </p:nvPr>
+        </p:nvSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="311944" y="4901878"/>
+            <a:ext cx="2895600" cy="92333"/>
+          </a:xfrm>
+          <a:prstGeom prst="rect">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:noFill/>
+          <a:ln>
+            <a:noFill/>
+          </a:ln>
+        </p:spPr>
+        <p:txBody>
+          <a:bodyPr anchorCtr="0" anchor="ctr" bIns="0" lIns="0" spcFirstLastPara="1" rIns="0" wrap="square" tIns="0">
+            <a:spAutoFit/>
+          </a:bodyPr>
+          <a:lstStyle/>
+          <a:p>
+            <a:pPr indent="0" lvl="0" marL="0" rtl="0" algn="l">
+              <a:spcBef>
+                <a:spcPts val="0"/>
+              </a:spcBef>
+              <a:spcAft>
+                <a:spcPts val="0"/>
+              </a:spcAft>
+              <a:buNone/>
+            </a:pPr>
+            <a:r>
+              <a:rPr lang="en-US"/>
+              <a:t>Confidential information for the sole benefit and use of PwC&#8217;s client.</a:t>
+            </a:r>
+            <a:endParaRPr/>
+          </a:p>
+        </p:txBody>
+      </p:sp>
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="496" name="Google Shape;496;p32"/>
+          <p:cNvSpPr txBox="1"/>
+          <p:nvPr>
+            <p:ph idx="12" type="sldNum"/>
+          </p:nvPr>
+        </p:nvSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="6700838" y="4770007"/>
+            <a:ext cx="2133600" cy="123111"/>
+          </a:xfrm>
+          <a:prstGeom prst="rect">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:noFill/>
+          <a:ln>
+            <a:noFill/>
+          </a:ln>
+        </p:spPr>
+        <p:txBody>
+          <a:bodyPr anchorCtr="0" anchor="ctr" bIns="0" lIns="0" spcFirstLastPara="1" rIns="0" wrap="square" tIns="0">
+            <a:spAutoFit/>
+          </a:bodyPr>
+          <a:lstStyle/>
+          <a:p>
+            <a:pPr indent="0" lvl="0" marL="0" rtl="0" algn="r">
+              <a:spcBef>
+                <a:spcPts val="0"/>
+              </a:spcBef>
+              <a:spcAft>
+                <a:spcPts val="0"/>
+              </a:spcAft>
+              <a:buNone/>
+            </a:pPr>
+            <a:fld id="{00000000-1234-1234-1234-123412341234}" type="slidenum">
+              <a:rPr lang="en-US"/>
+              <a:t>&#8249;#&#8250;</a:t>
+            </a:fld>
+            <a:endParaRPr/>
+          </a:p>
+        </p:txBody>
+      </p:sp>
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="497" name="Google Shape;497;p32"/>
+          <p:cNvSpPr txBox="1"/>
+          <p:nvPr/>
+        </p:nvSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="309562" y="1138145"/>
+            <a:ext cx="6765414" cy="209644"/>
+          </a:xfrm>
+          <a:prstGeom prst="rect">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:noFill/>
+          <a:ln>
+            <a:noFill/>
+          </a:ln>
+        </p:spPr>
+        <p:txBody>
+          <a:bodyPr anchorCtr="0" anchor="t" bIns="0" lIns="0" spcFirstLastPara="1" rIns="0" wrap="square" tIns="0">
+            <a:noAutofit/>
+          </a:bodyPr>
+          <a:lstStyle/>
+          <a:p>
+            <a:pPr indent="0" lvl="0" marL="0" marR="0" rtl="0" algn="l">
+              <a:lnSpc>
+                <a:spcPct val="90000"/>
+              </a:lnSpc>
+              <a:spcBef>
+                <a:spcPts val="0"/>
+              </a:spcBef>
+              <a:spcAft>
+                <a:spcPts val="0"/>
+              </a:spcAft>
+              <a:buClr>
+                <a:srgbClr val="000000"/>
+              </a:buClr>
+              <a:buSzPts val="1400"/>
+              <a:buFont typeface="Arial"/>
+              <a:buNone/>
+            </a:pPr>
+            <a:r>
+              <a:rPr b="1" lang="en-US" sz="1400">
+                <a:solidFill>
+                  <a:srgbClr val="000000"/>
+                </a:solidFill>
+                <a:latin typeface="Arial"/>
+                <a:ea typeface="Arial"/>
+                <a:cs typeface="Arial"/>
+                <a:sym typeface="Arial"/>
+              </a:rPr>
+              <a:t>Dominant Payment Mode: A Household&#8217;s Perspective</a:t>
+            </a:r>
+            <a:endParaRPr b="0" i="0" sz="1200" u="none" cap="none" strike="noStrike">
+              <a:solidFill>
+                <a:srgbClr val="000000"/>
+              </a:solidFill>
+              <a:latin typeface="Arial"/>
+              <a:ea typeface="Arial"/>
+              <a:cs typeface="Arial"/>
+              <a:sym typeface="Arial"/>
+            </a:endParaRPr>
+          </a:p>
+        </p:txBody>
+      </p:sp>
+      <p:pic>
+        <p:nvPicPr>
+          <p:cNvPr id="498" name="Google Shape;498;p32"/>
+          <p:cNvPicPr preferRelativeResize="0"/>
+          <p:nvPr/>
+        </p:nvPicPr>
+        <p:blipFill rotWithShape="1">
+          <a:blip r:embed="rId3">
+            <a:alphaModFix/>
+          </a:blip>
+          <a:srcRect b="0" l="0" r="0" t="0"/>
+          <a:stretch/>
+        </p:blipFill>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="4386840" y="1437948"/>
+            <a:ext cx="612443" cy="634244"/>
+          </a:xfrm>
+          <a:prstGeom prst="ellipse">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:noFill/>
+          <a:ln cap="rnd" cmpd="sng" w="19050">
+            <a:solidFill>
+              <a:srgbClr val="82141E"/>
+            </a:solidFill>
+            <a:prstDash val="solid"/>
+            <a:round/>
+            <a:headEnd len="sm" w="sm" type="none"/>
+            <a:tailEnd len="sm" w="sm" type="none"/>
+          </a:ln>
+        </p:spPr>
+      </p:pic>
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="499" name="Google Shape;499;p32"/>
+          <p:cNvSpPr txBox="1"/>
+          <p:nvPr/>
+        </p:nvSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="4069186" y="2102021"/>
+            <a:ext cx="1278233" cy="153888"/>
+          </a:xfrm>
+          <a:prstGeom prst="rect">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:noFill/>
+          <a:ln>
+            <a:noFill/>
+          </a:ln>
+        </p:spPr>
+        <p:txBody>
+          <a:bodyPr anchorCtr="0" anchor="t" bIns="0" lIns="0" spcFirstLastPara="1" rIns="0" wrap="square" tIns="0">
+            <a:spAutoFit/>
+          </a:bodyPr>
+          <a:lstStyle/>
+          <a:p>
+            <a:pPr indent="0" lvl="0" marL="0" marR="0" rtl="0" algn="ctr">
+              <a:spcBef>
+                <a:spcPts val="0"/>
+              </a:spcBef>
+              <a:spcAft>
+                <a:spcPts val="0"/>
+              </a:spcAft>
+              <a:buNone/>
+            </a:pPr>
+            <a:r>
+              <a:rPr b="1" lang="en-US" sz="1000">
+                <a:solidFill>
+                  <a:schemeClr val="dk1"/>
+                </a:solidFill>
+                <a:latin typeface="Arial"/>
+                <a:ea typeface="Arial"/>
+                <a:cs typeface="Arial"/>
+                <a:sym typeface="Arial"/>
+              </a:rPr>
+              <a:t>Yeo Soo Keng, 78</a:t>
+            </a:r>
+            <a:endParaRPr/>
+          </a:p>
+        </p:txBody>
+      </p:sp>
+      <p:pic>
+        <p:nvPicPr>
+          <p:cNvPr id="500" name="Google Shape;500;p32"/>
+          <p:cNvPicPr preferRelativeResize="0"/>
+          <p:nvPr/>
+        </p:nvPicPr>
+        <p:blipFill rotWithShape="1">
+          <a:blip r:embed="rId4">
+            <a:alphaModFix/>
+          </a:blip>
+          <a:srcRect b="0" l="0" r="0" t="0"/>
+          <a:stretch/>
+        </p:blipFill>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="3747548" y="2530209"/>
+            <a:ext cx="658517" cy="634244"/>
+          </a:xfrm>
+          <a:prstGeom prst="ellipse">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:noFill/>
+          <a:ln cap="rnd" cmpd="sng" w="19050">
+            <a:solidFill>
+              <a:srgbClr val="000000"/>
+            </a:solidFill>
+            <a:prstDash val="solid"/>
+            <a:round/>
+            <a:headEnd len="sm" w="sm" type="none"/>
+            <a:tailEnd len="sm" w="sm" type="none"/>
+          </a:ln>
+        </p:spPr>
+      </p:pic>
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="501" name="Google Shape;501;p32"/>
+          <p:cNvSpPr txBox="1"/>
+          <p:nvPr/>
+        </p:nvSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="3384509" y="3210819"/>
+            <a:ext cx="1278233" cy="153888"/>
+          </a:xfrm>
+          <a:prstGeom prst="rect">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:noFill/>
+          <a:ln>
+            <a:noFill/>
+          </a:ln>
+        </p:spPr>
+        <p:txBody>
+          <a:bodyPr anchorCtr="0" anchor="t" bIns="0" lIns="0" spcFirstLastPara="1" rIns="0" wrap="square" tIns="0">
+            <a:spAutoFit/>
+          </a:bodyPr>
+          <a:lstStyle/>
+          <a:p>
+            <a:pPr indent="0" lvl="0" marL="0" marR="0" rtl="0" algn="ctr">
+              <a:spcBef>
+                <a:spcPts val="0"/>
+              </a:spcBef>
+              <a:spcAft>
+                <a:spcPts val="0"/>
+              </a:spcAft>
+              <a:buNone/>
+            </a:pPr>
+            <a:r>
+              <a:rPr b="1" lang="en-US" sz="1000">
+                <a:solidFill>
+                  <a:schemeClr val="dk1"/>
+                </a:solidFill>
+                <a:latin typeface="Arial"/>
+                <a:ea typeface="Arial"/>
+                <a:cs typeface="Arial"/>
+                <a:sym typeface="Arial"/>
+              </a:rPr>
+              <a:t>Tan Chun Kit, 58</a:t>
+            </a:r>
+            <a:endParaRPr/>
+          </a:p>
+        </p:txBody>
+      </p:sp>
+      <p:pic>
+        <p:nvPicPr>
+          <p:cNvPr id="502" name="Google Shape;502;p32"/>
+          <p:cNvPicPr preferRelativeResize="0"/>
+          <p:nvPr/>
+        </p:nvPicPr>
+        <p:blipFill rotWithShape="1">
+          <a:blip r:embed="rId5">
+            <a:alphaModFix/>
+          </a:blip>
+          <a:srcRect b="0" l="11649" r="5876" t="0"/>
+          <a:stretch/>
+        </p:blipFill>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="4977983" y="2530209"/>
+            <a:ext cx="650284" cy="634244"/>
+          </a:xfrm>
+          <a:prstGeom prst="ellipse">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:noFill/>
+          <a:ln cap="rnd" cmpd="sng" w="19050">
+            <a:solidFill>
+              <a:srgbClr val="000000"/>
+            </a:solidFill>
+            <a:prstDash val="solid"/>
+            <a:round/>
+            <a:headEnd len="sm" w="sm" type="none"/>
+            <a:tailEnd len="sm" w="sm" type="none"/>
+          </a:ln>
+        </p:spPr>
+      </p:pic>
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="503" name="Google Shape;503;p32"/>
+          <p:cNvSpPr txBox="1"/>
+          <p:nvPr/>
+        </p:nvSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="4668546" y="3210988"/>
+            <a:ext cx="1278233" cy="153888"/>
+          </a:xfrm>
+          <a:prstGeom prst="rect">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:noFill/>
+          <a:ln>
+            <a:noFill/>
+          </a:ln>
+        </p:spPr>
+        <p:txBody>
+          <a:bodyPr anchorCtr="0" anchor="t" bIns="0" lIns="0" spcFirstLastPara="1" rIns="0" wrap="square" tIns="0">
+            <a:spAutoFit/>
+          </a:bodyPr>
+          <a:lstStyle/>
+          <a:p>
+            <a:pPr indent="0" lvl="0" marL="0" marR="0" rtl="0" algn="ctr">
+              <a:spcBef>
+                <a:spcPts val="0"/>
+              </a:spcBef>
+              <a:spcAft>
+                <a:spcPts val="0"/>
+              </a:spcAft>
+              <a:buNone/>
+            </a:pPr>
+            <a:r>
+              <a:rPr b="1" lang="en-US" sz="1000">
+                <a:solidFill>
+                  <a:schemeClr val="dk1"/>
+                </a:solidFill>
+                <a:latin typeface="Arial"/>
+                <a:ea typeface="Arial"/>
+                <a:cs typeface="Arial"/>
+                <a:sym typeface="Arial"/>
+              </a:rPr>
+              <a:t>Goh King Kuan, 50</a:t>
+            </a:r>
+            <a:endParaRPr/>
+          </a:p>
+        </p:txBody>
+      </p:sp>
+      <p:pic>
+        <p:nvPicPr>
+          <p:cNvPr id="504" name="Google Shape;504;p32"/>
+          <p:cNvPicPr preferRelativeResize="0"/>
+          <p:nvPr/>
+        </p:nvPicPr>
+        <p:blipFill rotWithShape="1">
+          <a:blip r:embed="rId6">
+            <a:alphaModFix/>
+          </a:blip>
+          <a:srcRect b="0" l="0" r="0" t="0"/>
+          <a:stretch/>
+        </p:blipFill>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="5787114" y="1752287"/>
+            <a:ext cx="636813" cy="634244"/>
+          </a:xfrm>
+          <a:prstGeom prst="ellipse">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:noFill/>
+          <a:ln cap="rnd" cmpd="sng" w="19050">
+            <a:solidFill>
+              <a:srgbClr val="DB536A"/>
+            </a:solidFill>
+            <a:prstDash val="solid"/>
+            <a:round/>
+            <a:headEnd len="sm" w="sm" type="none"/>
+            <a:tailEnd len="sm" w="sm" type="none"/>
+          </a:ln>
+        </p:spPr>
+      </p:pic>
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="505" name="Google Shape;505;p32"/>
+          <p:cNvSpPr txBox="1"/>
+          <p:nvPr/>
+        </p:nvSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="5466403" y="2440205"/>
+            <a:ext cx="1278233" cy="153888"/>
+          </a:xfrm>
+          <a:prstGeom prst="rect">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:noFill/>
+          <a:ln>
+            <a:noFill/>
+          </a:ln>
+        </p:spPr>
+        <p:txBody>
+          <a:bodyPr anchorCtr="0" anchor="t" bIns="0" lIns="0" spcFirstLastPara="1" rIns="0" wrap="square" tIns="0">
+            <a:spAutoFit/>
+          </a:bodyPr>
+          <a:lstStyle/>
+          <a:p>
+            <a:pPr indent="0" lvl="0" marL="0" marR="0" rtl="0" algn="ctr">
+              <a:spcBef>
+                <a:spcPts val="0"/>
+              </a:spcBef>
+              <a:spcAft>
+                <a:spcPts val="0"/>
+              </a:spcAft>
+              <a:buNone/>
+            </a:pPr>
+            <a:r>
+              <a:rPr b="1" lang="en-US" sz="1000">
+                <a:solidFill>
+                  <a:schemeClr val="dk1"/>
+                </a:solidFill>
+                <a:latin typeface="Arial"/>
+                <a:ea typeface="Arial"/>
+                <a:cs typeface="Arial"/>
+                <a:sym typeface="Arial"/>
+              </a:rPr>
+              <a:t>Maria, 35</a:t>
+            </a:r>
+            <a:endParaRPr/>
+          </a:p>
+        </p:txBody>
+      </p:sp>
+      <p:grpSp>
+        <p:nvGrpSpPr>
+          <p:cNvPr id="506" name="Google Shape;506;p32"/>
+          <p:cNvGrpSpPr/>
+          <p:nvPr/>
+        </p:nvGrpSpPr>
+        <p:grpSpPr>
+          <a:xfrm>
+            <a:off x="339947" y="1375040"/>
+            <a:ext cx="2278381" cy="1030338"/>
+            <a:chOff x="342900" y="1375040"/>
+            <a:chExt cx="2278381" cy="1030338"/>
+          </a:xfrm>
+        </p:grpSpPr>
+        <p:sp>
+          <p:nvSpPr>
+            <p:cNvPr id="507" name="Google Shape;507;p32"/>
+            <p:cNvSpPr/>
+            <p:nvPr/>
+          </p:nvSpPr>
+          <p:spPr>
+            <a:xfrm>
+              <a:off x="342900" y="1612737"/>
+              <a:ext cx="2278381" cy="792641"/>
+            </a:xfrm>
+            <a:prstGeom prst="rect">
+              <a:avLst/>
+            </a:prstGeom>
+            <a:solidFill>
+              <a:srgbClr val="EAE8E2"/>
+            </a:solidFill>
+            <a:ln>
+              <a:noFill/>
+            </a:ln>
+          </p:spPr>
+          <p:txBody>
+            <a:bodyPr anchorCtr="0" anchor="t" bIns="45700" lIns="91425" spcFirstLastPara="1" rIns="91425" wrap="square" tIns="45700">
+              <a:noAutofit/>
+            </a:bodyPr>
+            <a:lstStyle/>
+            <a:p>
+              <a:pPr indent="-171450" lvl="0" marL="171450" marR="0" rtl="0" algn="l">
+                <a:spcBef>
+                  <a:spcPts val="0"/>
+                </a:spcBef>
+                <a:spcAft>
+                  <a:spcPts val="0"/>
+                </a:spcAft>
+                <a:buClr>
+                  <a:schemeClr val="dk1"/>
+                </a:buClr>
+                <a:buSzPts val="1000"/>
+                <a:buFont typeface="Arial"/>
+                <a:buChar char="&#8226;"/>
+              </a:pPr>
+              <a:r>
+                <a:rPr lang="en-US" sz="1000">
+                  <a:solidFill>
+                    <a:schemeClr val="dk1"/>
+                  </a:solidFill>
+                  <a:latin typeface="Arial"/>
+                  <a:ea typeface="Arial"/>
+                  <a:cs typeface="Arial"/>
+                  <a:sym typeface="Arial"/>
+                </a:rPr>
+                <a:t>Spends on necessities and miscellaneous items &#8211; retail, transit, food</a:t>
+              </a:r>
+              <a:endParaRPr/>
+            </a:p>
+            <a:p>
+              <a:pPr indent="-171450" lvl="0" marL="171450" marR="0" rtl="0" algn="l">
+                <a:spcBef>
+                  <a:spcPts val="0"/>
+                </a:spcBef>
+                <a:spcAft>
+                  <a:spcPts val="0"/>
+                </a:spcAft>
+                <a:buClr>
+                  <a:schemeClr val="dk1"/>
+                </a:buClr>
+                <a:buSzPts val="1000"/>
+                <a:buFont typeface="Arial"/>
+                <a:buChar char="&#8226;"/>
+              </a:pPr>
+              <a:r>
+                <a:rPr lang="en-US" sz="1000">
+                  <a:solidFill>
+                    <a:schemeClr val="dk1"/>
+                  </a:solidFill>
+                  <a:latin typeface="Arial"/>
+                  <a:ea typeface="Arial"/>
+                  <a:cs typeface="Arial"/>
+                  <a:sym typeface="Arial"/>
+                </a:rPr>
+                <a:t>Pays only via cash</a:t>
+              </a:r>
+              <a:endParaRPr sz="1000">
+                <a:solidFill>
+                  <a:schemeClr val="dk1"/>
+                </a:solidFill>
+                <a:latin typeface="Arial"/>
+                <a:ea typeface="Arial"/>
+                <a:cs typeface="Arial"/>
+                <a:sym typeface="Arial"/>
+              </a:endParaRPr>
+            </a:p>
+          </p:txBody>
+        </p:sp>
+        <p:sp>
+          <p:nvSpPr>
+            <p:cNvPr id="508" name="Google Shape;508;p32"/>
+            <p:cNvSpPr/>
+            <p:nvPr/>
+          </p:nvSpPr>
+          <p:spPr>
+            <a:xfrm>
+              <a:off x="342900" y="1375040"/>
+              <a:ext cx="2278381" cy="240958"/>
+            </a:xfrm>
+            <a:prstGeom prst="rect">
+              <a:avLst/>
+            </a:prstGeom>
+            <a:solidFill>
+              <a:schemeClr val="accent1"/>
+            </a:solidFill>
+            <a:ln>
+              <a:noFill/>
+            </a:ln>
+          </p:spPr>
+          <p:txBody>
+            <a:bodyPr anchorCtr="0" anchor="ctr" bIns="45700" lIns="91425" spcFirstLastPara="1" rIns="91425" wrap="square" tIns="45700">
+              <a:noAutofit/>
+            </a:bodyPr>
+            <a:lstStyle/>
+            <a:p>
+              <a:pPr indent="0" lvl="0" marL="0" marR="0" rtl="0" algn="ctr">
+                <a:spcBef>
+                  <a:spcPts val="0"/>
+                </a:spcBef>
+                <a:spcAft>
+                  <a:spcPts val="0"/>
+                </a:spcAft>
+                <a:buNone/>
+              </a:pPr>
+              <a:r>
+                <a:rPr b="1" lang="en-US" sz="1100">
+                  <a:solidFill>
+                    <a:schemeClr val="lt1"/>
+                  </a:solidFill>
+                  <a:latin typeface="Arial"/>
+                  <a:ea typeface="Arial"/>
+                  <a:cs typeface="Arial"/>
+                  <a:sym typeface="Arial"/>
+                </a:rPr>
+                <a:t>Pioneer (&gt;65 years)</a:t>
+              </a:r>
+              <a:endParaRPr/>
+            </a:p>
+          </p:txBody>
+        </p:sp>
+      </p:grpSp>
+      <p:grpSp>
+        <p:nvGrpSpPr>
+          <p:cNvPr id="509" name="Google Shape;509;p32"/>
+          <p:cNvGrpSpPr/>
+          <p:nvPr/>
+        </p:nvGrpSpPr>
+        <p:grpSpPr>
+          <a:xfrm>
+            <a:off x="339947" y="2459658"/>
+            <a:ext cx="2278382" cy="1071607"/>
+            <a:chOff x="347566" y="2503539"/>
+            <a:chExt cx="2278382" cy="1071607"/>
+          </a:xfrm>
+        </p:grpSpPr>
+        <p:sp>
+          <p:nvSpPr>
+            <p:cNvPr id="510" name="Google Shape;510;p32"/>
+            <p:cNvSpPr/>
+            <p:nvPr/>
+          </p:nvSpPr>
+          <p:spPr>
+            <a:xfrm>
+              <a:off x="347566" y="2741236"/>
+              <a:ext cx="2278381" cy="833910"/>
+            </a:xfrm>
+            <a:prstGeom prst="rect">
+              <a:avLst/>
+            </a:prstGeom>
+            <a:solidFill>
+              <a:srgbClr val="EAE8E2"/>
+            </a:solidFill>
+            <a:ln>
+              <a:noFill/>
+            </a:ln>
+          </p:spPr>
+          <p:txBody>
+            <a:bodyPr anchorCtr="0" anchor="t" bIns="45700" lIns="91425" spcFirstLastPara="1" rIns="91425" wrap="square" tIns="45700">
+              <a:noAutofit/>
+            </a:bodyPr>
+            <a:lstStyle/>
+            <a:p>
+              <a:pPr indent="-171450" lvl="0" marL="171450" marR="0" rtl="0" algn="l">
+                <a:spcBef>
+                  <a:spcPts val="0"/>
+                </a:spcBef>
+                <a:spcAft>
+                  <a:spcPts val="0"/>
+                </a:spcAft>
+                <a:buClr>
+                  <a:schemeClr val="dk1"/>
+                </a:buClr>
+                <a:buSzPts val="1000"/>
+                <a:buFont typeface="Arial"/>
+                <a:buChar char="&#8226;"/>
+              </a:pPr>
+              <a:r>
+                <a:rPr lang="en-US" sz="1000">
+                  <a:solidFill>
+                    <a:schemeClr val="dk1"/>
+                  </a:solidFill>
+                  <a:latin typeface="Arial"/>
+                  <a:ea typeface="Arial"/>
+                  <a:cs typeface="Arial"/>
+                  <a:sym typeface="Arial"/>
+                </a:rPr>
+                <a:t>Provides for family, spends on household goods and meals</a:t>
+              </a:r>
+              <a:endParaRPr/>
+            </a:p>
+            <a:p>
+              <a:pPr indent="-171450" lvl="0" marL="171450" marR="0" rtl="0" algn="l">
+                <a:spcBef>
+                  <a:spcPts val="0"/>
+                </a:spcBef>
+                <a:spcAft>
+                  <a:spcPts val="0"/>
+                </a:spcAft>
+                <a:buClr>
+                  <a:schemeClr val="dk1"/>
+                </a:buClr>
+                <a:buSzPts val="1000"/>
+                <a:buFont typeface="Arial"/>
+                <a:buChar char="&#8226;"/>
+              </a:pPr>
+              <a:r>
+                <a:rPr lang="en-US" sz="1000">
+                  <a:solidFill>
+                    <a:schemeClr val="dk1"/>
+                  </a:solidFill>
+                  <a:latin typeface="Arial"/>
+                  <a:ea typeface="Arial"/>
+                  <a:cs typeface="Arial"/>
+                  <a:sym typeface="Arial"/>
+                </a:rPr>
+                <a:t>Pays via cash or credit/debit cards</a:t>
+              </a:r>
+              <a:endParaRPr/>
+            </a:p>
+            <a:p>
+              <a:pPr indent="-171450" lvl="0" marL="171450" marR="0" rtl="0" algn="l">
+                <a:spcBef>
+                  <a:spcPts val="0"/>
+                </a:spcBef>
+                <a:spcAft>
+                  <a:spcPts val="0"/>
+                </a:spcAft>
+                <a:buClr>
+                  <a:schemeClr val="dk1"/>
+                </a:buClr>
+                <a:buSzPts val="1000"/>
+                <a:buFont typeface="Arial"/>
+                <a:buChar char="&#8226;"/>
+              </a:pPr>
+              <a:r>
+                <a:rPr lang="en-US" sz="1000">
+                  <a:solidFill>
+                    <a:schemeClr val="dk1"/>
+                  </a:solidFill>
+                  <a:latin typeface="Arial"/>
+                  <a:ea typeface="Arial"/>
+                  <a:cs typeface="Arial"/>
+                  <a:sym typeface="Arial"/>
+                </a:rPr>
+                <a:t>Prefers cash for low-value transactions</a:t>
+              </a:r>
+              <a:endParaRPr/>
+            </a:p>
+          </p:txBody>
+        </p:sp>
+        <p:sp>
+          <p:nvSpPr>
+            <p:cNvPr id="511" name="Google Shape;511;p32"/>
+            <p:cNvSpPr/>
+            <p:nvPr/>
+          </p:nvSpPr>
+          <p:spPr>
+            <a:xfrm>
+              <a:off x="347567" y="2503539"/>
+              <a:ext cx="2278381" cy="240958"/>
+            </a:xfrm>
+            <a:prstGeom prst="rect">
+              <a:avLst/>
+            </a:prstGeom>
+            <a:solidFill>
+              <a:srgbClr val="000000"/>
+            </a:solidFill>
+            <a:ln>
+              <a:noFill/>
+            </a:ln>
+          </p:spPr>
+          <p:txBody>
+            <a:bodyPr anchorCtr="0" anchor="ctr" bIns="45700" lIns="91425" spcFirstLastPara="1" rIns="91425" wrap="square" tIns="45700">
+              <a:noAutofit/>
+            </a:bodyPr>
+            <a:lstStyle/>
+            <a:p>
+              <a:pPr indent="0" lvl="0" marL="0" marR="0" rtl="0" algn="ctr">
+                <a:spcBef>
+                  <a:spcPts val="0"/>
+                </a:spcBef>
+                <a:spcAft>
+                  <a:spcPts val="0"/>
+                </a:spcAft>
+                <a:buNone/>
+              </a:pPr>
+              <a:r>
+                <a:rPr b="1" lang="en-US" sz="1100">
+                  <a:solidFill>
+                    <a:schemeClr val="lt1"/>
+                  </a:solidFill>
+                  <a:latin typeface="Arial"/>
+                  <a:ea typeface="Arial"/>
+                  <a:cs typeface="Arial"/>
+                  <a:sym typeface="Arial"/>
+                </a:rPr>
+                <a:t>Silver Hair (45 &#8211; 65 years)</a:t>
+              </a:r>
+              <a:endParaRPr/>
+            </a:p>
+          </p:txBody>
+        </p:sp>
+      </p:grpSp>
+      <p:grpSp>
+        <p:nvGrpSpPr>
+          <p:cNvPr id="512" name="Google Shape;512;p32"/>
+          <p:cNvGrpSpPr/>
+          <p:nvPr/>
+        </p:nvGrpSpPr>
+        <p:grpSpPr>
+          <a:xfrm>
+            <a:off x="339947" y="3585545"/>
+            <a:ext cx="2278381" cy="1111274"/>
+            <a:chOff x="339947" y="3632039"/>
+            <a:chExt cx="2278381" cy="1111274"/>
+          </a:xfrm>
+        </p:grpSpPr>
+        <p:sp>
+          <p:nvSpPr>
+            <p:cNvPr id="513" name="Google Shape;513;p32"/>
+            <p:cNvSpPr/>
+            <p:nvPr/>
+          </p:nvSpPr>
+          <p:spPr>
+            <a:xfrm>
+              <a:off x="339947" y="3869736"/>
+              <a:ext cx="2278381" cy="873577"/>
+            </a:xfrm>
+            <a:prstGeom prst="rect">
+              <a:avLst/>
+            </a:prstGeom>
+            <a:solidFill>
+              <a:srgbClr val="EAE8E2"/>
+            </a:solidFill>
+            <a:ln>
+              <a:noFill/>
+            </a:ln>
+          </p:spPr>
+          <p:txBody>
+            <a:bodyPr anchorCtr="0" anchor="t" bIns="45700" lIns="91425" spcFirstLastPara="1" rIns="91425" wrap="square" tIns="45700">
+              <a:noAutofit/>
+            </a:bodyPr>
+            <a:lstStyle/>
+            <a:p>
+              <a:pPr indent="-171450" lvl="0" marL="171450" marR="0" rtl="0" algn="l">
+                <a:spcBef>
+                  <a:spcPts val="0"/>
+                </a:spcBef>
+                <a:spcAft>
+                  <a:spcPts val="0"/>
+                </a:spcAft>
+                <a:buClr>
+                  <a:schemeClr val="dk1"/>
+                </a:buClr>
+                <a:buSzPts val="1000"/>
+                <a:buFont typeface="Arial"/>
+                <a:buChar char="&#8226;"/>
+              </a:pPr>
+              <a:r>
+                <a:rPr lang="en-US" sz="1000">
+                  <a:solidFill>
+                    <a:schemeClr val="dk1"/>
+                  </a:solidFill>
+                  <a:latin typeface="Arial"/>
+                  <a:ea typeface="Arial"/>
+                  <a:cs typeface="Arial"/>
+                  <a:sym typeface="Arial"/>
+                </a:rPr>
+                <a:t>Spends on meals, entertainment, retail, and transit  </a:t>
+              </a:r>
+              <a:endParaRPr/>
+            </a:p>
+            <a:p>
+              <a:pPr indent="-171450" lvl="0" marL="171450" marR="0" rtl="0" algn="l">
+                <a:spcBef>
+                  <a:spcPts val="0"/>
+                </a:spcBef>
+                <a:spcAft>
+                  <a:spcPts val="0"/>
+                </a:spcAft>
+                <a:buClr>
+                  <a:schemeClr val="dk1"/>
+                </a:buClr>
+                <a:buSzPts val="1000"/>
+                <a:buFont typeface="Arial"/>
+                <a:buChar char="&#8226;"/>
+              </a:pPr>
+              <a:r>
+                <a:rPr lang="en-US" sz="1000">
+                  <a:solidFill>
+                    <a:schemeClr val="dk1"/>
+                  </a:solidFill>
+                  <a:latin typeface="Arial"/>
+                  <a:ea typeface="Arial"/>
+                  <a:cs typeface="Arial"/>
+                  <a:sym typeface="Arial"/>
+                </a:rPr>
+                <a:t>Pays via cash, cards, e-payments</a:t>
+              </a:r>
+              <a:endParaRPr/>
+            </a:p>
+            <a:p>
+              <a:pPr indent="-171450" lvl="0" marL="171450" marR="0" rtl="0" algn="l">
+                <a:spcBef>
+                  <a:spcPts val="0"/>
+                </a:spcBef>
+                <a:spcAft>
+                  <a:spcPts val="0"/>
+                </a:spcAft>
+                <a:buClr>
+                  <a:schemeClr val="dk1"/>
+                </a:buClr>
+                <a:buSzPts val="1000"/>
+                <a:buFont typeface="Arial"/>
+                <a:buChar char="&#8226;"/>
+              </a:pPr>
+              <a:r>
+                <a:rPr lang="en-US" sz="1000">
+                  <a:solidFill>
+                    <a:schemeClr val="dk1"/>
+                  </a:solidFill>
+                  <a:latin typeface="Arial"/>
+                  <a:ea typeface="Arial"/>
+                  <a:cs typeface="Arial"/>
+                  <a:sym typeface="Arial"/>
+                </a:rPr>
+                <a:t>Open to digital payments, prefers cash for small transactions</a:t>
+              </a:r>
+              <a:endParaRPr sz="1000">
+                <a:solidFill>
+                  <a:schemeClr val="dk1"/>
+                </a:solidFill>
+                <a:latin typeface="Arial"/>
+                <a:ea typeface="Arial"/>
+                <a:cs typeface="Arial"/>
+                <a:sym typeface="Arial"/>
+              </a:endParaRPr>
+            </a:p>
+          </p:txBody>
+        </p:sp>
+        <p:sp>
+          <p:nvSpPr>
+            <p:cNvPr id="514" name="Google Shape;514;p32"/>
+            <p:cNvSpPr/>
+            <p:nvPr/>
+          </p:nvSpPr>
+          <p:spPr>
+            <a:xfrm>
+              <a:off x="339947" y="3632039"/>
+              <a:ext cx="2278381" cy="240958"/>
+            </a:xfrm>
+            <a:prstGeom prst="rect">
+              <a:avLst/>
+            </a:prstGeom>
+            <a:solidFill>
+              <a:srgbClr val="EB8C00"/>
+            </a:solidFill>
+            <a:ln>
+              <a:noFill/>
+            </a:ln>
+          </p:spPr>
+          <p:txBody>
+            <a:bodyPr anchorCtr="0" anchor="ctr" bIns="45700" lIns="91425" spcFirstLastPara="1" rIns="91425" wrap="square" tIns="45700">
+              <a:noAutofit/>
+            </a:bodyPr>
+            <a:lstStyle/>
+            <a:p>
+              <a:pPr indent="0" lvl="0" marL="0" marR="0" rtl="0" algn="ctr">
+                <a:spcBef>
+                  <a:spcPts val="0"/>
+                </a:spcBef>
+                <a:spcAft>
+                  <a:spcPts val="0"/>
+                </a:spcAft>
+                <a:buNone/>
+              </a:pPr>
+              <a:r>
+                <a:rPr b="1" lang="en-US" sz="1100">
+                  <a:solidFill>
+                    <a:schemeClr val="lt1"/>
+                  </a:solidFill>
+                  <a:latin typeface="Arial"/>
+                  <a:ea typeface="Arial"/>
+                  <a:cs typeface="Arial"/>
+                  <a:sym typeface="Arial"/>
+                </a:rPr>
+                <a:t>Young Adult (20 &#8211; 44 years)</a:t>
+              </a:r>
+              <a:endParaRPr/>
+            </a:p>
+          </p:txBody>
+        </p:sp>
+      </p:grpSp>
+      <p:grpSp>
+        <p:nvGrpSpPr>
+          <p:cNvPr id="515" name="Google Shape;515;p32"/>
+          <p:cNvGrpSpPr/>
+          <p:nvPr/>
+        </p:nvGrpSpPr>
+        <p:grpSpPr>
+          <a:xfrm>
+            <a:off x="6593430" y="3333223"/>
+            <a:ext cx="2278381" cy="965964"/>
+            <a:chOff x="6590392" y="3348931"/>
+            <a:chExt cx="2278381" cy="965964"/>
+          </a:xfrm>
+        </p:grpSpPr>
+        <p:sp>
+          <p:nvSpPr>
+            <p:cNvPr id="516" name="Google Shape;516;p32"/>
+            <p:cNvSpPr/>
+            <p:nvPr/>
+          </p:nvSpPr>
+          <p:spPr>
+            <a:xfrm>
+              <a:off x="6590392" y="3575146"/>
+              <a:ext cx="2278381" cy="739749"/>
+            </a:xfrm>
+            <a:prstGeom prst="rect">
+              <a:avLst/>
+            </a:prstGeom>
+            <a:solidFill>
+              <a:srgbClr val="EAE8E2"/>
+            </a:solidFill>
+            <a:ln>
+              <a:noFill/>
+            </a:ln>
+          </p:spPr>
+          <p:txBody>
+            <a:bodyPr anchorCtr="0" anchor="t" bIns="45700" lIns="91425" spcFirstLastPara="1" rIns="91425" wrap="square" tIns="45700">
+              <a:noAutofit/>
+            </a:bodyPr>
+            <a:lstStyle/>
+            <a:p>
+              <a:pPr indent="-171450" lvl="0" marL="171450" marR="0" rtl="0" algn="l">
+                <a:spcBef>
+                  <a:spcPts val="0"/>
+                </a:spcBef>
+                <a:spcAft>
+                  <a:spcPts val="0"/>
+                </a:spcAft>
+                <a:buClr>
+                  <a:schemeClr val="dk1"/>
+                </a:buClr>
+                <a:buSzPts val="1000"/>
+                <a:buFont typeface="Arial"/>
+                <a:buChar char="&#8226;"/>
+              </a:pPr>
+              <a:r>
+                <a:rPr lang="en-US" sz="1000">
+                  <a:solidFill>
+                    <a:schemeClr val="dk1"/>
+                  </a:solidFill>
+                  <a:latin typeface="Arial"/>
+                  <a:ea typeface="Arial"/>
+                  <a:cs typeface="Arial"/>
+                  <a:sym typeface="Arial"/>
+                </a:rPr>
+                <a:t>Spends on meals, transit, and miscellaneous school items</a:t>
+              </a:r>
+              <a:endParaRPr/>
+            </a:p>
+            <a:p>
+              <a:pPr indent="-171450" lvl="0" marL="171450" marR="0" rtl="0" algn="l">
+                <a:spcBef>
+                  <a:spcPts val="0"/>
+                </a:spcBef>
+                <a:spcAft>
+                  <a:spcPts val="0"/>
+                </a:spcAft>
+                <a:buClr>
+                  <a:schemeClr val="dk1"/>
+                </a:buClr>
+                <a:buSzPts val="1000"/>
+                <a:buFont typeface="Arial"/>
+                <a:buChar char="&#8226;"/>
+              </a:pPr>
+              <a:r>
+                <a:rPr lang="en-US" sz="1000">
+                  <a:solidFill>
+                    <a:schemeClr val="dk1"/>
+                  </a:solidFill>
+                  <a:latin typeface="Arial"/>
+                  <a:ea typeface="Arial"/>
+                  <a:cs typeface="Arial"/>
+                  <a:sym typeface="Arial"/>
+                </a:rPr>
+                <a:t>Pays via cash as it is the form of allowance provided by parents</a:t>
+              </a:r>
+              <a:endParaRPr/>
+            </a:p>
+          </p:txBody>
+        </p:sp>
+        <p:sp>
+          <p:nvSpPr>
+            <p:cNvPr id="517" name="Google Shape;517;p32"/>
+            <p:cNvSpPr/>
+            <p:nvPr/>
+          </p:nvSpPr>
+          <p:spPr>
+            <a:xfrm>
+              <a:off x="6590392" y="3348931"/>
+              <a:ext cx="2278381" cy="240958"/>
+            </a:xfrm>
+            <a:prstGeom prst="rect">
+              <a:avLst/>
+            </a:prstGeom>
+            <a:solidFill>
+              <a:srgbClr val="968C6D"/>
+            </a:solidFill>
+            <a:ln>
+              <a:noFill/>
+            </a:ln>
+          </p:spPr>
+          <p:txBody>
+            <a:bodyPr anchorCtr="0" anchor="ctr" bIns="45700" lIns="91425" spcFirstLastPara="1" rIns="91425" wrap="square" tIns="45700">
+              <a:noAutofit/>
+            </a:bodyPr>
+            <a:lstStyle/>
+            <a:p>
+              <a:pPr indent="0" lvl="0" marL="0" marR="0" rtl="0" algn="l">
+                <a:spcBef>
+                  <a:spcPts val="0"/>
+                </a:spcBef>
+                <a:spcAft>
+                  <a:spcPts val="0"/>
+                </a:spcAft>
+                <a:buNone/>
+              </a:pPr>
+              <a:r>
+                <a:rPr b="1" lang="en-US" sz="1050">
+                  <a:solidFill>
+                    <a:schemeClr val="lt1"/>
+                  </a:solidFill>
+                  <a:latin typeface="Arial"/>
+                  <a:ea typeface="Arial"/>
+                  <a:cs typeface="Arial"/>
+                  <a:sym typeface="Arial"/>
+                </a:rPr>
+                <a:t>Teen and Young (&lt;19 years)</a:t>
+              </a:r>
+              <a:endParaRPr b="1" sz="1050">
+                <a:solidFill>
+                  <a:schemeClr val="dk1"/>
+                </a:solidFill>
+                <a:latin typeface="Arial"/>
+                <a:ea typeface="Arial"/>
+                <a:cs typeface="Arial"/>
+                <a:sym typeface="Arial"/>
+              </a:endParaRPr>
+            </a:p>
+          </p:txBody>
+        </p:sp>
+      </p:grpSp>
+      <p:grpSp>
+        <p:nvGrpSpPr>
+          <p:cNvPr id="518" name="Google Shape;518;p32"/>
+          <p:cNvGrpSpPr/>
+          <p:nvPr/>
+        </p:nvGrpSpPr>
+        <p:grpSpPr>
+          <a:xfrm>
+            <a:off x="6557231" y="1518023"/>
+            <a:ext cx="2278382" cy="1561094"/>
+            <a:chOff x="6582771" y="1600772"/>
+            <a:chExt cx="2278382" cy="1561094"/>
+          </a:xfrm>
+        </p:grpSpPr>
+        <p:sp>
+          <p:nvSpPr>
+            <p:cNvPr id="519" name="Google Shape;519;p32"/>
+            <p:cNvSpPr/>
+            <p:nvPr/>
+          </p:nvSpPr>
+          <p:spPr>
+            <a:xfrm>
+              <a:off x="6582771" y="1838467"/>
+              <a:ext cx="2278381" cy="1323399"/>
+            </a:xfrm>
+            <a:prstGeom prst="rect">
+              <a:avLst/>
+            </a:prstGeom>
+            <a:solidFill>
+              <a:srgbClr val="EAE8E2"/>
+            </a:solidFill>
+            <a:ln>
+              <a:noFill/>
+            </a:ln>
+          </p:spPr>
+          <p:txBody>
+            <a:bodyPr anchorCtr="0" anchor="t" bIns="45700" lIns="91425" spcFirstLastPara="1" rIns="91425" wrap="square" tIns="45700">
+              <a:noAutofit/>
+            </a:bodyPr>
+            <a:lstStyle/>
+            <a:p>
+              <a:pPr indent="-171450" lvl="0" marL="171450" marR="0" rtl="0" algn="l">
+                <a:spcBef>
+                  <a:spcPts val="0"/>
+                </a:spcBef>
+                <a:spcAft>
+                  <a:spcPts val="0"/>
+                </a:spcAft>
+                <a:buClr>
+                  <a:schemeClr val="dk1"/>
+                </a:buClr>
+                <a:buSzPts val="1000"/>
+                <a:buFont typeface="Arial"/>
+                <a:buChar char="&#8226;"/>
+              </a:pPr>
+              <a:r>
+                <a:rPr lang="en-US" sz="1000">
+                  <a:solidFill>
+                    <a:schemeClr val="dk1"/>
+                  </a:solidFill>
+                  <a:latin typeface="Arial"/>
+                  <a:ea typeface="Arial"/>
+                  <a:cs typeface="Arial"/>
+                  <a:sym typeface="Arial"/>
+                </a:rPr>
+                <a:t>Spends only when requested by employer, mostly on household necessities</a:t>
+              </a:r>
+              <a:endParaRPr/>
+            </a:p>
+            <a:p>
+              <a:pPr indent="-171450" lvl="0" marL="171450" marR="0" rtl="0" algn="l">
+                <a:spcBef>
+                  <a:spcPts val="0"/>
+                </a:spcBef>
+                <a:spcAft>
+                  <a:spcPts val="0"/>
+                </a:spcAft>
+                <a:buClr>
+                  <a:schemeClr val="dk1"/>
+                </a:buClr>
+                <a:buSzPts val="1000"/>
+                <a:buFont typeface="Arial"/>
+                <a:buChar char="&#8226;"/>
+              </a:pPr>
+              <a:r>
+                <a:rPr lang="en-US" sz="1000">
+                  <a:solidFill>
+                    <a:schemeClr val="dk1"/>
+                  </a:solidFill>
+                  <a:latin typeface="Arial"/>
+                  <a:ea typeface="Arial"/>
+                  <a:cs typeface="Arial"/>
+                  <a:sym typeface="Arial"/>
+                </a:rPr>
+                <a:t>Pays via cash as it is the usual payment mode provided by the employer</a:t>
+              </a:r>
+              <a:endParaRPr/>
+            </a:p>
+            <a:p>
+              <a:pPr indent="-171450" lvl="0" marL="171450" marR="0" rtl="0" algn="l">
+                <a:spcBef>
+                  <a:spcPts val="0"/>
+                </a:spcBef>
+                <a:spcAft>
+                  <a:spcPts val="0"/>
+                </a:spcAft>
+                <a:buClr>
+                  <a:schemeClr val="dk1"/>
+                </a:buClr>
+                <a:buSzPts val="1000"/>
+                <a:buFont typeface="Arial"/>
+                <a:buChar char="&#8226;"/>
+              </a:pPr>
+              <a:r>
+                <a:rPr lang="en-US" sz="1000">
+                  <a:solidFill>
+                    <a:schemeClr val="dk1"/>
+                  </a:solidFill>
+                  <a:latin typeface="Arial"/>
+                  <a:ea typeface="Arial"/>
+                  <a:cs typeface="Arial"/>
+                  <a:sym typeface="Arial"/>
+                </a:rPr>
+                <a:t>Receives wages in cash and remits home to family physically</a:t>
+              </a:r>
+              <a:endParaRPr sz="1000">
+                <a:solidFill>
+                  <a:schemeClr val="dk1"/>
+                </a:solidFill>
+                <a:latin typeface="Arial"/>
+                <a:ea typeface="Arial"/>
+                <a:cs typeface="Arial"/>
+                <a:sym typeface="Arial"/>
+              </a:endParaRPr>
+            </a:p>
+            <a:p>
+              <a:pPr indent="-107950" lvl="0" marL="171450" marR="0" rtl="0" algn="l">
+                <a:spcBef>
+                  <a:spcPts val="0"/>
+                </a:spcBef>
+                <a:spcAft>
+                  <a:spcPts val="0"/>
+                </a:spcAft>
+                <a:buClr>
+                  <a:schemeClr val="dk1"/>
+                </a:buClr>
+                <a:buSzPts val="1000"/>
+                <a:buFont typeface="Arial"/>
+                <a:buNone/>
+              </a:pPr>
+              <a:r>
+                <a:t/>
+              </a:r>
+              <a:endParaRPr sz="1000">
+                <a:solidFill>
+                  <a:schemeClr val="dk1"/>
+                </a:solidFill>
+                <a:latin typeface="Arial"/>
+                <a:ea typeface="Arial"/>
+                <a:cs typeface="Arial"/>
+                <a:sym typeface="Arial"/>
+              </a:endParaRPr>
+            </a:p>
+          </p:txBody>
+        </p:sp>
+        <p:sp>
+          <p:nvSpPr>
+            <p:cNvPr id="520" name="Google Shape;520;p32"/>
+            <p:cNvSpPr/>
+            <p:nvPr/>
+          </p:nvSpPr>
+          <p:spPr>
+            <a:xfrm>
+              <a:off x="6582772" y="1600772"/>
+              <a:ext cx="2278381" cy="240958"/>
+            </a:xfrm>
+            <a:prstGeom prst="rect">
+              <a:avLst/>
+            </a:prstGeom>
+            <a:solidFill>
+              <a:srgbClr val="DB536A"/>
+            </a:solidFill>
+            <a:ln>
+              <a:noFill/>
+            </a:ln>
+          </p:spPr>
+          <p:txBody>
+            <a:bodyPr anchorCtr="0" anchor="ctr" bIns="45700" lIns="91425" spcFirstLastPara="1" rIns="91425" wrap="square" tIns="45700">
+              <a:noAutofit/>
+            </a:bodyPr>
+            <a:lstStyle/>
+            <a:p>
+              <a:pPr indent="0" lvl="0" marL="0" marR="0" rtl="0" algn="ctr">
+                <a:spcBef>
+                  <a:spcPts val="0"/>
+                </a:spcBef>
+                <a:spcAft>
+                  <a:spcPts val="0"/>
+                </a:spcAft>
+                <a:buNone/>
+              </a:pPr>
+              <a:r>
+                <a:rPr b="1" lang="en-US" sz="1100">
+                  <a:solidFill>
+                    <a:schemeClr val="lt1"/>
+                  </a:solidFill>
+                  <a:latin typeface="Arial"/>
+                  <a:ea typeface="Arial"/>
+                  <a:cs typeface="Arial"/>
+                  <a:sym typeface="Arial"/>
+                </a:rPr>
+                <a:t>Foreign Worker (20 &#8211; 44 years)</a:t>
+              </a:r>
+              <a:endParaRPr/>
+            </a:p>
+          </p:txBody>
+        </p:sp>
+      </p:grpSp>
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="521" name="Google Shape;521;p32"/>
+          <p:cNvSpPr/>
+          <p:nvPr/>
+        </p:nvSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="2772247" y="1423864"/>
+            <a:ext cx="1267823" cy="1018084"/>
+          </a:xfrm>
+          <a:prstGeom prst="wedgeRectCallout">
+            <a:avLst>
+              <a:gd fmla="val 32051" name="adj1"/>
+              <a:gd fmla="val 60525" name="adj2"/>
+            </a:avLst>
+          </a:prstGeom>
+          <a:solidFill>
+            <a:srgbClr val="E6D0D2"/>
+          </a:solidFill>
+          <a:ln>
+            <a:noFill/>
+          </a:ln>
+        </p:spPr>
+        <p:txBody>
+          <a:bodyPr anchorCtr="0" anchor="ctr" bIns="45700" lIns="36000" spcFirstLastPara="1" rIns="9125" wrap="square" tIns="45700">
+            <a:noAutofit/>
+          </a:bodyPr>
+          <a:lstStyle/>
+          <a:p>
+            <a:pPr indent="0" lvl="0" marL="0" marR="0" rtl="0" algn="l">
+              <a:spcBef>
+                <a:spcPts val="0"/>
+              </a:spcBef>
+              <a:spcAft>
+                <a:spcPts val="0"/>
+              </a:spcAft>
+              <a:buNone/>
+            </a:pPr>
+            <a:r>
+              <a:rPr b="1" lang="en-US" sz="1000">
+                <a:solidFill>
+                  <a:srgbClr val="000000"/>
+                </a:solidFill>
+                <a:latin typeface="Arial"/>
+                <a:ea typeface="Arial"/>
+                <a:cs typeface="Arial"/>
+                <a:sym typeface="Arial"/>
+              </a:rPr>
+              <a:t>Cash </a:t>
+            </a:r>
+            <a:r>
+              <a:rPr lang="en-US" sz="1000">
+                <a:solidFill>
+                  <a:srgbClr val="000000"/>
+                </a:solidFill>
+                <a:latin typeface="Arial"/>
+                <a:ea typeface="Arial"/>
+                <a:cs typeface="Arial"/>
+                <a:sym typeface="Arial"/>
+              </a:rPr>
+              <a:t>is a norm in every household as it is </a:t>
+            </a:r>
+            <a:r>
+              <a:rPr b="1" lang="en-US" sz="1000">
+                <a:solidFill>
+                  <a:srgbClr val="000000"/>
+                </a:solidFill>
+                <a:latin typeface="Arial"/>
+                <a:ea typeface="Arial"/>
+                <a:cs typeface="Arial"/>
+                <a:sym typeface="Arial"/>
+              </a:rPr>
+              <a:t>simple</a:t>
+            </a:r>
+            <a:r>
+              <a:rPr lang="en-US" sz="1000">
+                <a:solidFill>
+                  <a:srgbClr val="000000"/>
+                </a:solidFill>
+                <a:latin typeface="Arial"/>
+                <a:ea typeface="Arial"/>
+                <a:cs typeface="Arial"/>
+                <a:sym typeface="Arial"/>
+              </a:rPr>
+              <a:t>, </a:t>
+            </a:r>
+            <a:r>
+              <a:rPr b="1" lang="en-US" sz="1000">
+                <a:solidFill>
+                  <a:srgbClr val="000000"/>
+                </a:solidFill>
+                <a:latin typeface="Arial"/>
+                <a:ea typeface="Arial"/>
+                <a:cs typeface="Arial"/>
+                <a:sym typeface="Arial"/>
+              </a:rPr>
+              <a:t>convenient</a:t>
+            </a:r>
+            <a:r>
+              <a:rPr lang="en-US" sz="1000">
+                <a:solidFill>
+                  <a:srgbClr val="000000"/>
+                </a:solidFill>
+                <a:latin typeface="Arial"/>
+                <a:ea typeface="Arial"/>
+                <a:cs typeface="Arial"/>
+                <a:sym typeface="Arial"/>
+              </a:rPr>
+              <a:t>, </a:t>
+            </a:r>
+            <a:r>
+              <a:rPr b="1" lang="en-US" sz="1000">
+                <a:solidFill>
+                  <a:srgbClr val="000000"/>
+                </a:solidFill>
+                <a:latin typeface="Arial"/>
+                <a:ea typeface="Arial"/>
+                <a:cs typeface="Arial"/>
+                <a:sym typeface="Arial"/>
+              </a:rPr>
+              <a:t>instant</a:t>
+            </a:r>
+            <a:r>
+              <a:rPr lang="en-US" sz="1000">
+                <a:solidFill>
+                  <a:srgbClr val="000000"/>
+                </a:solidFill>
+                <a:latin typeface="Arial"/>
+                <a:ea typeface="Arial"/>
+                <a:cs typeface="Arial"/>
+                <a:sym typeface="Arial"/>
+              </a:rPr>
+              <a:t>, and </a:t>
+            </a:r>
+            <a:r>
+              <a:rPr b="1" lang="en-US" sz="1000">
+                <a:solidFill>
+                  <a:srgbClr val="000000"/>
+                </a:solidFill>
+                <a:latin typeface="Arial"/>
+                <a:ea typeface="Arial"/>
+                <a:cs typeface="Arial"/>
+                <a:sym typeface="Arial"/>
+              </a:rPr>
+              <a:t>widely accepted</a:t>
+            </a:r>
+            <a:endParaRPr b="1" sz="1000">
+              <a:solidFill>
+                <a:srgbClr val="000000"/>
+              </a:solidFill>
+              <a:latin typeface="Arial"/>
+              <a:ea typeface="Arial"/>
+              <a:cs typeface="Arial"/>
+              <a:sym typeface="Arial"/>
+            </a:endParaRPr>
+          </a:p>
+        </p:txBody>
+      </p:sp>
+      <p:pic>
+        <p:nvPicPr>
+          <p:cNvPr id="522" name="Google Shape;522;p32"/>
+          <p:cNvPicPr preferRelativeResize="0"/>
+          <p:nvPr/>
+        </p:nvPicPr>
+        <p:blipFill rotWithShape="1">
+          <a:blip r:embed="rId7">
+            <a:alphaModFix/>
+          </a:blip>
+          <a:srcRect b="0" l="0" r="0" t="0"/>
+          <a:stretch/>
+        </p:blipFill>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="3044879" y="3734650"/>
+            <a:ext cx="638491" cy="634244"/>
+          </a:xfrm>
+          <a:prstGeom prst="ellipse">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:noFill/>
+          <a:ln cap="rnd" cmpd="sng" w="19050">
+            <a:solidFill>
+              <a:srgbClr val="EB8C00"/>
+            </a:solidFill>
+            <a:prstDash val="solid"/>
+            <a:round/>
+            <a:headEnd len="sm" w="sm" type="none"/>
+            <a:tailEnd len="sm" w="sm" type="none"/>
+          </a:ln>
+        </p:spPr>
+      </p:pic>
+      <p:pic>
+        <p:nvPicPr>
+          <p:cNvPr id="523" name="Google Shape;523;p32"/>
+          <p:cNvPicPr preferRelativeResize="0"/>
+          <p:nvPr/>
+        </p:nvPicPr>
+        <p:blipFill rotWithShape="1">
+          <a:blip r:embed="rId8">
+            <a:alphaModFix/>
+          </a:blip>
+          <a:srcRect b="0" l="0" r="0" t="0"/>
+          <a:stretch/>
+        </p:blipFill>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="4295289" y="3734650"/>
+            <a:ext cx="641777" cy="634244"/>
+          </a:xfrm>
+          <a:prstGeom prst="ellipse">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:solidFill>
+            <a:srgbClr val="B6AF99"/>
+          </a:solidFill>
+          <a:ln cap="rnd" cmpd="sng" w="19050">
+            <a:solidFill>
+              <a:srgbClr val="968C6D"/>
+            </a:solidFill>
+            <a:prstDash val="solid"/>
+            <a:round/>
+            <a:headEnd len="sm" w="sm" type="none"/>
+            <a:tailEnd len="sm" w="sm" type="none"/>
+          </a:ln>
+        </p:spPr>
+      </p:pic>
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="524" name="Google Shape;524;p32"/>
+          <p:cNvSpPr txBox="1"/>
+          <p:nvPr/>
+        </p:nvSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="3977060" y="4428758"/>
+            <a:ext cx="1278233" cy="153888"/>
+          </a:xfrm>
+          <a:prstGeom prst="rect">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:noFill/>
+          <a:ln>
+            <a:noFill/>
+          </a:ln>
+        </p:spPr>
+        <p:txBody>
+          <a:bodyPr anchorCtr="0" anchor="t" bIns="0" lIns="0" spcFirstLastPara="1" rIns="0" wrap="square" tIns="0">
+            <a:spAutoFit/>
+          </a:bodyPr>
+          <a:lstStyle/>
+          <a:p>
+            <a:pPr indent="0" lvl="0" marL="0" marR="0" rtl="0" algn="ctr">
+              <a:spcBef>
+                <a:spcPts val="0"/>
+              </a:spcBef>
+              <a:spcAft>
+                <a:spcPts val="0"/>
+              </a:spcAft>
+              <a:buNone/>
+            </a:pPr>
+            <a:r>
+              <a:rPr b="1" lang="en-US" sz="1000">
+                <a:solidFill>
+                  <a:schemeClr val="dk1"/>
+                </a:solidFill>
+                <a:latin typeface="Arial"/>
+                <a:ea typeface="Arial"/>
+                <a:cs typeface="Arial"/>
+                <a:sym typeface="Arial"/>
+              </a:rPr>
+              <a:t>Marc Tan, 18</a:t>
+            </a:r>
+            <a:endParaRPr/>
+          </a:p>
+        </p:txBody>
+      </p:sp>
+      <p:pic>
+        <p:nvPicPr>
+          <p:cNvPr id="525" name="Google Shape;525;p32"/>
+          <p:cNvPicPr preferRelativeResize="0"/>
+          <p:nvPr/>
+        </p:nvPicPr>
+        <p:blipFill rotWithShape="1">
+          <a:blip r:embed="rId9">
+            <a:alphaModFix/>
+          </a:blip>
+          <a:srcRect b="0" l="0" r="0" t="0"/>
+          <a:stretch/>
+        </p:blipFill>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="5549717" y="3734650"/>
+            <a:ext cx="637025" cy="634244"/>
+          </a:xfrm>
+          <a:prstGeom prst="ellipse">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:solidFill>
+            <a:srgbClr val="B6AF99"/>
+          </a:solidFill>
+          <a:ln cap="rnd" cmpd="sng" w="19050">
+            <a:solidFill>
+              <a:srgbClr val="968C6D"/>
+            </a:solidFill>
+            <a:prstDash val="solid"/>
+            <a:round/>
+            <a:headEnd len="sm" w="sm" type="none"/>
+            <a:tailEnd len="sm" w="sm" type="none"/>
+          </a:ln>
+        </p:spPr>
+      </p:pic>
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="526" name="Google Shape;526;p32"/>
+          <p:cNvSpPr txBox="1"/>
+          <p:nvPr/>
+        </p:nvSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="5229112" y="4427270"/>
+            <a:ext cx="1278233" cy="153888"/>
+          </a:xfrm>
+          <a:prstGeom prst="rect">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:noFill/>
+          <a:ln>
+            <a:noFill/>
+          </a:ln>
+        </p:spPr>
+        <p:txBody>
+          <a:bodyPr anchorCtr="0" anchor="t" bIns="0" lIns="0" spcFirstLastPara="1" rIns="0" wrap="square" tIns="0">
+            <a:spAutoFit/>
+          </a:bodyPr>
+          <a:lstStyle/>
+          <a:p>
+            <a:pPr indent="0" lvl="0" marL="0" marR="0" rtl="0" algn="ctr">
+              <a:spcBef>
+                <a:spcPts val="0"/>
+              </a:spcBef>
+              <a:spcAft>
+                <a:spcPts val="0"/>
+              </a:spcAft>
+              <a:buNone/>
+            </a:pPr>
+            <a:r>
+              <a:rPr b="1" lang="en-US" sz="1000">
+                <a:solidFill>
+                  <a:schemeClr val="dk1"/>
+                </a:solidFill>
+                <a:latin typeface="Arial"/>
+                <a:ea typeface="Arial"/>
+                <a:cs typeface="Arial"/>
+                <a:sym typeface="Arial"/>
+              </a:rPr>
+              <a:t>Becky Tan, 12</a:t>
+            </a:r>
+            <a:endParaRPr/>
+          </a:p>
+        </p:txBody>
+      </p:sp>
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="527" name="Google Shape;527;p32"/>
+          <p:cNvSpPr txBox="1"/>
+          <p:nvPr/>
+        </p:nvSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="2725008" y="4428758"/>
+            <a:ext cx="1278233" cy="153888"/>
+          </a:xfrm>
+          <a:prstGeom prst="rect">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:noFill/>
+          <a:ln>
+            <a:noFill/>
+          </a:ln>
+        </p:spPr>
+        <p:txBody>
+          <a:bodyPr anchorCtr="0" anchor="t" bIns="0" lIns="0" spcFirstLastPara="1" rIns="0" wrap="square" tIns="0">
+            <a:spAutoFit/>
+          </a:bodyPr>
+          <a:lstStyle/>
+          <a:p>
+            <a:pPr indent="0" lvl="0" marL="0" marR="0" rtl="0" algn="ctr">
+              <a:spcBef>
+                <a:spcPts val="0"/>
+              </a:spcBef>
+              <a:spcAft>
+                <a:spcPts val="0"/>
+              </a:spcAft>
+              <a:buNone/>
+            </a:pPr>
+            <a:r>
+              <a:rPr b="1" lang="en-US" sz="1000">
+                <a:solidFill>
+                  <a:schemeClr val="dk1"/>
+                </a:solidFill>
+                <a:latin typeface="Arial"/>
+                <a:ea typeface="Arial"/>
+                <a:cs typeface="Arial"/>
+                <a:sym typeface="Arial"/>
+              </a:rPr>
+              <a:t>Daniel Tan, 26</a:t>
+            </a:r>
+            <a:endParaRPr/>
+          </a:p>
+        </p:txBody>
+      </p:sp>
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="528" name="Google Shape;528;p32"/>
+          <p:cNvSpPr txBox="1"/>
+          <p:nvPr/>
+        </p:nvSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="311945" y="4725871"/>
+            <a:ext cx="8522492" cy="92333"/>
+          </a:xfrm>
+          <a:prstGeom prst="rect">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:noFill/>
+          <a:ln>
+            <a:noFill/>
+          </a:ln>
+        </p:spPr>
+        <p:txBody>
+          <a:bodyPr anchorCtr="0" anchor="b" bIns="0" lIns="0" spcFirstLastPara="1" rIns="0" wrap="square" tIns="0">
+            <a:spAutoFit/>
+          </a:bodyPr>
+          <a:lstStyle/>
+          <a:p>
+            <a:pPr indent="0" lvl="0" marL="0" marR="0" rtl="0" algn="l">
+              <a:lnSpc>
+                <a:spcPct val="100000"/>
+              </a:lnSpc>
+              <a:spcBef>
+                <a:spcPts val="0"/>
+              </a:spcBef>
+              <a:spcAft>
+                <a:spcPts val="0"/>
+              </a:spcAft>
+              <a:buClr>
+                <a:srgbClr val="000000"/>
+              </a:buClr>
+              <a:buSzPts val="600"/>
+              <a:buFont typeface="Arial"/>
+              <a:buNone/>
+            </a:pPr>
+            <a:r>
+              <a:rPr b="0" i="1" lang="en-US" sz="600">
+                <a:solidFill>
+                  <a:srgbClr val="000000"/>
+                </a:solidFill>
+                <a:latin typeface="Arial"/>
+                <a:ea typeface="Arial"/>
+                <a:cs typeface="Arial"/>
+                <a:sym typeface="Arial"/>
+              </a:rPr>
+              <a:t>Source: PwC Strategy&amp; analysis</a:t>
+            </a:r>
+            <a:endParaRPr/>
+          </a:p>
+        </p:txBody>
+      </p:sp>
+    </p:spTree>
+  </p:cSld>
+  <p:clrMapOvr>
+    <a:masterClrMapping/>
+  </p:clrMapOvr>
+</p:sld>

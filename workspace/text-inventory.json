@@ -1,0 +1,7095 @@
+{
+  "slide-0": {
+    "shape-0": {
+      "left": 0.34,
+      "top": 0.42,
+      "width": 3.74,
+      "height": 0.2,
+      "placeholder_type": "BODY",
+      "default_font_size": 12.0,
+      "overflow": {
+        "frame": {
+          "overflow_bottom": 0.1
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "August 2018"
+        }
+      ]
+    },
+    "shape-1": {
+      "left": 0.34,
+      "top": 1.72,
+      "width": 7.81,
+      "height": 0.48,
+      "placeholder_type": "SUBTITLE",
+      "default_font_size": 32.0,
+      "paragraphs": [
+        {
+          "text": "ePayments Strategy",
+          "line_spacing": 10.8
+        }
+      ]
+    },
+    "shape-2": {
+      "left": 0.34,
+      "top": 2.22,
+      "width": 8.5,
+      "height": 0.97,
+      "placeholder_type": "CENTER_TITLE",
+      "default_font_size": 32.0,
+      "paragraphs": [
+        {
+          "text": "Greenfield PayCo market entry and case for change in Southeast Asia",
+          "italic": false,
+          "line_spacing": 10.8
+        }
+      ]
+    }
+  },
+  "slide-1": {
+    "shape-0": {
+      "left": 0.34,
+      "top": 0.24,
+      "width": 9.32,
+      "height": 0.67,
+      "placeholder_type": "TITLE",
+      "paragraphs": [
+        {
+          "text": "For questions related to this document please contact any one of our team members"
+        }
+      ]
+    },
+    "shape-1": {
+      "left": 0.34,
+      "top": 1.37,
+      "width": 1.75,
+      "height": 1.8,
+      "paragraphs": [
+        {
+          "text": "Winston Nesfield",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "bold": true,
+          "color": "000000"
+        },
+        {
+          "text": "Engagement Partner",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "color": "000000"
+        },
+        {
+          "text": "Singapore\u000bwinston.nesfield\u000b@strategyand.sg.pwc.com",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "color": "000000"
+        }
+      ]
+    },
+    "shape-2": {
+      "left": 2.24,
+      "top": 1.37,
+      "width": 1.75,
+      "height": 1.8,
+      "paragraphs": [
+        {
+          "text": "Eduardo Arnoni",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "bold": true,
+          "color": "000000"
+        },
+        {
+          "text": "Subject Matter Expert",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "color": "000000"
+        },
+        {
+          "text": "Australia\u000beduardo.arnoni\u000b@strategyand.au.pwc.com",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "color": "000000"
+        }
+      ]
+    },
+    "shape-3": {
+      "left": 4.13,
+      "top": 1.37,
+      "width": 1.75,
+      "height": 1.8,
+      "paragraphs": [
+        {
+          "text": "Shirish Jain",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "bold": true,
+          "color": "000000"
+        },
+        {
+          "text": "Engagement Director",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "color": "000000"
+        },
+        {
+          "text": "Singapore\u000bshirish.b.jain\u000b@strategyand.sg.pwc.com",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "color": "000000"
+        }
+      ]
+    },
+    "shape-4": {
+      "left": 6.02,
+      "top": 1.37,
+      "width": 1.75,
+      "height": 1.8,
+      "paragraphs": [
+        {
+          "text": "Anurag Pandey",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "bold": true,
+          "color": "000000"
+        },
+        {
+          "text": "Client Relationship Manager",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "color": "000000"
+        },
+        {
+          "text": "Singapore\u000banurag.pandey\u000b@sg.pwc.com",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "color": "000000"
+        }
+      ]
+    },
+    "shape-5": {
+      "left": 7.92,
+      "top": 1.37,
+      "width": 1.75,
+      "height": 1.8,
+      "paragraphs": [
+        {
+          "text": "Daryl Mark",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "bold": true,
+          "color": "000000"
+        },
+        {
+          "text": "Engagement Manager",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "color": "000000"
+        },
+        {
+          "text": "Singapore",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "color": "000000"
+        },
+        {
+          "text": "daryl.c.mark\u000b@strategyand.sg.pwc.com",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "color": "000000"
+        }
+      ]
+    },
+    "shape-6": {
+      "left": 0.34,
+      "top": 3.38,
+      "width": 1.75,
+      "height": 1.8,
+      "paragraphs": [
+        {
+          "text": "Becky Yeoh",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "bold": true,
+          "color": "000000"
+        },
+        {
+          "text": "Work Stream Lead",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "color": "000000"
+        },
+        {
+          "text": "Malaysia\u000bbecky.sk.yeoh\u000b@strategyand.my.pwc.com",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "color": "000000"
+        }
+      ]
+    },
+    "shape-7": {
+      "left": 2.24,
+      "top": 3.38,
+      "width": 1.75,
+      "height": 1.8,
+      "paragraphs": [
+        {
+          "text": "Xing Juen Goh",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "bold": true,
+          "color": "000000"
+        },
+        {
+          "text": "Work Stream Lead",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "color": "000000"
+        },
+        {
+          "text": "Singapore",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "color": "000000"
+        },
+        {
+          "text": "xingjuen.goh",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "color": "000000"
+        },
+        {
+          "text": "@strategyand.sg.pwc.com",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "color": "000000"
+        }
+      ]
+    },
+    "shape-8": {
+      "left": 4.13,
+      "top": 3.38,
+      "width": 1.75,
+      "height": 1.8,
+      "paragraphs": [
+        {
+          "text": "Jien Yue Choong",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "bold": true,
+          "color": "000000"
+        },
+        {
+          "text": "Work Stream Lead",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "color": "000000"
+        },
+        {
+          "text": "Malaysia\u000bjien.yue.choong\u000b@strategyand.my.pwc.com",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "color": "000000"
+        }
+      ]
+    },
+    "shape-9": {
+      "left": 6.02,
+      "top": 3.38,
+      "width": 1.75,
+      "height": 1.8,
+      "paragraphs": [
+        {
+          "text": "Daniel Hoon",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "bold": true,
+          "color": "000000"
+        },
+        {
+          "text": "Analyst",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "color": "000000"
+        },
+        {
+          "text": "Singapore\u000bdaniel.wj.hoon\u000b@strategyand.sg.pwc.com",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "color": "000000"
+        }
+      ]
+    },
+    "shape-10": {
+      "left": 7.92,
+      "top": 3.38,
+      "width": 1.75,
+      "height": 1.8,
+      "paragraphs": [
+        {
+          "text": "Marc Lam",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "bold": true,
+          "color": "000000"
+        },
+        {
+          "text": "Analyst",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "color": "000000"
+        },
+        {
+          "text": "Singapore\u000bmarc.wx.lam",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "color": "000000"
+        },
+        {
+          "text": "@strategyand.sg.pwc.com",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "color": "000000"
+        }
+      ]
+    },
+    "shape-11": {
+      "left": 0.34,
+      "top": 5.36,
+      "width": 3.17,
+      "height": 0.1,
+      "placeholder_type": "FOOTER",
+      "paragraphs": [
+        {
+          "text": "Confidential information for the sole benefit and use of PwC’s client."
+        }
+      ]
+    }
+  },
+  "slide-2": {
+    "shape-0": {
+      "left": 0.34,
+      "top": 0.24,
+      "width": 9.32,
+      "height": 0.67,
+      "placeholder_type": "TITLE",
+      "paragraphs": [
+        {
+          "text": "Project Qualification: \u000bePayments Strategy for a NewCo in South East Asia"
+        }
+      ]
+    },
+    "shape-1": {
+      "left": 0.34,
+      "top": 5.36,
+      "width": 3.17,
+      "height": 0.1,
+      "placeholder_type": "FOOTER",
+      "paragraphs": [
+        {
+          "text": "Confidential information for the sole benefit and use of PwC’s client."
+        }
+      ]
+    }
+  },
+  "slide-3": {
+    "shape-0": {
+      "left": 0.34,
+      "top": 0.24,
+      "width": 9.41,
+      "height": 0.67,
+      "placeholder_type": "TITLE",
+      "paragraphs": [
+        {
+          "text": "In support of country’s Smart Nation Payments agenda, client aims to establish a NewCo to further drive cashless adoption"
+        }
+      ]
+    },
+    "shape-1": {
+      "left": 0.34,
+      "top": 1.26,
+      "width": 5.05,
+      "height": 0.23,
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-2": 0.18
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Country Payments Target",
+          "font_name": "Arial",
+          "font_size": 14.0,
+          "bold": true,
+          "theme_color": "DARK_1",
+          "line_spacing": 12.6
+        }
+      ]
+    },
+    "shape-2": {
+      "left": 4.59,
+      "top": 1.26,
+      "width": 5.05,
+      "height": 0.23,
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-1": 0.18
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Clients Objectives",
+          "font_name": "Arial",
+          "font_size": 14.0,
+          "bold": true,
+          "theme_color": "DARK_1",
+          "line_spacing": 12.6
+        }
+      ]
+    },
+    "shape-3": {
+      "left": 4.81,
+      "top": 1.7,
+      "width": 4.62,
+      "height": 3.33,
+      "paragraphs": [
+        {
+          "text": "Develop a national ePayment solution through NewCo that aims to:",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Promote ePayments for retail and SME transactions",
+          "bullet": true,
+          "level": 1,
+          "space_before": 6.0,
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Support the social sector",
+          "bullet": true,
+          "level": 1,
+          "space_before": 6.0,
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Establish a forward-looking view (including emerging and key trends) of the payments landscape",
+          "bullet": true,
+          "level": 0,
+          "space_before": 6.0,
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Determine the ways-to-play (incl. op model, target markets) for NewCo to accelerate migration to e-payments",
+          "bullet": true,
+          "level": 0,
+          "space_before": 6.0,
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Design infrastructure that is future ready by exploring all relevant current and potential technologies – assess suitability of existing national payments infrastructure",
+          "bullet": true,
+          "level": 0,
+          "space_before": 6.0,
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Explore opportunities to leverage on existing investments for the collaboration",
+          "bullet": true,
+          "level": 0,
+          "space_before": 6.0,
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-4": {
+      "left": 0.8,
+      "top": 3.4,
+      "width": 3.82,
+      "height": 2.73,
+      "overflow": {
+        "slide": {
+          "overflow_bottom": 0.5
+        }
+      },
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-5": 1.07,
+          "shape-6": 1.07,
+          "shape-7": 0.27,
+          "shape-8": 1.07
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Interoperable system",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 18.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Simple payments system",
+          "bullet": true,
+          "level": 0,
+          "space_before": 36.0,
+          "font_name": "Arial",
+          "font_size": 18.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Faster settlement speed",
+          "bullet": true,
+          "level": 0,
+          "space_before": 36.0,
+          "font_name": "Arial",
+          "font_size": 18.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Safer transactions",
+          "bullet": true,
+          "level": 0,
+          "space_before": 36.0,
+          "font_name": "Arial",
+          "font_size": 18.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-5": {
+      "left": 1.12,
+      "top": 3.69,
+      "width": 3.14,
+      "height": 0.34,
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-4": 1.07
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Higher accessibility and acceptance for customers and businesses",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "italic": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-6": {
+      "left": 1.12,
+      "top": 4.53,
+      "width": 3.14,
+      "height": 0.34,
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-4": 1.07
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "A simplified payments system to increase competitiveness and efficiency for users",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "italic": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-7": {
+      "left": 0.34,
+      "top": 5.36,
+      "width": 3.17,
+      "height": 0.1,
+      "placeholder_type": "FOOTER",
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-4": 0.27,
+          "shape-8": 0.24
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Confidential information for the sole benefit and use of PwC’s client."
+        }
+      ]
+    },
+    "shape-8": {
+      "left": 1.12,
+      "top": 5.29,
+      "width": 3.14,
+      "height": 0.34,
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-4": 1.07,
+          "shape-7": 0.24
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Increased speed of settlements via cashless payment methods",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "italic": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-9": {
+      "left": 1.12,
+      "top": 6.08,
+      "width": 3.14,
+      "height": 0.34,
+      "overflow": {
+        "slide": {
+          "overflow_bottom": 0.8
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "A fully regulated payments environment (e.g. establishment of the Payments Council)",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "italic": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    }
+  },
+  "slide-4": {
+    "shape-0": {
+      "left": 0.34,
+      "top": 0.24,
+      "width": 9.32,
+      "height": 0.67,
+      "placeholder_type": "TITLE",
+      "paragraphs": [
+        {
+          "text": "In response to top-down call to action, disruptors are entering the market with two variations of digital wallet propositions"
+        }
+      ]
+    },
+    "shape-1": {
+      "left": 0.34,
+      "top": 1.26,
+      "width": 8.9,
+      "height": 0.23,
+      "paragraphs": [
+        {
+          "text": "Payment schemes available",
+          "font_name": "Arial",
+          "font_size": 14.0,
+          "bold": true,
+          "theme_color": "DARK_1",
+          "line_spacing": 12.6
+        }
+      ]
+    },
+    "shape-2": {
+      "left": 0.34,
+      "top": 1.5,
+      "width": 2.98,
+      "height": 0.25,
+      "paragraphs": [
+        {
+          "text": "2-party scheme",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-3": {
+      "left": 3.52,
+      "top": 1.5,
+      "width": 2.98,
+      "height": 0.25,
+      "paragraphs": [
+        {
+          "text": "3-party scheme",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-4": {
+      "left": 6.7,
+      "top": 1.5,
+      "width": 2.95,
+      "height": 0.25,
+      "paragraphs": [
+        {
+          "text": "4-party (or more) scheme",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-5": {
+      "left": 0.34,
+      "top": 1.79,
+      "width": 2.98,
+      "height": 0.37,
+      "paragraphs": [
+        {
+          "text": "Transaction occurs directly between merchant and customer",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-6": {
+      "left": 3.52,
+      "top": 1.79,
+      "width": 2.98,
+      "height": 0.56,
+      "paragraphs": [
+        {
+          "text": "Players acquire the consumer & merchant. Acceptance of payment is dependent on a specific application and POS terminal",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-7": {
+      "left": 6.7,
+      "top": 1.79,
+      "width": 2.95,
+      "height": 0.56,
+      "paragraphs": [
+        {
+          "text": "Players only acquire consumers. Acceptance of payment is widely accepted with Visa and Mastercard POS terminals",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-8": {
+      "left": 0.34,
+      "top": 3.78,
+      "width": 1.34,
+      "height": 0.19,
+      "overflow": {
+        "frame": {
+          "overflow_bottom": 0.07
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Players:",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-9": {
+      "left": 3.52,
+      "top": 3.78,
+      "width": 1.34,
+      "height": 0.19,
+      "overflow": {
+        "frame": {
+          "overflow_bottom": 0.07
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Players:",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-10": {
+      "left": 6.7,
+      "top": 3.78,
+      "width": 1.34,
+      "height": 0.19,
+      "overflow": {
+        "frame": {
+          "overflow_bottom": 0.07
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Players:",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-11": {
+      "left": 2.24,
+      "top": 4.56,
+      "width": 1.12,
+      "height": 0.56,
+      "paragraphs": [
+        {
+          "text": "Recently opened to third party developers",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "color": "000000"
+        }
+      ]
+    },
+    "shape-12": {
+      "left": 3.67,
+      "top": 4.94,
+      "width": 1.74,
+      "height": 0.37,
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-13": 0.04,
+          "shape-16": 0.17
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Staged wallets",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "theme_color": "ACCENT_6"
+        },
+        {
+          "text": "(Stored value)",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "theme_color": "ACCENT_6"
+        }
+      ]
+    },
+    "shape-13": {
+      "left": 3.77,
+      "top": 5.01,
+      "width": 0.2,
+      "height": 0.2,
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-12": 0.04
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "1",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": true,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-14": {
+      "left": 6.65,
+      "top": 5.01,
+      "width": 0.2,
+      "height": 0.2,
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-15": 0.01,
+          "shape-18": 0.02
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "2",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": true,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-15": {
+      "left": 6.78,
+      "top": 4.94,
+      "width": 1.74,
+      "height": 0.37,
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-14": 0.01,
+          "shape-16": 0.17,
+          "shape-18": 0.21
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Pass-through wallets\u000b(Secure container)",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "theme_color": "ACCENT_1"
+        }
+      ]
+    },
+    "shape-16": {
+      "left": 0.34,
+      "top": 5.17,
+      "width": 9.32,
+      "height": 0.1,
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-12": 0.17,
+          "shape-15": 0.17,
+          "shape-18": 0.12,
+          "shape-19": 0.06
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Source: Tech in Asia, PwC Strategy& analysis",
+          "font_name": "Arial",
+          "font_size": 6.0,
+          "bold": false,
+          "italic": true,
+          "color": "000000",
+          "line_spacing": 6.0
+        }
+      ]
+    },
+    "shape-17": {
+      "left": 0.34,
+      "top": 5.36,
+      "width": 3.17,
+      "height": 0.1,
+      "placeholder_type": "FOOTER",
+      "paragraphs": [
+        {
+          "text": "Confidential information for the sole benefit and use of PwC’s client."
+        }
+      ]
+    },
+    "shape-18": {
+      "left": 6.55,
+      "top": 5.09,
+      "width": 1.18,
+      "height": 0.28,
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-14": 0.02,
+          "shape-15": 0.21,
+          "shape-16": 0.12
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Issuer/Acquirer",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-19": {
+      "left": 9.1,
+      "top": 5.09,
+      "width": 1.18,
+      "height": 0.28,
+      "overflow": {
+        "slide": {
+          "overflow_right": 0.28
+        }
+      },
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-16": 0.06
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Issuer",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-20": {
+      "left": 10.53,
+      "top": 5.09,
+      "width": 1.18,
+      "height": 0.28,
+      "overflow": {
+        "slide": {
+          "overflow_right": 1.71
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Acquirer",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-21": {
+      "left": 1.07,
+      "top": 6.16,
+      "width": 0.81,
+      "height": 0.17,
+      "overflow": {
+        "slide": {
+          "overflow_bottom": 0.71
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Consumer",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "theme_color": "DARK_1",
+          "line_spacing": 8.1
+        }
+      ]
+    },
+    "shape-22": {
+      "left": 4.13,
+      "top": 6.22,
+      "width": 1.18,
+      "height": 0.28,
+      "overflow": {
+        "slide": {
+          "overflow_bottom": 0.87
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Merchant",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-23": {
+      "left": 7.31,
+      "top": 6.57,
+      "width": 1.18,
+      "height": 0.28,
+      "overflow": {
+        "slide": {
+          "overflow_bottom": 1.22
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Merchant",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-24": {
+      "left": 10.56,
+      "top": 6.63,
+      "width": 1.18,
+      "height": 0.28,
+      "overflow": {
+        "slide": {
+          "overflow_right": 1.74,
+          "overflow_bottom": 1.28
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Merchant",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-25": {
+      "left": 10.66,
+      "top": 6.88,
+      "width": 0.77,
+      "height": 0.16,
+      "overflow": {
+        "slide": {
+          "overflow_right": 1.42,
+          "overflow_bottom": 1.42
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Consumer",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "theme_color": "DARK_1",
+          "line_spacing": 8.1
+        }
+      ]
+    },
+    "shape-26": {
+      "left": 13.85,
+      "top": 6.88,
+      "width": 0.77,
+      "height": 0.16,
+      "overflow": {
+        "slide": {
+          "overflow_right": 4.62,
+          "overflow_bottom": 1.42
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Consumer",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "theme_color": "DARK_1",
+          "line_spacing": 8.1
+        }
+      ]
+    }
+  },
+  "slide-5": {
+    "shape-0": {
+      "left": 0.34,
+      "top": 0.24,
+      "width": 9.32,
+      "height": 0.67,
+      "placeholder_type": "TITLE",
+      "paragraphs": [
+        {
+          "text": "While disruptors brings choice for consumers, ‘Cash’ remains the leading option for low value transactions"
+        }
+      ]
+    },
+    "shape-1": {
+      "left": 0.34,
+      "top": 1.24,
+      "width": 8.9,
+      "height": 0.27,
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-2": 0.3
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Competitor Landscape Analysis",
+          "font_name": "Arial",
+          "font_size": 14.0,
+          "bold": true,
+          "theme_color": "DARK_1",
+          "line_spacing": 12.6
+        }
+      ]
+    },
+    "shape-2": {
+      "left": 5.59,
+      "top": 1.42,
+      "width": 3.3,
+      "height": 1.17,
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-1": 0.3
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Players were assessed across seven lenses – payment direction, experience, interoperability, settlement speed, cost to merchants, customer reach, and fraud prevention",
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "color": "000000"
+        }
+      ]
+    },
+    "shape-3": {
+      "left": 0.44,
+      "top": 3.54,
+      "width": 2.68,
+      "height": 0.99,
+      "paragraphs": [
+        {
+          "text": "The payments service providers selected for assessment were filtered based on their significance in the market",
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "color": "000000"
+        }
+      ]
+    },
+    "shape-4": {
+      "left": 0.34,
+      "top": 5.36,
+      "width": 3.17,
+      "height": 0.1,
+      "placeholder_type": "FOOTER",
+      "paragraphs": [
+        {
+          "text": "Confidential information for the sole benefit and use of PwC’s client."
+        }
+      ]
+    }
+  },
+  "slide-6": {
+    "shape-0": {
+      "left": 0.34,
+      "top": 0.24,
+      "width": 9.32,
+      "height": 0.67,
+      "placeholder_type": "TITLE",
+      "paragraphs": [
+        {
+          "text": "Non-differentiating efforts by players often reap marginal benefits as user pain points remain unaddressed"
+        }
+      ]
+    },
+    "shape-1": {
+      "left": 0.34,
+      "top": 1.26,
+      "width": 8.9,
+      "height": 0.23,
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-4": 0.25
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Differentiating efforts of players",
+          "font_name": "Arial",
+          "font_size": 14.0,
+          "bold": true,
+          "theme_color": "DARK_1",
+          "line_spacing": 12.6
+        }
+      ]
+    },
+    "shape-2": {
+      "left": 0.4,
+      "top": 1.52,
+      "width": 1.41,
+      "height": 0.64,
+      "paragraphs": [
+        {
+          "text": "Telco-led mobile wallet",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-3": {
+      "left": 3.44,
+      "top": 1.52,
+      "width": 3.06,
+      "height": 0.64,
+      "paragraphs": [
+        {
+          "text": "Mobile payment solutions that are available (app-form) to customers upon sign up with a telco company. The mobile wallet allows for C2B and P2P transactions",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-4": {
+      "left": 3.93,
+      "top": 1.35,
+      "width": 1.82,
+      "height": 0.18,
+      "overflow": {
+        "frame": {
+          "overflow_bottom": 0.07
+        }
+      },
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-1": 0.25
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Description",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 10.5,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-5": {
+      "left": 7.1,
+      "top": 1.52,
+      "width": 2.51,
+      "height": 0.26,
+      "overflow": {
+        "frame": {
+          "overflow_bottom": 0.07
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Key takeaway",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "theme_color": "LIGHT_1",
+          "line_spacing": 12.0
+        }
+      ]
+    },
+    "shape-6": {
+      "left": 0.4,
+      "top": 2.22,
+      "width": 1.41,
+      "height": 0.64,
+      "paragraphs": [
+        {
+          "text": "Network co-brand cards",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-7": {
+      "left": 3.44,
+      "top": 2.23,
+      "width": 3.06,
+      "height": 0.64,
+      "paragraphs": [
+        {
+          "text": "Co-branded cards are collaborative efforts by a card network and a retailer to provide additional incentives to customers, usually aimed to drive shared customer loyalty",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-8": {
+      "left": 7.1,
+      "top": 1.79,
+      "width": 2.51,
+      "height": 3.16,
+      "paragraphs": [
+        {
+          "text": "Customer experience is compromised as players try to diversify and differentiate themselves",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": true,
+          "theme_color": "DARK_1",
+          "line_spacing": 10.0
+        },
+        {
+          "text": "Customers often have to take additional steps to redeem points/benefits (troublesome)",
+          "bullet": true,
+          "level": 1,
+          "space_before": 3.0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "theme_color": "DARK_1",
+          "line_spacing": 10.0
+        },
+        {
+          "text": "Interoperability is still lacking as payment products are limited to app users and payments are restricted to in-app and pre-approved merchants",
+          "bullet": true,
+          "level": 0,
+          "space_before": 3.0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": true,
+          "theme_color": "DARK_1",
+          "line_spacing": 10.0
+        },
+        {
+          "text": "Lack of KYC and risk management measures on customers result in defaults and bad debts – business model become unsustainable",
+          "bullet": true,
+          "level": 0,
+          "space_before": 3.0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": true,
+          "theme_color": "DARK_1",
+          "line_spacing": 10.0
+        }
+      ]
+    },
+    "shape-9": {
+      "left": 0.4,
+      "top": 2.92,
+      "width": 1.41,
+      "height": 0.64,
+      "paragraphs": [
+        {
+          "text": "Disruptive-play",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-10": {
+      "left": 3.44,
+      "top": 2.91,
+      "width": 3.06,
+      "height": 0.64,
+      "paragraphs": [
+        {
+          "text": "Disruptors enter the payments landscape with intentions to maximise customer wallet-use to support core business. Discounts and incentives are offered frequently to consumers",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-11": {
+      "left": 0.4,
+      "top": 3.62,
+      "width": 1.41,
+      "height": 0.64,
+      "paragraphs": [
+        {
+          "text": "Buy-now-pay-later services",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-12": {
+      "left": 3.45,
+      "top": 3.62,
+      "width": 3.06,
+      "height": 0.64,
+      "paragraphs": [
+        {
+          "text": "Players are providing a buy-now pay-later service that allows customers to make a purchase and pay in instalments, assisting customers with lower cash-in-hand",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-13": {
+      "left": 0.4,
+      "top": 4.31,
+      "width": 1.41,
+      "height": 0.64,
+      "paragraphs": [
+        {
+          "text": "Reduction in costs to users",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-14": {
+      "left": 2.37,
+      "top": 4.55,
+      "width": 0.95,
+      "height": 0.15,
+      "overflow": {
+        "frame": {
+          "overflow_bottom": 0.08
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Amex",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-15": {
+      "left": 3.45,
+      "top": 4.32,
+      "width": 3.34,
+      "height": 0.64,
+      "paragraphs": [
+        {
+          "text": "Players are expected to reduce MDR in order to remain competitive and encourage merchant adoption (e.g. AMEX have reduced MDR for some merchants to 0.8% per transaction from 4.5%",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-16": {
+      "left": 0.34,
+      "top": 5.14,
+      "width": 9.32,
+      "height": 0.1,
+      "paragraphs": [
+        {
+          "text": "Source: Company websites, Guardian, PwC Strategy& analysis",
+          "font_name": "Arial",
+          "font_size": 6.0,
+          "bold": false,
+          "italic": true,
+          "color": "000000",
+          "line_spacing": 6.0
+        }
+      ]
+    },
+    "shape-17": {
+      "left": 0.34,
+      "top": 5.36,
+      "width": 3.17,
+      "height": 0.1,
+      "placeholder_type": "FOOTER",
+      "paragraphs": [
+        {
+          "text": "Confidential information for the sole benefit and use of PwC’s client."
+        }
+      ]
+    },
+    "shape-18": {
+      "left": 4.48,
+      "top": 6.92,
+      "width": 0.96,
+      "height": 0.26,
+      "overflow": {
+        "slide": {
+          "overflow_bottom": 1.56
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Razer zVault",
+          "font_name": "Arial",
+          "font_size": 8.0,
+          "bold": true,
+          "theme_color": "DARK_1",
+          "line_spacing": 12.0
+        }
+      ]
+    }
+  },
+  "slide-7": {
+    "shape-0": {
+      "left": 0.34,
+      "top": 0.24,
+      "width": 9.32,
+      "height": 0.67,
+      "placeholder_type": "TITLE",
+      "paragraphs": [
+        {
+          "text": "The country’s grassroots still prefer cash especially for low-value transactions – a habit entrenched in hearts and minds"
+        }
+      ]
+    },
+    "shape-1": {
+      "left": 0.34,
+      "top": 1.24,
+      "width": 7.4,
+      "height": 0.23,
+      "paragraphs": [
+        {
+          "text": "Dominant Payment Mode: A Household’s Perspective",
+          "font_name": "Arial",
+          "font_size": 14.0,
+          "bold": true,
+          "color": "000000",
+          "line_spacing": 12.6
+        }
+      ]
+    },
+    "shape-2": {
+      "left": 3.03,
+      "top": 1.56,
+      "width": 1.39,
+      "height": 1.11,
+      "paragraphs": [
+        {
+          "text": "Cash is a norm in every household as it is simple, convenient, instant, and widely accepted",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": true,
+          "color": "000000"
+        }
+      ]
+    },
+    "shape-3": {
+      "left": 4.45,
+      "top": 2.3,
+      "width": 1.4,
+      "height": 0.17,
+      "overflow": {
+        "frame": {
+          "overflow_bottom": 0.08
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Yeo Soo Keng, 78",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-4": {
+      "left": 5.98,
+      "top": 2.67,
+      "width": 1.4,
+      "height": 0.17,
+      "overflow": {
+        "frame": {
+          "overflow_bottom": 0.08
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Maria, 35",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-5": {
+      "left": 0.75,
+      "top": 3.01,
+      "width": 2.49,
+      "height": 0.26,
+      "paragraphs": [
+        {
+          "text": "Pioneer (>65 years)",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-6": {
+      "left": 0.75,
+      "top": 3.27,
+      "width": 2.49,
+      "height": 0.87,
+      "paragraphs": [
+        {
+          "text": "Spends on necessities and miscellaneous items – retail, transit, food",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Pays only via cash",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-7": {
+      "left": 3.7,
+      "top": 3.51,
+      "width": 1.4,
+      "height": 0.17,
+      "overflow": {
+        "frame": {
+          "overflow_bottom": 0.08
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Tan Chun Kit, 58",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-8": {
+      "left": 5.11,
+      "top": 3.51,
+      "width": 1.4,
+      "height": 0.17,
+      "overflow": {
+        "frame": {
+          "overflow_bottom": 0.08
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Goh King Kuan, 50",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-9": {
+      "left": 14.37,
+      "top": 3.41,
+      "width": 2.49,
+      "height": 0.26,
+      "overflow": {
+        "slide": {
+          "overflow_right": 6.86
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Foreign Worker (20 – 44 years)",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-10": {
+      "left": 14.37,
+      "top": 3.67,
+      "width": 2.49,
+      "height": 1.45,
+      "overflow": {
+        "slide": {
+          "overflow_right": 6.86
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Spends only when requested by employer, mostly on household necessities",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Pays via cash as it is the usual payment mode provided by the employer",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Receives wages in cash and remits home to family physically",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-11": {
+      "left": 0.34,
+      "top": 5.17,
+      "width": 9.32,
+      "height": 0.1,
+      "paragraphs": [
+        {
+          "text": "Source: PwC Strategy& analysis",
+          "font_name": "Arial",
+          "font_size": 6.0,
+          "bold": false,
+          "italic": true,
+          "color": "000000",
+          "line_spacing": 6.0
+        }
+      ]
+    },
+    "shape-12": {
+      "left": 2.98,
+      "top": 4.84,
+      "width": 1.4,
+      "height": 0.17,
+      "overflow": {
+        "frame": {
+          "overflow_bottom": 0.08
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Daniel Tan, 26",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-13": {
+      "left": 4.35,
+      "top": 4.84,
+      "width": 1.4,
+      "height": 0.17,
+      "overflow": {
+        "frame": {
+          "overflow_bottom": 0.08
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Marc Tan, 18",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-14": {
+      "left": 5.72,
+      "top": 4.84,
+      "width": 1.4,
+      "height": 0.17,
+      "overflow": {
+        "frame": {
+          "overflow_bottom": 0.08
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Becky Tan, 12",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-15": {
+      "left": 0.34,
+      "top": 5.36,
+      "width": 3.17,
+      "height": 0.1,
+      "placeholder_type": "FOOTER",
+      "paragraphs": [
+        {
+          "text": "Confidential information for the sole benefit and use of PwC’s client."
+        }
+      ]
+    },
+    "shape-16": {
+      "left": 0.75,
+      "top": 5.43,
+      "width": 2.49,
+      "height": 0.26,
+      "overflow": {
+        "slide": {
+          "overflow_bottom": 0.07
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Silver Hair (45 – 65 years)",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-17": {
+      "left": 0.75,
+      "top": 5.69,
+      "width": 2.49,
+      "height": 0.91,
+      "overflow": {
+        "slide": {
+          "overflow_bottom": 0.97
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Provides for family, spends on household goods and meals",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Pays via cash or credit/debit cards",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Prefers cash for low-value transactions",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-18": {
+      "left": 14.42,
+      "top": 7.31,
+      "width": 2.49,
+      "height": 0.26,
+      "overflow": {
+        "slide": {
+          "overflow_right": 6.91,
+          "overflow_bottom": 1.95
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Teen and Young (<19 years)",
+          "font_name": "Arial",
+          "font_size": 10.5,
+          "bold": true,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-19": {
+      "left": 14.42,
+      "top": 7.56,
+      "width": 2.49,
+      "height": 0.81,
+      "overflow": {
+        "slide": {
+          "overflow_right": 6.91,
+          "overflow_bottom": 2.74
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Spends on meals, transit, and miscellaneous school items",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Pays via cash as it is the form of allowance provided by parents",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-20": {
+      "left": 0.74,
+      "top": 7.89,
+      "width": 2.49,
+      "height": 0.26,
+      "overflow": {
+        "slide": {
+          "overflow_bottom": 2.53
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Young Adult (20 – 44 years)",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-21": {
+      "left": 0.74,
+      "top": 8.15,
+      "width": 2.49,
+      "height": 0.96,
+      "overflow": {
+        "slide": {
+          "overflow_bottom": 3.48
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Spends on meals, entertainment, retail, and transit",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Pays via cash, cards, e-payments",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Open to digital payments, prefers cash for small transactions",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    }
+  },
+  "slide-8": {
+    "shape-0": {
+      "left": 0.34,
+      "top": 0.24,
+      "width": 9.32,
+      "height": 0.67,
+      "placeholder_type": "TITLE",
+      "paragraphs": [
+        {
+          "text": "From a small merchant perspective, hawkers prefer cash due to its simplicity and the instant availability of funds"
+        }
+      ]
+    },
+    "shape-1": {
+      "left": 0.39,
+      "top": 1.24,
+      "width": 7.8,
+      "height": 0.23,
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-3": 0.1
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Day-in-life of a Hawker – Overview",
+          "font_name": "Arial",
+          "font_size": 14.0,
+          "bold": true,
+          "theme_color": "DARK_1",
+          "line_spacing": 12.6
+        }
+      ]
+    },
+    "shape-2": {
+      "left": 3.04,
+      "top": 1.67,
+      "width": 2.18,
+      "height": 2.06,
+      "paragraphs": [
+        {
+          "text": "Suppliers:",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Chun Kit has to go to the market in the morning to get his supplies for the day’s work",
+          "bullet": true,
+          "level": 0,
+          "space_before": 3.0,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "His suppliers accepts cash as the only mode of payment",
+          "bullet": true,
+          "level": 0,
+          "space_before": 3.0,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-3": {
+      "left": 4.88,
+      "top": 1.23,
+      "width": 0.72,
+      "height": 0.15,
+      "overflow": {
+        "frame": {
+          "overflow_bottom": 0.08
+        }
+      },
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-1": 0.1
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Needs:",
+          "alignment": "RIGHT",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-4": {
+      "left": 7.49,
+      "top": 1.64,
+      "width": 2.18,
+      "height": 2.06,
+      "paragraphs": [
+        {
+          "text": "Operations:",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Chun Kit’s busiest hours are between 12pm to 2pm. He serves ~90 bowls of fish soup during that period at ~$4 each",
+          "bullet": true,
+          "level": 0,
+          "space_before": 3.0,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "A small % of customers asks about e-payments but are happy to pay cash for hawker transactions",
+          "bullet": true,
+          "level": 0,
+          "space_before": 3.0,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-5": {
+      "left": 5.77,
+      "top": 2.23,
+      "width": 1.19,
+      "height": 1.17,
+      "paragraphs": [
+        {
+          "text": "Cash Virtuous Cycle",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 14.0,
+          "bold": true,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-6": {
+      "left": 11.85,
+      "top": 2.39,
+      "width": 0.72,
+      "height": 0.15,
+      "overflow": {
+        "frame": {
+          "overflow_bottom": 0.08
+        },
+        "slide": {
+          "overflow_right": 2.57
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Simplicity",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-7": {
+      "left": 12.98,
+      "top": 2.39,
+      "width": 0.82,
+      "height": 0.15,
+      "overflow": {
+        "frame": {
+          "overflow_bottom": 0.08
+        },
+        "slide": {
+          "overflow_right": 3.8
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Convenience",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-8": {
+      "left": 14.21,
+      "top": 2.39,
+      "width": 1.26,
+      "height": 0.15,
+      "overflow": {
+        "frame": {
+          "overflow_bottom": 0.08
+        },
+        "slide": {
+          "overflow_right": 5.47
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Availability of Funds",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-9": {
+      "left": 0.34,
+      "top": 3.14,
+      "width": 2.48,
+      "height": 1.99,
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-10": 0.23
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Tan Chun Kit, 58 years old, is a hawker selling fish soup. He employs 1 stall assistant and operates between 7.30am – 4.30pm. Cash is his dominant mode of payment.",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Chun Kit is the primary breadwinner of his family, which consists of his wife and 2 sons who are still in school. He currently lives in a 3-room flat.",
+          "space_before": 3.0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-10": {
+      "left": 0.63,
+      "top": 4.22,
+      "width": 0.68,
+      "height": 0.34,
+      "overflow": {
+        "frame": {
+          "overflow_bottom": 0.18
+        }
+      },
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-9": 0.23
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Tan Chun Kit, 58",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-11": {
+      "left": 3.04,
+      "top": 4.01,
+      "width": 6.64,
+      "height": 1.12,
+      "paragraphs": [
+        {
+          "text": "Family:",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "After Chun Kit close his stall for the day, he goes to a nearby food centre to pack food for his family – cash is the only accepted payment method in the food centre",
+          "bullet": true,
+          "level": 0,
+          "space_before": 3.0,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Chun Kit’s sons ask him for some money after dinner for a school excursion to the zoo – cash is the most readily available and convenient form of payment for Chun Kit",
+          "bullet": true,
+          "level": 0,
+          "space_before": 3.0,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-12": {
+      "left": 0.34,
+      "top": 5.36,
+      "width": 3.17,
+      "height": 0.1,
+      "placeholder_type": "FOOTER",
+      "paragraphs": [
+        {
+          "text": "Confidential information for the sole benefit and use of PwC’s client."
+        }
+      ]
+    },
+    "shape-13": {
+      "left": 8.54,
+      "top": 5.11,
+      "width": 1.03,
+      "height": 0.45,
+      "paragraphs": [
+        {
+          "text": "Morning",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "color": "000000"
+        }
+      ]
+    },
+    "shape-14": {
+      "left": 10.7,
+      "top": 5.32,
+      "width": 0.99,
+      "height": 0.45,
+      "overflow": {
+        "slide": {
+          "overflow_right": 1.69,
+          "overflow_bottom": 0.15
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Mid-day",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-15": {
+      "left": 9.54,
+      "top": 7.08,
+      "width": 1.04,
+      "height": 0.44,
+      "overflow": {
+        "slide": {
+          "overflow_right": 0.58,
+          "overflow_bottom": 1.9
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Evening",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "color": "000000"
+        }
+      ]
+    }
+  },
+  "slide-9": {
+    "shape-0": {
+      "left": 0.34,
+      "top": 0.24,
+      "width": 9.32,
+      "height": 0.67,
+      "placeholder_type": "TITLE",
+      "paragraphs": [
+        {
+          "text": "Example: Cash and ePayments are about cost neutral to hawkers – no compelling incentive to adopt ePayments",
+          "underline": true
+        }
+      ]
+    },
+    "shape-1": {
+      "left": 0.39,
+      "top": 1.24,
+      "width": 8.9,
+      "height": 0.23,
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-5": 0.12
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Case Study: Cost of Cash vs. ePayments",
+          "font_name": "Arial",
+          "font_size": 14.0,
+          "bold": true,
+          "color": "000000",
+          "line_spacing": 12.6
+        }
+      ]
+    },
+    "shape-2": {
+      "left": 0.45,
+      "top": 1.56,
+      "width": 2.34,
+      "height": 0.17,
+      "overflow": {
+        "frame": {
+          "overflow_bottom": 0.08
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Scenario 1: Cash Only",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-3": {
+      "left": 3.38,
+      "top": 1.49,
+      "width": 1.33,
+      "height": 0.13,
+      "overflow": {
+        "frame": {
+          "overflow_bottom": 0.09
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "1 hour",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 8.0,
+          "bold": true,
+          "italic": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-4": {
+      "left": 6.44,
+      "top": 1.48,
+      "width": 3.25,
+      "height": 0.27,
+      "paragraphs": [
+        {
+          "text": "Cost of Handling Cash",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": true,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-5": {
+      "left": 8.58,
+      "top": 1.19,
+      "width": 1.08,
+      "height": 0.22,
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-1": 0.12
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "ILLUSTRATIVE",
+          "alignment": "RIGHT",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": true,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-6": {
+      "left": 0.5,
+      "top": 1.77,
+      "width": 1.82,
+      "height": 0.31,
+      "paragraphs": [
+        {
+          "text": "Sales",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": true,
+          "color": "FFFFFF"
+        }
+      ]
+    },
+    "shape-7": {
+      "left": 0.6,
+      "top": 2.13,
+      "width": 1.62,
+      "height": 0.84,
+      "paragraphs": [
+        {
+          "text": "Chun Kit only accepts payments by cash – collecting $560 in cash per day for 140 bowls of fish soup",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-8": {
+      "left": 2.31,
+      "top": 1.77,
+      "width": 1.82,
+      "height": 0.31,
+      "paragraphs": [
+        {
+          "text": "Reconciliation",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": true,
+          "color": "FFFFFF"
+        }
+      ]
+    },
+    "shape-9": {
+      "left": 2.44,
+      "top": 2.15,
+      "width": 1.62,
+      "height": 0.84,
+      "paragraphs": [
+        {
+          "text": "End of day, Chun Kit counts the total cash collected, ensuring it matches to number of bowls sold",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-10": {
+      "left": 4.12,
+      "top": 1.77,
+      "width": 1.82,
+      "height": 0.31,
+      "paragraphs": [
+        {
+          "text": "Banking",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": true,
+          "color": "FFFFFF"
+        }
+      ]
+    },
+    "shape-11": {
+      "left": 4.15,
+      "top": 2.14,
+      "width": 1.69,
+      "height": 0.84,
+      "paragraphs": [
+        {
+          "text": "Chun Kit goes to the bank to deposit the proceeds for the day, spending a total 1 hour for reconciliation and banking",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-12": {
+      "left": 6.44,
+      "top": 1.77,
+      "width": 3.25,
+      "height": 0.81,
+      "paragraphs": [
+        {
+          "text": "1 hour per day of reconciliation and banking",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "$10 per hour opportunity cost to Chun Kit1",
+          "bullet": true,
+          "level": 0,
+          "space_before": 5.5,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "365 days of operation per year",
+          "bullet": true,
+          "level": 0,
+          "space_before": 5.5,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-13": {
+      "left": 6.44,
+      "top": 2.63,
+      "width": 1.57,
+      "height": 0.5,
+      "paragraphs": [
+        {
+          "text": "Opportunity cost per annum: $3,650",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-14": {
+      "left": 8.06,
+      "top": 2.63,
+      "width": 1.61,
+      "height": 0.5,
+      "paragraphs": [
+        {
+          "text": "Avg. impact to profitability4: ~5%",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-15": {
+      "left": 0.45,
+      "top": 3.29,
+      "width": 2.34,
+      "height": 0.17,
+      "overflow": {
+        "frame": {
+          "overflow_bottom": 0.08
+        }
+      },
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-18": 0.02
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Scenario 2: ePayments Only",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-16": {
+      "left": 0.5,
+      "top": 3.5,
+      "width": 1.83,
+      "height": 0.31,
+      "paragraphs": [
+        {
+          "text": "Sales",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": true,
+          "color": "FFFFFF"
+        }
+      ]
+    },
+    "shape-17": {
+      "left": 2.33,
+      "top": 3.5,
+      "width": 1.83,
+      "height": 0.31,
+      "paragraphs": [
+        {
+          "text": "Reconciliation",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": true,
+          "color": "FFFFFF"
+        }
+      ]
+    },
+    "shape-18": {
+      "left": 2.53,
+      "top": 3.22,
+      "width": 1.33,
+      "height": 0.13,
+      "overflow": {
+        "frame": {
+          "overflow_bottom": 0.09
+        }
+      },
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-15": 0.02
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "20 mins",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 8.0,
+          "bold": true,
+          "italic": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-19": {
+      "left": 4.14,
+      "top": 3.5,
+      "width": 1.83,
+      "height": 0.31,
+      "paragraphs": [
+        {
+          "text": "Home",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": true,
+          "color": "FFFFFF"
+        }
+      ]
+    },
+    "shape-20": {
+      "left": 6.45,
+      "top": 3.21,
+      "width": 3.23,
+      "height": 0.3,
+      "paragraphs": [
+        {
+          "text": "Cost of ePayments",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": true,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-21": {
+      "left": 6.45,
+      "top": 3.54,
+      "width": 3.23,
+      "height": 0.81,
+      "paragraphs": [
+        {
+          "text": "~$200,000 revenue per year2",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "0.8% – 3.0% fee per transaction3",
+          "bullet": true,
+          "level": 0,
+          "space_before": 5.5,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "$20 mins per day at $10 per hour1",
+          "bullet": true,
+          "level": 0,
+          "space_before": 5.5,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-22": {
+      "left": 0.56,
+      "top": 3.87,
+      "width": 1.62,
+      "height": 0.84,
+      "paragraphs": [
+        {
+          "text": "Chun Kit accepts ePayments for all 140 bowls of fish soup everyday, incurring 0.8% - 3.0% transaction fee",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-23": {
+      "left": 2.45,
+      "top": 3.88,
+      "width": 1.62,
+      "height": 0.84,
+      "paragraphs": [
+        {
+          "text": "End of day, Chun Kit performs bank reconciliation to ensure proceeds received matches bowls sold",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-24": {
+      "left": 4.24,
+      "top": 3.87,
+      "width": 1.62,
+      "height": 0.5,
+      "paragraphs": [
+        {
+          "text": "Chun Kit goes home and his work is done for the day",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-25": {
+      "left": 6.44,
+      "top": 4.4,
+      "width": 1.57,
+      "height": 0.5,
+      "paragraphs": [
+        {
+          "text": "Avg. annual trx fee: $4,900",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-26": {
+      "left": 8.06,
+      "top": 4.4,
+      "width": 1.61,
+      "height": 0.5,
+      "paragraphs": [
+        {
+          "text": "Avg. impact to profitability4: ~6%",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-27": {
+      "left": 0.34,
+      "top": 4.97,
+      "width": 9.32,
+      "height": 0.3,
+      "overflow": {
+        "frame": {
+          "overflow_bottom": 0.14
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Note: 1) Hourly opportunity cost is based on average per hour wage adjusted for realisable savings amount of $10; 2) ~$200,000 revenue per year is based on $560 revenue per day multiplied by 365 operational days per year; 3) Transaction fee range is based on competitive rates – XXX (0.8%) to Visa / Mastercard (3.0%); 4) Profitability is assumed to be 40% of revenue at $80,000 based on average gross margins for hawkers",
+          "font_name": "Arial",
+          "font_size": 6.0,
+          "bold": false,
+          "italic": true,
+          "color": "000000",
+          "line_spacing": 6.0
+        },
+        {
+          "text": "Source: XXX; PwC Strategy& analysis",
+          "font_name": "Arial",
+          "font_size": 6.0,
+          "bold": false,
+          "italic": true,
+          "color": "000000",
+          "line_spacing": 6.0
+        }
+      ]
+    },
+    "shape-28": {
+      "left": 0.34,
+      "top": 5.36,
+      "width": 3.17,
+      "height": 0.1,
+      "placeholder_type": "FOOTER",
+      "paragraphs": [
+        {
+          "text": "Confidential information for the sole benefit and use of PwC’s client."
+        }
+      ]
+    }
+  },
+  "slide-10": {
+    "shape-0": {
+      "left": 0.34,
+      "top": 0.24,
+      "width": 9.32,
+      "height": 0.67,
+      "placeholder_type": "TITLE",
+      "paragraphs": [
+        {
+          "text": "In order to encourage ePayments adoption, the cash cycle needs to be broken without affecting family needs"
+        }
+      ]
+    },
+    "shape-1": {
+      "left": 0.39,
+      "top": 1.24,
+      "width": 8.9,
+      "height": 0.27,
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-5": 0.29
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Current State Payment Cycle – Cash-Based",
+          "font_name": "Arial",
+          "font_size": 14.0,
+          "bold": true,
+          "theme_color": "DARK_1",
+          "line_spacing": 12.6
+        }
+      ]
+    },
+    "shape-2": {
+      "left": 2.48,
+      "top": 1.59,
+      "width": 0.23,
+      "height": 0.23,
+      "paragraphs": [
+        {
+          "text": "2",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 10.5,
+          "bold": true,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-3": {
+      "left": 4.48,
+      "top": 1.47,
+      "width": 0.23,
+      "height": 0.23,
+      "paragraphs": [
+        {
+          "text": "3",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 10.5,
+          "bold": true,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-4": {
+      "left": 4.74,
+      "top": 1.47,
+      "width": 2.26,
+      "height": 1.05,
+      "paragraphs": [
+        {
+          "text": "Soo Keng receives cash from Chun Kit and spends on daily necessities via cash– groceries, transit, and some retail spending",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-5": {
+      "left": 7.39,
+      "top": 1.36,
+      "width": 2.29,
+      "height": 0.38,
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-1": 0.29
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Future State",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-6": {
+      "left": 1.25,
+      "top": 2.26,
+      "width": 0.23,
+      "height": 0.23,
+      "paragraphs": [
+        {
+          "text": "1",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 10.5,
+          "bold": true,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-7": {
+      "left": 3.33,
+      "top": 2.27,
+      "width": 1.02,
+      "height": 0.34,
+      "paragraphs": [
+        {
+          "text": "Yeo Soo Keng, 78",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-8": {
+      "left": 7.39,
+      "top": 1.77,
+      "width": 2.29,
+      "height": 3.24,
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-11": 0.05,
+          "shape-14": 0.05,
+          "shape-16": 0.05
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Cashless adoption can be facilitated by breaking the cash cycle simultaneously, lowering overall funds in circulation",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Chun Kit receives funds directly into his mobile wallet without needing a physical ATM withdrawal",
+          "bullet": true,
+          "level": 0,
+          "space_before": 5.0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Funds are disbursed digitally into Soo Keng, Marc, and Maria’s e-wallets respectively",
+          "bullet": true,
+          "level": 0,
+          "space_before": 5.0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "As cashless payments becomes widely adopted, Soo Keng, Marc, and Maria can perform transactions digitally without requiring physical cash",
+          "bullet": true,
+          "level": 0,
+          "space_before": 5.0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-9": {
+      "left": 1.51,
+      "top": 2.82,
+      "width": 0.95,
+      "height": 0.34,
+      "paragraphs": [
+        {
+          "text": "Tan Chun Kit, 58",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-10": {
+      "left": 4.74,
+      "top": 2.72,
+      "width": 2.26,
+      "height": 1.05,
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-13": 0.02
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Marc receives cash from Chun Kit and spends on daily meals and miscellaneous items via cash – transit, entertainment",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-11": {
+      "left": 7.42,
+      "top": 2.73,
+      "width": 0.23,
+      "height": 0.23,
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-8": 0.05
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "1",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 10.5,
+          "bold": true,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-12": {
+      "left": 0.36,
+      "top": 3.53,
+      "width": 2.39,
+      "height": 1.48,
+      "paragraphs": [
+        {
+          "text": "Chun Kit receives directly through his bank account. He proceeds to the ATM and withdraw cash to:",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Provide for his mother, Soo Keng, and son, Marc",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Pay monthly wages to his household helper, Maria",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-13": {
+      "left": 3.46,
+      "top": 3.44,
+      "width": 1.4,
+      "height": 0.17,
+      "overflow": {
+        "frame": {
+          "overflow_bottom": 0.08
+        }
+      },
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-10": 0.02
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Marc Tan, 18",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-14": {
+      "left": 7.41,
+      "top": 3.47,
+      "width": 0.23,
+      "height": 0.23,
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-8": 0.05
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "2",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 10.5,
+          "bold": true,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-15": {
+      "left": 4.72,
+      "top": 3.97,
+      "width": 2.26,
+      "height": 1.05,
+      "paragraphs": [
+        {
+          "text": "Maria receives cash and proceeds to the nearest 7-11 to remit cash back to her family in the Philippines",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-16": {
+      "left": 7.42,
+      "top": 4.07,
+      "width": 0.23,
+      "height": 0.23,
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-8": 0.05
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "3",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 10.5,
+          "bold": true,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-17": {
+      "left": 3.32,
+      "top": 4.66,
+      "width": 1.4,
+      "height": 0.17,
+      "overflow": {
+        "frame": {
+          "overflow_bottom": 0.08
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Maria, 35",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-18": {
+      "left": 0.34,
+      "top": 5.17,
+      "width": 9.32,
+      "height": 0.1,
+      "paragraphs": [
+        {
+          "text": "Source: PwC Strategy& analysis",
+          "font_name": "Arial",
+          "font_size": 6.0,
+          "bold": false,
+          "italic": true,
+          "color": "000000",
+          "line_spacing": 6.0
+        }
+      ]
+    },
+    "shape-19": {
+      "left": 0.34,
+      "top": 5.36,
+      "width": 3.17,
+      "height": 0.1,
+      "placeholder_type": "FOOTER",
+      "paragraphs": [
+        {
+          "text": "Confidential information for the sole benefit and use of PwC’s client."
+        }
+      ]
+    }
+  },
+  "slide-11": {
+    "shape-0": {
+      "left": 0.34,
+      "top": 0.24,
+      "width": 9.32,
+      "height": 0.67,
+      "placeholder_type": "TITLE",
+      "paragraphs": [
+        {
+          "text": "There are five key needs of new ePayments offering that will appeal to the People and beyond"
+        }
+      ]
+    },
+    "shape-1": {
+      "left": 0.19,
+      "top": 1.51,
+      "width": 1.54,
+      "height": 0.19,
+      "overflow": {
+        "frame": {
+          "overflow_bottom": 0.07
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Transaction Type",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-2": {
+      "left": 0.34,
+      "top": 1.24,
+      "width": 8.9,
+      "height": 0.27,
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-5": 0.15
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Consumer Facing Payments Example Use Cases",
+          "font_name": "Arial",
+          "font_size": 14.0,
+          "bold": true,
+          "theme_color": "DARK_1",
+          "line_spacing": 12.6
+        }
+      ]
+    },
+    "shape-3": {
+      "left": 1.85,
+      "top": 1.52,
+      "width": 1.7,
+      "height": 0.19,
+      "overflow": {
+        "frame": {
+          "overflow_bottom": 0.07
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Fund Flow",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-4": {
+      "left": 4.04,
+      "top": 1.51,
+      "width": 1.7,
+      "height": 0.19,
+      "overflow": {
+        "frame": {
+          "overflow_bottom": 0.07
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Payment Channel",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-5": {
+      "left": 8.33,
+      "top": 1.19,
+      "width": 1.33,
+      "height": 0.22,
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-2": 0.15
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "NON-EXHAUSTIVE",
+          "alignment": "RIGHT",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": true,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-6": {
+      "left": 0.35,
+      "top": 1.71,
+      "width": 1.2,
+      "height": 0.64,
+      "paragraphs": [
+        {
+          "text": "Food and retail payments",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-7": {
+      "left": 3.7,
+      "top": 1.71,
+      "width": 2.37,
+      "height": 0.64,
+      "paragraphs": [
+        {
+          "text": "Payment made via cash, card, or mobile payments – wide range of payment methods",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-8": {
+      "left": 0.35,
+      "top": 2.4,
+      "width": 1.2,
+      "height": 0.64,
+      "paragraphs": [
+        {
+          "text": "Winnings disbursement",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-9": {
+      "left": 1.76,
+      "top": 2.45,
+      "width": 0.56,
+      "height": 0.57,
+      "paragraphs": [
+        {
+          "text": "Sanitised",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 8.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-10": {
+      "left": 3.7,
+      "top": 2.4,
+      "width": 2.37,
+      "height": 0.64,
+      "paragraphs": [
+        {
+          "text": "Funds disbursed via cheque – inconvenient and lengthy payment process",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-11": {
+      "left": 0.35,
+      "top": 3.08,
+      "width": 1.2,
+      "height": 0.64,
+      "paragraphs": [
+        {
+          "text": "Child allowance",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-12": {
+      "left": 3.7,
+      "top": 3.08,
+      "width": 2.37,
+      "height": 0.64,
+      "paragraphs": [
+        {
+          "text": "Funds transfer mostly done by cash, emerging offerings with XXX",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-13": {
+      "left": 13.78,
+      "top": 3.23,
+      "width": 2.02,
+      "height": 0.64,
+      "overflow": {
+        "slide": {
+          "overflow_right": 5.8
+        }
+      },
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-15": 0.91
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Instant",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Widely accepted",
+          "bullet": true,
+          "level": 0,
+          "space_before": 3.0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Information rich (e-receipt)",
+          "bullet": true,
+          "level": 0,
+          "space_before": 3.0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-14": {
+      "left": 13.94,
+      "top": 3.03,
+      "width": 1.7,
+      "height": 0.19,
+      "overflow": {
+        "frame": {
+          "overflow_bottom": 0.07
+        },
+        "slide": {
+          "overflow_right": 5.64
+        }
+      },
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-16": 0.24
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Consumer Needs",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-15": {
+      "left": 14.36,
+      "top": 3.22,
+      "width": 1.44,
+      "height": 0.64,
+      "overflow": {
+        "slide": {
+          "overflow_right": 5.8
+        }
+      },
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-13": 0.91
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Underserved – market fragmented with noise",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-16": {
+      "left": 14.39,
+      "top": 3.03,
+      "width": 1.35,
+      "height": 0.19,
+      "overflow": {
+        "frame": {
+          "overflow_bottom": 0.07
+        },
+        "slide": {
+          "overflow_right": 5.75
+        }
+      },
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-14": 0.24
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Market Situation",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-17": {
+      "left": 0.35,
+      "top": 3.77,
+      "width": 1.2,
+      "height": 0.64,
+      "paragraphs": [
+        {
+          "text": "Tax payments",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-18": {
+      "left": 2.95,
+      "top": 3.8,
+      "width": 0.56,
+      "height": 0.57,
+      "paragraphs": [
+        {
+          "text": "Sanitised",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 8.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-19": {
+      "left": 3.7,
+      "top": 3.77,
+      "width": 2.37,
+      "height": 0.64,
+      "paragraphs": [
+        {
+          "text": "Payment made via XXX – inconvenient process with administrative requirements",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-20": {
+      "left": 13.78,
+      "top": 3.91,
+      "width": 2.02,
+      "height": 0.64,
+      "overflow": {
+        "slide": {
+          "overflow_right": 5.8
+        }
+      },
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-21": 0.92
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Instant",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Information rich",
+          "bullet": true,
+          "level": 0,
+          "space_before": 3.0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-21": {
+      "left": 14.36,
+      "top": 3.91,
+      "width": 1.44,
+      "height": 0.64,
+      "overflow": {
+        "slide": {
+          "overflow_right": 5.8
+        }
+      },
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-20": 0.92
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Underserved – lack of instant B2C offering",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-22": {
+      "left": 0.35,
+      "top": 4.46,
+      "width": 1.2,
+      "height": 0.64,
+      "paragraphs": [
+        {
+          "text": "Scholarship awards",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-23": {
+      "left": 1.76,
+      "top": 4.54,
+      "width": 0.56,
+      "height": 0.57,
+      "paragraphs": [
+        {
+          "text": "Sanitised",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 8.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-24": {
+      "left": 3.7,
+      "top": 4.46,
+      "width": 2.37,
+      "height": 0.64,
+      "paragraphs": [
+        {
+          "text": "Funds disbursed via XXX, increasingly using XXX – poor experience",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-25": {
+      "left": 13.78,
+      "top": 4.6,
+      "width": 2.02,
+      "height": 0.64,
+      "overflow": {
+        "slide": {
+          "overflow_right": 5.8
+        }
+      },
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-26": 0.92
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Instant",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Simple and convenient",
+          "bullet": true,
+          "level": 0,
+          "space_before": 3.0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Anonymity",
+          "bullet": true,
+          "level": 0,
+          "space_before": 3.0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-26": {
+      "left": 14.36,
+      "top": 4.6,
+      "width": 1.44,
+      "height": 0.64,
+      "overflow": {
+        "slide": {
+          "overflow_right": 5.8
+        }
+      },
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-25": 0.92
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Underserved – infra available, but poor experience",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-27": {
+      "left": 0.34,
+      "top": 5.17,
+      "width": 9.32,
+      "height": 0.1,
+      "paragraphs": [
+        {
+          "text": "Source: PwC Strategy& analysis",
+          "font_name": "Arial",
+          "font_size": 6.0,
+          "bold": false,
+          "italic": true,
+          "color": "000000",
+          "line_spacing": 6.0
+        }
+      ]
+    },
+    "shape-28": {
+      "left": 0.34,
+      "top": 5.36,
+      "width": 3.17,
+      "height": 0.1,
+      "placeholder_type": "FOOTER",
+      "paragraphs": [
+        {
+          "text": "Confidential information for the sole benefit and use of PwC’s client."
+        }
+      ]
+    },
+    "shape-29": {
+      "left": 13.78,
+      "top": 5.29,
+      "width": 2.02,
+      "height": 0.64,
+      "overflow": {
+        "slide": {
+          "overflow_right": 5.8,
+          "overflow_bottom": 0.3
+        }
+      },
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-30": 0.91
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Instant",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Simple and convenient",
+          "bullet": true,
+          "level": 0,
+          "space_before": 3.0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-30": {
+      "left": 14.36,
+      "top": 5.28,
+      "width": 1.44,
+      "height": 0.64,
+      "overflow": {
+        "slide": {
+          "overflow_right": 5.8,
+          "overflow_bottom": 0.29
+        }
+      },
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-29": 0.91
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Underserved – lack of simple and instant C2G offering",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-31": {
+      "left": 13.78,
+      "top": 5.98,
+      "width": 2.02,
+      "height": 0.64,
+      "overflow": {
+        "slide": {
+          "overflow_right": 5.8,
+          "overflow_bottom": 0.99
+        }
+      },
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-32": 0.91
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Instant",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Information rich",
+          "bullet": true,
+          "level": 0,
+          "space_before": 3.0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-32": {
+      "left": 14.36,
+      "top": 5.97,
+      "width": 1.44,
+      "height": 0.64,
+      "overflow": {
+        "slide": {
+          "overflow_right": 5.8,
+          "overflow_bottom": 0.98
+        }
+      },
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-31": 0.91
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Underserved – lack of instant G2C offering",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    }
+  },
+  "slide-12": {
+    "shape-0": {
+      "left": 0.34,
+      "top": 0.24,
+      "width": 9.32,
+      "height": 0.67,
+      "placeholder_type": "TITLE",
+      "paragraphs": [
+        {
+          "text": "NewCo aims to provide a unified payments infrastructure; it is not a bank, clearing house, or “another” mobile wallet"
+        }
+      ]
+    },
+    "shape-1": {
+      "left": 0.39,
+      "top": 1.22,
+      "width": 8.9,
+      "height": 0.23,
+      "paragraphs": [
+        {
+          "text": "Key Functions of NewCo",
+          "font_name": "Arial",
+          "font_size": 14.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 12.6
+        }
+      ]
+    },
+    "shape-2": {
+      "left": 0.33,
+      "top": 5.14,
+      "width": 8.9,
+      "height": 0.1,
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-4": 0.32
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Source: PwC Strategy& analysis",
+          "font_name": "Arial",
+          "font_size": 6.0,
+          "bold": false,
+          "italic": true,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 6.0
+        }
+      ]
+    },
+    "shape-3": {
+      "left": 6.06,
+      "top": 4.65,
+      "width": 3.74,
+      "height": 0.38,
+      "paragraphs": [
+        {
+          "text": "NewCo is not …",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-4": {
+      "left": 6.06,
+      "top": 5.05,
+      "width": 3.74,
+      "height": 3.11,
+      "overflow": {
+        "slide": {
+          "overflow_bottom": 2.53
+        }
+      },
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-2": 0.32
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "A bank",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "NewCo will not provide banking services to users (e.g. working capital finance, consumer loans, etc.)",
+          "bullet": true,
+          "level": 1,
+          "space_before": 3.0,
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "A clearing house",
+          "bullet": true,
+          "level": 0,
+          "space_before": 6.0,
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "NewCo will not perform functions of an automated clearing and settlement facility (e.g. require license from clearing house)",
+          "bullet": true,
+          "level": 1,
+          "space_before": 3.0,
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "“Another” mobile wallet in the market",
+          "bullet": true,
+          "level": 0,
+          "space_before": 6.0,
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "NewCo will not add to the market fragmentation of ePayments in the country but rather to unify existing payment offerings",
+          "bullet": true,
+          "level": 1,
+          "space_before": 3.0,
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-5": {
+      "left": 0.34,
+      "top": 5.36,
+      "width": 3.17,
+      "height": 0.1,
+      "placeholder_type": "FOOTER",
+      "paragraphs": [
+        {
+          "text": "Confidential information for the sole benefit and use of PwC’s client."
+        }
+      ]
+    },
+    "shape-6": {
+      "left": 2.29,
+      "top": 6.26,
+      "width": 3.74,
+      "height": 0.38,
+      "overflow": {
+        "slide": {
+          "overflow_bottom": 1.02
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "NewCo is …",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-7": {
+      "left": 2.29,
+      "top": 6.65,
+      "width": 3.74,
+      "height": 3.11,
+      "overflow": {
+        "slide": {
+          "overflow_bottom": 4.14
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "An interoperable payments experience",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Allow payers to make payments for a wide range of transactions (e.g. retail, transit, social, gaming), based on unique identifiers (e.g. xxx, xxx, mobile number)",
+          "bullet": true,
+          "level": 1,
+          "space_before": 3.0,
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "A common standard for interoperable payments",
+          "bullet": true,
+          "level": 0,
+          "space_before": 6.0,
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "A payments processing service",
+          "bullet": true,
+          "level": 0,
+          "space_before": 6.0,
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Facilitate and authenticate payment transactions of service users",
+          "bullet": true,
+          "level": 1,
+          "space_before": 3.0,
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "A business services offering",
+          "bullet": true,
+          "level": 0,
+          "space_before": 6.0,
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Offer solutions to support day-to-day merchant operational needs, digitising businesses",
+          "bullet": true,
+          "level": 1,
+          "space_before": 3.0,
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "theme_color": "DARK_1"
+        }
+      ]
+    }
+  },
+  "slide-13": {
+    "shape-0": {
+      "left": 0.34,
+      "top": 0.24,
+      "width": 9.32,
+      "height": 0.67,
+      "placeholder_type": "TITLE",
+      "paragraphs": [
+        {
+          "text": "NewCo operates Wallet and Scheme, supported by the business services function and a standards arm"
+        }
+      ]
+    },
+    "shape-1": {
+      "left": 0.31,
+      "top": 1.48,
+      "width": 1.44,
+      "height": 0.23,
+      "paragraphs": [
+        {
+          "text": "Core Services",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-2": {
+      "left": 0.39,
+      "top": 1.24,
+      "width": 8.9,
+      "height": 0.23,
+      "paragraphs": [
+        {
+          "text": "NewCo’s Lines of Service",
+          "font_name": "Arial",
+          "font_size": 14.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 12.6
+        }
+      ]
+    },
+    "shape-3": {
+      "left": 5.06,
+      "top": 1.48,
+      "width": 1.44,
+      "height": 0.23,
+      "paragraphs": [
+        {
+          "text": "Enablers",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-4": {
+      "left": 0.31,
+      "top": 2.97,
+      "width": 2.28,
+      "height": 0.36,
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-6": 0.08
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Wallet",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "FFFFFF",
+          "line_spacing": 12.0
+        }
+      ]
+    },
+    "shape-5": {
+      "left": 0.31,
+      "top": 3.37,
+      "width": 2.28,
+      "height": 1.73,
+      "paragraphs": [
+        {
+          "text": "Enables multiple category wallets (i.e. first and third party wallets) and ‘Account-on-file’ / card-not-present transactions",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 10.0
+        },
+        {
+          "text": "Ensures interoperability between all participating entities for a wide range of activities (e.g. retail, transit, gaming, social)",
+          "bullet": true,
+          "level": 0,
+          "space_before": 2.5,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 10.0
+        }
+      ]
+    },
+    "shape-6": {
+      "left": 0.39,
+      "top": 3.0,
+      "width": 0.28,
+      "height": 0.28,
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-4": 0.08
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "1",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "FFFFFF",
+          "line_spacing": 12.0
+        }
+      ]
+    },
+    "shape-7": {
+      "left": 2.67,
+      "top": 2.97,
+      "width": 2.28,
+      "height": 0.36,
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-9": 0.08
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Scheme",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "FFFFFF",
+          "line_spacing": 12.0
+        }
+      ]
+    },
+    "shape-8": {
+      "left": 2.67,
+      "top": 3.37,
+      "width": 2.28,
+      "height": 1.73,
+      "paragraphs": [
+        {
+          "text": "Facilitates and authenticates payment transactions",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 10.0
+        },
+        {
+          "text": "Enables processing, clearing, and settlement for scheme service users",
+          "bullet": true,
+          "level": 0,
+          "space_before": 2.5,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 10.0
+        },
+        {
+          "text": "Sets and enforces scheme operating rules (e.g. dispute management, technical requirements)",
+          "bullet": true,
+          "level": 0,
+          "space_before": 2.5,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 10.0
+        }
+      ]
+    },
+    "shape-9": {
+      "left": 2.73,
+      "top": 3.0,
+      "width": 0.28,
+      "height": 0.28,
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-7": 0.08
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "2",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "FFFFFF",
+          "line_spacing": 12.0
+        }
+      ]
+    },
+    "shape-10": {
+      "left": 5.06,
+      "top": 2.97,
+      "width": 2.28,
+      "height": 0.36,
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-12": 0.08
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Business Services",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "FFFFFF",
+          "line_spacing": 12.0
+        }
+      ]
+    },
+    "shape-11": {
+      "left": 5.06,
+      "top": 3.37,
+      "width": 2.28,
+      "height": 1.73,
+      "paragraphs": [
+        {
+          "text": "Provides merchants with solutions that cater to day-to-day operational needs, including but not limited to:",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "color": "000000",
+          "line_spacing": 10.0
+        },
+        {
+          "text": "e-invoicing and billing",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "color": "000000",
+          "line_spacing": 10.0
+        },
+        {
+          "text": "Auto reconciliation",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "color": "000000",
+          "line_spacing": 10.0
+        },
+        {
+          "text": "Customer and loyalty management",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 10.0
+        },
+        {
+          "text": "Inventory management",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "color": "000000",
+          "line_spacing": 10.0
+        }
+      ]
+    },
+    "shape-12": {
+      "left": 5.12,
+      "top": 2.99,
+      "width": 0.28,
+      "height": 0.28,
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-10": 0.08
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "3",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "FFFFFF",
+          "line_spacing": 12.0
+        }
+      ]
+    },
+    "shape-13": {
+      "left": 0.33,
+      "top": 5.14,
+      "width": 8.9,
+      "height": 0.1,
+      "paragraphs": [
+        {
+          "text": "Source: PwC Strategy& analysis",
+          "font_name": "Arial",
+          "font_size": 6.0,
+          "bold": false,
+          "italic": true,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 6.0
+        }
+      ]
+    },
+    "shape-14": {
+      "left": 0.34,
+      "top": 5.36,
+      "width": 3.17,
+      "height": 0.1,
+      "placeholder_type": "FOOTER",
+      "paragraphs": [
+        {
+          "text": "Confidential information for the sole benefit and use of PwC’s client.",
+          "font_name": "Arial",
+          "font_size": 6.0,
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 6.0
+        }
+      ]
+    },
+    "shape-15": {
+      "left": 14.77,
+      "top": 5.94,
+      "width": 2.28,
+      "height": 0.36,
+      "overflow": {
+        "slide": {
+          "overflow_right": 7.05,
+          "overflow_bottom": 0.67
+        }
+      },
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-17": 0.08
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Standards",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "FFFFFF",
+          "line_spacing": 12.0
+        }
+      ]
+    },
+    "shape-16": {
+      "left": 14.77,
+      "top": 6.34,
+      "width": 2.28,
+      "height": 1.73,
+      "overflow": {
+        "slide": {
+          "overflow_right": 7.05,
+          "overflow_bottom": 2.45
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Sets experiential standard required for service users to participate in Wallet",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 10.0
+        },
+        {
+          "text": "Determines standard required for interoperability",
+          "bullet": true,
+          "level": 0,
+          "space_before": 2.5,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 10.0
+        },
+        {
+          "text": "Leads initiatives to educate and shift public mindset to increase cashless adoption",
+          "bullet": true,
+          "level": 0,
+          "space_before": 2.5,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 10.0
+        }
+      ]
+    },
+    "shape-17": {
+      "left": 14.83,
+      "top": 5.96,
+      "width": 0.28,
+      "height": 0.28,
+      "overflow": {
+        "slide": {
+          "overflow_right": 5.1,
+          "overflow_bottom": 0.61
+        }
+      },
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-15": 0.08
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "4",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "color": "FFFFFF",
+          "line_spacing": 12.0
+        }
+      ]
+    }
+  },
+  "slide-14": {
+    "shape-0": {
+      "left": 0.34,
+      "top": 0.24,
+      "width": 9.32,
+      "height": 0.67,
+      "placeholder_type": "TITLE",
+      "paragraphs": [
+        {
+          "text": "The Wallet is a secure container that allows users to manage multiple category wallets, promoting interoperability"
+        }
+      ]
+    },
+    "shape-1": {
+      "left": 0.39,
+      "top": 1.24,
+      "width": 8.9,
+      "height": 0.23,
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-3": 0.18
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Overview of Wallet",
+          "font_name": "Arial",
+          "font_size": 14.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 12.6
+        }
+      ]
+    },
+    "shape-2": {
+      "left": 2.56,
+      "top": 1.55,
+      "width": 7.1,
+      "height": 0.61,
+      "paragraphs": [
+        {
+          "text": "Wallet is a secure container / ‘Account-on-file’ that enables users to manage multiple category wallets, promoting interoperability and reducing fragmentation of digital wallets in the country",
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 12.0
+        }
+      ]
+    },
+    "shape-3": {
+      "left": 8.38,
+      "top": 1.19,
+      "width": 1.27,
+      "height": 0.25,
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-1": 0.18
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "ILLUSTRATIVE",
+          "alignment": "RIGHT",
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "FFFFFF",
+          "line_spacing": 12.0
+        }
+      ]
+    },
+    "shape-4": {
+      "left": 0.47,
+      "top": 4.48,
+      "width": 1.94,
+      "height": 0.19,
+      "overflow": {
+        "frame": {
+          "overflow_bottom": 0.07
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Wallet",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 11.0
+        }
+      ]
+    },
+    "shape-5": {
+      "left": 0.33,
+      "top": 5.14,
+      "width": 8.9,
+      "height": 0.1,
+      "paragraphs": [
+        {
+          "text": "Source: PwC Strategy& analysis",
+          "font_name": "Arial",
+          "font_size": 6.0,
+          "bold": false,
+          "italic": true,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 6.0
+        }
+      ]
+    },
+    "shape-6": {
+      "left": 0.34,
+      "top": 5.36,
+      "width": 3.17,
+      "height": 0.1,
+      "placeholder_type": "FOOTER",
+      "paragraphs": [
+        {
+          "text": "Confidential information for the sole benefit and use of PwC’s client.",
+          "font_name": "Arial",
+          "font_size": 6.0,
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 6.0
+        }
+      ]
+    },
+    "shape-7": {
+      "left": 5.11,
+      "top": 5.5,
+      "width": 1.28,
+      "height": 1.78,
+      "overflow": {
+        "slide": {
+          "overflow_bottom": 1.65
+        }
+      },
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-14": 1.23
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "How does it work?",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "FFFFFF",
+          "line_spacing": 12.0
+        }
+      ]
+    },
+    "shape-8": {
+      "left": 6.49,
+      "top": 5.5,
+      "width": 5.73,
+      "height": 1.78,
+      "overflow": {
+        "slide": {
+          "overflow_right": 2.22,
+          "overflow_bottom": 1.65
+        }
+      },
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-9": 0.04,
+          "shape-12": 0.04,
+          "shape-15": 5.5,
+          "shape-16": 0.04,
+          "shape-18": 0.04
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Category wallet providers register to participate in Wallet to enhance their respective user experience with wide access and interoperability",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 11.0
+        },
+        {
+          "text": "Consumers upload their respective sources of fund onto the Wallet account (e.g. retail, gaming, social, transit)",
+          "bullet": true,
+          "level": 0,
+          "space_before": 5.5,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 11.0
+        },
+        {
+          "text": "Consumers select the most preferred source of fund to perform a transaction (e.g. gaming wallet for gaming payments)",
+          "bullet": true,
+          "level": 0,
+          "space_before": 5.5,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 11.0
+        },
+        {
+          "text": "Consumers transact (card present and card not present) through mode offered by merchants (e.g. NFC, QR code, biometrics), enabled by ‘Account-on-file’",
+          "bullet": true,
+          "level": 0,
+          "space_before": 5.5,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 11.0
+        }
+      ]
+    },
+    "shape-9": {
+      "left": 6.51,
+      "top": 5.56,
+      "width": 0.21,
+      "height": 0.21,
+      "overflow": {
+        "slide": {
+          "overflow_bottom": 0.14
+        }
+      },
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-8": 0.04
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "1",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "FFFFFF",
+          "line_spacing": 11.0
+        }
+      ]
+    },
+    "shape-10": {
+      "left": 1.96,
+      "top": 5.71,
+      "width": 0.63,
+      "height": 0.19,
+      "overflow": {
+        "frame": {
+          "overflow_bottom": 0.07
+        },
+        "slide": {
+          "overflow_bottom": 0.27
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Retail",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-11": {
+      "left": 1.96,
+      "top": 6.18,
+      "width": 0.63,
+      "height": 0.19,
+      "overflow": {
+        "frame": {
+          "overflow_bottom": 0.07
+        },
+        "slide": {
+          "overflow_bottom": 0.74
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Gaming",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-12": {
+      "left": 6.51,
+      "top": 6.0,
+      "width": 0.21,
+      "height": 0.21,
+      "overflow": {
+        "slide": {
+          "overflow_bottom": 0.58
+        }
+      },
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-8": 0.04
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "2",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "FFFFFF",
+          "line_spacing": 11.0
+        }
+      ]
+    },
+    "shape-13": {
+      "left": 1.96,
+      "top": 6.65,
+      "width": 0.63,
+      "height": 0.19,
+      "overflow": {
+        "frame": {
+          "overflow_bottom": 0.07
+        },
+        "slide": {
+          "overflow_bottom": 1.21
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Social",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-14": {
+      "left": 5.12,
+      "top": 6.31,
+      "width": 1.28,
+      "height": 0.97,
+      "overflow": {
+        "slide": {
+          "overflow_bottom": 1.66
+        }
+      },
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-7": 1.23
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Who does it serve?",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "FFFFFF",
+          "line_spacing": 12.0
+        }
+      ]
+    },
+    "shape-15": {
+      "left": 6.49,
+      "top": 6.32,
+      "width": 5.73,
+      "height": 0.97,
+      "overflow": {
+        "slide": {
+          "overflow_right": 2.22,
+          "overflow_bottom": 1.66
+        }
+      },
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-8": 5.5,
+          "shape-16": 0.04,
+          "shape-18": 0.04
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Service users (i.e. category wallet providers) who compete on user-base on their respective mobile applications (e.g. payment, loyalty rewards)",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "theme_color": "DARK_1",
+          "line_spacing": 11.0
+        },
+        {
+          "text": "Consumers who want to make cashless payments and digital transactions across a wide range of channels",
+          "space_before": 5.5,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 11.0
+        }
+      ]
+    },
+    "shape-16": {
+      "left": 6.51,
+      "top": 6.43,
+      "width": 0.21,
+      "height": 0.21,
+      "overflow": {
+        "slide": {
+          "overflow_bottom": 1.01
+        }
+      },
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-8": 0.04,
+          "shape-15": 0.04
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "3",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "FFFFFF",
+          "line_spacing": 11.0
+        }
+      ]
+    },
+    "shape-17": {
+      "left": 1.96,
+      "top": 7.12,
+      "width": 0.63,
+      "height": 0.19,
+      "overflow": {
+        "frame": {
+          "overflow_bottom": 0.07
+        },
+        "slide": {
+          "overflow_bottom": 1.68
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Transit",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-18": {
+      "left": 6.51,
+      "top": 6.86,
+      "width": 0.21,
+      "height": 0.21,
+      "overflow": {
+        "slide": {
+          "overflow_bottom": 1.44
+        }
+      },
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-8": 0.04,
+          "shape-15": 0.04
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "4",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "FFFFFF",
+          "line_spacing": 11.0
+        }
+      ]
+    }
+  },
+  "slide-15": {
+    "shape-0": {
+      "left": 0.34,
+      "top": 0.24,
+      "width": 9.32,
+      "height": 0.67,
+      "placeholder_type": "TITLE",
+      "paragraphs": [
+        {
+          "text": "NewCo will allow 3rd party methods (service users) to participate in an open payments scheme"
+        }
+      ]
+    },
+    "shape-1": {
+      "left": 0.39,
+      "top": 1.24,
+      "width": 8.9,
+      "height": 0.23,
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-3": 0.18
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Overview of Scheme",
+          "font_name": "Arial",
+          "font_size": 14.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 12.6
+        }
+      ]
+    },
+    "shape-2": {
+      "left": 2.56,
+      "top": 1.57,
+      "width": 7.1,
+      "height": 0.55,
+      "paragraphs": [
+        {
+          "text": "Scheme facilitates and authenticates transactions, enables processing, clearing, and settlement services, as well as sets and enforces scheme operating rules",
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 12.0
+        }
+      ]
+    },
+    "shape-3": {
+      "left": 8.38,
+      "top": 1.19,
+      "width": 1.27,
+      "height": 0.25,
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-1": 0.18
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "ILLUSTRATIVE",
+          "alignment": "RIGHT",
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "FFFFFF",
+          "line_spacing": 12.0
+        }
+      ]
+    },
+    "shape-4": {
+      "left": 0.44,
+      "top": 1.73,
+      "width": 0.23,
+      "height": 0.23,
+      "paragraphs": [
+        {
+          "text": "1",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 12.0
+        }
+      ]
+    },
+    "shape-5": {
+      "left": 0.93,
+      "top": 1.75,
+      "width": 1.02,
+      "height": 0.18,
+      "overflow": {
+        "frame": {
+          "overflow_bottom": 0.07
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Service User",
+          "font_name": "Arial",
+          "font_size": 10.5,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 10.5
+        }
+      ]
+    },
+    "shape-6": {
+      "left": 0.44,
+      "top": 3.06,
+      "width": 0.23,
+      "height": 0.23,
+      "paragraphs": [
+        {
+          "text": "2",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 12.0
+        }
+      ]
+    },
+    "shape-7": {
+      "left": 1.07,
+      "top": 3.32,
+      "width": 0.77,
+      "height": 0.18,
+      "overflow": {
+        "frame": {
+          "overflow_bottom": 0.07
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Interface",
+          "font_name": "Arial",
+          "font_size": 10.5,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 10.5
+        }
+      ]
+    },
+    "shape-8": {
+      "left": 2.56,
+      "top": 3.21,
+      "width": 1.28,
+      "height": 1.62,
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-13": 0.1,
+          "shape-19": 0.06
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "How does it work?",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "FFFFFF",
+          "line_spacing": 12.0
+        }
+      ]
+    },
+    "shape-9": {
+      "left": 3.93,
+      "top": 3.21,
+      "width": 5.73,
+      "height": 1.62,
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-10": 0.04,
+          "shape-14": 0.04,
+          "shape-15": 0.04,
+          "shape-19": 0.02
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Service user integrates and joins the scheme to leverage on the digital infrastructure provided by NewCo",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 11.0
+        },
+        {
+          "text": "Interface facilitates all transactions performed by service users within the scheme network",
+          "bullet": true,
+          "level": 0,
+          "space_before": 5.5,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 11.0
+        },
+        {
+          "text": "Enables clearing and settlement services – potentially leverage on XXX infrastructure",
+          "bullet": true,
+          "level": 0,
+          "space_before": 5.5,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "color": "000000",
+          "line_spacing": 11.0
+        }
+      ]
+    },
+    "shape-10": {
+      "left": 3.97,
+      "top": 3.27,
+      "width": 0.21,
+      "height": 0.21,
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-9": 0.04
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "1",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "theme_color": "LIGHT_1",
+          "line_spacing": 11.0
+        }
+      ]
+    },
+    "shape-11": {
+      "left": 0.44,
+      "top": 3.8,
+      "width": 0.23,
+      "height": 0.23,
+      "paragraphs": [
+        {
+          "text": "3",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 12.0
+        }
+      ]
+    },
+    "shape-12": {
+      "left": 1.55,
+      "top": 4.11,
+      "width": 0.66,
+      "height": 0.15,
+      "overflow": {
+        "frame": {
+          "overflow_bottom": 0.08
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Gaming",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-13": {
+      "left": 2.56,
+      "top": 4.11,
+      "width": 0.66,
+      "height": 0.15,
+      "overflow": {
+        "frame": {
+          "overflow_bottom": 0.08
+        }
+      },
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-8": 0.1
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Social",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-14": {
+      "left": 3.97,
+      "top": 3.71,
+      "width": 0.21,
+      "height": 0.21,
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-9": 0.04
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "2",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "theme_color": "LIGHT_1",
+          "line_spacing": 11.0
+        }
+      ]
+    },
+    "shape-15": {
+      "left": 3.97,
+      "top": 4.16,
+      "width": 0.21,
+      "height": 0.21,
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-9": 0.04
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "3",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "theme_color": "LIGHT_1",
+          "line_spacing": 11.0
+        }
+      ]
+    },
+    "shape-16": {
+      "left": 0.39,
+      "top": 4.79,
+      "width": 1.94,
+      "height": 0.19,
+      "overflow": {
+        "frame": {
+          "overflow_bottom": 0.07
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "NewCo Scheme",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 11.0
+        }
+      ]
+    },
+    "shape-17": {
+      "left": 0.59,
+      "top": 4.44,
+      "width": 1.61,
+      "height": 0.18,
+      "overflow": {
+        "frame": {
+          "overflow_bottom": 0.07
+        }
+      },
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-18": 0.08
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Clearing & Settlement",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 10.5,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 10.5
+        }
+      ]
+    },
+    "shape-18": {
+      "left": 0.64,
+      "top": 4.41,
+      "width": 0.66,
+      "height": 0.15,
+      "overflow": {
+        "frame": {
+          "overflow_bottom": 0.08
+        }
+      },
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-17": 0.08
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Retail",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-19": {
+      "left": 3.42,
+      "top": 4.51,
+      "width": 0.66,
+      "height": 0.15,
+      "overflow": {
+        "frame": {
+          "overflow_bottom": 0.08
+        }
+      },
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-8": 0.06,
+          "shape-9": 0.02
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Transit",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-20": {
+      "left": 0.33,
+      "top": 5.14,
+      "width": 8.9,
+      "height": 0.1,
+      "paragraphs": [
+        {
+          "text": "Source: PwC Strategy& analysis",
+          "font_name": "Arial",
+          "font_size": 6.0,
+          "bold": false,
+          "italic": true,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 6.0
+        }
+      ]
+    },
+    "shape-21": {
+      "left": 0.34,
+      "top": 5.36,
+      "width": 3.17,
+      "height": 0.1,
+      "placeholder_type": "FOOTER",
+      "paragraphs": [
+        {
+          "text": "Confidential information for the sole benefit and use of PwC’s client.",
+          "font_name": "Arial",
+          "font_size": 6.0,
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 6.0
+        }
+      ]
+    },
+    "shape-22": {
+      "left": 5.12,
+      "top": 6.3,
+      "width": 1.28,
+      "height": 0.92,
+      "overflow": {
+        "slide": {
+          "overflow_bottom": 1.59
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Who does it serve?",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "FFFFFF",
+          "line_spacing": 12.0
+        }
+      ]
+    },
+    "shape-23": {
+      "left": 6.49,
+      "top": 6.3,
+      "width": 5.73,
+      "height": 0.92,
+      "overflow": {
+        "slide": {
+          "overflow_right": 2.22,
+          "overflow_bottom": 1.59
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Service users (i.e. category wallet providers) who want to leverage on NewCo’s digital infrastructure to achieve interoperability, extend customer reach, and user experience",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 11.0
+        }
+      ]
+    }
+  },
+  "slide-16": {
+    "shape-0": {
+      "left": 0.34,
+      "top": 0.24,
+      "width": 9.32,
+      "height": 0.67,
+      "placeholder_type": "TITLE",
+      "paragraphs": [
+        {
+          "text": "Merchants could leverage on NewCo’s digital merchant solutions to support day-to-day operational needs"
+        }
+      ]
+    },
+    "shape-1": {
+      "left": 0.39,
+      "top": 1.24,
+      "width": 8.9,
+      "height": 0.23,
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-3": 0.18
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Overview of Merchant Services",
+          "font_name": "Arial",
+          "font_size": 14.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 12.6
+        }
+      ]
+    },
+    "shape-2": {
+      "left": 2.56,
+      "top": 1.57,
+      "width": 7.1,
+      "height": 0.55,
+      "paragraphs": [
+        {
+          "text": "Merchant services enable overlay digital solutions that cater to merchants’ day-to-day operational needs",
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "color": "000000",
+          "line_spacing": 12.0
+        }
+      ]
+    },
+    "shape-3": {
+      "left": 8.38,
+      "top": 1.19,
+      "width": 1.27,
+      "height": 0.25,
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-1": 0.18
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "ILLUSTRATIVE",
+          "alignment": "RIGHT",
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "FFFFFF",
+          "line_spacing": 12.0
+        }
+      ]
+    },
+    "shape-4": {
+      "left": 2.56,
+      "top": 3.21,
+      "width": 1.28,
+      "height": 1.62,
+      "paragraphs": [
+        {
+          "text": "How does it work?",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "FFFFFF",
+          "line_spacing": 12.0
+        }
+      ]
+    },
+    "shape-5": {
+      "left": 3.93,
+      "top": 3.21,
+      "width": 5.73,
+      "height": 1.62,
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-6": 0.04,
+          "shape-7": 0.04,
+          "shape-9": 0.04
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Merchants adopt NewCo’s offering, transacting most or all payments via NewCo’s network",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "color": "000000",
+          "line_spacing": 11.0
+        },
+        {
+          "text": "Merchants leverage on NewCo to enable digital merchant solutions to support business operations",
+          "bullet": true,
+          "level": 0,
+          "space_before": 5.5,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "color": "000000",
+          "line_spacing": 11.0
+        },
+        {
+          "text": "NewCo enables and integrates selected digital solutions for merchants",
+          "bullet": true,
+          "level": 0,
+          "space_before": 5.5,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 11.0
+        }
+      ]
+    },
+    "shape-6": {
+      "left": 3.97,
+      "top": 3.27,
+      "width": 0.21,
+      "height": 0.21,
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-5": 0.04
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "1",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "theme_color": "LIGHT_1",
+          "line_spacing": 11.0
+        }
+      ]
+    },
+    "shape-7": {
+      "left": 3.97,
+      "top": 3.71,
+      "width": 0.21,
+      "height": 0.21,
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-5": 0.04
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "2",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "theme_color": "LIGHT_1",
+          "line_spacing": 11.0
+        }
+      ]
+    },
+    "shape-8": {
+      "left": 0.44,
+      "top": 4.0,
+      "width": 1.94,
+      "height": 0.37,
+      "paragraphs": [
+        {
+          "text": "Merchant Services – Overlay Digital Solutions",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "color": "000000",
+          "line_spacing": 11.0
+        }
+      ]
+    },
+    "shape-9": {
+      "left": 3.97,
+      "top": 4.16,
+      "width": 0.21,
+      "height": 0.21,
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-5": 0.04
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "3",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "theme_color": "LIGHT_1",
+          "line_spacing": 11.0
+        }
+      ]
+    },
+    "shape-10": {
+      "left": 0.33,
+      "top": 5.14,
+      "width": 8.9,
+      "height": 0.1,
+      "paragraphs": [
+        {
+          "text": "Source: PwC Strategy& analysis",
+          "font_name": "Arial",
+          "font_size": 6.0,
+          "bold": false,
+          "italic": true,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 6.0
+        }
+      ]
+    },
+    "shape-11": {
+      "left": 0.34,
+      "top": 5.36,
+      "width": 3.17,
+      "height": 0.1,
+      "placeholder_type": "FOOTER",
+      "paragraphs": [
+        {
+          "text": "Confidential information for the sole benefit and use of PwC’s client."
+        }
+      ]
+    },
+    "shape-12": {
+      "left": 5.12,
+      "top": 6.3,
+      "width": 1.28,
+      "height": 0.92,
+      "overflow": {
+        "slide": {
+          "overflow_bottom": 1.59
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Who does it serve?",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "FFFFFF",
+          "line_spacing": 12.0
+        }
+      ]
+    },
+    "shape-13": {
+      "left": 6.49,
+      "top": 6.3,
+      "width": 5.73,
+      "height": 0.92,
+      "overflow": {
+        "slide": {
+          "overflow_right": 2.22,
+          "overflow_bottom": 1.59
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Merchants, acquired by NewCo, who want to digitise their business operations, enabling operational efficiency (e.g. e-invoicing and billing, auto reconciliation, inventory management, accounting and tax reporting, reporting and analytics)",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "color": "000000",
+          "line_spacing": 11.0
+        }
+      ]
+    }
+  },
+  "slide-17": {
+    "shape-0": {
+      "left": 0.34,
+      "top": 0.24,
+      "width": 9.32,
+      "height": 0.67,
+      "placeholder_type": "TITLE",
+      "paragraphs": [
+        {
+          "text": "Standard sets requirements for Wallet and Scheme to drive experience and interoperability for consumers and merchants"
+        }
+      ]
+    },
+    "shape-1": {
+      "left": 0.39,
+      "top": 1.24,
+      "width": 8.9,
+      "height": 0.23,
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-3": 0.18
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Overview of Standard",
+          "font_name": "Arial",
+          "font_size": 14.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 12.6
+        }
+      ]
+    },
+    "shape-2": {
+      "left": 2.56,
+      "top": 1.57,
+      "width": 7.1,
+      "height": 0.55,
+      "paragraphs": [
+        {
+          "text": "Standard sets technical, experiential, and operational requirements for Wallet service users, determines and enforces scheme rules, as well as boost consumer and merchant adoption",
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "color": "000000",
+          "line_spacing": 12.0
+        }
+      ]
+    },
+    "shape-3": {
+      "left": 8.38,
+      "top": 1.19,
+      "width": 1.27,
+      "height": 0.25,
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-1": 0.18
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "ILLUSTRATIVE",
+          "alignment": "RIGHT",
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "FFFFFF",
+          "line_spacing": 12.0
+        }
+      ]
+    },
+    "shape-4": {
+      "left": 2.56,
+      "top": 2.21,
+      "width": 1.28,
+      "height": 0.92,
+      "paragraphs": [
+        {
+          "text": "Who does it relate to?",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "FFFFFF",
+          "line_spacing": 12.0
+        }
+      ]
+    },
+    "shape-5": {
+      "left": 3.93,
+      "top": 2.22,
+      "width": 5.73,
+      "height": 0.92,
+      "paragraphs": [
+        {
+          "text": "Wallet service user (i.e. category wallet providers) – subjected to wallet standard",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "color": "000000",
+          "line_spacing": 11.0
+        },
+        {
+          "text": "Scheme service user – subjected to scheme rules",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "color": "000000",
+          "line_spacing": 11.0
+        },
+        {
+          "text": "NewCo’s consumer and merchants",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "color": "000000",
+          "line_spacing": 11.0
+        }
+      ]
+    },
+    "shape-6": {
+      "left": 2.56,
+      "top": 3.21,
+      "width": 1.28,
+      "height": 1.62,
+      "paragraphs": [
+        {
+          "text": "How does it work?",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "FFFFFF",
+          "line_spacing": 12.0
+        }
+      ]
+    },
+    "shape-7": {
+      "left": 3.93,
+      "top": 3.21,
+      "width": 5.73,
+      "height": 1.62,
+      "paragraphs": [
+        {
+          "text": "Wallet service user meet the set technical, experiential, and operational requirements to participate in Wallet",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "color": "000000",
+          "line_spacing": 11.0
+        },
+        {
+          "text": "Scheme service user must adhere to scheme rules set by NewCo",
+          "bullet": true,
+          "level": 0,
+          "space_before": 5.5,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 11.0
+        },
+        {
+          "text": "NewCo’s offering to align to formal and informal consumer and merchant adoption levers to change public mindset and behavior towards cashless",
+          "bullet": true,
+          "level": 0,
+          "space_before": 5.5,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "color": "000000",
+          "line_spacing": 11.0
+        }
+      ]
+    },
+    "shape-8": {
+      "left": 0.33,
+      "top": 5.14,
+      "width": 8.9,
+      "height": 0.1,
+      "paragraphs": [
+        {
+          "text": "Source: PwC Strategy& analysis",
+          "font_name": "Arial",
+          "font_size": 6.0,
+          "bold": false,
+          "italic": true,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 6.0
+        }
+      ]
+    },
+    "shape-9": {
+      "left": 0.34,
+      "top": 5.36,
+      "width": 3.17,
+      "height": 0.1,
+      "placeholder_type": "FOOTER",
+      "paragraphs": [
+        {
+          "text": "Confidential information for the sole benefit and use of PwC’s client."
+        }
+      ]
+    },
+    "shape-10": {
+      "left": 0.87,
+      "top": 5.67,
+      "width": 1.94,
+      "height": 0.19,
+      "overflow": {
+        "frame": {
+          "overflow_bottom": 0.07
+        },
+        "slide": {
+          "overflow_bottom": 0.23
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "NewCo Standard",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "color": "000000",
+          "line_spacing": 11.0
+        }
+      ]
+    }
+  },
+  "slide-18": {
+    "shape-0": {
+      "left": 0.34,
+      "top": 0.24,
+      "width": 9.32,
+      "height": 0.67,
+      "placeholder_type": "TITLE",
+      "paragraphs": [
+        {
+          "text": "The target addressable market for NewCo was identified and business case developed to substantiate the investment required"
+        }
+      ]
+    },
+    "shape-1": {
+      "left": 0.35,
+      "top": 1.24,
+      "width": 4.06,
+      "height": 0.23,
+      "paragraphs": [
+        {
+          "text": "Overview of the Target Addressable Market",
+          "font_name": "Arial",
+          "font_size": 14.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 12.6
+        }
+      ]
+    },
+    "shape-2": {
+      "left": 5.07,
+      "top": 1.24,
+      "width": 3.9,
+      "height": 0.23,
+      "paragraphs": [
+        {
+          "text": "Overview of the Business Case",
+          "font_name": "Arial",
+          "font_size": 14.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 12.6
+        }
+      ]
+    },
+    "shape-3": {
+      "left": 0.42,
+      "top": 3.05,
+      "width": 4.43,
+      "height": 2.08,
+      "placeholder_type": "BODY",
+      "default_font_size": 16.0,
+      "paragraphs": [
+        {
+          "text": "Key Takeaways",
+          "font_size": 11.0,
+          "bold": true,
+          "underline": true,
+          "line_spacing": 9.9
+        },
+        {
+          "text": "NewCo will be competing in the informal cash market in its initial phase – capture rate is driven by NewCo’s interoperability feature and it’s position at top-of-the-wallet",
+          "bullet": true,
+          "level": 0,
+          "space_before": 6.0,
+          "font_size": 11.0,
+          "line_spacing": 9.9
+        },
+        {
+          "text": "NewCo will capture debit card transactions subsequently as consumers move away from delayed to instant settlement of funds",
+          "bullet": true,
+          "level": 0,
+          "space_before": 6.0,
+          "font_size": 11.0,
+          "line_spacing": 9.9
+        },
+        {
+          "text": "Credit and charge card transactions will not be captured by NewCo as they offer consumers a different product proposition to NewCo, competing in a different market",
+          "bullet": true,
+          "level": 0,
+          "space_before": 6.0,
+          "font_size": 11.0,
+          "line_spacing": 9.9
+        }
+      ]
+    },
+    "shape-4": {
+      "left": 5.11,
+      "top": 3.05,
+      "width": 4.43,
+      "height": 2.24,
+      "paragraphs": [
+        {
+          "text": "Key Takeaways",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "underline": true,
+          "color": "000000",
+          "line_spacing": 9.9
+        },
+        {
+          "text": "As a national infrastructure, NewCo’s fees to service users will be lower than local and international ePayment players – main revenue lines include the wallet, scheme and membership fee",
+          "bullet": true,
+          "level": 0,
+          "space_before": 6.0,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "theme_color": "DARK_1",
+          "line_spacing": 9.9
+        },
+        {
+          "text": "NewCo Wallet will be in direct competition with Google, Samsung and Apple wallet at steady state",
+          "bullet": true,
+          "level": 0,
+          "space_before": 6.0,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "theme_color": "DARK_1",
+          "line_spacing": 9.9
+        },
+        {
+          "text": "NewCo’s costs buckets are categorised into Plan, Build, Engage, Operate and Change – largest in Build as capital is required develop the scheme infrastructure and directory required to enable interoperability",
+          "bullet": true,
+          "level": 0,
+          "space_before": 6.0,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "theme_color": "DARK_1",
+          "line_spacing": 9.9
+        }
+      ]
+    },
+    "shape-5": {
+      "left": 0.34,
+      "top": 5.36,
+      "width": 3.17,
+      "height": 0.1,
+      "placeholder_type": "FOOTER",
+      "paragraphs": [
+        {
+          "text": "Confidential information for the sole benefit and use of PwC’s client."
+        }
+      ]
+    }
+  },
+  "slide-19": {
+    "shape-0": {
+      "left": 0.34,
+      "top": 0.24,
+      "width": 9.32,
+      "height": 0.67,
+      "placeholder_type": "TITLE",
+      "paragraphs": [
+        {
+          "text": "NewCo’s operating model and corporate structure were developed in order to maximise synergies between the Clients"
+        }
+      ]
+    },
+    "shape-1": {
+      "left": 0.34,
+      "top": 1.24,
+      "width": 3.9,
+      "height": 0.23,
+      "paragraphs": [
+        {
+          "text": "Overview of the Operating Model",
+          "font_name": "Arial",
+          "font_size": 14.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 12.6
+        }
+      ]
+    },
+    "shape-2": {
+      "left": 5.07,
+      "top": 1.24,
+      "width": 3.9,
+      "height": 0.23,
+      "paragraphs": [
+        {
+          "text": "Overview of the Corporate Structure",
+          "font_name": "Arial",
+          "font_size": 14.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 12.6
+        }
+      ]
+    },
+    "shape-3": {
+      "left": 0.42,
+      "top": 3.05,
+      "width": 4.43,
+      "height": 1.99,
+      "paragraphs": [
+        {
+          "text": "Key Takeaways",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "underline": true,
+          "theme_color": "DARK_1",
+          "line_spacing": 9.9
+        },
+        {
+          "text": "A hybrid (cross) model of a Business Unit-led and Functions-led operating model is recommended for NewCo as support services are centralized and redundancies are avoided",
+          "bullet": true,
+          "level": 0,
+          "space_before": 6.0,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "theme_color": "DARK_1",
+          "line_spacing": 9.9
+        },
+        {
+          "text": "NewCo’s target operating model is aimed to be lean and equipped with essential “run” function for NewCo’s service offering, “change” function for products and innovation , and “enable” function for product technology management and enterprise functions",
+          "bullet": true,
+          "level": 0,
+          "space_before": 6.0,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "theme_color": "DARK_1",
+          "line_spacing": 9.9
+        }
+      ]
+    },
+    "shape-4": {
+      "left": 5.11,
+      "top": 3.05,
+      "width": 4.43,
+      "height": 1.66,
+      "paragraphs": [
+        {
+          "text": "Key Takeaways",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "underline": true,
+          "color": "000000",
+          "line_spacing": 9.9
+        },
+        {
+          "text": "NewCo is recommended to be a private company as it allows for independence, swift changes without ministerial approvals, and limited risks for NewCo",
+          "bullet": true,
+          "level": 0,
+          "space_before": 6.0,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "theme_color": "DARK_1",
+          "line_spacing": 9.9
+        },
+        {
+          "text": "As a public infrastructure, NewCo’s Board of Directors will include a chairman, executive directors, shareholder representatives and independent board members from various backgrounds to uphold unbiased decision making",
+          "bullet": true,
+          "level": 0,
+          "space_before": 6.0,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "theme_color": "DARK_1",
+          "line_spacing": 9.9
+        }
+      ]
+    },
+    "shape-5": {
+      "left": 0.34,
+      "top": 5.36,
+      "width": 3.17,
+      "height": 0.1,
+      "placeholder_type": "FOOTER",
+      "paragraphs": [
+        {
+          "text": "Confidential information for the sole benefit and use of PwC’s client."
+        }
+      ]
+    }
+  },
+  "slide-20": {
+    "shape-0": {
+      "left": 0.34,
+      "top": 0.24,
+      "width": 9.32,
+      "height": 0.67,
+      "placeholder_type": "TITLE",
+      "paragraphs": [
+        {
+          "text": "The high level technical architecture and implementation roadmap were developed to aid implementation of NewCo"
+        }
+      ]
+    },
+    "shape-1": {
+      "left": 0.34,
+      "top": 1.24,
+      "width": 3.9,
+      "height": 0.23,
+      "paragraphs": [
+        {
+          "text": "Overview of the Technical Architecture",
+          "font_name": "Arial",
+          "font_size": 14.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 12.6
+        }
+      ]
+    },
+    "shape-2": {
+      "left": 5.07,
+      "top": 1.24,
+      "width": 3.9,
+      "height": 0.23,
+      "paragraphs": [
+        {
+          "text": "Overview of the Implementation Roadmap",
+          "font_name": "Arial",
+          "font_size": 14.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 12.6
+        }
+      ]
+    },
+    "shape-3": {
+      "left": 0.42,
+      "top": 3.05,
+      "width": 4.43,
+      "height": 2.08,
+      "paragraphs": [
+        {
+          "text": "Key Takeaways",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "underline": true,
+          "theme_color": "DARK_1",
+          "line_spacing": 9.9
+        },
+        {
+          "text": "NewCo services to include capturing payment request, transmitting messages, and verifying and authorising transactions to facilitating clearing and settlement",
+          "bullet": true,
+          "level": 0,
+          "space_before": 6.0,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "theme_color": "DARK_1",
+          "line_spacing": 9.9
+        },
+        {
+          "text": "To capture payment requests, NewCo will leverage on existing channels (i.e. QR code) and greenfield (i.e. biometrics) in order to maximise affordability, availability, scalability and security",
+          "bullet": true,
+          "level": 0,
+          "space_before": 6.0,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "theme_color": "DARK_1",
+          "line_spacing": 9.9
+        },
+        {
+          "text": "NewCo will provide a seamless payments experience which includes human-to-system and system-to-system interaction",
+          "bullet": true,
+          "level": 0,
+          "space_before": 6.0,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "theme_color": "DARK_1",
+          "line_spacing": 9.9
+        }
+      ]
+    },
+    "shape-4": {
+      "left": 5.11,
+      "top": 3.05,
+      "width": 4.43,
+      "height": 2.01,
+      "paragraphs": [
+        {
+          "text": "Key Takeaways",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "underline": true,
+          "color": "000000",
+          "line_spacing": 9.9
+        },
+        {
+          "text": "As a public infrastructure, an integrated go-live model was recommended for NewCo as stakeholder socialisation and testing runs in parallel with the traditional plan, build and run",
+          "bullet": true,
+          "level": 0,
+          "space_before": 6.0,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "theme_color": "DARK_1",
+          "line_spacing": 9.9
+        },
+        {
+          "text": "Go-live for NewCo will be fast-to-market, potentially ahead of emerging FinTech competition",
+          "bullet": true,
+          "level": 2,
+          "space_before": 3.0,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "theme_color": "DARK_1",
+          "line_spacing": 11.0
+        },
+        {
+          "text": "Flexibility in making operational refinements",
+          "bullet": true,
+          "level": 2,
+          "space_before": 3.0,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "theme_color": "DARK_1",
+          "line_spacing": 11.0
+        },
+        {
+          "text": "Support from key stakeholders in the early stages is crucial to ensure the success of NewCo",
+          "bullet": true,
+          "level": 0,
+          "space_before": 9.0,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "theme_color": "DARK_1",
+          "line_spacing": 9.9
+        }
+      ]
+    },
+    "shape-5": {
+      "left": 0.34,
+      "top": 5.36,
+      "width": 3.17,
+      "height": 0.1,
+      "placeholder_type": "FOOTER",
+      "paragraphs": [
+        {
+          "text": "Confidential information for the sole benefit and use of PwC’s client."
+        }
+      ]
+    }
+  },
+  "slide-21": {
+    "shape-0": {
+      "left": 0.35,
+      "top": 4.96,
+      "width": 9.32,
+      "height": 0.42,
+      "placeholder_type": "BODY",
+      "default_font_size": 6.0,
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-1": 3.38
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "© 2018 PwC. All rights reserved.",
+          "font_size": 8.0,
+          "line_spacing": 8.4
+        },
+        {
+          "text": "PwC refers to the PwC network and/or one or more of its member firms, each of which is a separate legal entity. Please see www.pwc.com/structure for further details.",
+          "font_size": 8.0,
+          "line_spacing": 8.4
+        }
+      ]
+    },
+    "shape-1": {
+      "left": 1.43,
+      "top": 4.97,
+      "width": 8.57,
+      "height": 0.66,
+      "overlap": {
+        "overlapping_shapes": {
+          "shape-0": 3.38
+        }
+      },
+      "paragraphs": [
+        {
+          "text": "Strategy       Impact",
+          "alignment": "CENTER",
+          "font_name": "Georgia",
+          "font_size": 36.0,
+          "bold": true,
+          "italic": true,
+          "underline": false,
+          "theme_color": "DARK_1",
+          "line_spacing": 36.0
+        }
+      ]
+    }
+  }
+}

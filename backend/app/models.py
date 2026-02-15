@@ -1,6 +1,6 @@
 from datetime import datetime
 
-from sqlalchemy import DateTime, ForeignKey, Integer, String, Text
+from sqlalchemy import DateTime, Float, ForeignKey, Integer, String, Text
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
 from app.db import Base
@@ -70,3 +70,52 @@ class DeckJob(Base):
     created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, nullable=False)
     updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, nullable=False)
     completed_at: Mapped[datetime | None] = mapped_column(DateTime, nullable=True)
+
+
+class DeckOutline(Base):
+    __tablename__ = "deck_outlines"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
+    job_id: Mapped[str] = mapped_column(ForeignKey("deck_jobs.id"), nullable=False, unique=True)
+    prompt: Mapped[str] = mapped_column(Text, nullable=False)
+    outline_json_path: Mapped[str] = mapped_column(String, nullable=False)
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, nullable=False)
+
+
+class JobEvent(Base):
+    __tablename__ = "job_events"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
+    job_id: Mapped[str] = mapped_column(ForeignKey("deck_jobs.id"), nullable=False, index=True)
+    ts: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, nullable=False, index=True)
+    stage: Mapped[str] = mapped_column(String, nullable=False)
+    event_type: Mapped[str] = mapped_column(String, nullable=False)
+    payload_json: Mapped[str] = mapped_column(Text, nullable=False, default="{}")
+    severity: Mapped[str] = mapped_column(String, nullable=False, default="info")
+
+
+class ToolRun(Base):
+    __tablename__ = "tool_runs"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
+    job_id: Mapped[str] = mapped_column(ForeignKey("deck_jobs.id"), nullable=False, index=True)
+    tool_name: Mapped[str] = mapped_column(String, nullable=False, index=True)
+    status: Mapped[str] = mapped_column(String, nullable=False)
+    duration_ms: Mapped[int] = mapped_column(Integer, nullable=False, default=0)
+    input_hash: Mapped[str] = mapped_column(String, nullable=False, default="")
+    output_hash: Mapped[str] = mapped_column(String, nullable=False, default="")
+    artifact_json: Mapped[str] = mapped_column(Text, nullable=False, default="{}")
+    error: Mapped[str | None] = mapped_column(Text, nullable=True)
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, nullable=False)
+
+
+class QualityReport(Base):
+    __tablename__ = "quality_reports"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
+    deck_id: Mapped[str] = mapped_column(ForeignKey("decks.id"), nullable=False, index=True)
+    version: Mapped[int] = mapped_column(Integer, nullable=False, index=True)
+    score: Mapped[float | None] = mapped_column(Float, nullable=True)
+    issues_json: Mapped[str] = mapped_column(Text, nullable=False, default="{}")
+    passes_used: Mapped[int] = mapped_column(Integer, nullable=False, default=0)
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, nullable=False)

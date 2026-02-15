@@ -23,25 +23,43 @@ export default function App() {
   const [templateFile, setTemplateFile] = useState(null);
   const [docFile, setDocFile] = useState(null);
   const [prompt, setPrompt] = useState("Create a 12-slide strategy deck about AI agents for enterprise operations.");
+  const [creationMode, setCreationMode] = useState("template");
+  const [scratchTheme, setScratchTheme] = useState("default");
   const [selectedTemplateId, setSelectedTemplateId] = useState("");
   const [selectedDocIds, setSelectedDocIds] = useState([]);
   const [slideCount, setSlideCount] = useState(12);
-  const [provider, setProvider] = useState("mock");
+  const [provider, setProvider] = useState("openai");
+  const [agentMode, setAgentMode] = useState("bounded");
+  const [qualityProfile, setQualityProfile] = useState("balanced");
+  const [maxCorrectionPasses, setMaxCorrectionPasses] = useState(1);
   const [job, setJob] = useState(null);
+  const [jobEvents, setJobEvents] = useState([]);
   const [deck, setDeck] = useState(null);
+  const [qualityReport, setQualityReport] = useState(null);
   const [revisePrompt, setRevisePrompt] = useState("Make tone more executive and concise.");
   const [editorConfig, setEditorConfig] = useState(null);
+  const [cleanupReport, setCleanupReport] = useState(null);
   const [error, setError] = useState("");
   const [busy, setBusy] = useState(false);
   const [editorMountReady, setEditorMountReady] = useState(false);
+  const latestVersionInfo = useMemo(() => {
+    if (!deck?.versions?.length) return null;
+    return deck.versions.find((row) => row.version === deck.latest_version) || deck.versions[0];
+  }, [deck]);
 
-  const canGenerate = useMemo(() => selectedTemplateId && prompt.trim().length > 3, [selectedTemplateId, prompt]);
+  const canGenerate = useMemo(() => {
+    if (prompt.trim().length <= 3) return false;
+    if (creationMode === "template") return Boolean(selectedTemplateId);
+    return true;
+  }, [creationMode, selectedTemplateId, prompt]);
 
   const loadData = async () => {
     const [templateRows, docRows] = await Promise.all([api("/templates"), api("/docs")]);
     setTemplates(templateRows);
     setDocs(docRows);
-    if (!selectedTemplateId && templateRows.length > 0) {
+    if (templateRows.length === 0) {
+      setSelectedTemplateId("");
+    } else if (!selectedTemplateId || !templateRows.some((row) => row.id === selectedTemplateId)) {
       setSelectedTemplateId(templateRows[0].id);
     }
   };
@@ -54,11 +72,22 @@ export default function App() {
     if (!job || job.status === "completed" || job.status === "failed") return;
     const id = setInterval(async () => {
       try {
-        const latest = await api(`/jobs/${job.id}`);
+        const [latest, events] = await Promise.all([
+          api(`/jobs/${job.id}`),
+          api(`/jobs/${job.id}/events?limit=200`),
+        ]);
         setJob(latest);
+        setJobEvents(events);
         if (latest.status === "completed" && latest.deck_id) {
           const detail = await api(`/decks/${latest.deck_id}`);
           setDeck(detail);
+          const version = detail.latest_version;
+          try {
+            const report = await api(`/decks/${latest.deck_id}/quality/${version}`);
+            setQualityReport(report);
+          } catch {
+            setQualityReport(null);
+          }
         }
       } catch (e) {
         setError(String(e.message || e));
@@ -139,15 +168,62 @@ export default function App() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           prompt,
-          template_id: selectedTemplateId,
+          creation_mode: creationMode,
+          template_id: creationMode === "template" ? selectedTemplateId : null,
+          scratch_theme: creationMode === "scratch" ? scratchTheme : null,
           doc_ids: selectedDocIds,
           slide_count: Number(slideCount),
           provider,
+          agent_mode: agentMode,
+          quality_profile: qualityProfile,
+          max_correction_passes: Number(maxCorrectionPasses),
         }),
       });
       setJob(result);
       setDeck(null);
+      setJobEvents([]);
+      setQualityReport(null);
       setEditorConfig(null);
+    } catch (e2) {
+      setError(String(e2.message || e2));
+    } finally {
+      setBusy(false);
+    }
+  };
+
+  const deleteTemplate = async (templateId, templateName) => {
+    if (!window.confirm(`Delete template "${templateName}"?`)) return;
+    setBusy(true);
+    setError("");
+    try {
+      await api(`/templates/${templateId}`, { method: "DELETE" });
+      setCleanupReport(null);
+      await loadData();
+    } catch (e2) {
+      setError(String(e2.message || e2));
+    } finally {
+      setBusy(false);
+    }
+  };
+
+  const cleanupTemplates = async (dryRun) => {
+    setBusy(true);
+    setError("");
+    try {
+      const report = await api("/templates/cleanup", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          dry_run: dryRun,
+          include_scratch: true,
+          include_test: true,
+          only_unreferenced: true,
+        }),
+      });
+      setCleanupReport(report);
+      if (!dryRun) {
+        await loadData();
+      }
     } catch (e2) {
       setError(String(e2.message || e2));
     } finally {
@@ -163,9 +239,17 @@ export default function App() {
       const result = await api(`/decks/${deck.id}/revise`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ prompt: revisePrompt, provider }),
+        body: JSON.stringify({
+          prompt: revisePrompt,
+          provider,
+          agent_mode: agentMode,
+          quality_profile: qualityProfile,
+          max_correction_passes: Number(maxCorrectionPasses),
+        }),
       });
       setJob(result);
+      setJobEvents([]);
+      setQualityReport(null);
       setEditorConfig(null);
     } catch (e2) {
       setError(String(e2.message || e2));
@@ -214,9 +298,28 @@ export default function App() {
           </form>
           <ul>
             {templates.map((t) => (
-              <li key={t.id}>{t.name}</li>
+              <li key={t.id}>
+                <span>{t.name} ({t.status})</span>
+                <button type="button" disabled={busy} onClick={() => deleteTemplate(t.id, t.name)}>
+                  Delete
+                </button>
+              </li>
             ))}
           </ul>
+          <div className="row">
+            <button type="button" disabled={busy} onClick={() => cleanupTemplates(true)}>
+              Preview Cleanup
+            </button>
+            <button type="button" disabled={busy} onClick={() => cleanupTemplates(false)}>
+              Cleanup Hidden/Test Templates
+            </button>
+          </div>
+          {cleanupReport && (
+            <p>
+              {cleanupReport.dry_run ? "Dry run" : "Cleanup"}: matched {cleanupReport.matched_ids.length}, deleted{" "}
+              {cleanupReport.deleted_ids.length}, skipped {cleanupReport.skipped.length}.
+            </p>
+          )}
         </div>
 
         <div className="card">
@@ -241,14 +344,37 @@ export default function App() {
         <textarea value={prompt} onChange={(e) => setPrompt(e.target.value)} rows={4} />
         <div className="row">
           <label>
+            Mode
+            <select value={creationMode} onChange={(e) => setCreationMode(e.target.value)}>
+              <option value="template">template</option>
+              <option value="scratch">scratch</option>
+            </select>
+          </label>
+          <label>
             Template
-            <select value={selectedTemplateId} onChange={(e) => setSelectedTemplateId(e.target.value)}>
+            <select
+              value={selectedTemplateId}
+              onChange={(e) => setSelectedTemplateId(e.target.value)}
+              disabled={creationMode !== "template"}
+            >
               <option value="">Select template</option>
               {templates.map((t) => (
                 <option key={t.id} value={t.id}>
                   {t.name}
                 </option>
               ))}
+            </select>
+          </label>
+          <label>
+            Scratch Theme
+            <select
+              value={scratchTheme}
+              onChange={(e) => setScratchTheme(e.target.value)}
+              disabled={creationMode !== "scratch"}
+            >
+              <option value="default">default</option>
+              <option value="dark">dark</option>
+              <option value="corporate">corporate</option>
             </select>
           </label>
           <label>
@@ -263,6 +389,31 @@ export default function App() {
               <option value="anthropic">anthropic</option>
             </select>
           </label>
+          <label>
+            Agent Mode
+            <select value={agentMode} onChange={(e) => setAgentMode(e.target.value)}>
+              <option value="bounded">bounded</option>
+              <option value="off">off</option>
+            </select>
+          </label>
+          <label>
+            Quality Profile
+            <select value={qualityProfile} onChange={(e) => setQualityProfile(e.target.value)}>
+              <option value="fast">fast</option>
+              <option value="balanced">balanced</option>
+              <option value="high_fidelity">high_fidelity</option>
+            </select>
+          </label>
+          <label>
+            Max Corrections
+            <input
+              type="number"
+              min={0}
+              max={2}
+              value={maxCorrectionPasses}
+              onChange={(e) => setMaxCorrectionPasses(e.target.value)}
+            />
+          </label>
         </div>
         <button disabled={busy || !canGenerate} onClick={runGeneration}>Generate</button>
       </section>
@@ -272,10 +423,22 @@ export default function App() {
           <h2>Job Status</h2>
           {job ? (
             <>
-              <p><strong>{job.status}</strong> · {job.phase}</p>
+              <p><strong>{job.status}</strong> | {job.phase}</p>
               <progress max="100" value={job.progress_pct} />
               <p>{job.progress_pct}%</p>
               {job.error_message && <p className="error">{job.error_message}</p>}
+              {jobEvents.length > 0 && (
+                <details>
+                  <summary>Trace Events ({jobEvents.length})</summary>
+                  <ul>
+                    {jobEvents.slice(-40).map((event) => (
+                      <li key={`${event.id}-${event.event_type}`}>
+                        [{event.stage}] {event.event_type}
+                      </li>
+                    ))}
+                  </ul>
+                </details>
+              )}
             </>
           ) : (
             <p>No active job.</p>
@@ -288,6 +451,30 @@ export default function App() {
             <>
               <p>Deck ID: {deck.id}</p>
               <p>Latest Version: {deck.latest_version}</p>
+              {latestVersionInfo?.warnings?.length > 0 && (
+                <div className="error">
+                  <strong>Warnings:</strong>
+                  <ul>
+                    {latestVersionInfo.warnings.map((w, idx) => (
+                      <li key={`${idx}-${w}`}>{w}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+              {qualityReport && (
+                <div>
+                  <p>
+                    Quality Score: <strong>{qualityReport.score ?? "n/a"}</strong> | Passes Used:{" "}
+                    <strong>{qualityReport.passes_used ?? 0}</strong>
+                  </p>
+                  {(qualityReport.issues?.qa_issues || []).length > 0 && (
+                    <details>
+                      <summary>QA Issues ({qualityReport.issues.qa_issues.length})</summary>
+                      <pre>{JSON.stringify(qualityReport.issues.qa_issues.slice(0, 20), null, 2)}</pre>
+                    </details>
+                  )}
+                </div>
+              )}
               <a href={`${API_BASE}/decks/${deck.id}/download`} target="_blank" rel="noreferrer">
                 Download .pptx
               </a>
@@ -312,3 +499,4 @@ export default function App() {
     </div>
   );
 }
+

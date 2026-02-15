@@ -9,11 +9,11 @@ class MockProvider(BaseLLMProvider):
         s = slot.upper()
 
         if "TITLE" in s:
-            return f"{prompt[:90]} — Slide {slide_number}"
+            return f"{prompt[:90]} - Slide {slide_number}"
         if "SUBTITLE" in s:
             return "AI-generated draft aligned to template style"
         if "BULLET" in s:
-            return "• Key point one\n• Key point two\n• Key point three"
+            return "Key point one\nKey point two\nKey point three"
         if "SOURCE" in s or "CITATION" in s or "REFERENCE" in s:
             return "; ".join(sources[:3]) if sources else "Internal + web research"
         if "FOOTER" in s:
@@ -29,7 +29,8 @@ class MockProvider(BaseLLMProvider):
             body += f" Additional instruction: {extra_instructions}."
         return body
 
-    def generate_slides(self, prompt, research_chunks, template_manifest, slide_count, extra_instructions=None):
+    def generate_slides(self, prompt, research_chunks, template_manifest, slide_count, extra_instructions=None, deck_thesis=None):
+        self.reset_warnings()
         template_slides = template_manifest.get("slides") or []
         if not template_slides:
             return []
@@ -40,8 +41,11 @@ class MockProvider(BaseLLMProvider):
         result: list[SlideContent] = []
         for idx in range(target_count):
             spec = template_slides[idx]
+            scoped_prompt = prompt
+            if deck_thesis:
+                scoped_prompt = f"{prompt}. Thesis: {deck_thesis}"
             slots = {
-                slot_name: self._slot_value(slot_name, prompt, idx + 1, sources, extra_instructions)
+                slot_name: self._slot_value(slot_name, scoped_prompt, idx + 1, sources, extra_instructions)
                 for slot_name in spec.get("slots", [])
             }
             result.append(SlideContent(template_slide_index=spec.get("index", idx), slots=slots))
@@ -49,6 +53,7 @@ class MockProvider(BaseLLMProvider):
         return result
 
     def revise_slides(self, prompt, existing_slides, research_chunks, template_manifest):
+        self.reset_warnings()
         revised: list[SlideContent] = []
         for idx, slide in enumerate(existing_slides, start=1):
             current_slots = slide.get("slots", {})
@@ -68,3 +73,24 @@ class MockProvider(BaseLLMProvider):
             )
 
         return revised
+
+    def generate_text(self, *, system_prompt: str, user_prompt: str, max_tokens: int = 180) -> str:
+        text = user_prompt.strip().rstrip(".")
+        if not text:
+            return "This deck presents a clear, decision-oriented recommendation."
+        return f"This deck argues that {text}. It supports this with evidence, tradeoffs, and a concrete execution path."
+
+    def generate_outline(self, *, prompt: str, template_manifest: dict, slide_count: int, research_chunks: list[dict]) -> dict:
+        self.reset_warnings()
+        slides = (template_manifest.get("slides") or [])[:slide_count]
+        thesis = self.generate_text(system_prompt="Generate a deck thesis", user_prompt=prompt, max_tokens=120)
+        outline_rows = []
+        for idx, row in enumerate(slides, start=1):
+            outline_rows.append(
+                {
+                    "template_slide_index": int(row.get("index", idx - 1)),
+                    "narrative_role": f"Step {idx}: {row.get('archetype', 'general')} narrative progression.",
+                    "key_message": f"Key point for step {idx} that supports the thesis.",
+                }
+            )
+        return {"thesis": thesis, "slides": outline_rows}

@@ -1,0 +1,4803 @@
+{
+  "slide-0": {
+    "shape-0": {
+      "paragraphs": [
+        {
+          "text": "March 2025"
+        }
+      ]
+    },
+    "shape-1": {
+      "paragraphs": [
+        {
+          "text": "Urban Farming Strategy",
+          "line_spacing": 10.8
+        }
+      ]
+    },
+    "shape-2": {
+      "paragraphs": [
+        {
+          "text": "Greenfield AgriCo market entry and case for change in Southeast Asia",
+          "italic": false,
+          "line_spacing": 10.8
+        }
+      ]
+    }
+  },
+  "slide-1": {
+    "shape-0": {
+      "paragraphs": [
+        {
+          "text": "For questions related to this document please contact any one of our team members"
+        }
+      ]
+    },
+    "shape-1": {
+      "paragraphs": [
+        {
+          "text": "Sarah Chen",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "bold": true,
+          "color": "000000"
+        },
+        {
+          "text": "Engagement Partner",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "color": "000000"
+        },
+        {
+          "text": "Singapore\u000bsarah.chen\u000b@strategyand.sg.pwc.com",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "color": "000000"
+        }
+      ]
+    },
+    "shape-2": {
+      "paragraphs": [
+        {
+          "text": "Marcus Rivera",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "bold": true,
+          "color": "000000"
+        },
+        {
+          "text": "Subject Matter Expert",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "color": "000000"
+        },
+        {
+          "text": "Australia\u000bmarcus.rivera\u000b@strategyand.au.pwc.com",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "color": "000000"
+        }
+      ]
+    },
+    "shape-3": {
+      "paragraphs": [
+        {
+          "text": "Priya Sharma",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "bold": true,
+          "color": "000000"
+        },
+        {
+          "text": "Engagement Director",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "color": "000000"
+        },
+        {
+          "text": "Singapore\u000bpriya.sharma\u000b@strategyand.sg.pwc.com",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "color": "000000"
+        }
+      ]
+    },
+    "shape-4": {
+      "paragraphs": [
+        {
+          "text": "James Wong",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "bold": true,
+          "color": "000000"
+        },
+        {
+          "text": "Client Relationship Manager",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "color": "000000"
+        },
+        {
+          "text": "Singapore\u000bjames.wong\u000b@sg.pwc.com",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "color": "000000"
+        }
+      ]
+    },
+    "shape-5": {
+      "paragraphs": [
+        {
+          "text": "Rachel Lim",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "bold": true,
+          "color": "000000"
+        },
+        {
+          "text": "Engagement Manager",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "color": "000000"
+        },
+        {
+          "text": "Singapore",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "color": "000000"
+        },
+        {
+          "text": "rachel.lim\u000b@strategyand.sg.pwc.com",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "color": "000000"
+        }
+      ]
+    },
+    "shape-6": {
+      "paragraphs": [
+        {
+          "text": "David Tan",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "bold": true,
+          "color": "000000"
+        },
+        {
+          "text": "Work Stream Lead",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "color": "000000"
+        },
+        {
+          "text": "Malaysia\u000bdavid.tan\u000b@strategyand.my.pwc.com",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "color": "000000"
+        }
+      ]
+    },
+    "shape-7": {
+      "paragraphs": [
+        {
+          "text": "Lisa Ng",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "bold": true,
+          "color": "000000"
+        },
+        {
+          "text": "Work Stream Lead",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "color": "000000"
+        },
+        {
+          "text": "Singapore",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "color": "000000"
+        },
+        {
+          "text": "lisa.ng",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "color": "000000"
+        },
+        {
+          "text": "@strategyand.sg.pwc.com",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "color": "000000"
+        }
+      ]
+    },
+    "shape-8": {
+      "paragraphs": [
+        {
+          "text": "Amir Hassan",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "bold": true,
+          "color": "000000"
+        },
+        {
+          "text": "Work Stream Lead",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "color": "000000"
+        },
+        {
+          "text": "Malaysia\u000bamir.hassan\u000b@strategyand.my.pwc.com",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "color": "000000"
+        }
+      ]
+    },
+    "shape-9": {
+      "paragraphs": [
+        {
+          "text": "Kevin Park",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "bold": true,
+          "color": "000000"
+        },
+        {
+          "text": "Analyst",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "color": "000000"
+        },
+        {
+          "text": "Singapore\u000bkevin.park\u000b@strategyand.sg.pwc.com",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "color": "000000"
+        }
+      ]
+    },
+    "shape-10": {
+      "paragraphs": [
+        {
+          "text": "Emma Lee",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "bold": true,
+          "color": "000000"
+        },
+        {
+          "text": "Analyst",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "color": "000000"
+        },
+        {
+          "text": "Singapore\u000bemma.lee",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "color": "000000"
+        },
+        {
+          "text": "@strategyand.sg.pwc.com",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "color": "000000"
+        }
+      ]
+    },
+    "shape-11": {
+      "paragraphs": [
+        {
+          "text": "Confidential information for the sole benefit and use of PwC's client."
+        }
+      ]
+    }
+  },
+  "slide-2": {
+    "shape-0": {
+      "paragraphs": [
+        {
+          "text": "Project Qualification: \u000bUrban Farming Strategy for an AgriCo in South East Asia"
+        }
+      ]
+    },
+    "shape-1": {
+      "paragraphs": [
+        {
+          "text": "Confidential information for the sole benefit and use of PwC's client."
+        }
+      ]
+    }
+  },
+  "slide-3": {
+    "shape-0": {
+      "paragraphs": [
+        {
+          "text": "In support of country's Smart Food Security agenda, client aims to establish an AgriCo to further drive urban farming adoption"
+        }
+      ]
+    },
+    "shape-1": {
+      "paragraphs": [
+        {
+          "text": "Country Food Security Target",
+          "font_name": "Arial",
+          "font_size": 14.0,
+          "bold": true,
+          "theme_color": "DARK_1",
+          "line_spacing": 12.6
+        }
+      ]
+    },
+    "shape-2": {
+      "paragraphs": [
+        {
+          "text": "Clients Objectives",
+          "font_name": "Arial",
+          "font_size": 14.0,
+          "bold": true,
+          "theme_color": "DARK_1",
+          "line_spacing": 12.6
+        }
+      ]
+    },
+    "shape-3": {
+      "paragraphs": [
+        {
+          "text": "Develop a national urban farming solution through AgriCo that aims to:",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Promote vertical farming for retail and restaurant supply chains",
+          "bullet": true,
+          "level": 1,
+          "space_before": 6.0,
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Support food banks and the social sector",
+          "bullet": true,
+          "level": 1,
+          "space_before": 6.0,
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Establish a forward-looking view (including emerging and key trends) of the agriculture landscape",
+          "bullet": true,
+          "level": 0,
+          "space_before": 6.0,
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Determine the ways-to-play (incl. op model, target markets) for AgriCo to accelerate adoption of local produce",
+          "bullet": true,
+          "level": 0,
+          "space_before": 6.0,
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Design infrastructure that is future ready by exploring all relevant current and potential technologies \u2013 assess suitability of existing national farming infrastructure",
+          "bullet": true,
+          "level": 0,
+          "space_before": 6.0,
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Explore opportunities to leverage on existing investments for the collaboration",
+          "bullet": true,
+          "level": 0,
+          "space_before": 6.0,
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-4": {
+      "paragraphs": [
+        {
+          "text": "Interoperable farming system",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 18.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Simple distribution network",
+          "bullet": true,
+          "level": 0,
+          "space_before": 36.0,
+          "font_name": "Arial",
+          "font_size": 18.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Faster harvest cycles",
+          "bullet": true,
+          "level": 0,
+          "space_before": 36.0,
+          "font_name": "Arial",
+          "font_size": 18.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Safer produce standards",
+          "bullet": true,
+          "level": 0,
+          "space_before": 36.0,
+          "font_name": "Arial",
+          "font_size": 18.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-5": {
+      "paragraphs": [
+        {
+          "text": "Higher accessibility and acceptance for consumers and businesses",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "italic": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-6": {
+      "paragraphs": [
+        {
+          "text": "A simplified distribution system to increase competitiveness and efficiency for users",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "italic": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-7": {
+      "paragraphs": [
+        {
+          "text": "Confidential information for the sole benefit and use of PwC's client."
+        }
+      ]
+    },
+    "shape-8": {
+      "paragraphs": [
+        {
+          "text": "Increased speed of harvest-to-table via controlled environment agriculture",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "italic": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-9": {
+      "paragraphs": [
+        {
+          "text": "A fully regulated food safety environment (e.g. establishment of the Food Standards Council)",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "italic": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    }
+  },
+  "slide-4": {
+    "shape-0": {
+      "paragraphs": [
+        {
+          "text": "In response to top-down call to action, disruptors are entering the market with two variations of urban farming propositions"
+        }
+      ]
+    },
+    "shape-1": {
+      "paragraphs": [
+        {
+          "text": "Farming models available",
+          "font_name": "Arial",
+          "font_size": 14.0,
+          "bold": true,
+          "theme_color": "DARK_1",
+          "line_spacing": 12.6
+        }
+      ]
+    },
+    "shape-2": {
+      "paragraphs": [
+        {
+          "text": "Indoor Vertical Farms",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-3": {
+      "paragraphs": [
+        {
+          "text": "Rooftop Greenhouses",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-4": {
+      "paragraphs": [
+        {
+          "text": "Community Gardens (or more)",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-5": {
+      "paragraphs": [
+        {
+          "text": "Produce grown and distributed directly by operator to consumer",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-6": {
+      "paragraphs": [
+        {
+          "text": "Operators grow and distribute produce. Distribution is dependent on a specific network and delivery arrangement",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-7": {
+      "paragraphs": [
+        {
+          "text": "Operators only grow produce. Distribution is broadly accepted via existing wholesale and retail supply chains",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-8": {
+      "paragraphs": [
+        {
+          "text": "Operators:",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-9": {
+      "paragraphs": [
+        {
+          "text": "Operators:",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-10": {
+      "paragraphs": [
+        {
+          "text": "Operators:",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-11": {
+      "paragraphs": [
+        {
+          "text": "Recently opened to third party growers",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "color": "000000"
+        }
+      ]
+    },
+    "shape-12": {
+      "paragraphs": [
+        {
+          "text": "Closed-loop farms",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "theme_color": "ACCENT_6"
+        },
+        {
+          "text": "(Controlled env.)",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "theme_color": "ACCENT_6"
+        }
+      ]
+    },
+    "shape-13": {
+      "paragraphs": [
+        {
+          "text": "1",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": true,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-14": {
+      "paragraphs": [
+        {
+          "text": "2",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": true,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-15": {
+      "paragraphs": [
+        {
+          "text": "Open farms\u000b(Multi-crop)",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "theme_color": "ACCENT_1"
+        }
+      ]
+    },
+    "shape-16": {
+      "paragraphs": [
+        {
+          "text": "Source: AgriTech Asia, PwC Strategy& analysis",
+          "font_name": "Arial",
+          "font_size": 6.0,
+          "bold": false,
+          "italic": true,
+          "color": "000000",
+          "line_spacing": 6.0
+        }
+      ]
+    },
+    "shape-17": {
+      "paragraphs": [
+        {
+          "text": "Confidential information for the sole benefit and use of PwC's client."
+        }
+      ]
+    },
+    "shape-18": {
+      "paragraphs": [
+        {
+          "text": "Grower/Distributor",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-19": {
+      "paragraphs": [
+        {
+          "text": "Grower",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-20": {
+      "paragraphs": [
+        {
+          "text": "Distributor",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-21": {
+      "paragraphs": [
+        {
+          "text": "Consumer",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "theme_color": "DARK_1",
+          "line_spacing": 8.1
+        }
+      ]
+    },
+    "shape-22": {
+      "paragraphs": [
+        {
+          "text": "Merchant",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-23": {
+      "paragraphs": [
+        {
+          "text": "Merchant",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-24": {
+      "paragraphs": [
+        {
+          "text": "Merchant",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-25": {
+      "paragraphs": [
+        {
+          "text": "Consumer",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "theme_color": "DARK_1",
+          "line_spacing": 8.1
+        }
+      ]
+    },
+    "shape-26": {
+      "paragraphs": [
+        {
+          "text": "Consumer",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "theme_color": "DARK_1",
+          "line_spacing": 8.1
+        }
+      ]
+    }
+  },
+  "slide-5": {
+    "shape-0": {
+      "paragraphs": [
+        {
+          "text": "While disruptors bring choice for consumers, 'Imported Produce' remains the leading option for affordable food"
+        }
+      ]
+    },
+    "shape-1": {
+      "paragraphs": [
+        {
+          "text": "Competitor Landscape Analysis",
+          "font_name": "Arial",
+          "font_size": 14.0,
+          "bold": true,
+          "theme_color": "DARK_1",
+          "line_spacing": 12.6
+        }
+      ]
+    },
+    "shape-2": {
+      "paragraphs": [
+        {
+          "text": "Operators were assessed across seven lenses \u2013 produce variety, freshness, interoperability, harvest speed, cost to merchants, customer reach, and food safety",
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "color": "000000"
+        }
+      ]
+    },
+    "shape-3": {
+      "paragraphs": [
+        {
+          "text": "The urban farming operators selected for assessment were filtered based on their significance in the market",
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "color": "000000"
+        }
+      ]
+    },
+    "shape-4": {
+      "paragraphs": [
+        {
+          "text": "Confidential information for the sole benefit and use of PwC's client."
+        }
+      ]
+    }
+  },
+  "slide-6": {
+    "shape-0": {
+      "paragraphs": [
+        {
+          "text": "Non-differentiating efforts by players often reap marginal benefits as consumer pain points remain unaddressed"
+        }
+      ]
+    },
+    "shape-1": {
+      "paragraphs": [
+        {
+          "text": "Differentiating efforts of players",
+          "font_name": "Arial",
+          "font_size": 14.0,
+          "bold": true,
+          "theme_color": "DARK_1",
+          "line_spacing": 12.6
+        }
+      ]
+    },
+    "shape-2": {
+      "paragraphs": [
+        {
+          "text": "Tech-led vertical farms",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-3": {
+      "paragraphs": [
+        {
+          "text": "Technology-driven farming solutions available (app-based) to consumers upon subscription. The platform allows for B2C and B2B produce ordering",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-4": {
+      "paragraphs": [
+        {
+          "text": "Description",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 10.5,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-5": {
+      "paragraphs": [
+        {
+          "text": "Key takeaway",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "theme_color": "LIGHT_1",
+          "line_spacing": 12.0
+        }
+      ]
+    },
+    "shape-6": {
+      "paragraphs": [
+        {
+          "text": "Retailer co-branded farms",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-7": {
+      "paragraphs": [
+        {
+          "text": "Co-branded farms are collaborative efforts by a retailer and a farm operator to provide fresh produce directly in-store, usually aimed to drive shared customer loyalty",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-8": {
+      "paragraphs": [
+        {
+          "text": "Consumer experience is compromised as operators try to diversify and differentiate themselves",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": true,
+          "theme_color": "DARK_1",
+          "line_spacing": 10.0
+        },
+        {
+          "text": "Consumers often have to travel to specific locations or wait for delivery windows (inconvenient)",
+          "bullet": true,
+          "level": 1,
+          "space_before": 3.0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "theme_color": "DARK_1",
+          "line_spacing": 10.0
+        },
+        {
+          "text": "Interoperability is still lacking as produce offerings are limited to specific operator networks and restricted to pre-approved merchants",
+          "bullet": true,
+          "level": 0,
+          "space_before": 3.0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": true,
+          "theme_color": "DARK_1",
+          "line_spacing": 10.0
+        },
+        {
+          "text": "Lack of quality standards and traceability measures result in spoilage and waste \u2013 business model becomes unsustainable",
+          "bullet": true,
+          "level": 0,
+          "space_before": 3.0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": true,
+          "theme_color": "DARK_1",
+          "line_spacing": 10.0
+        }
+      ]
+    },
+    "shape-9": {
+      "paragraphs": [
+        {
+          "text": "Disruptive farm-to-table play",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-10": {
+      "paragraphs": [
+        {
+          "text": "Disruptors enter the farming landscape with intentions to maximise direct-to-consumer freshness to support core business. Discounts and incentives are offered frequently to consumers",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-11": {
+      "paragraphs": [
+        {
+          "text": "Subscription harvest services",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-12": {
+      "paragraphs": [
+        {
+          "text": "Operators are providing a subscription harvest service that allows consumers to pre-order seasonal produce and receive regular deliveries, assisting consumers with fresh food access",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-13": {
+      "paragraphs": [
+        {
+          "text": "Reduction in costs to consumers",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-14": {
+      "paragraphs": [
+        {
+          "text": "SkyGreens",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-15": {
+      "paragraphs": [
+        {
+          "text": "Operators are expected to reduce distribution margins in order to remain competitive and encourage merchant adoption (e.g. SkyGreens have reduced margins for some merchants to 5% per kg from 20%)",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-16": {
+      "paragraphs": [
+        {
+          "text": "Source: Company websites, Straits Times, PwC Strategy& analysis",
+          "font_name": "Arial",
+          "font_size": 6.0,
+          "bold": false,
+          "italic": true,
+          "color": "000000",
+          "line_spacing": 6.0
+        }
+      ]
+    },
+    "shape-17": {
+      "paragraphs": [
+        {
+          "text": "Confidential information for the sole benefit and use of PwC's client."
+        }
+      ]
+    },
+    "shape-18": {
+      "paragraphs": [
+        {
+          "text": "Sustenir Agri",
+          "font_name": "Arial",
+          "font_size": 8.0,
+          "bold": true,
+          "theme_color": "DARK_1",
+          "line_spacing": 12.0
+        }
+      ]
+    }
+  },
+  "slide-7": {
+    "shape-0": {
+      "paragraphs": [
+        {
+          "text": "The country's grassroots still prefer imported produce especially for daily meals \u2013 a habit entrenched in hearts and minds"
+        }
+      ]
+    },
+    "shape-1": {
+      "paragraphs": [
+        {
+          "text": "Dominant Sourcing Mode: A Household's Perspective",
+          "font_name": "Arial",
+          "font_size": 14.0,
+          "bold": true,
+          "color": "000000",
+          "line_spacing": 12.6
+        }
+      ]
+    },
+    "shape-2": {
+      "paragraphs": [
+        {
+          "text": "Imported produce is a norm in every household as it is affordable, available, familiar, and widely stocked",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": true,
+          "color": "000000"
+        }
+      ]
+    },
+    "shape-3": {
+      "paragraphs": [
+        {
+          "text": "Yeo Soo Keng, 78",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-4": {
+      "paragraphs": [
+        {
+          "text": "Maria, 35",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-5": {
+      "paragraphs": [
+        {
+          "text": "Pioneer (>65 years)",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-6": {
+      "paragraphs": [
+        {
+          "text": "Buys groceries for daily meals \u2013 wet market, supermarket, hawker centres",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Buys only imported produce due to familiarity and lower price",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-7": {
+      "paragraphs": [
+        {
+          "text": "Tan Chun Kit, 58",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-8": {
+      "paragraphs": [
+        {
+          "text": "Goh King Kuan, 50",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-9": {
+      "paragraphs": [
+        {
+          "text": "Foreign Worker (20 \u2013 44 years)",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-10": {
+      "paragraphs": [
+        {
+          "text": "Buys only when requested by employer, mostly household groceries",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Buys imported produce as it is the usual option provided by the employer",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Receives food allowance and sends savings home to family physically",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-11": {
+      "paragraphs": [
+        {
+          "text": "Source: PwC Strategy& analysis",
+          "font_name": "Arial",
+          "font_size": 6.0,
+          "bold": false,
+          "italic": true,
+          "color": "000000",
+          "line_spacing": 6.0
+        }
+      ]
+    },
+    "shape-12": {
+      "paragraphs": [
+        {
+          "text": "Daniel Tan, 26",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-13": {
+      "paragraphs": [
+        {
+          "text": "Marc Tan, 18",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-14": {
+      "paragraphs": [
+        {
+          "text": "Becky Tan, 12",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-15": {
+      "paragraphs": [
+        {
+          "text": "Confidential information for the sole benefit and use of PwC's client."
+        }
+      ]
+    },
+    "shape-16": {
+      "paragraphs": [
+        {
+          "text": "Silver Hair (45 \u2013 65 years)",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-17": {
+      "paragraphs": [
+        {
+          "text": "Provides for family, buys groceries and meals from markets",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Buys imported produce or visits supermarket chains",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Prefers imported produce for daily cooking needs",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-18": {
+      "paragraphs": [
+        {
+          "text": "Teen and Young (<19 years)",
+          "font_name": "Arial",
+          "font_size": 10.5,
+          "bold": true,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-19": {
+      "paragraphs": [
+        {
+          "text": "Eats meals prepared by parents using mostly imported ingredients",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Buys snacks and meals using pocket money at hawker centres and convenience stores",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-20": {
+      "paragraphs": [
+        {
+          "text": "Young Adult (20 \u2013 44 years)",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-21": {
+      "paragraphs": [
+        {
+          "text": "Buys groceries for meals, dining out, and retail food shopping",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Buys imported produce, occasionally tries local organic options",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Open to local produce, prefers imported for affordability",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    }
+  },
+  "slide-8": {
+    "shape-0": {
+      "paragraphs": [
+        {
+          "text": "From a small merchant perspective, hawkers prefer imported ingredients due to their affordability and wide availability"
+        }
+      ]
+    },
+    "shape-1": {
+      "paragraphs": [
+        {
+          "text": "Day-in-life of a Hawker \u2013 Overview",
+          "font_name": "Arial",
+          "font_size": 14.0,
+          "bold": true,
+          "theme_color": "DARK_1",
+          "line_spacing": 12.6
+        }
+      ]
+    },
+    "shape-2": {
+      "paragraphs": [
+        {
+          "text": "Suppliers:",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Chun Kit has to go to the wet market early morning to source his ingredients for the day's cooking",
+          "bullet": true,
+          "level": 0,
+          "space_before": 3.0,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "His suppliers stock mainly imported produce as it is cheaper and more readily available",
+          "bullet": true,
+          "level": 0,
+          "space_before": 3.0,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-3": {
+      "paragraphs": [
+        {
+          "text": "Needs:",
+          "alignment": "RIGHT",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-4": {
+      "paragraphs": [
+        {
+          "text": "Operations:",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Chun Kit's busiest hours are between 12pm to 2pm. He serves ~90 bowls of fish soup during that period at ~$4 each",
+          "bullet": true,
+          "level": 0,
+          "space_before": 3.0,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "A small % of customers asks about locally-farmed ingredients but are satisfied with the taste of imported produce",
+          "bullet": true,
+          "level": 0,
+          "space_before": 3.0,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-5": {
+      "paragraphs": [
+        {
+          "text": "Import Supply Cycle",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 14.0,
+          "bold": true,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-6": {
+      "paragraphs": [
+        {
+          "text": "Affordability",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-7": {
+      "paragraphs": [
+        {
+          "text": "Availability",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-8": {
+      "paragraphs": [
+        {
+          "text": "Reliability of Supply",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-9": {
+      "paragraphs": [
+        {
+          "text": "Tan Chun Kit, 58 years old, is a hawker selling fish soup. He employs 1 stall assistant and operates between 7.30am \u2013 4.30pm. Imported ingredients are his dominant source of supply.",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Chun Kit is the primary breadwinner of his family, which consists of his wife and 2 sons who are still in school. He currently lives in a 3-room flat.",
+          "space_before": 3.0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-10": {
+      "paragraphs": [
+        {
+          "text": "Tan Chun Kit, 58",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-11": {
+      "paragraphs": [
+        {
+          "text": "Family:",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "After Chun Kit closes his stall for the day, he goes to a nearby food centre to pack food for his family \u2013 imported produce is the main ingredient used in the food centre",
+          "bullet": true,
+          "level": 0,
+          "space_before": 3.0,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Chun Kit's sons ask him for dinner money after school for a meal at the hawker centre \u2013 imported ingredients are the most affordable and convenient option for hawkers",
+          "bullet": true,
+          "level": 0,
+          "space_before": 3.0,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-12": {
+      "paragraphs": [
+        {
+          "text": "Confidential information for the sole benefit and use of PwC's client."
+        }
+      ]
+    },
+    "shape-13": {
+      "paragraphs": [
+        {
+          "text": "Morning",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "color": "000000"
+        }
+      ]
+    },
+    "shape-14": {
+      "paragraphs": [
+        {
+          "text": "Mid-day",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-15": {
+      "paragraphs": [
+        {
+          "text": "Evening",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "color": "000000"
+        }
+      ]
+    }
+  },
+  "slide-9": {
+    "shape-0": {
+      "paragraphs": [
+        {
+          "text": "Example: Imported and locally-farmed produce are about cost neutral to hawkers \u2013 no compelling incentive to adopt local farming",
+          "underline": true
+        }
+      ]
+    },
+    "shape-1": {
+      "paragraphs": [
+        {
+          "text": "Case Study: Cost of Imported vs. Locally-Farmed Produce",
+          "font_name": "Arial",
+          "font_size": 14.0,
+          "bold": true,
+          "color": "000000",
+          "line_spacing": 12.6
+        }
+      ]
+    },
+    "shape-2": {
+      "paragraphs": [
+        {
+          "text": "Scenario 1: Imported Only",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-3": {
+      "paragraphs": [
+        {
+          "text": "1 hour",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 8.0,
+          "bold": true,
+          "italic": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-4": {
+      "paragraphs": [
+        {
+          "text": "Cost of Import Sourcing",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": true,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-5": {
+      "paragraphs": [
+        {
+          "text": "ILLUSTRATIVE",
+          "alignment": "RIGHT",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": true,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-6": {
+      "paragraphs": [
+        {
+          "text": "Sourcing",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": true,
+          "color": "FFFFFF"
+        }
+      ]
+    },
+    "shape-7": {
+      "paragraphs": [
+        {
+          "text": "Chun Kit only sources imported ingredients \u2013 spending $80 per day on produce for 140 bowls of fish soup",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-8": {
+      "paragraphs": [
+        {
+          "text": "Quality Check",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": true,
+          "color": "FFFFFF"
+        }
+      ]
+    },
+    "shape-9": {
+      "paragraphs": [
+        {
+          "text": "End of day, Chun Kit inspects the remaining stock, estimating wastage against the day's usage",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-10": {
+      "paragraphs": [
+        {
+          "text": "Market Trip",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": true,
+          "color": "FFFFFF"
+        }
+      ]
+    },
+    "shape-11": {
+      "paragraphs": [
+        {
+          "text": "Chun Kit travels to the wet market to restock imported ingredients for the next day, spending 1 hour for quality check and restocking",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-12": {
+      "paragraphs": [
+        {
+          "text": "1 hour per day of quality check and market trip",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "$10 per hour opportunity cost to Chun Kit1",
+          "bullet": true,
+          "level": 0,
+          "space_before": 5.5,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "365 days of operation per year",
+          "bullet": true,
+          "level": 0,
+          "space_before": 5.5,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-13": {
+      "paragraphs": [
+        {
+          "text": "Opportunity cost per annum: $3,650",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-14": {
+      "paragraphs": [
+        {
+          "text": "Avg. impact to profitability4: ~5%",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-15": {
+      "paragraphs": [
+        {
+          "text": "Scenario 2: Locally-Farmed Only",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-16": {
+      "paragraphs": [
+        {
+          "text": "Sourcing",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": true,
+          "color": "FFFFFF"
+        }
+      ]
+    },
+    "shape-17": {
+      "paragraphs": [
+        {
+          "text": "Quality Check",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": true,
+          "color": "FFFFFF"
+        }
+      ]
+    },
+    "shape-18": {
+      "paragraphs": [
+        {
+          "text": "20 mins",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 8.0,
+          "bold": true,
+          "italic": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-19": {
+      "paragraphs": [
+        {
+          "text": "Home",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": true,
+          "color": "FFFFFF"
+        }
+      ]
+    },
+    "shape-20": {
+      "paragraphs": [
+        {
+          "text": "Cost of Local Produce",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": true,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-21": {
+      "paragraphs": [
+        {
+          "text": "~$200,000 revenue per year2",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "5% \u2013 15% premium per kg for local produce3",
+          "bullet": true,
+          "level": 0,
+          "space_before": 5.5,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "20 mins per day at $10 per hour1",
+          "bullet": true,
+          "level": 0,
+          "space_before": 5.5,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-22": {
+      "paragraphs": [
+        {
+          "text": "Chun Kit sources locally-farmed ingredients for all 140 bowls of fish soup everyday, incurring 5% - 15% price premium per kg",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-23": {
+      "paragraphs": [
+        {
+          "text": "End of day, Chun Kit performs a quick freshness check to ensure produce received matches quality standards",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-24": {
+      "paragraphs": [
+        {
+          "text": "Chun Kit goes home and his work is done for the day",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-25": {
+      "paragraphs": [
+        {
+          "text": "Avg. annual premium: $4,900",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-26": {
+      "paragraphs": [
+        {
+          "text": "Avg. impact to profitability4: ~6%",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-27": {
+      "paragraphs": [
+        {
+          "text": "Note: 1) Hourly opportunity cost is based on average per hour wage adjusted for realisable savings amount of $10; 2) ~$200,000 revenue per year is based on $560 revenue per day multiplied by 365 operational days per year; 3) Price premium range is based on competitive rates \u2013 local farms (5%) to certified organic (15%); 4) Profitability is assumed to be 40% of revenue at $80,000 based on average gross margins for hawkers",
+          "font_name": "Arial",
+          "font_size": 6.0,
+          "bold": false,
+          "italic": true,
+          "color": "000000",
+          "line_spacing": 6.0
+        },
+        {
+          "text": "Source: AVA; PwC Strategy& analysis",
+          "font_name": "Arial",
+          "font_size": 6.0,
+          "bold": false,
+          "italic": true,
+          "color": "000000",
+          "line_spacing": 6.0
+        }
+      ]
+    },
+    "shape-28": {
+      "paragraphs": [
+        {
+          "text": "Confidential information for the sole benefit and use of PwC's client."
+        }
+      ]
+    }
+  },
+  "slide-10": {
+    "shape-0": {
+      "paragraphs": [
+        {
+          "text": "In order to encourage local produce adoption, the import dependency cycle needs to be broken without affecting family needs"
+        }
+      ]
+    },
+    "shape-1": {
+      "paragraphs": [
+        {
+          "text": "Current State Supply Cycle \u2013 Import-Based",
+          "font_name": "Arial",
+          "font_size": 14.0,
+          "bold": true,
+          "theme_color": "DARK_1",
+          "line_spacing": 12.6
+        }
+      ]
+    },
+    "shape-2": {
+      "paragraphs": [
+        {
+          "text": "2",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 10.5,
+          "bold": true,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-3": {
+      "paragraphs": [
+        {
+          "text": "3",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 10.5,
+          "bold": true,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-4": {
+      "paragraphs": [
+        {
+          "text": "Soo Keng receives groceries from Chun Kit and prepares daily meals using imported ingredients \u2013 vegetables, meat, and some household staples",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-5": {
+      "paragraphs": [
+        {
+          "text": "Future State",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-6": {
+      "paragraphs": [
+        {
+          "text": "1",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 10.5,
+          "bold": true,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-7": {
+      "paragraphs": [
+        {
+          "text": "Yeo Soo Keng, 78",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-8": {
+      "paragraphs": [
+        {
+          "text": "Local produce adoption can be facilitated by breaking the import cycle simultaneously, increasing overall local food supply",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Chun Kit receives produce directly from the AgriCo network without needing a physical wet market trip",
+          "bullet": true,
+          "level": 0,
+          "space_before": 5.0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Produce is distributed directly to Soo Keng, Marc, and Maria via local delivery networks",
+          "bullet": true,
+          "level": 0,
+          "space_before": 5.0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "As local farming becomes widely adopted, Soo Keng, Marc, and Maria can source fresh produce locally without relying on imports",
+          "bullet": true,
+          "level": 0,
+          "space_before": 5.0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-9": {
+      "paragraphs": [
+        {
+          "text": "Tan Chun Kit, 58",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-10": {
+      "paragraphs": [
+        {
+          "text": "Marc receives meal money from Chun Kit and eats at hawker centres using imported ingredients \u2013 meals, snacks, entertainment",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-11": {
+      "paragraphs": [
+        {
+          "text": "1",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 10.5,
+          "bold": true,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-12": {
+      "paragraphs": [
+        {
+          "text": "Chun Kit sources ingredients through the wet market supply chain. He proceeds to the market early morning to:",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Buy groceries for his mother, Soo Keng, and son, Marc",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Provide food supplies for his household helper, Maria",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-13": {
+      "paragraphs": [
+        {
+          "text": "Marc Tan, 18",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-14": {
+      "paragraphs": [
+        {
+          "text": "2",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 10.5,
+          "bold": true,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-15": {
+      "paragraphs": [
+        {
+          "text": "Maria receives groceries and proceeds to the nearest convenience store to buy additional household items for the family",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-16": {
+      "paragraphs": [
+        {
+          "text": "3",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 10.5,
+          "bold": true,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-17": {
+      "paragraphs": [
+        {
+          "text": "Maria, 35",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-18": {
+      "paragraphs": [
+        {
+          "text": "Source: PwC Strategy& analysis",
+          "font_name": "Arial",
+          "font_size": 6.0,
+          "bold": false,
+          "italic": true,
+          "color": "000000",
+          "line_spacing": 6.0
+        }
+      ]
+    },
+    "shape-19": {
+      "paragraphs": [
+        {
+          "text": "Confidential information for the sole benefit and use of PwC's client."
+        }
+      ]
+    }
+  },
+  "slide-11": {
+    "shape-0": {
+      "paragraphs": [
+        {
+          "text": "There are five key needs of new urban farming offering that will appeal to the People and beyond"
+        }
+      ]
+    },
+    "shape-1": {
+      "paragraphs": [
+        {
+          "text": "Produce Category",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-2": {
+      "paragraphs": [
+        {
+          "text": "Consumer Facing Produce Example Use Cases",
+          "font_name": "Arial",
+          "font_size": 14.0,
+          "bold": true,
+          "theme_color": "DARK_1",
+          "line_spacing": 12.6
+        }
+      ]
+    },
+    "shape-3": {
+      "paragraphs": [
+        {
+          "text": "Supply Flow",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-4": {
+      "paragraphs": [
+        {
+          "text": "Distribution Channel",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-5": {
+      "paragraphs": [
+        {
+          "text": "NON-EXHAUSTIVE",
+          "alignment": "RIGHT",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": true,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-6": {
+      "paragraphs": [
+        {
+          "text": "Fresh produce delivery",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-7": {
+      "paragraphs": [
+        {
+          "text": "Delivery via local farms, online platforms, or neighbourhood collection points \u2013 wide range of channels",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-8": {
+      "paragraphs": [
+        {
+          "text": "Restaurant supply",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-9": {
+      "paragraphs": [
+        {
+          "text": "Sanitised",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 8.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-10": {
+      "paragraphs": [
+        {
+          "text": "Produce supplied via wholesale \u2013 fragmented and lengthy distribution process",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-11": {
+      "paragraphs": [
+        {
+          "text": "School meals",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-12": {
+      "paragraphs": [
+        {
+          "text": "Produce sourcing mostly done via importers, emerging offerings with local farms",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-13": {
+      "paragraphs": [
+        {
+          "text": "Fresh",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Widely available",
+          "bullet": true,
+          "level": 0,
+          "space_before": 3.0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Traceable (e-label)",
+          "bullet": true,
+          "level": 0,
+          "space_before": 3.0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-14": {
+      "paragraphs": [
+        {
+          "text": "Consumer Needs",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-15": {
+      "paragraphs": [
+        {
+          "text": "Underserved \u2013 market fragmented with noise",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-16": {
+      "paragraphs": [
+        {
+          "text": "Market Situation",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-17": {
+      "paragraphs": [
+        {
+          "text": "Govt food programs",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-18": {
+      "paragraphs": [
+        {
+          "text": "Sanitised",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 8.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-19": {
+      "paragraphs": [
+        {
+          "text": "Produce sourced via govt tenders \u2013 complex process with administrative requirements",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-20": {
+      "paragraphs": [
+        {
+          "text": "Fresh",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Traceable",
+          "bullet": true,
+          "level": 0,
+          "space_before": 3.0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-21": {
+      "paragraphs": [
+        {
+          "text": "Underserved \u2013 lack of direct farm-to-govt offering",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-22": {
+      "paragraphs": [
+        {
+          "text": "Community distribution",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-23": {
+      "paragraphs": [
+        {
+          "text": "Sanitised",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 8.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-24": {
+      "paragraphs": [
+        {
+          "text": "Produce distributed via community centres, increasingly using local networks \u2013 limited experience",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-25": {
+      "paragraphs": [
+        {
+          "text": "Fresh",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Simple and convenient",
+          "bullet": true,
+          "level": 0,
+          "space_before": 3.0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Traceability",
+          "bullet": true,
+          "level": 0,
+          "space_before": 3.0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-26": {
+      "paragraphs": [
+        {
+          "text": "Underserved \u2013 infra available, but poor experience",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-27": {
+      "paragraphs": [
+        {
+          "text": "Source: PwC Strategy& analysis",
+          "font_name": "Arial",
+          "font_size": 6.0,
+          "bold": false,
+          "italic": true,
+          "color": "000000",
+          "line_spacing": 6.0
+        }
+      ]
+    },
+    "shape-28": {
+      "paragraphs": [
+        {
+          "text": "Confidential information for the sole benefit and use of PwC's client."
+        }
+      ]
+    },
+    "shape-29": {
+      "paragraphs": [
+        {
+          "text": "Fresh",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Simple and convenient",
+          "bullet": true,
+          "level": 0,
+          "space_before": 3.0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-30": {
+      "paragraphs": [
+        {
+          "text": "Underserved \u2013 lack of simple and direct farm-to-community offering",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-31": {
+      "paragraphs": [
+        {
+          "text": "Fresh",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Traceable",
+          "bullet": true,
+          "level": 0,
+          "space_before": 3.0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-32": {
+      "paragraphs": [
+        {
+          "text": "Underserved \u2013 lack of direct community distribution offering",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    }
+  },
+  "slide-12": {
+    "shape-0": {
+      "paragraphs": [
+        {
+          "text": "AgriCo aims to provide a unified farming infrastructure; it is not a supermarket, distributor, or \u201canother\u201d farm"
+        }
+      ]
+    },
+    "shape-1": {
+      "paragraphs": [
+        {
+          "text": "Key Functions of AgriCo",
+          "font_name": "Arial",
+          "font_size": 14.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 12.6
+        }
+      ]
+    },
+    "shape-2": {
+      "paragraphs": [
+        {
+          "text": "Source: PwC Strategy& analysis",
+          "font_name": "Arial",
+          "font_size": 6.0,
+          "bold": false,
+          "italic": true,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 6.0
+        }
+      ]
+    },
+    "shape-3": {
+      "paragraphs": [
+        {
+          "text": "AgriCo is not \u2026",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-4": {
+      "paragraphs": [
+        {
+          "text": "A supermarket",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "AgriCo will not provide retail services to consumers (e.g. branded stores, consumer shelf space, etc.)",
+          "bullet": true,
+          "level": 1,
+          "space_before": 3.0,
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "A cold-chain distributor",
+          "bullet": true,
+          "level": 0,
+          "space_before": 6.0,
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "AgriCo will not perform functions of a logistics and cold-chain distribution facility (e.g. require license from food authority)",
+          "bullet": true,
+          "level": 1,
+          "space_before": 3.0,
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "\u201cAnother\u201d farm in the market",
+          "bullet": true,
+          "level": 0,
+          "space_before": 6.0,
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "AgriCo will not add to the market fragmentation of urban farms in the country but rather to unify existing farming offerings",
+          "bullet": true,
+          "level": 1,
+          "space_before": 3.0,
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-5": {
+      "paragraphs": [
+        {
+          "text": "Confidential information for the sole benefit and use of PwC's client."
+        }
+      ]
+    },
+    "shape-6": {
+      "paragraphs": [
+        {
+          "text": "AgriCo is \u2026",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-7": {
+      "paragraphs": [
+        {
+          "text": "An interoperable produce sourcing experience",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Allow buyers to source produce across a wide range of categories (e.g. vegetables, herbs, protein, specialty crops), based on unique identifiers (e.g. farm ID, batch number, crop variety)",
+          "bullet": true,
+          "level": 1,
+          "space_before": 3.0,
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "A common standard for interoperable farming",
+          "bullet": true,
+          "level": 0,
+          "space_before": 6.0,
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "A produce distribution processing service",
+          "bullet": true,
+          "level": 0,
+          "space_before": 6.0,
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Facilitate and authenticate produce transactions between farm network users",
+          "bullet": true,
+          "level": 1,
+          "space_before": 3.0,
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "A merchant services offering",
+          "bullet": true,
+          "level": 0,
+          "space_before": 6.0,
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        },
+        {
+          "text": "Offer solutions to support day-to-day merchant sourcing and operational needs, digitising food businesses",
+          "bullet": true,
+          "level": 1,
+          "space_before": 3.0,
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "theme_color": "DARK_1"
+        }
+      ]
+    }
+  },
+  "slide-13": {
+    "shape-0": {
+      "paragraphs": [
+        {
+          "text": "AgriCo operates Farm Network and Distribution Platform, supported by merchant services and a standards arm"
+        }
+      ]
+    },
+    "shape-1": {
+      "paragraphs": [
+        {
+          "text": "Core Services",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-2": {
+      "paragraphs": [
+        {
+          "text": "AgriCo's Lines of Service",
+          "font_name": "Arial",
+          "font_size": 14.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 12.6
+        }
+      ]
+    },
+    "shape-3": {
+      "paragraphs": [
+        {
+          "text": "Enablers",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "theme_color": "LIGHT_1"
+        }
+      ]
+    },
+    "shape-4": {
+      "paragraphs": [
+        {
+          "text": "Farm Network",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "FFFFFF",
+          "line_spacing": 12.0
+        }
+      ]
+    },
+    "shape-5": {
+      "paragraphs": [
+        {
+          "text": "Enables multiple category produce lines (i.e. first and third party farms) and 'Produce-on-demand' / pre-order transactions",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 10.0
+        },
+        {
+          "text": "Ensures interoperability between all participating entities for a wide range of produce categories (e.g. vegetables, herbs, protein, specialty crops)",
+          "bullet": true,
+          "level": 0,
+          "space_before": 2.5,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 10.0
+        }
+      ]
+    },
+    "shape-6": {
+      "paragraphs": [
+        {
+          "text": "1",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "FFFFFF",
+          "line_spacing": 12.0
+        }
+      ]
+    },
+    "shape-7": {
+      "paragraphs": [
+        {
+          "text": "Distribution",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "FFFFFF",
+          "line_spacing": 12.0
+        }
+      ]
+    },
+    "shape-8": {
+      "paragraphs": [
+        {
+          "text": "Facilitates and authenticates produce distribution transactions",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 10.0
+        },
+        {
+          "text": "Enables order processing, fulfilment, and settlement for distribution service users",
+          "bullet": true,
+          "level": 0,
+          "space_before": 2.5,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 10.0
+        },
+        {
+          "text": "Sets and enforces distribution operating rules (e.g. quality management, freshness requirements)",
+          "bullet": true,
+          "level": 0,
+          "space_before": 2.5,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 10.0
+        }
+      ]
+    },
+    "shape-9": {
+      "paragraphs": [
+        {
+          "text": "2",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "FFFFFF",
+          "line_spacing": 12.0
+        }
+      ]
+    },
+    "shape-10": {
+      "paragraphs": [
+        {
+          "text": "Merchant Services",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "FFFFFF",
+          "line_spacing": 12.0
+        }
+      ]
+    },
+    "shape-11": {
+      "paragraphs": [
+        {
+          "text": "Provides merchants with solutions that cater to day-to-day sourcing needs, including but not limited to:",
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "color": "000000",
+          "line_spacing": 10.0
+        },
+        {
+          "text": "e-ordering and invoicing",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "color": "000000",
+          "line_spacing": 10.0
+        },
+        {
+          "text": "Auto inventory tracking",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "color": "000000",
+          "line_spacing": 10.0
+        },
+        {
+          "text": "Supplier and quality management",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 10.0
+        },
+        {
+          "text": "Freshness monitoring",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "color": "000000",
+          "line_spacing": 10.0
+        }
+      ]
+    },
+    "shape-12": {
+      "paragraphs": [
+        {
+          "text": "3",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "FFFFFF",
+          "line_spacing": 12.0
+        }
+      ]
+    },
+    "shape-13": {
+      "paragraphs": [
+        {
+          "text": "Source: PwC Strategy& analysis",
+          "font_name": "Arial",
+          "font_size": 6.0,
+          "bold": false,
+          "italic": true,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 6.0
+        }
+      ]
+    },
+    "shape-14": {
+      "paragraphs": [
+        {
+          "text": "Confidential information for the sole benefit and use of PwC's client.",
+          "font_name": "Arial",
+          "font_size": 6.0,
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 6.0
+        }
+      ]
+    },
+    "shape-15": {
+      "paragraphs": [
+        {
+          "text": "Standards",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "FFFFFF",
+          "line_spacing": 12.0
+        }
+      ]
+    },
+    "shape-16": {
+      "paragraphs": [
+        {
+          "text": "Sets quality standard required for service users to participate in Farm Network",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 10.0
+        },
+        {
+          "text": "Determines standard required for interoperability",
+          "bullet": true,
+          "level": 0,
+          "space_before": 2.5,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 10.0
+        },
+        {
+          "text": "Leads initiatives to educate and shift public mindset to increase local produce adoption",
+          "bullet": true,
+          "level": 0,
+          "space_before": 2.5,
+          "font_name": "Arial",
+          "font_size": 10.0,
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 10.0
+        }
+      ]
+    },
+    "shape-17": {
+      "paragraphs": [
+        {
+          "text": "4",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "color": "FFFFFF",
+          "line_spacing": 12.0
+        }
+      ]
+    }
+  },
+  "slide-14": {
+    "shape-0": {
+      "paragraphs": [
+        {
+          "text": "The Farm Network is a unified platform that allows users to access multiple produce categories, promoting interoperability"
+        }
+      ]
+    },
+    "shape-1": {
+      "paragraphs": [
+        {
+          "text": "Overview of Farm Network",
+          "font_name": "Arial",
+          "font_size": 14.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 12.6
+        }
+      ]
+    },
+    "shape-2": {
+      "paragraphs": [
+        {
+          "text": "Farm Network is a unified platform / 'Produce-on-demand' that enables users to access multiple produce categories, promoting interoperability and reducing fragmentation of food supply in the country",
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 12.0
+        }
+      ]
+    },
+    "shape-3": {
+      "paragraphs": [
+        {
+          "text": "ILLUSTRATIVE",
+          "alignment": "RIGHT",
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "FFFFFF",
+          "line_spacing": 12.0
+        }
+      ]
+    },
+    "shape-4": {
+      "paragraphs": [
+        {
+          "text": "Farm Network",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 11.0
+        }
+      ]
+    },
+    "shape-5": {
+      "paragraphs": [
+        {
+          "text": "Source: PwC Strategy& analysis",
+          "font_name": "Arial",
+          "font_size": 6.0,
+          "bold": false,
+          "italic": true,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 6.0
+        }
+      ]
+    },
+    "shape-6": {
+      "paragraphs": [
+        {
+          "text": "Confidential information for the sole benefit and use of PwC's client.",
+          "font_name": "Arial",
+          "font_size": 6.0,
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 6.0
+        }
+      ]
+    },
+    "shape-7": {
+      "paragraphs": [
+        {
+          "text": "How does it work?",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "FFFFFF",
+          "line_spacing": 12.0
+        }
+      ]
+    },
+    "shape-8": {
+      "paragraphs": [
+        {
+          "text": "Produce category providers register to participate in Farm Network to enhance their respective distribution with wide access and interoperability",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 11.0
+        },
+        {
+          "text": "Consumers browse their preferred produce categories on the Farm Network platform (e.g. vegetables, herbs, protein, specialty crops)",
+          "bullet": true,
+          "level": 0,
+          "space_before": 5.5,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 11.0
+        },
+        {
+          "text": "Consumers select the most preferred source of produce to complete an order (e.g. organic greens from a vertical farm)",
+          "bullet": true,
+          "level": 0,
+          "space_before": 5.5,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 11.0
+        },
+        {
+          "text": "Consumers receive produce (direct delivery or collection) through mode offered by merchants (e.g. neighbourhood pickup, home delivery, market stall), enabled by 'Produce-on-demand'",
+          "bullet": true,
+          "level": 0,
+          "space_before": 5.5,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 11.0
+        }
+      ]
+    },
+    "shape-9": {
+      "paragraphs": [
+        {
+          "text": "1",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "FFFFFF",
+          "line_spacing": 11.0
+        }
+      ]
+    },
+    "shape-10": {
+      "paragraphs": [
+        {
+          "text": "Vegetables",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-11": {
+      "paragraphs": [
+        {
+          "text": "Herbs",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-12": {
+      "paragraphs": [
+        {
+          "text": "2",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "FFFFFF",
+          "line_spacing": 11.0
+        }
+      ]
+    },
+    "shape-13": {
+      "paragraphs": [
+        {
+          "text": "Protein",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-14": {
+      "paragraphs": [
+        {
+          "text": "Who does it serve?",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "FFFFFF",
+          "line_spacing": 12.0
+        }
+      ]
+    },
+    "shape-15": {
+      "paragraphs": [
+        {
+          "text": "Service users (i.e. produce category providers) who compete on freshness and variety on their respective platforms (e.g. farm-to-table, organic certification)",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "theme_color": "DARK_1",
+          "line_spacing": 11.0
+        },
+        {
+          "text": "Consumers who want to access fresh local produce across a wide range of categories and distribution channels",
+          "space_before": 5.5,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 11.0
+        }
+      ]
+    },
+    "shape-16": {
+      "paragraphs": [
+        {
+          "text": "3",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "FFFFFF",
+          "line_spacing": 11.0
+        }
+      ]
+    },
+    "shape-17": {
+      "paragraphs": [
+        {
+          "text": "Specialty",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-18": {
+      "paragraphs": [
+        {
+          "text": "4",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "FFFFFF",
+          "line_spacing": 11.0
+        }
+      ]
+    }
+  },
+  "slide-15": {
+    "shape-0": {
+      "paragraphs": [
+        {
+          "text": "AgriCo will allow 3rd party producers to participate in an open distribution scheme"
+        }
+      ]
+    },
+    "shape-1": {
+      "paragraphs": [
+        {
+          "text": "Overview of Distribution",
+          "font_name": "Arial",
+          "font_size": 14.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 12.6
+        }
+      ]
+    },
+    "shape-2": {
+      "paragraphs": [
+        {
+          "text": "Distribution facilitates and authenticates produce orders, enables processing, fulfilment, and settlement services, as well as sets and enforces distribution operating rules",
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 12.0
+        }
+      ]
+    },
+    "shape-3": {
+      "paragraphs": [
+        {
+          "text": "ILLUSTRATIVE",
+          "alignment": "RIGHT",
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "FFFFFF",
+          "line_spacing": 12.0
+        }
+      ]
+    },
+    "shape-4": {
+      "paragraphs": [
+        {
+          "text": "1",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 12.0
+        }
+      ]
+    },
+    "shape-5": {
+      "paragraphs": [
+        {
+          "text": "Service User",
+          "font_name": "Arial",
+          "font_size": 10.5,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 10.5
+        }
+      ]
+    },
+    "shape-6": {
+      "paragraphs": [
+        {
+          "text": "2",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 12.0
+        }
+      ]
+    },
+    "shape-7": {
+      "paragraphs": [
+        {
+          "text": "Interface",
+          "font_name": "Arial",
+          "font_size": 10.5,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 10.5
+        }
+      ]
+    },
+    "shape-8": {
+      "paragraphs": [
+        {
+          "text": "How does it work?",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "FFFFFF",
+          "line_spacing": 12.0
+        }
+      ]
+    },
+    "shape-9": {
+      "paragraphs": [
+        {
+          "text": "Service user integrates and joins the distribution platform to leverage on the digital infrastructure provided by AgriCo",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 11.0
+        },
+        {
+          "text": "Interface facilitates all orders processed by service users within the distribution network",
+          "bullet": true,
+          "level": 0,
+          "space_before": 5.5,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 11.0
+        },
+        {
+          "text": "Enables fulfilment and settlement services \u2013 potentially leverage on existing cold-chain infrastructure",
+          "bullet": true,
+          "level": 0,
+          "space_before": 5.5,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "color": "000000",
+          "line_spacing": 11.0
+        }
+      ]
+    },
+    "shape-10": {
+      "paragraphs": [
+        {
+          "text": "1",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "theme_color": "LIGHT_1",
+          "line_spacing": 11.0
+        }
+      ]
+    },
+    "shape-11": {
+      "paragraphs": [
+        {
+          "text": "3",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 12.0
+        }
+      ]
+    },
+    "shape-12": {
+      "paragraphs": [
+        {
+          "text": "Herbs",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-13": {
+      "paragraphs": [
+        {
+          "text": "Protein",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-14": {
+      "paragraphs": [
+        {
+          "text": "2",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "theme_color": "LIGHT_1",
+          "line_spacing": 11.0
+        }
+      ]
+    },
+    "shape-15": {
+      "paragraphs": [
+        {
+          "text": "3",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "theme_color": "LIGHT_1",
+          "line_spacing": 11.0
+        }
+      ]
+    },
+    "shape-16": {
+      "paragraphs": [
+        {
+          "text": "AgriCo Distribution",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 11.0
+        }
+      ]
+    },
+    "shape-17": {
+      "paragraphs": [
+        {
+          "text": "Fulfilment & Settlement",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 10.5,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 10.5
+        }
+      ]
+    },
+    "shape-18": {
+      "paragraphs": [
+        {
+          "text": "Vegetables",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-19": {
+      "paragraphs": [
+        {
+          "text": "Specialty",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 9.0,
+          "bold": true,
+          "theme_color": "DARK_1"
+        }
+      ]
+    },
+    "shape-20": {
+      "paragraphs": [
+        {
+          "text": "Source: PwC Strategy& analysis",
+          "font_name": "Arial",
+          "font_size": 6.0,
+          "bold": false,
+          "italic": true,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 6.0
+        }
+      ]
+    },
+    "shape-21": {
+      "paragraphs": [
+        {
+          "text": "Confidential information for the sole benefit and use of PwC's client.",
+          "font_name": "Arial",
+          "font_size": 6.0,
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 6.0
+        }
+      ]
+    },
+    "shape-22": {
+      "paragraphs": [
+        {
+          "text": "Who does it serve?",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "FFFFFF",
+          "line_spacing": 12.0
+        }
+      ]
+    },
+    "shape-23": {
+      "paragraphs": [
+        {
+          "text": "Service users (i.e. produce category providers) who want to leverage on AgriCo's digital infrastructure to achieve interoperability, extend customer reach, and distribution experience",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 11.0
+        }
+      ]
+    }
+  },
+  "slide-16": {
+    "shape-0": {
+      "paragraphs": [
+        {
+          "text": "Merchants could leverage on AgriCo's digital solutions to support day-to-day sourcing and operational needs"
+        }
+      ]
+    },
+    "shape-1": {
+      "paragraphs": [
+        {
+          "text": "Overview of Merchant Services",
+          "font_name": "Arial",
+          "font_size": 14.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 12.6
+        }
+      ]
+    },
+    "shape-2": {
+      "paragraphs": [
+        {
+          "text": "Merchant services enable overlay digital solutions that cater to merchants' day-to-day sourcing and operational needs",
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "color": "000000",
+          "line_spacing": 12.0
+        }
+      ]
+    },
+    "shape-3": {
+      "paragraphs": [
+        {
+          "text": "ILLUSTRATIVE",
+          "alignment": "RIGHT",
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "FFFFFF",
+          "line_spacing": 12.0
+        }
+      ]
+    },
+    "shape-4": {
+      "paragraphs": [
+        {
+          "text": "How does it work?",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "FFFFFF",
+          "line_spacing": 12.0
+        }
+      ]
+    },
+    "shape-5": {
+      "paragraphs": [
+        {
+          "text": "Merchants adopt AgriCo's offering, sourcing most or all produce via AgriCo's network",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "color": "000000",
+          "line_spacing": 11.0
+        },
+        {
+          "text": "Merchants leverage on AgriCo to enable digital sourcing solutions to support business operations",
+          "bullet": true,
+          "level": 0,
+          "space_before": 5.5,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "color": "000000",
+          "line_spacing": 11.0
+        },
+        {
+          "text": "AgriCo enables and integrates selected digital solutions for merchants",
+          "bullet": true,
+          "level": 0,
+          "space_before": 5.5,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 11.0
+        }
+      ]
+    },
+    "shape-6": {
+      "paragraphs": [
+        {
+          "text": "1",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "theme_color": "LIGHT_1",
+          "line_spacing": 11.0
+        }
+      ]
+    },
+    "shape-7": {
+      "paragraphs": [
+        {
+          "text": "2",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "theme_color": "LIGHT_1",
+          "line_spacing": 11.0
+        }
+      ]
+    },
+    "shape-8": {
+      "paragraphs": [
+        {
+          "text": "Merchant Services \u2013 Overlay Digital Solutions",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "color": "000000",
+          "line_spacing": 11.0
+        }
+      ]
+    },
+    "shape-9": {
+      "paragraphs": [
+        {
+          "text": "3",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "theme_color": "LIGHT_1",
+          "line_spacing": 11.0
+        }
+      ]
+    },
+    "shape-10": {
+      "paragraphs": [
+        {
+          "text": "Source: PwC Strategy& analysis",
+          "font_name": "Arial",
+          "font_size": 6.0,
+          "bold": false,
+          "italic": true,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 6.0
+        }
+      ]
+    },
+    "shape-11": {
+      "paragraphs": [
+        {
+          "text": "Confidential information for the sole benefit and use of PwC's client."
+        }
+      ]
+    },
+    "shape-12": {
+      "paragraphs": [
+        {
+          "text": "Who does it serve?",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "FFFFFF",
+          "line_spacing": 12.0
+        }
+      ]
+    },
+    "shape-13": {
+      "paragraphs": [
+        {
+          "text": "Merchants, onboarded by AgriCo, who want to digitise their sourcing and business operations, enabling operational efficiency (e.g. e-ordering and invoicing, auto inventory tracking, supplier management, freshness monitoring, reporting and analytics)",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "color": "000000",
+          "line_spacing": 11.0
+        }
+      ]
+    }
+  },
+  "slide-17": {
+    "shape-0": {
+      "paragraphs": [
+        {
+          "text": "Standards set requirements for Farm Network and Distribution to drive quality and traceability for consumers and merchants"
+        }
+      ]
+    },
+    "shape-1": {
+      "paragraphs": [
+        {
+          "text": "Overview of Standards",
+          "font_name": "Arial",
+          "font_size": 14.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 12.6
+        }
+      ]
+    },
+    "shape-2": {
+      "paragraphs": [
+        {
+          "text": "Standards set technical, quality, and operational requirements for Farm Network service users, determines and enforces distribution rules, as well as boost consumer and merchant adoption",
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "color": "000000",
+          "line_spacing": 12.0
+        }
+      ]
+    },
+    "shape-3": {
+      "paragraphs": [
+        {
+          "text": "ILLUSTRATIVE",
+          "alignment": "RIGHT",
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "FFFFFF",
+          "line_spacing": 12.0
+        }
+      ]
+    },
+    "shape-4": {
+      "paragraphs": [
+        {
+          "text": "Who does it relate to?",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "FFFFFF",
+          "line_spacing": 12.0
+        }
+      ]
+    },
+    "shape-5": {
+      "paragraphs": [
+        {
+          "text": "Farm Network service user (i.e. produce category providers) \u2013 subjected to farming standards",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "color": "000000",
+          "line_spacing": 11.0
+        },
+        {
+          "text": "Distribution service user \u2013 subjected to distribution rules",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "color": "000000",
+          "line_spacing": 11.0
+        },
+        {
+          "text": "AgriCo's consumers and merchants",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "color": "000000",
+          "line_spacing": 11.0
+        }
+      ]
+    },
+    "shape-6": {
+      "paragraphs": [
+        {
+          "text": "How does it work?",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 12.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "FFFFFF",
+          "line_spacing": 12.0
+        }
+      ]
+    },
+    "shape-7": {
+      "paragraphs": [
+        {
+          "text": "Farm Network service user must meet the set technical, quality, and operational requirements to participate in Farm Network",
+          "bullet": true,
+          "level": 0,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "color": "000000",
+          "line_spacing": 11.0
+        },
+        {
+          "text": "Distribution service user must adhere to distribution rules set by AgriCo",
+          "bullet": true,
+          "level": 0,
+          "space_before": 5.5,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 11.0
+        },
+        {
+          "text": "AgriCo's offering to align to formal and informal consumer and merchant adoption levers to change public mindset and behavior towards local produce",
+          "bullet": true,
+          "level": 0,
+          "space_before": 5.5,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "color": "000000",
+          "line_spacing": 11.0
+        }
+      ]
+    },
+    "shape-8": {
+      "paragraphs": [
+        {
+          "text": "Source: PwC Strategy& analysis",
+          "font_name": "Arial",
+          "font_size": 6.0,
+          "bold": false,
+          "italic": true,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 6.0
+        }
+      ]
+    },
+    "shape-9": {
+      "paragraphs": [
+        {
+          "text": "Confidential information for the sole benefit and use of PwC's client."
+        }
+      ]
+    },
+    "shape-10": {
+      "paragraphs": [
+        {
+          "text": "AgriCo Standards",
+          "alignment": "CENTER",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "color": "000000",
+          "line_spacing": 11.0
+        }
+      ]
+    }
+  },
+  "slide-18": {
+    "shape-0": {
+      "paragraphs": [
+        {
+          "text": "The target addressable market for AgriCo was identified and business case developed to substantiate the investment required"
+        }
+      ]
+    },
+    "shape-1": {
+      "paragraphs": [
+        {
+          "text": "Overview of the Target Addressable Market",
+          "font_name": "Arial",
+          "font_size": 14.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 12.6
+        }
+      ]
+    },
+    "shape-2": {
+      "paragraphs": [
+        {
+          "text": "Overview of the Business Case",
+          "font_name": "Arial",
+          "font_size": 14.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 12.6
+        }
+      ]
+    },
+    "shape-3": {
+      "paragraphs": [
+        {
+          "text": "Key Takeaways",
+          "font_size": 11.0,
+          "bold": true,
+          "underline": true,
+          "line_spacing": 9.9
+        },
+        {
+          "text": "AgriCo will be competing in the imported produce market in its initial phase \u2013 capture rate is driven by AgriCo's interoperability feature and its position as the top-of-mind local produce platform",
+          "bullet": true,
+          "level": 0,
+          "space_before": 6.0,
+          "font_size": 11.0,
+          "line_spacing": 9.9
+        },
+        {
+          "text": "AgriCo will capture wholesale fresh produce transactions subsequently as merchants move from imported to locally-sourced ingredients",
+          "bullet": true,
+          "level": 0,
+          "space_before": 6.0,
+          "font_size": 11.0,
+          "line_spacing": 9.9
+        },
+        {
+          "text": "Specialty and premium import transactions will not be captured by AgriCo as they offer consumers a different product proposition to AgriCo, competing in a different market",
+          "bullet": true,
+          "level": 0,
+          "space_before": 6.0,
+          "font_size": 11.0,
+          "line_spacing": 9.9
+        }
+      ]
+    },
+    "shape-4": {
+      "paragraphs": [
+        {
+          "text": "Key Takeaways",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "underline": true,
+          "color": "000000",
+          "line_spacing": 9.9
+        },
+        {
+          "text": "As a national infrastructure, AgriCo's fees to service users will be lower than local and international produce distributors \u2013 main revenue lines include the farm network, distribution and membership fee",
+          "bullet": true,
+          "level": 0,
+          "space_before": 6.0,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "theme_color": "DARK_1",
+          "line_spacing": 9.9
+        },
+        {
+          "text": "AgriCo Farm Network will be in direct competition with imported produce distributors and emerging AgriTech platforms at steady state",
+          "bullet": true,
+          "level": 0,
+          "space_before": 6.0,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "theme_color": "DARK_1",
+          "line_spacing": 9.9
+        },
+        {
+          "text": "AgriCo's cost buckets are categorised into Plan, Build, Engage, Operate and Change \u2013 largest in Build as capital is required to develop the farm network infrastructure and directory required to enable interoperability",
+          "bullet": true,
+          "level": 0,
+          "space_before": 6.0,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "theme_color": "DARK_1",
+          "line_spacing": 9.9
+        }
+      ]
+    },
+    "shape-5": {
+      "paragraphs": [
+        {
+          "text": "Confidential information for the sole benefit and use of PwC's client."
+        }
+      ]
+    }
+  },
+  "slide-19": {
+    "shape-0": {
+      "paragraphs": [
+        {
+          "text": "AgriCo's operating model and corporate structure were developed in order to maximise synergies between the Clients"
+        }
+      ]
+    },
+    "shape-1": {
+      "paragraphs": [
+        {
+          "text": "Overview of the Operating Model",
+          "font_name": "Arial",
+          "font_size": 14.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 12.6
+        }
+      ]
+    },
+    "shape-2": {
+      "paragraphs": [
+        {
+          "text": "Overview of the Corporate Structure",
+          "font_name": "Arial",
+          "font_size": 14.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 12.6
+        }
+      ]
+    },
+    "shape-3": {
+      "paragraphs": [
+        {
+          "text": "Key Takeaways",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "underline": true,
+          "theme_color": "DARK_1",
+          "line_spacing": 9.9
+        },
+        {
+          "text": "A hybrid (cross) model of a Business Unit-led and Functions-led operating model is recommended for AgriCo as support services are centralised and redundancies are avoided",
+          "bullet": true,
+          "level": 0,
+          "space_before": 6.0,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "theme_color": "DARK_1",
+          "line_spacing": 9.9
+        },
+        {
+          "text": "AgriCo's target operating model is aimed to be lean and equipped with essential \u201crun\u201d function for AgriCo's service offering, \u201cchange\u201d function for products and innovation, and \u201cenable\u201d function for farm technology management and enterprise functions",
+          "bullet": true,
+          "level": 0,
+          "space_before": 6.0,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "theme_color": "DARK_1",
+          "line_spacing": 9.9
+        }
+      ]
+    },
+    "shape-4": {
+      "paragraphs": [
+        {
+          "text": "Key Takeaways",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "underline": true,
+          "color": "000000",
+          "line_spacing": 9.9
+        },
+        {
+          "text": "AgriCo is recommended to be a private company as it allows for independence, swift changes without ministerial approvals, and limited risks for AgriCo",
+          "bullet": true,
+          "level": 0,
+          "space_before": 6.0,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "theme_color": "DARK_1",
+          "line_spacing": 9.9
+        },
+        {
+          "text": "As a public infrastructure, AgriCo's Board of Directors will include a chairman, executive directors, shareholder representatives and independent board members from various backgrounds to uphold unbiased decision making",
+          "bullet": true,
+          "level": 0,
+          "space_before": 6.0,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "theme_color": "DARK_1",
+          "line_spacing": 9.9
+        }
+      ]
+    },
+    "shape-5": {
+      "paragraphs": [
+        {
+          "text": "Confidential information for the sole benefit and use of PwC's client."
+        }
+      ]
+    }
+  },
+  "slide-20": {
+    "shape-0": {
+      "paragraphs": [
+        {
+          "text": "The high level technical architecture and implementation roadmap were developed to aid implementation of AgriCo"
+        }
+      ]
+    },
+    "shape-1": {
+      "paragraphs": [
+        {
+          "text": "Overview of the Technical Architecture",
+          "font_name": "Arial",
+          "font_size": 14.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 12.6
+        }
+      ]
+    },
+    "shape-2": {
+      "paragraphs": [
+        {
+          "text": "Overview of the Implementation Roadmap",
+          "font_name": "Arial",
+          "font_size": 14.0,
+          "bold": true,
+          "italic": false,
+          "underline": false,
+          "color": "000000",
+          "line_spacing": 12.6
+        }
+      ]
+    },
+    "shape-3": {
+      "paragraphs": [
+        {
+          "text": "Key Takeaways",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "underline": true,
+          "theme_color": "DARK_1",
+          "line_spacing": 9.9
+        },
+        {
+          "text": "AgriCo services to include capturing produce orders, transmitting messages, and verifying and authenticating transactions to facilitating fulfilment and settlement",
+          "bullet": true,
+          "level": 0,
+          "space_before": 6.0,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "theme_color": "DARK_1",
+          "line_spacing": 9.9
+        },
+        {
+          "text": "To capture produce orders, AgriCo will leverage on existing channels (i.e. mobile app) and greenfield (i.e. IoT sensors) in order to maximise affordability, availability, scalability and traceability",
+          "bullet": true,
+          "level": 0,
+          "space_before": 6.0,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "theme_color": "DARK_1",
+          "line_spacing": 9.9
+        },
+        {
+          "text": "AgriCo will provide a seamless farm-to-table experience which includes human-to-system and system-to-system interaction",
+          "bullet": true,
+          "level": 0,
+          "space_before": 6.0,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "theme_color": "DARK_1",
+          "line_spacing": 9.9
+        }
+      ]
+    },
+    "shape-4": {
+      "paragraphs": [
+        {
+          "text": "Key Takeaways",
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": true,
+          "underline": true,
+          "color": "000000",
+          "line_spacing": 9.9
+        },
+        {
+          "text": "As a public infrastructure, an integrated go-live model was recommended for AgriCo as stakeholder socialisation and testing runs in parallel with the traditional plan, build and run",
+          "bullet": true,
+          "level": 0,
+          "space_before": 6.0,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "theme_color": "DARK_1",
+          "line_spacing": 9.9
+        },
+        {
+          "text": "Go-live for AgriCo will be fast-to-market, potentially ahead of emerging AgriTech competition",
+          "bullet": true,
+          "level": 2,
+          "space_before": 3.0,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "theme_color": "DARK_1",
+          "line_spacing": 11.0
+        },
+        {
+          "text": "Flexibility in making operational refinements",
+          "bullet": true,
+          "level": 2,
+          "space_before": 3.0,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "bold": false,
+          "italic": false,
+          "underline": false,
+          "theme_color": "DARK_1",
+          "line_spacing": 11.0
+        },
+        {
+          "text": "Support from key stakeholders in the early stages is crucial to ensure the success of AgriCo",
+          "bullet": true,
+          "level": 0,
+          "space_before": 9.0,
+          "font_name": "Arial",
+          "font_size": 11.0,
+          "theme_color": "DARK_1",
+          "line_spacing": 9.9
+        }
+      ]
+    },
+    "shape-5": {
+      "paragraphs": [
+        {
+          "text": "Confidential information for the sole benefit and use of PwC's client."
+        }
+      ]
+    }
+  },
+  "slide-21": {
+    "shape-0": {
+      "paragraphs": [
+        {
+          "text": "\u00a9 2025 PwC. All rights reserved.",
+          "font_size": 8.0,
+          "line_spacing": 8.4
+        },
+        {
+          "text": "PwC refers to the PwC network and/or one or more of its member firms, each of which is a separate legal entity. Please see www.pwc.com/structure for further details.",
+          "font_size": 8.0,
+          "line_spacing": 8.4
+        }
+      ]
+    },
+    "shape-1": {
+      "paragraphs": [
+        {
+          "text": "Strategy       Impact",
+          "alignment": "CENTER",
+          "font_name": "Georgia",
+          "font_size": 36.0,
+          "bold": true,
+          "italic": true,
+          "underline": false,
+          "theme_color": "DARK_1",
+          "line_spacing": 36.0
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,2340 @@
+<?xml version="1.0" encoding="ascii"?>
+<p:sld xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mv="urn:schemas-microsoft-com:mac:vml" xmlns:p="http://schemas.openxmlformats.org/presentationml/2006/main" xmlns:c="http://schemas.openxmlformats.org/drawingml/2006/chart" xmlns:dgm="http://schemas.openxmlformats.org/drawingml/2006/diagram" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:pvml="urn:schemas-microsoft-com:office:powerpoint" xmlns:com="http://schemas.openxmlformats.org/drawingml/2006/compatibility" xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" xmlns:p15="http://schemas.microsoft.com/office/powerpoint/2012/main" xmlns:ahyp="http://schemas.microsoft.com/office/drawing/2018/hyperlinkcolor">
+  <p:cSld>
+    <p:spTree>
+      <p:nvGrpSpPr>
+        <p:cNvPr id="702" name="Shape 702"/>
+        <p:cNvGrpSpPr/>
+        <p:nvPr/>
+      </p:nvGrpSpPr>
+      <p:grpSpPr>
+        <a:xfrm>
+          <a:off x="0" y="0"/>
+          <a:ext cx="0" cy="0"/>
+          <a:chOff x="0" y="0"/>
+          <a:chExt cx="0" cy="0"/>
+        </a:xfrm>
+      </p:grpSpPr>
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="703" name="Google Shape;703;p36"/>
+          <p:cNvSpPr txBox="1"/>
+          <p:nvPr>
+            <p:ph type="title"/>
+          </p:nvPr>
+        </p:nvSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="309562" y="222576"/>
+            <a:ext cx="8524875" cy="615553"/>
+          </a:xfrm>
+          <a:prstGeom prst="rect">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:noFill/>
+          <a:ln>
+            <a:noFill/>
+          </a:ln>
+        </p:spPr>
+        <p:txBody>
+          <a:bodyPr anchorCtr="0" anchor="b" bIns="0" lIns="0" spcFirstLastPara="1" rIns="0" wrap="square" tIns="0">
+            <a:spAutoFit/>
+          </a:bodyPr>
+          <a:lstStyle/>
+          <a:p>
+            <a:pPr indent="0" lvl="0" marL="0" rtl="0" algn="l">
+              <a:buNone/>
+              <a:spcBef>
+                <a:spcPts val="0"/>
+              </a:spcBef>
+              <a:spcAft>
+                <a:spcPts val="0"/>
+              </a:spcAft>
+              <a:buClr>
+                <a:schemeClr val="dk1"/>
+              </a:buClr>
+              <a:buSzPts val="2000"/>
+            </a:pPr>
+            <a:r>
+              <a:t>There are five key needs of new urban farming offering that will appeal to the People and beyond</a:t>
+            </a:r>
+            <a:endParaRPr/>
+          </a:p>
+        </p:txBody>
+      </p:sp>
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="704" name="Google Shape;704;p36"/>
+          <p:cNvSpPr txBox="1"/>
+          <p:nvPr>
+            <p:ph idx="11" type="ftr"/>
+          </p:nvPr>
+        </p:nvSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="311944" y="4901878"/>
+            <a:ext cx="2895600" cy="92333"/>
+          </a:xfrm>
+          <a:prstGeom prst="rect">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:noFill/>
+          <a:ln>
+            <a:noFill/>
+          </a:ln>
+        </p:spPr>
+        <p:txBody>
+          <a:bodyPr anchorCtr="0" anchor="ctr" bIns="0" lIns="0" spcFirstLastPara="1" rIns="0" wrap="square" tIns="0">
+            <a:spAutoFit/>
+          </a:bodyPr>
+          <a:lstStyle/>
+          <a:p>
+            <a:pPr indent="0" lvl="0" marL="0" rtl="0" algn="l">
+              <a:buNone/>
+              <a:spcBef>
+                <a:spcPts val="0"/>
+              </a:spcBef>
+              <a:spcAft>
+                <a:spcPts val="0"/>
+              </a:spcAft>
+            </a:pPr>
+            <a:r>
+              <a:t>Confidential information for the sole benefit and use of PwC's client.</a:t>
+            </a:r>
+            <a:endParaRPr/>
+          </a:p>
+        </p:txBody>
+      </p:sp>
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="705" name="Google Shape;705;p36"/>
+          <p:cNvSpPr txBox="1"/>
+          <p:nvPr>
+            <p:ph idx="12" type="sldNum"/>
+          </p:nvPr>
+        </p:nvSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="6700838" y="4770007"/>
+            <a:ext cx="2133600" cy="123111"/>
+          </a:xfrm>
+          <a:prstGeom prst="rect">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:noFill/>
+          <a:ln>
+            <a:noFill/>
+          </a:ln>
+        </p:spPr>
+        <p:txBody>
+          <a:bodyPr anchorCtr="0" anchor="ctr" bIns="0" lIns="0" spcFirstLastPara="1" rIns="0" wrap="square" tIns="0">
+            <a:spAutoFit/>
+          </a:bodyPr>
+          <a:lstStyle/>
+          <a:p>
+            <a:pPr indent="0" lvl="0" marL="0" rtl="0" algn="r">
+              <a:spcBef>
+                <a:spcPts val="0"/>
+              </a:spcBef>
+              <a:spcAft>
+                <a:spcPts val="0"/>
+              </a:spcAft>
+              <a:buNone/>
+            </a:pPr>
+            <a:fld id="{00000000-1234-1234-1234-123412341234}" type="slidenum">
+              <a:rPr lang="en-US"/>
+              <a:t>&#8249;#&#8250;</a:t>
+            </a:fld>
+            <a:endParaRPr/>
+          </a:p>
+        </p:txBody>
+      </p:sp>
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="706" name="Google Shape;706;p36"/>
+          <p:cNvSpPr txBox="1"/>
+          <p:nvPr/>
+        </p:nvSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="309562" y="1138144"/>
+            <a:ext cx="8140700" cy="248560"/>
+          </a:xfrm>
+          <a:prstGeom prst="rect">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:noFill/>
+          <a:ln>
+            <a:noFill/>
+          </a:ln>
+        </p:spPr>
+        <p:txBody>
+          <a:bodyPr anchorCtr="0" anchor="t" bIns="0" lIns="0" spcFirstLastPara="1" rIns="0" wrap="square" tIns="0">
+            <a:noAutofit/>
+          </a:bodyPr>
+          <a:lstStyle/>
+          <a:p>
+            <a:pPr indent="0" lvl="0" marL="0" marR="0" rtl="0" algn="l">
+              <a:buNone/>
+              <a:lnSpc>
+                <a:spcPts val="1260"/>
+              </a:lnSpc>
+              <a:spcBef>
+                <a:spcPts val="0"/>
+              </a:spcBef>
+              <a:spcAft>
+                <a:spcPts val="0"/>
+              </a:spcAft>
+              <a:buClr>
+                <a:schemeClr val="dk1"/>
+              </a:buClr>
+              <a:buSzPts val="1400"/>
+            </a:pPr>
+            <a:r>
+              <a:rPr b="1" sz="1400">
+                <a:solidFill>
+                  <a:schemeClr val="dk1"/>
+                </a:solidFill>
+                <a:latin typeface="Arial"/>
+              </a:rPr>
+              <a:t>Consumer Facing Produce Example Use Cases</a:t>
+            </a:r>
+            <a:endParaRPr b="0" sz="1200">
+              <a:solidFill>
+                <a:schemeClr val="dk1"/>
+              </a:solidFill>
+              <a:latin typeface="Arial"/>
+              <a:ea typeface="Arial"/>
+              <a:cs typeface="Arial"/>
+              <a:sym typeface="Arial"/>
+            </a:endParaRPr>
+          </a:p>
+        </p:txBody>
+      </p:sp>
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="707" name="Google Shape;707;p36"/>
+          <p:cNvSpPr txBox="1"/>
+          <p:nvPr/>
+        </p:nvSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="311945" y="4725871"/>
+            <a:ext cx="8522492" cy="92333"/>
+          </a:xfrm>
+          <a:prstGeom prst="rect">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:noFill/>
+          <a:ln>
+            <a:noFill/>
+          </a:ln>
+        </p:spPr>
+        <p:txBody>
+          <a:bodyPr anchorCtr="0" anchor="b" bIns="0" lIns="0" spcFirstLastPara="1" rIns="0" wrap="square" tIns="0">
+            <a:spAutoFit/>
+          </a:bodyPr>
+          <a:lstStyle/>
+          <a:p>
+            <a:pPr indent="0" lvl="0" marL="0" marR="0" rtl="0" algn="l">
+              <a:buNone/>
+              <a:lnSpc>
+                <a:spcPts val="600"/>
+              </a:lnSpc>
+              <a:spcBef>
+                <a:spcPts val="0"/>
+              </a:spcBef>
+              <a:spcAft>
+                <a:spcPts val="0"/>
+              </a:spcAft>
+              <a:buClr>
+                <a:srgbClr val="000000"/>
+              </a:buClr>
+              <a:buSzPts val="600"/>
+            </a:pPr>
+            <a:r>
+              <a:rPr b="0" i="1" sz="600">
+                <a:solidFill>
+                  <a:srgbClr val="000000"/>
+                </a:solidFill>
+                <a:latin typeface="Arial"/>
+              </a:rPr>
+              <a:t>Source: PwC Strategy&amp; analysis</a:t>
+            </a:r>
+            <a:endParaRPr/>
+          </a:p>
+        </p:txBody>
+      </p:sp>
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="708" name="Google Shape;708;p36"/>
+          <p:cNvSpPr txBox="1"/>
+          <p:nvPr/>
+        </p:nvSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="170080" y="1378664"/>
+            <a:ext cx="1407508" cy="169277"/>
+          </a:xfrm>
+          <a:prstGeom prst="rect">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:noFill/>
+          <a:ln>
+            <a:noFill/>
+          </a:ln>
+        </p:spPr>
+        <p:txBody>
+          <a:bodyPr anchorCtr="0" anchor="t" bIns="0" lIns="0" spcFirstLastPara="1" rIns="0" wrap="square" tIns="0">
+            <a:spAutoFit/>
+          </a:bodyPr>
+          <a:lstStyle/>
+          <a:p>
+            <a:pPr indent="0" lvl="0" marL="0" marR="0" rtl="0" algn="ctr">
+              <a:buNone/>
+              <a:spcBef>
+                <a:spcPts val="0"/>
+              </a:spcBef>
+              <a:spcAft>
+                <a:spcPts val="0"/>
+              </a:spcAft>
+            </a:pPr>
+            <a:r>
+              <a:rPr b="1" sz="1100">
+                <a:solidFill>
+                  <a:schemeClr val="dk1"/>
+                </a:solidFill>
+                <a:latin typeface="Arial"/>
+              </a:rPr>
+              <a:t>Produce Category</a:t>
+            </a:r>
+            <a:endParaRPr/>
+          </a:p>
+        </p:txBody>
+      </p:sp>
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="709" name="Google Shape;709;p36"/>
+          <p:cNvSpPr txBox="1"/>
+          <p:nvPr/>
+        </p:nvSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="1692615" y="1386704"/>
+            <a:ext cx="1553070" cy="169277"/>
+          </a:xfrm>
+          <a:prstGeom prst="rect">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:noFill/>
+          <a:ln>
+            <a:noFill/>
+          </a:ln>
+        </p:spPr>
+        <p:txBody>
+          <a:bodyPr anchorCtr="0" anchor="t" bIns="0" lIns="0" spcFirstLastPara="1" rIns="0" wrap="square" tIns="0">
+            <a:spAutoFit/>
+          </a:bodyPr>
+          <a:lstStyle/>
+          <a:p>
+            <a:pPr indent="0" lvl="0" marL="0" marR="0" rtl="0" algn="ctr">
+              <a:buNone/>
+              <a:spcBef>
+                <a:spcPts val="0"/>
+              </a:spcBef>
+              <a:spcAft>
+                <a:spcPts val="0"/>
+              </a:spcAft>
+            </a:pPr>
+            <a:r>
+              <a:rPr b="1" sz="1100">
+                <a:solidFill>
+                  <a:schemeClr val="dk1"/>
+                </a:solidFill>
+                <a:latin typeface="Arial"/>
+              </a:rPr>
+              <a:t>Supply Flow</a:t>
+            </a:r>
+            <a:endParaRPr/>
+          </a:p>
+        </p:txBody>
+      </p:sp>
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="710" name="Google Shape;710;p36"/>
+          <p:cNvSpPr txBox="1"/>
+          <p:nvPr/>
+        </p:nvSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="3698516" y="1378664"/>
+            <a:ext cx="1553070" cy="169277"/>
+          </a:xfrm>
+          <a:prstGeom prst="rect">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:noFill/>
+          <a:ln>
+            <a:noFill/>
+          </a:ln>
+        </p:spPr>
+        <p:txBody>
+          <a:bodyPr anchorCtr="0" anchor="t" bIns="0" lIns="0" spcFirstLastPara="1" rIns="0" wrap="square" tIns="0">
+            <a:spAutoFit/>
+          </a:bodyPr>
+          <a:lstStyle/>
+          <a:p>
+            <a:pPr indent="0" lvl="0" marL="0" marR="0" rtl="0" algn="ctr">
+              <a:buNone/>
+              <a:spcBef>
+                <a:spcPts val="0"/>
+              </a:spcBef>
+              <a:spcAft>
+                <a:spcPts val="0"/>
+              </a:spcAft>
+            </a:pPr>
+            <a:r>
+              <a:rPr b="1" sz="1100">
+                <a:solidFill>
+                  <a:schemeClr val="dk1"/>
+                </a:solidFill>
+                <a:latin typeface="Arial"/>
+              </a:rPr>
+              <a:t>Distribution Channel</a:t>
+            </a:r>
+            <a:endParaRPr/>
+          </a:p>
+        </p:txBody>
+      </p:sp>
+      <p:pic>
+        <p:nvPicPr>
+          <p:cNvPr id="711" name="Google Shape;711;p36"/>
+          <p:cNvPicPr preferRelativeResize="0"/>
+          <p:nvPr/>
+        </p:nvPicPr>
+        <p:blipFill rotWithShape="1">
+          <a:blip r:embed="rId3">
+            <a:alphaModFix/>
+          </a:blip>
+          <a:srcRect b="0" l="0" r="0" t="0"/>
+          <a:stretch/>
+        </p:blipFill>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="2718481" y="4120363"/>
+            <a:ext cx="482176" cy="476517"/>
+          </a:xfrm>
+          <a:prstGeom prst="ellipse">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:solidFill>
+            <a:srgbClr val="B6AF99"/>
+          </a:solidFill>
+          <a:ln cap="rnd" cmpd="sng" w="19050">
+            <a:solidFill>
+              <a:srgbClr val="968C6D"/>
+            </a:solidFill>
+            <a:prstDash val="solid"/>
+            <a:round/>
+            <a:headEnd len="sm" w="sm" type="none"/>
+            <a:tailEnd len="sm" w="sm" type="none"/>
+          </a:ln>
+        </p:spPr>
+      </p:pic>
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="712" name="Google Shape;712;p36"/>
+          <p:cNvSpPr/>
+          <p:nvPr/>
+        </p:nvSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="323850" y="3451204"/>
+            <a:ext cx="1101381" cy="582761"/>
+          </a:xfrm>
+          <a:prstGeom prst="rect">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:solidFill>
+            <a:schemeClr val="accent1"/>
+          </a:solidFill>
+          <a:ln>
+            <a:noFill/>
+          </a:ln>
+        </p:spPr>
+        <p:txBody>
+          <a:bodyPr anchorCtr="0" anchor="ctr" bIns="45700" lIns="91425" spcFirstLastPara="1" rIns="91425" wrap="square" tIns="45700">
+            <a:noAutofit/>
+          </a:bodyPr>
+          <a:lstStyle/>
+          <a:p>
+            <a:pPr indent="0" lvl="0" marL="0" marR="0" rtl="0" algn="ctr">
+              <a:buNone/>
+              <a:spcBef>
+                <a:spcPts val="0"/>
+              </a:spcBef>
+              <a:spcAft>
+                <a:spcPts val="0"/>
+              </a:spcAft>
+            </a:pPr>
+            <a:r>
+              <a:rPr b="1" sz="1100">
+                <a:solidFill>
+                  <a:schemeClr val="lt1"/>
+                </a:solidFill>
+                <a:latin typeface="Arial"/>
+              </a:rPr>
+              <a:t>Govt food programs</a:t>
+            </a:r>
+            <a:endParaRPr/>
+          </a:p>
+        </p:txBody>
+      </p:sp>
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="713" name="Google Shape;713;p36"/>
+          <p:cNvSpPr/>
+          <p:nvPr/>
+        </p:nvSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="323850" y="4077690"/>
+            <a:ext cx="1101381" cy="582761"/>
+          </a:xfrm>
+          <a:prstGeom prst="rect">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:solidFill>
+            <a:schemeClr val="accent1"/>
+          </a:solidFill>
+          <a:ln>
+            <a:noFill/>
+          </a:ln>
+        </p:spPr>
+        <p:txBody>
+          <a:bodyPr anchorCtr="0" anchor="ctr" bIns="45700" lIns="91425" spcFirstLastPara="1" rIns="91425" wrap="square" tIns="45700">
+            <a:noAutofit/>
+          </a:bodyPr>
+          <a:lstStyle/>
+          <a:p>
+            <a:pPr indent="0" lvl="0" marL="0" marR="0" rtl="0" algn="ctr">
+              <a:buNone/>
+              <a:spcBef>
+                <a:spcPts val="0"/>
+              </a:spcBef>
+              <a:spcAft>
+                <a:spcPts val="0"/>
+              </a:spcAft>
+            </a:pPr>
+            <a:r>
+              <a:rPr b="1" sz="1100">
+                <a:solidFill>
+                  <a:schemeClr val="lt1"/>
+                </a:solidFill>
+                <a:latin typeface="Arial"/>
+              </a:rPr>
+              <a:t>Community distribution</a:t>
+            </a:r>
+            <a:endParaRPr b="1" sz="1100">
+              <a:solidFill>
+                <a:schemeClr val="lt1"/>
+              </a:solidFill>
+              <a:latin typeface="Arial"/>
+              <a:ea typeface="Arial"/>
+              <a:cs typeface="Arial"/>
+              <a:sym typeface="Arial"/>
+            </a:endParaRPr>
+          </a:p>
+        </p:txBody>
+      </p:sp>
+      <p:pic>
+        <p:nvPicPr>
+          <p:cNvPr id="714" name="Google Shape;714;p36"/>
+          <p:cNvPicPr preferRelativeResize="0"/>
+          <p:nvPr/>
+        </p:nvPicPr>
+        <p:blipFill rotWithShape="1">
+          <a:blip r:embed="rId4">
+            <a:alphaModFix/>
+          </a:blip>
+          <a:srcRect b="0" l="0" r="0" t="0"/>
+          <a:stretch/>
+        </p:blipFill>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="1611623" y="3510063"/>
+            <a:ext cx="494754" cy="476517"/>
+          </a:xfrm>
+          <a:prstGeom prst="ellipse">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:noFill/>
+          <a:ln cap="rnd" cmpd="sng" w="19050">
+            <a:solidFill>
+              <a:srgbClr val="000000"/>
+            </a:solidFill>
+            <a:prstDash val="solid"/>
+            <a:round/>
+            <a:headEnd len="sm" w="sm" type="none"/>
+            <a:tailEnd len="sm" w="sm" type="none"/>
+          </a:ln>
+        </p:spPr>
+      </p:pic>
+      <p:cxnSp>
+        <p:nvCxnSpPr>
+          <p:cNvPr id="715" name="Google Shape;715;p36"/>
+          <p:cNvCxnSpPr/>
+          <p:nvPr/>
+        </p:nvCxnSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="2217478" y="3748322"/>
+            <a:ext cx="364043" cy="0"/>
+          </a:xfrm>
+          <a:prstGeom prst="straightConnector1">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:noFill/>
+          <a:ln cap="flat" cmpd="sng" w="19050">
+            <a:solidFill>
+              <a:schemeClr val="dk1"/>
+            </a:solidFill>
+            <a:prstDash val="dash"/>
+            <a:round/>
+            <a:headEnd len="sm" w="sm" type="none"/>
+            <a:tailEnd len="med" w="med" type="triangle"/>
+          </a:ln>
+        </p:spPr>
+      </p:cxnSp>
+      <p:cxnSp>
+        <p:nvCxnSpPr>
+          <p:cNvPr id="716" name="Google Shape;716;p36"/>
+          <p:cNvCxnSpPr/>
+          <p:nvPr/>
+        </p:nvCxnSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="2217478" y="4371983"/>
+            <a:ext cx="364043" cy="0"/>
+          </a:xfrm>
+          <a:prstGeom prst="straightConnector1">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:noFill/>
+          <a:ln cap="flat" cmpd="sng" w="19050">
+            <a:solidFill>
+              <a:schemeClr val="dk1"/>
+            </a:solidFill>
+            <a:prstDash val="dash"/>
+            <a:round/>
+            <a:headEnd len="sm" w="sm" type="none"/>
+            <a:tailEnd len="med" w="med" type="triangle"/>
+          </a:ln>
+        </p:spPr>
+      </p:cxnSp>
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="717" name="Google Shape;717;p36"/>
+          <p:cNvSpPr/>
+          <p:nvPr/>
+        </p:nvSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="3387648" y="3451204"/>
+            <a:ext cx="2165933" cy="582761"/>
+          </a:xfrm>
+          <a:prstGeom prst="rect">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:solidFill>
+            <a:srgbClr val="EAE8E2"/>
+          </a:solidFill>
+          <a:ln>
+            <a:noFill/>
+          </a:ln>
+        </p:spPr>
+        <p:txBody>
+          <a:bodyPr anchorCtr="0" anchor="ctr" bIns="45700" lIns="91425" spcFirstLastPara="1" rIns="91425" wrap="square" tIns="45700">
+            <a:noAutofit/>
+          </a:bodyPr>
+          <a:lstStyle/>
+          <a:p>
+            <a:pPr indent="0" lvl="0" marL="0" marR="0" rtl="0" algn="l">
+              <a:buNone/>
+              <a:spcBef>
+                <a:spcPts val="0"/>
+              </a:spcBef>
+              <a:spcAft>
+                <a:spcPts val="0"/>
+              </a:spcAft>
+            </a:pPr>
+            <a:r>
+              <a:rPr sz="1000">
+                <a:solidFill>
+                  <a:schemeClr val="dk1"/>
+                </a:solidFill>
+                <a:latin typeface="Arial"/>
+              </a:rPr>
+              <a:t>Produce sourced via govt tenders &#8211; complex process with administrative requirements</a:t>
+            </a:r>
+            <a:endParaRPr/>
+          </a:p>
+        </p:txBody>
+      </p:sp>
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="718" name="Google Shape;718;p36"/>
+          <p:cNvSpPr/>
+          <p:nvPr/>
+        </p:nvSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="3387648" y="4077690"/>
+            <a:ext cx="2165933" cy="582761"/>
+          </a:xfrm>
+          <a:prstGeom prst="rect">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:solidFill>
+            <a:srgbClr val="EAE8E2"/>
+          </a:solidFill>
+          <a:ln>
+            <a:noFill/>
+          </a:ln>
+        </p:spPr>
+        <p:txBody>
+          <a:bodyPr anchorCtr="0" anchor="ctr" bIns="45700" lIns="91425" spcFirstLastPara="1" rIns="91425" wrap="square" tIns="45700">
+            <a:noAutofit/>
+          </a:bodyPr>
+          <a:lstStyle/>
+          <a:p>
+            <a:pPr indent="0" lvl="0" marL="0" marR="0" rtl="0" algn="l">
+              <a:buNone/>
+              <a:spcBef>
+                <a:spcPts val="0"/>
+              </a:spcBef>
+              <a:spcAft>
+                <a:spcPts val="0"/>
+              </a:spcAft>
+            </a:pPr>
+            <a:r>
+              <a:rPr sz="1000">
+                <a:solidFill>
+                  <a:schemeClr val="dk1"/>
+                </a:solidFill>
+                <a:latin typeface="Arial"/>
+              </a:rPr>
+              <a:t>Produce distributed via community centres, increasingly using local networks &#8211; limited experience</a:t>
+            </a:r>
+            <a:endParaRPr sz="1000">
+              <a:solidFill>
+                <a:schemeClr val="dk1"/>
+              </a:solidFill>
+              <a:latin typeface="Arial"/>
+              <a:ea typeface="Arial"/>
+              <a:cs typeface="Arial"/>
+              <a:sym typeface="Arial"/>
+            </a:endParaRPr>
+          </a:p>
+        </p:txBody>
+      </p:sp>
+      <p:pic>
+        <p:nvPicPr>
+          <p:cNvPr id="719" name="Google Shape;719;p36"/>
+          <p:cNvPicPr preferRelativeResize="0"/>
+          <p:nvPr/>
+        </p:nvPicPr>
+        <p:blipFill rotWithShape="1">
+          <a:blip r:embed="rId5">
+            <a:alphaModFix/>
+          </a:blip>
+          <a:srcRect b="0" l="0" r="0" t="0"/>
+          <a:stretch/>
+        </p:blipFill>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="2704460" y="2258407"/>
+            <a:ext cx="479708" cy="476517"/>
+          </a:xfrm>
+          <a:prstGeom prst="ellipse">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:noFill/>
+          <a:ln cap="rnd" cmpd="sng" w="19050">
+            <a:solidFill>
+              <a:srgbClr val="EB8C00"/>
+            </a:solidFill>
+            <a:prstDash val="solid"/>
+            <a:round/>
+            <a:headEnd len="sm" w="sm" type="none"/>
+            <a:tailEnd len="sm" w="sm" type="none"/>
+          </a:ln>
+        </p:spPr>
+      </p:pic>
+      <p:pic>
+        <p:nvPicPr>
+          <p:cNvPr id="720" name="Google Shape;720;p36"/>
+          <p:cNvPicPr preferRelativeResize="0"/>
+          <p:nvPr/>
+        </p:nvPicPr>
+        <p:blipFill rotWithShape="1">
+          <a:blip r:embed="rId6">
+            <a:alphaModFix/>
+          </a:blip>
+          <a:srcRect b="0" l="0" r="0" t="0"/>
+          <a:stretch/>
+        </p:blipFill>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="2731602" y="2867970"/>
+            <a:ext cx="478606" cy="476517"/>
+          </a:xfrm>
+          <a:prstGeom prst="ellipse">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:solidFill>
+            <a:srgbClr val="B6AF99"/>
+          </a:solidFill>
+          <a:ln cap="rnd" cmpd="sng" w="19050">
+            <a:solidFill>
+              <a:srgbClr val="968C6D"/>
+            </a:solidFill>
+            <a:prstDash val="solid"/>
+            <a:round/>
+            <a:headEnd len="sm" w="sm" type="none"/>
+            <a:tailEnd len="sm" w="sm" type="none"/>
+          </a:ln>
+        </p:spPr>
+      </p:pic>
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="721" name="Google Shape;721;p36"/>
+          <p:cNvSpPr/>
+          <p:nvPr/>
+        </p:nvSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="323850" y="1566783"/>
+            <a:ext cx="1101381" cy="582761"/>
+          </a:xfrm>
+          <a:prstGeom prst="rect">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:solidFill>
+            <a:schemeClr val="accent1"/>
+          </a:solidFill>
+          <a:ln>
+            <a:noFill/>
+          </a:ln>
+        </p:spPr>
+        <p:txBody>
+          <a:bodyPr anchorCtr="0" anchor="ctr" bIns="45700" lIns="91425" spcFirstLastPara="1" rIns="91425" wrap="square" tIns="45700">
+            <a:noAutofit/>
+          </a:bodyPr>
+          <a:lstStyle/>
+          <a:p>
+            <a:pPr indent="0" lvl="0" marL="0" marR="0" rtl="0" algn="ctr">
+              <a:buNone/>
+              <a:spcBef>
+                <a:spcPts val="0"/>
+              </a:spcBef>
+              <a:spcAft>
+                <a:spcPts val="0"/>
+              </a:spcAft>
+            </a:pPr>
+            <a:r>
+              <a:rPr b="1" sz="1100">
+                <a:solidFill>
+                  <a:schemeClr val="lt1"/>
+                </a:solidFill>
+                <a:latin typeface="Arial"/>
+              </a:rPr>
+              <a:t>Fresh produce delivery</a:t>
+            </a:r>
+            <a:endParaRPr b="1" sz="1100">
+              <a:solidFill>
+                <a:schemeClr val="lt1"/>
+              </a:solidFill>
+              <a:latin typeface="Arial"/>
+              <a:ea typeface="Arial"/>
+              <a:cs typeface="Arial"/>
+              <a:sym typeface="Arial"/>
+            </a:endParaRPr>
+          </a:p>
+        </p:txBody>
+      </p:sp>
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="722" name="Google Shape;722;p36"/>
+          <p:cNvSpPr/>
+          <p:nvPr/>
+        </p:nvSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="323850" y="2193269"/>
+            <a:ext cx="1101381" cy="582761"/>
+          </a:xfrm>
+          <a:prstGeom prst="rect">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:solidFill>
+            <a:schemeClr val="accent1"/>
+          </a:solidFill>
+          <a:ln>
+            <a:noFill/>
+          </a:ln>
+        </p:spPr>
+        <p:txBody>
+          <a:bodyPr anchorCtr="0" anchor="ctr" bIns="45700" lIns="91425" spcFirstLastPara="1" rIns="91425" wrap="square" tIns="45700">
+            <a:noAutofit/>
+          </a:bodyPr>
+          <a:lstStyle/>
+          <a:p>
+            <a:pPr indent="0" lvl="0" marL="0" marR="0" rtl="0" algn="ctr">
+              <a:buNone/>
+              <a:spcBef>
+                <a:spcPts val="0"/>
+              </a:spcBef>
+              <a:spcAft>
+                <a:spcPts val="0"/>
+              </a:spcAft>
+            </a:pPr>
+            <a:r>
+              <a:rPr b="1" sz="1100">
+                <a:solidFill>
+                  <a:schemeClr val="lt1"/>
+                </a:solidFill>
+                <a:latin typeface="Arial"/>
+              </a:rPr>
+              <a:t>Restaurant supply</a:t>
+            </a:r>
+            <a:endParaRPr b="1" sz="1100">
+              <a:solidFill>
+                <a:schemeClr val="lt1"/>
+              </a:solidFill>
+              <a:latin typeface="Arial"/>
+              <a:ea typeface="Arial"/>
+              <a:cs typeface="Arial"/>
+              <a:sym typeface="Arial"/>
+            </a:endParaRPr>
+          </a:p>
+        </p:txBody>
+      </p:sp>
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="723" name="Google Shape;723;p36"/>
+          <p:cNvSpPr/>
+          <p:nvPr/>
+        </p:nvSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="323850" y="2819756"/>
+            <a:ext cx="1101381" cy="582761"/>
+          </a:xfrm>
+          <a:prstGeom prst="rect">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:solidFill>
+            <a:schemeClr val="accent1"/>
+          </a:solidFill>
+          <a:ln>
+            <a:noFill/>
+          </a:ln>
+        </p:spPr>
+        <p:txBody>
+          <a:bodyPr anchorCtr="0" anchor="ctr" bIns="45700" lIns="91425" spcFirstLastPara="1" rIns="91425" wrap="square" tIns="45700">
+            <a:noAutofit/>
+          </a:bodyPr>
+          <a:lstStyle/>
+          <a:p>
+            <a:pPr indent="0" lvl="0" marL="0" marR="0" rtl="0" algn="ctr">
+              <a:buNone/>
+              <a:spcBef>
+                <a:spcPts val="0"/>
+              </a:spcBef>
+              <a:spcAft>
+                <a:spcPts val="0"/>
+              </a:spcAft>
+            </a:pPr>
+            <a:r>
+              <a:rPr b="1" sz="1100">
+                <a:solidFill>
+                  <a:schemeClr val="lt1"/>
+                </a:solidFill>
+                <a:latin typeface="Arial"/>
+              </a:rPr>
+              <a:t>School meals</a:t>
+            </a:r>
+            <a:endParaRPr b="1" sz="1100">
+              <a:solidFill>
+                <a:schemeClr val="lt1"/>
+              </a:solidFill>
+              <a:latin typeface="Arial"/>
+              <a:ea typeface="Arial"/>
+              <a:cs typeface="Arial"/>
+              <a:sym typeface="Arial"/>
+            </a:endParaRPr>
+          </a:p>
+        </p:txBody>
+      </p:sp>
+      <p:pic>
+        <p:nvPicPr>
+          <p:cNvPr id="724" name="Google Shape;724;p36"/>
+          <p:cNvPicPr preferRelativeResize="0"/>
+          <p:nvPr/>
+        </p:nvPicPr>
+        <p:blipFill rotWithShape="1">
+          <a:blip r:embed="rId7">
+            <a:alphaModFix/>
+          </a:blip>
+          <a:srcRect b="0" l="0" r="0" t="0"/>
+          <a:stretch/>
+        </p:blipFill>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="1628931" y="1623010"/>
+            <a:ext cx="460138" cy="476517"/>
+          </a:xfrm>
+          <a:prstGeom prst="ellipse">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:noFill/>
+          <a:ln cap="rnd" cmpd="sng" w="19050">
+            <a:solidFill>
+              <a:srgbClr val="82141E"/>
+            </a:solidFill>
+            <a:prstDash val="solid"/>
+            <a:round/>
+            <a:headEnd len="sm" w="sm" type="none"/>
+            <a:tailEnd len="sm" w="sm" type="none"/>
+          </a:ln>
+        </p:spPr>
+      </p:pic>
+      <p:cxnSp>
+        <p:nvCxnSpPr>
+          <p:cNvPr id="725" name="Google Shape;725;p36"/>
+          <p:cNvCxnSpPr/>
+          <p:nvPr/>
+        </p:nvCxnSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="2217478" y="1858251"/>
+            <a:ext cx="364043" cy="0"/>
+          </a:xfrm>
+          <a:prstGeom prst="straightConnector1">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:noFill/>
+          <a:ln cap="flat" cmpd="sng" w="19050">
+            <a:solidFill>
+              <a:schemeClr val="dk1"/>
+            </a:solidFill>
+            <a:prstDash val="dash"/>
+            <a:round/>
+            <a:headEnd len="sm" w="sm" type="none"/>
+            <a:tailEnd len="med" w="med" type="triangle"/>
+          </a:ln>
+        </p:spPr>
+      </p:cxnSp>
+      <p:cxnSp>
+        <p:nvCxnSpPr>
+          <p:cNvPr id="726" name="Google Shape;726;p36"/>
+          <p:cNvCxnSpPr/>
+          <p:nvPr/>
+        </p:nvCxnSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="2217478" y="2481912"/>
+            <a:ext cx="364043" cy="0"/>
+          </a:xfrm>
+          <a:prstGeom prst="straightConnector1">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:noFill/>
+          <a:ln cap="flat" cmpd="sng" w="19050">
+            <a:solidFill>
+              <a:schemeClr val="dk1"/>
+            </a:solidFill>
+            <a:prstDash val="dash"/>
+            <a:round/>
+            <a:headEnd len="sm" w="sm" type="none"/>
+            <a:tailEnd len="med" w="med" type="triangle"/>
+          </a:ln>
+        </p:spPr>
+      </p:cxnSp>
+      <p:pic>
+        <p:nvPicPr>
+          <p:cNvPr id="727" name="Google Shape;727;p36"/>
+          <p:cNvPicPr preferRelativeResize="0"/>
+          <p:nvPr/>
+        </p:nvPicPr>
+        <p:blipFill rotWithShape="1">
+          <a:blip r:embed="rId8">
+            <a:alphaModFix/>
+          </a:blip>
+          <a:srcRect b="0" l="11649" r="5876" t="0"/>
+          <a:stretch/>
+        </p:blipFill>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="1600500" y="2867970"/>
+            <a:ext cx="488569" cy="476517"/>
+          </a:xfrm>
+          <a:prstGeom prst="ellipse">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:noFill/>
+          <a:ln cap="rnd" cmpd="sng" w="19050">
+            <a:solidFill>
+              <a:srgbClr val="000000"/>
+            </a:solidFill>
+            <a:prstDash val="solid"/>
+            <a:round/>
+            <a:headEnd len="sm" w="sm" type="none"/>
+            <a:tailEnd len="sm" w="sm" type="none"/>
+          </a:ln>
+        </p:spPr>
+      </p:pic>
+      <p:cxnSp>
+        <p:nvCxnSpPr>
+          <p:cNvPr id="728" name="Google Shape;728;p36"/>
+          <p:cNvCxnSpPr/>
+          <p:nvPr/>
+        </p:nvCxnSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="2217478" y="3105574"/>
+            <a:ext cx="364043" cy="0"/>
+          </a:xfrm>
+          <a:prstGeom prst="straightConnector1">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:noFill/>
+          <a:ln cap="flat" cmpd="sng" w="19050">
+            <a:solidFill>
+              <a:schemeClr val="dk1"/>
+            </a:solidFill>
+            <a:prstDash val="dash"/>
+            <a:round/>
+            <a:headEnd len="sm" w="sm" type="none"/>
+            <a:tailEnd len="med" w="med" type="triangle"/>
+          </a:ln>
+        </p:spPr>
+      </p:cxnSp>
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="729" name="Google Shape;729;p36"/>
+          <p:cNvSpPr/>
+          <p:nvPr/>
+        </p:nvSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="3387648" y="1566783"/>
+            <a:ext cx="2165933" cy="582761"/>
+          </a:xfrm>
+          <a:prstGeom prst="rect">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:solidFill>
+            <a:srgbClr val="EAE8E2"/>
+          </a:solidFill>
+          <a:ln>
+            <a:noFill/>
+          </a:ln>
+        </p:spPr>
+        <p:txBody>
+          <a:bodyPr anchorCtr="0" anchor="ctr" bIns="45700" lIns="91425" spcFirstLastPara="1" rIns="91425" wrap="square" tIns="45700">
+            <a:noAutofit/>
+          </a:bodyPr>
+          <a:lstStyle/>
+          <a:p>
+            <a:pPr indent="0" lvl="0" marL="0" marR="0" rtl="0" algn="l">
+              <a:buNone/>
+              <a:spcBef>
+                <a:spcPts val="0"/>
+              </a:spcBef>
+              <a:spcAft>
+                <a:spcPts val="0"/>
+              </a:spcAft>
+            </a:pPr>
+            <a:r>
+              <a:rPr sz="1000">
+                <a:solidFill>
+                  <a:schemeClr val="dk1"/>
+                </a:solidFill>
+                <a:latin typeface="Arial"/>
+              </a:rPr>
+              <a:t>Delivery via local farms, online platforms, or neighbourhood collection points &#8211; wide range of channels</a:t>
+            </a:r>
+            <a:endParaRPr sz="1000">
+              <a:solidFill>
+                <a:schemeClr val="dk1"/>
+              </a:solidFill>
+              <a:latin typeface="Arial"/>
+              <a:ea typeface="Arial"/>
+              <a:cs typeface="Arial"/>
+              <a:sym typeface="Arial"/>
+            </a:endParaRPr>
+          </a:p>
+        </p:txBody>
+      </p:sp>
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="730" name="Google Shape;730;p36"/>
+          <p:cNvSpPr/>
+          <p:nvPr/>
+        </p:nvSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="3387648" y="2193269"/>
+            <a:ext cx="2165933" cy="582761"/>
+          </a:xfrm>
+          <a:prstGeom prst="rect">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:solidFill>
+            <a:srgbClr val="EAE8E2"/>
+          </a:solidFill>
+          <a:ln>
+            <a:noFill/>
+          </a:ln>
+        </p:spPr>
+        <p:txBody>
+          <a:bodyPr anchorCtr="0" anchor="ctr" bIns="45700" lIns="91425" spcFirstLastPara="1" rIns="91425" wrap="square" tIns="45700">
+            <a:noAutofit/>
+          </a:bodyPr>
+          <a:lstStyle/>
+          <a:p>
+            <a:pPr indent="0" lvl="0" marL="0" marR="0" rtl="0" algn="l">
+              <a:buNone/>
+              <a:spcBef>
+                <a:spcPts val="0"/>
+              </a:spcBef>
+              <a:spcAft>
+                <a:spcPts val="0"/>
+              </a:spcAft>
+            </a:pPr>
+            <a:r>
+              <a:rPr sz="1000">
+                <a:solidFill>
+                  <a:schemeClr val="dk1"/>
+                </a:solidFill>
+                <a:latin typeface="Arial"/>
+              </a:rPr>
+              <a:t>Produce supplied via wholesale &#8211; fragmented and lengthy distribution process</a:t>
+            </a:r>
+            <a:endParaRPr sz="1000">
+              <a:solidFill>
+                <a:schemeClr val="dk1"/>
+              </a:solidFill>
+              <a:latin typeface="Arial"/>
+              <a:ea typeface="Arial"/>
+              <a:cs typeface="Arial"/>
+              <a:sym typeface="Arial"/>
+            </a:endParaRPr>
+          </a:p>
+        </p:txBody>
+      </p:sp>
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="731" name="Google Shape;731;p36"/>
+          <p:cNvSpPr/>
+          <p:nvPr/>
+        </p:nvSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="3387648" y="2819756"/>
+            <a:ext cx="2165933" cy="582761"/>
+          </a:xfrm>
+          <a:prstGeom prst="rect">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:solidFill>
+            <a:srgbClr val="EAE8E2"/>
+          </a:solidFill>
+          <a:ln>
+            <a:noFill/>
+          </a:ln>
+        </p:spPr>
+        <p:txBody>
+          <a:bodyPr anchorCtr="0" anchor="ctr" bIns="45700" lIns="91425" spcFirstLastPara="1" rIns="91425" wrap="square" tIns="45700">
+            <a:noAutofit/>
+          </a:bodyPr>
+          <a:lstStyle/>
+          <a:p>
+            <a:pPr indent="0" lvl="0" marL="0" marR="0" rtl="0" algn="l">
+              <a:buNone/>
+              <a:spcBef>
+                <a:spcPts val="0"/>
+              </a:spcBef>
+              <a:spcAft>
+                <a:spcPts val="0"/>
+              </a:spcAft>
+            </a:pPr>
+            <a:r>
+              <a:rPr sz="1000">
+                <a:solidFill>
+                  <a:schemeClr val="dk1"/>
+                </a:solidFill>
+                <a:latin typeface="Arial"/>
+              </a:rPr>
+              <a:t>Produce sourcing mostly done via importers, emerging offerings with local farms</a:t>
+            </a:r>
+            <a:endParaRPr sz="1000">
+              <a:solidFill>
+                <a:schemeClr val="dk1"/>
+              </a:solidFill>
+              <a:latin typeface="Arial"/>
+              <a:ea typeface="Arial"/>
+              <a:cs typeface="Arial"/>
+              <a:sym typeface="Arial"/>
+            </a:endParaRPr>
+          </a:p>
+        </p:txBody>
+      </p:sp>
+      <p:grpSp>
+        <p:nvGrpSpPr>
+          <p:cNvPr id="732" name="Google Shape;732;p36"/>
+          <p:cNvGrpSpPr/>
+          <p:nvPr/>
+        </p:nvGrpSpPr>
+        <p:grpSpPr>
+          <a:xfrm>
+            <a:off x="5617290" y="1383539"/>
+            <a:ext cx="1313677" cy="3266401"/>
+            <a:chOff x="7515998" y="1387801"/>
+            <a:chExt cx="1313677" cy="3266401"/>
+          </a:xfrm>
+        </p:grpSpPr>
+        <p:sp>
+          <p:nvSpPr>
+            <p:cNvPr id="733" name="Google Shape;733;p36"/>
+            <p:cNvSpPr txBox="1"/>
+            <p:nvPr/>
+          </p:nvSpPr>
+          <p:spPr>
+            <a:xfrm>
+              <a:off x="7542549" y="1387801"/>
+              <a:ext cx="1238745" cy="169277"/>
+            </a:xfrm>
+            <a:prstGeom prst="rect">
+              <a:avLst/>
+            </a:prstGeom>
+            <a:noFill/>
+            <a:ln>
+              <a:noFill/>
+            </a:ln>
+          </p:spPr>
+          <p:txBody>
+            <a:bodyPr anchorCtr="0" anchor="t" bIns="0" lIns="0" spcFirstLastPara="1" rIns="0" wrap="square" tIns="0">
+              <a:spAutoFit/>
+            </a:bodyPr>
+            <a:lstStyle/>
+            <a:p>
+              <a:pPr indent="0" lvl="0" marL="0" marR="0" rtl="0" algn="ctr">
+                <a:buNone/>
+                <a:spcBef>
+                  <a:spcPts val="0"/>
+                </a:spcBef>
+                <a:spcAft>
+                  <a:spcPts val="0"/>
+                </a:spcAft>
+              </a:pPr>
+              <a:r>
+                <a:rPr b="1" sz="1100">
+                  <a:solidFill>
+                    <a:schemeClr val="dk1"/>
+                  </a:solidFill>
+                  <a:latin typeface="Arial"/>
+                </a:rPr>
+                <a:t>Market Situation</a:t>
+              </a:r>
+              <a:endParaRPr/>
+            </a:p>
+          </p:txBody>
+        </p:sp>
+        <p:sp>
+          <p:nvSpPr>
+            <p:cNvPr id="734" name="Google Shape;734;p36"/>
+            <p:cNvSpPr/>
+            <p:nvPr/>
+          </p:nvSpPr>
+          <p:spPr>
+            <a:xfrm>
+              <a:off x="7515998" y="3443372"/>
+              <a:ext cx="1313677" cy="582761"/>
+            </a:xfrm>
+            <a:prstGeom prst="rect">
+              <a:avLst/>
+            </a:prstGeom>
+            <a:solidFill>
+              <a:srgbClr val="EAE8E1"/>
+            </a:solidFill>
+            <a:ln>
+              <a:noFill/>
+            </a:ln>
+          </p:spPr>
+          <p:txBody>
+            <a:bodyPr anchorCtr="0" anchor="ctr" bIns="45700" lIns="91425" spcFirstLastPara="1" rIns="91425" wrap="square" tIns="45700">
+              <a:noAutofit/>
+            </a:bodyPr>
+            <a:lstStyle/>
+            <a:p>
+              <a:pPr indent="0" lvl="0" marL="0" marR="0" rtl="0" algn="l">
+                <a:buNone/>
+                <a:spcBef>
+                  <a:spcPts val="0"/>
+                </a:spcBef>
+                <a:spcAft>
+                  <a:spcPts val="0"/>
+                </a:spcAft>
+              </a:pPr>
+              <a:r>
+                <a:rPr b="1" sz="1000">
+                  <a:solidFill>
+                    <a:schemeClr val="dk1"/>
+                  </a:solidFill>
+                  <a:latin typeface="Arial"/>
+                </a:rPr>
+                <a:t>Underserved &#8211; lack of simple and direct farm-to-community offering</a:t>
+              </a:r>
+              <a:endParaRPr/>
+            </a:p>
+          </p:txBody>
+        </p:sp>
+        <p:sp>
+          <p:nvSpPr>
+            <p:cNvPr id="735" name="Google Shape;735;p36"/>
+            <p:cNvSpPr/>
+            <p:nvPr/>
+          </p:nvSpPr>
+          <p:spPr>
+            <a:xfrm>
+              <a:off x="7515998" y="4071441"/>
+              <a:ext cx="1313677" cy="582761"/>
+            </a:xfrm>
+            <a:prstGeom prst="rect">
+              <a:avLst/>
+            </a:prstGeom>
+            <a:solidFill>
+              <a:srgbClr val="EAE8E1"/>
+            </a:solidFill>
+            <a:ln>
+              <a:noFill/>
+            </a:ln>
+          </p:spPr>
+          <p:txBody>
+            <a:bodyPr anchorCtr="0" anchor="ctr" bIns="45700" lIns="91425" spcFirstLastPara="1" rIns="91425" wrap="square" tIns="45700">
+              <a:noAutofit/>
+            </a:bodyPr>
+            <a:lstStyle/>
+            <a:p>
+              <a:pPr indent="0" lvl="0" marL="0" marR="0" rtl="0" algn="l">
+                <a:buNone/>
+                <a:spcBef>
+                  <a:spcPts val="0"/>
+                </a:spcBef>
+                <a:spcAft>
+                  <a:spcPts val="0"/>
+                </a:spcAft>
+              </a:pPr>
+              <a:r>
+                <a:rPr b="1" sz="1000">
+                  <a:solidFill>
+                    <a:schemeClr val="dk1"/>
+                  </a:solidFill>
+                  <a:latin typeface="Arial"/>
+                </a:rPr>
+                <a:t>Underserved &#8211; lack of direct community distribution offering</a:t>
+              </a:r>
+              <a:endParaRPr/>
+            </a:p>
+          </p:txBody>
+        </p:sp>
+        <p:sp>
+          <p:nvSpPr>
+            <p:cNvPr id="736" name="Google Shape;736;p36"/>
+            <p:cNvSpPr/>
+            <p:nvPr/>
+          </p:nvSpPr>
+          <p:spPr>
+            <a:xfrm>
+              <a:off x="7515998" y="1562117"/>
+              <a:ext cx="1313677" cy="582761"/>
+            </a:xfrm>
+            <a:prstGeom prst="rect">
+              <a:avLst/>
+            </a:prstGeom>
+            <a:solidFill>
+              <a:srgbClr val="EAE8E1"/>
+            </a:solidFill>
+            <a:ln>
+              <a:noFill/>
+            </a:ln>
+          </p:spPr>
+          <p:txBody>
+            <a:bodyPr anchorCtr="0" anchor="ctr" bIns="45700" lIns="91425" spcFirstLastPara="1" rIns="91425" wrap="square" tIns="45700">
+              <a:noAutofit/>
+            </a:bodyPr>
+            <a:lstStyle/>
+            <a:p>
+              <a:pPr indent="0" lvl="0" marL="0" marR="0" rtl="0" algn="l">
+                <a:buNone/>
+                <a:spcBef>
+                  <a:spcPts val="0"/>
+                </a:spcBef>
+                <a:spcAft>
+                  <a:spcPts val="0"/>
+                </a:spcAft>
+              </a:pPr>
+              <a:r>
+                <a:rPr b="1" sz="1000">
+                  <a:solidFill>
+                    <a:schemeClr val="dk1"/>
+                  </a:solidFill>
+                  <a:latin typeface="Arial"/>
+                </a:rPr>
+                <a:t>Underserved &#8211; market fragmented with noise</a:t>
+              </a:r>
+              <a:endParaRPr/>
+            </a:p>
+          </p:txBody>
+        </p:sp>
+        <p:sp>
+          <p:nvSpPr>
+            <p:cNvPr id="737" name="Google Shape;737;p36"/>
+            <p:cNvSpPr/>
+            <p:nvPr/>
+          </p:nvSpPr>
+          <p:spPr>
+            <a:xfrm>
+              <a:off x="7515998" y="2190186"/>
+              <a:ext cx="1313677" cy="582761"/>
+            </a:xfrm>
+            <a:prstGeom prst="rect">
+              <a:avLst/>
+            </a:prstGeom>
+            <a:solidFill>
+              <a:srgbClr val="EAE8E1"/>
+            </a:solidFill>
+            <a:ln>
+              <a:noFill/>
+            </a:ln>
+          </p:spPr>
+          <p:txBody>
+            <a:bodyPr anchorCtr="0" anchor="ctr" bIns="45700" lIns="91425" spcFirstLastPara="1" rIns="91425" wrap="square" tIns="45700">
+              <a:noAutofit/>
+            </a:bodyPr>
+            <a:lstStyle/>
+            <a:p>
+              <a:pPr indent="0" lvl="0" marL="0" marR="0" rtl="0" algn="l">
+                <a:buNone/>
+                <a:spcBef>
+                  <a:spcPts val="0"/>
+                </a:spcBef>
+                <a:spcAft>
+                  <a:spcPts val="0"/>
+                </a:spcAft>
+              </a:pPr>
+              <a:r>
+                <a:rPr b="1" sz="1000">
+                  <a:solidFill>
+                    <a:schemeClr val="dk1"/>
+                  </a:solidFill>
+                  <a:latin typeface="Arial"/>
+                </a:rPr>
+                <a:t>Underserved &#8211; lack of direct farm-to-govt offering</a:t>
+              </a:r>
+              <a:endParaRPr/>
+            </a:p>
+          </p:txBody>
+        </p:sp>
+        <p:sp>
+          <p:nvSpPr>
+            <p:cNvPr id="738" name="Google Shape;738;p36"/>
+            <p:cNvSpPr/>
+            <p:nvPr/>
+          </p:nvSpPr>
+          <p:spPr>
+            <a:xfrm>
+              <a:off x="7515998" y="2818254"/>
+              <a:ext cx="1313677" cy="582761"/>
+            </a:xfrm>
+            <a:prstGeom prst="rect">
+              <a:avLst/>
+            </a:prstGeom>
+            <a:solidFill>
+              <a:srgbClr val="EAE8E1"/>
+            </a:solidFill>
+            <a:ln>
+              <a:noFill/>
+            </a:ln>
+          </p:spPr>
+          <p:txBody>
+            <a:bodyPr anchorCtr="0" anchor="ctr" bIns="45700" lIns="91425" spcFirstLastPara="1" rIns="91425" wrap="square" tIns="45700">
+              <a:noAutofit/>
+            </a:bodyPr>
+            <a:lstStyle/>
+            <a:p>
+              <a:pPr indent="0" lvl="0" marL="0" marR="0" rtl="0" algn="l">
+                <a:buNone/>
+                <a:spcBef>
+                  <a:spcPts val="0"/>
+                </a:spcBef>
+                <a:spcAft>
+                  <a:spcPts val="0"/>
+                </a:spcAft>
+              </a:pPr>
+              <a:r>
+                <a:rPr b="1" sz="1000">
+                  <a:solidFill>
+                    <a:schemeClr val="dk1"/>
+                  </a:solidFill>
+                  <a:latin typeface="Arial"/>
+                </a:rPr>
+                <a:t>Underserved &#8211; infra available, but poor experience</a:t>
+              </a:r>
+              <a:endParaRPr sz="1000">
+                <a:solidFill>
+                  <a:schemeClr val="dk1"/>
+                </a:solidFill>
+                <a:latin typeface="Arial"/>
+                <a:ea typeface="Arial"/>
+                <a:cs typeface="Arial"/>
+                <a:sym typeface="Arial"/>
+              </a:endParaRPr>
+            </a:p>
+          </p:txBody>
+        </p:sp>
+      </p:grpSp>
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="739" name="Google Shape;739;p36"/>
+          <p:cNvSpPr/>
+          <p:nvPr/>
+        </p:nvSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="7615586" y="1086938"/>
+            <a:ext cx="1218851" cy="197510"/>
+          </a:xfrm>
+          <a:prstGeom prst="rect">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:solidFill>
+            <a:schemeClr val="dk1"/>
+          </a:solidFill>
+          <a:ln cap="flat" cmpd="sng" w="9525">
+            <a:solidFill>
+              <a:schemeClr val="dk1"/>
+            </a:solidFill>
+            <a:prstDash val="solid"/>
+            <a:miter lim="800000"/>
+            <a:headEnd len="sm" w="sm" type="none"/>
+            <a:tailEnd len="sm" w="sm" type="none"/>
+          </a:ln>
+        </p:spPr>
+        <p:txBody>
+          <a:bodyPr anchorCtr="0" anchor="ctr" bIns="21600" lIns="36000" spcFirstLastPara="1" rIns="36000" wrap="square" tIns="21600">
+            <a:noAutofit/>
+          </a:bodyPr>
+          <a:lstStyle/>
+          <a:p>
+            <a:pPr indent="0" lvl="0" marL="0" marR="0" rtl="0" algn="r">
+              <a:buNone/>
+              <a:spcBef>
+                <a:spcPts val="0"/>
+              </a:spcBef>
+              <a:spcAft>
+                <a:spcPts val="0"/>
+              </a:spcAft>
+            </a:pPr>
+            <a:r>
+              <a:rPr b="1" sz="1000">
+                <a:solidFill>
+                  <a:schemeClr val="lt1"/>
+                </a:solidFill>
+                <a:latin typeface="Arial"/>
+              </a:rPr>
+              <a:t>NON-EXHAUSTIVE</a:t>
+            </a:r>
+            <a:endParaRPr b="1" sz="1000">
+              <a:solidFill>
+                <a:schemeClr val="lt1"/>
+              </a:solidFill>
+              <a:latin typeface="Arial"/>
+              <a:ea typeface="Arial"/>
+              <a:cs typeface="Arial"/>
+              <a:sym typeface="Arial"/>
+            </a:endParaRPr>
+          </a:p>
+        </p:txBody>
+      </p:sp>
+      <p:pic>
+        <p:nvPicPr>
+          <p:cNvPr descr="Related image" id="740" name="Google Shape;740;p36"/>
+          <p:cNvPicPr preferRelativeResize="0"/>
+          <p:nvPr/>
+        </p:nvPicPr>
+        <p:blipFill rotWithShape="1">
+          <a:blip r:embed="rId9">
+            <a:alphaModFix/>
+          </a:blip>
+          <a:srcRect b="0" l="0" r="0" t="0"/>
+          <a:stretch/>
+        </p:blipFill>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="2705501" y="1623363"/>
+            <a:ext cx="456041" cy="456041"/>
+          </a:xfrm>
+          <a:prstGeom prst="rect">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:noFill/>
+          <a:ln>
+            <a:noFill/>
+          </a:ln>
+        </p:spPr>
+      </p:pic>
+      <p:grpSp>
+        <p:nvGrpSpPr>
+          <p:cNvPr id="741" name="Google Shape;741;p36"/>
+          <p:cNvGrpSpPr/>
+          <p:nvPr/>
+        </p:nvGrpSpPr>
+        <p:grpSpPr>
+          <a:xfrm>
+            <a:off x="6985014" y="1387801"/>
+            <a:ext cx="1849423" cy="3276912"/>
+            <a:chOff x="5617290" y="1383539"/>
+            <a:chExt cx="1849423" cy="3276912"/>
+          </a:xfrm>
+        </p:grpSpPr>
+        <p:sp>
+          <p:nvSpPr>
+            <p:cNvPr id="742" name="Google Shape;742;p36"/>
+            <p:cNvSpPr txBox="1"/>
+            <p:nvPr/>
+          </p:nvSpPr>
+          <p:spPr>
+            <a:xfrm>
+              <a:off x="5758660" y="1383539"/>
+              <a:ext cx="1553070" cy="169277"/>
+            </a:xfrm>
+            <a:prstGeom prst="rect">
+              <a:avLst/>
+            </a:prstGeom>
+            <a:noFill/>
+            <a:ln>
+              <a:noFill/>
+            </a:ln>
+          </p:spPr>
+          <p:txBody>
+            <a:bodyPr anchorCtr="0" anchor="t" bIns="0" lIns="0" spcFirstLastPara="1" rIns="0" wrap="square" tIns="0">
+              <a:spAutoFit/>
+            </a:bodyPr>
+            <a:lstStyle/>
+            <a:p>
+              <a:pPr indent="0" lvl="0" marL="0" marR="0" rtl="0" algn="ctr">
+                <a:buNone/>
+                <a:spcBef>
+                  <a:spcPts val="0"/>
+                </a:spcBef>
+                <a:spcAft>
+                  <a:spcPts val="0"/>
+                </a:spcAft>
+              </a:pPr>
+              <a:r>
+                <a:rPr b="1" sz="1100">
+                  <a:solidFill>
+                    <a:schemeClr val="dk1"/>
+                  </a:solidFill>
+                  <a:latin typeface="Arial"/>
+                </a:rPr>
+                <a:t>Consumer Needs</a:t>
+              </a:r>
+              <a:endParaRPr/>
+            </a:p>
+          </p:txBody>
+        </p:sp>
+        <p:sp>
+          <p:nvSpPr>
+            <p:cNvPr id="743" name="Google Shape;743;p36"/>
+            <p:cNvSpPr/>
+            <p:nvPr/>
+          </p:nvSpPr>
+          <p:spPr>
+            <a:xfrm>
+              <a:off x="5617290" y="1565281"/>
+              <a:ext cx="1849423" cy="582761"/>
+            </a:xfrm>
+            <a:prstGeom prst="rect">
+              <a:avLst/>
+            </a:prstGeom>
+            <a:solidFill>
+              <a:srgbClr val="FED291"/>
+            </a:solidFill>
+            <a:ln>
+              <a:noFill/>
+            </a:ln>
+          </p:spPr>
+          <p:txBody>
+            <a:bodyPr anchorCtr="0" anchor="ctr" bIns="45700" lIns="91425" spcFirstLastPara="1" rIns="91425" wrap="square" tIns="45700">
+              <a:noAutofit/>
+            </a:bodyPr>
+            <a:lstStyle/>
+            <a:p>
+              <a:pPr indent="-101600" marL="203200" marR="0" rtl="0" algn="l">
+                <a:spcBef>
+                  <a:spcPts val="0"/>
+                </a:spcBef>
+                <a:spcAft>
+                  <a:spcPts val="0"/>
+                </a:spcAft>
+                <a:buClr>
+                  <a:schemeClr val="dk1"/>
+                </a:buClr>
+                <a:buSzPts val="1000"/>
+                <a:buChar char="&#8226;"/>
+              </a:pPr>
+              <a:r>
+                <a:rPr sz="1000">
+                  <a:solidFill>
+                    <a:schemeClr val="dk1"/>
+                  </a:solidFill>
+                  <a:latin typeface="Arial"/>
+                </a:rPr>
+                <a:t>Fresh</a:t>
+              </a:r>
+              <a:endParaRPr/>
+            </a:p>
+            <a:p>
+              <a:pPr marL="203200" indent="-101600" algn="l">
+                <a:spcBef>
+                  <a:spcPts val="300"/>
+                </a:spcBef>
+                <a:buChar char="&#8226;"/>
+              </a:pPr>
+              <a:r>
+                <a:rPr sz="1000">
+                  <a:solidFill>
+                    <a:schemeClr val="dk1"/>
+                  </a:solidFill>
+                  <a:latin typeface="Arial"/>
+                </a:rPr>
+                <a:t>Widely available</a:t>
+              </a:r>
+            </a:p>
+            <a:p>
+              <a:pPr marL="203200" indent="-101600" algn="l">
+                <a:spcBef>
+                  <a:spcPts val="300"/>
+                </a:spcBef>
+                <a:buChar char="&#8226;"/>
+              </a:pPr>
+              <a:r>
+                <a:rPr sz="1000">
+                  <a:solidFill>
+                    <a:schemeClr val="dk1"/>
+                  </a:solidFill>
+                  <a:latin typeface="Arial"/>
+                </a:rPr>
+                <a:t>Traceable (e-label)</a:t>
+              </a:r>
+            </a:p>
+          </p:txBody>
+        </p:sp>
+        <p:sp>
+          <p:nvSpPr>
+            <p:cNvPr id="744" name="Google Shape;744;p36"/>
+            <p:cNvSpPr/>
+            <p:nvPr/>
+          </p:nvSpPr>
+          <p:spPr>
+            <a:xfrm>
+              <a:off x="5617290" y="2191767"/>
+              <a:ext cx="1849423" cy="582761"/>
+            </a:xfrm>
+            <a:prstGeom prst="rect">
+              <a:avLst/>
+            </a:prstGeom>
+            <a:solidFill>
+              <a:srgbClr val="FED291"/>
+            </a:solidFill>
+            <a:ln>
+              <a:noFill/>
+            </a:ln>
+          </p:spPr>
+          <p:txBody>
+            <a:bodyPr anchorCtr="0" anchor="ctr" bIns="45700" lIns="91425" spcFirstLastPara="1" rIns="91425" wrap="square" tIns="45700">
+              <a:noAutofit/>
+            </a:bodyPr>
+            <a:lstStyle/>
+            <a:p>
+              <a:pPr indent="-101600" marL="203200" marR="0" rtl="0" algn="l">
+                <a:spcBef>
+                  <a:spcPts val="0"/>
+                </a:spcBef>
+                <a:spcAft>
+                  <a:spcPts val="0"/>
+                </a:spcAft>
+                <a:buClr>
+                  <a:schemeClr val="dk1"/>
+                </a:buClr>
+                <a:buSzPts val="1000"/>
+                <a:buChar char="&#8226;"/>
+              </a:pPr>
+              <a:r>
+                <a:rPr sz="1000">
+                  <a:solidFill>
+                    <a:schemeClr val="dk1"/>
+                  </a:solidFill>
+                  <a:latin typeface="Arial"/>
+                </a:rPr>
+                <a:t>Fresh</a:t>
+              </a:r>
+              <a:endParaRPr/>
+            </a:p>
+            <a:p>
+              <a:pPr marL="203200" indent="-101600" algn="l">
+                <a:spcBef>
+                  <a:spcPts val="300"/>
+                </a:spcBef>
+                <a:buChar char="&#8226;"/>
+              </a:pPr>
+              <a:r>
+                <a:rPr sz="1000">
+                  <a:solidFill>
+                    <a:schemeClr val="dk1"/>
+                  </a:solidFill>
+                  <a:latin typeface="Arial"/>
+                </a:rPr>
+                <a:t>Traceable</a:t>
+              </a:r>
+            </a:p>
+          </p:txBody>
+        </p:sp>
+        <p:sp>
+          <p:nvSpPr>
+            <p:cNvPr id="745" name="Google Shape;745;p36"/>
+            <p:cNvSpPr/>
+            <p:nvPr/>
+          </p:nvSpPr>
+          <p:spPr>
+            <a:xfrm>
+              <a:off x="5617290" y="2818254"/>
+              <a:ext cx="1849423" cy="582761"/>
+            </a:xfrm>
+            <a:prstGeom prst="rect">
+              <a:avLst/>
+            </a:prstGeom>
+            <a:solidFill>
+              <a:srgbClr val="FED291"/>
+            </a:solidFill>
+            <a:ln>
+              <a:noFill/>
+            </a:ln>
+          </p:spPr>
+          <p:txBody>
+            <a:bodyPr anchorCtr="0" anchor="ctr" bIns="45700" lIns="91425" spcFirstLastPara="1" rIns="91425" wrap="square" tIns="45700">
+              <a:noAutofit/>
+            </a:bodyPr>
+            <a:lstStyle/>
+            <a:p>
+              <a:pPr indent="-101600" marL="203200" marR="0" rtl="0" algn="l">
+                <a:spcBef>
+                  <a:spcPts val="0"/>
+                </a:spcBef>
+                <a:spcAft>
+                  <a:spcPts val="0"/>
+                </a:spcAft>
+                <a:buClr>
+                  <a:schemeClr val="dk1"/>
+                </a:buClr>
+                <a:buSzPts val="1000"/>
+                <a:buChar char="&#8226;"/>
+              </a:pPr>
+              <a:r>
+                <a:rPr sz="1000">
+                  <a:solidFill>
+                    <a:schemeClr val="dk1"/>
+                  </a:solidFill>
+                  <a:latin typeface="Arial"/>
+                </a:rPr>
+                <a:t>Fresh</a:t>
+              </a:r>
+              <a:endParaRPr/>
+            </a:p>
+            <a:p>
+              <a:pPr marL="203200" indent="-101600" algn="l">
+                <a:spcBef>
+                  <a:spcPts val="300"/>
+                </a:spcBef>
+                <a:buChar char="&#8226;"/>
+              </a:pPr>
+              <a:r>
+                <a:rPr sz="1000">
+                  <a:solidFill>
+                    <a:schemeClr val="dk1"/>
+                  </a:solidFill>
+                  <a:latin typeface="Arial"/>
+                </a:rPr>
+                <a:t>Simple and convenient</a:t>
+              </a:r>
+            </a:p>
+            <a:p>
+              <a:pPr marL="203200" indent="-101600" algn="l">
+                <a:spcBef>
+                  <a:spcPts val="300"/>
+                </a:spcBef>
+                <a:buChar char="&#8226;"/>
+              </a:pPr>
+              <a:r>
+                <a:rPr sz="1000">
+                  <a:solidFill>
+                    <a:schemeClr val="dk1"/>
+                  </a:solidFill>
+                  <a:latin typeface="Arial"/>
+                </a:rPr>
+                <a:t>Traceability</a:t>
+              </a:r>
+            </a:p>
+          </p:txBody>
+        </p:sp>
+        <p:sp>
+          <p:nvSpPr>
+            <p:cNvPr id="746" name="Google Shape;746;p36"/>
+            <p:cNvSpPr/>
+            <p:nvPr/>
+          </p:nvSpPr>
+          <p:spPr>
+            <a:xfrm>
+              <a:off x="5617290" y="3451204"/>
+              <a:ext cx="1849423" cy="582761"/>
+            </a:xfrm>
+            <a:prstGeom prst="rect">
+              <a:avLst/>
+            </a:prstGeom>
+            <a:solidFill>
+              <a:srgbClr val="FED291"/>
+            </a:solidFill>
+            <a:ln>
+              <a:noFill/>
+            </a:ln>
+          </p:spPr>
+          <p:txBody>
+            <a:bodyPr anchorCtr="0" anchor="ctr" bIns="45700" lIns="91425" spcFirstLastPara="1" rIns="91425" wrap="square" tIns="45700">
+              <a:noAutofit/>
+            </a:bodyPr>
+            <a:lstStyle/>
+            <a:p>
+              <a:pPr indent="-101600" marL="203200" marR="0" rtl="0" algn="l">
+                <a:spcBef>
+                  <a:spcPts val="0"/>
+                </a:spcBef>
+                <a:spcAft>
+                  <a:spcPts val="0"/>
+                </a:spcAft>
+                <a:buClr>
+                  <a:schemeClr val="dk1"/>
+                </a:buClr>
+                <a:buSzPts val="1000"/>
+                <a:buChar char="&#8226;"/>
+              </a:pPr>
+              <a:r>
+                <a:rPr sz="1000">
+                  <a:solidFill>
+                    <a:schemeClr val="dk1"/>
+                  </a:solidFill>
+                  <a:latin typeface="Arial"/>
+                </a:rPr>
+                <a:t>Fresh</a:t>
+              </a:r>
+              <a:endParaRPr/>
+            </a:p>
+            <a:p>
+              <a:pPr marL="203200" indent="-101600" algn="l">
+                <a:spcBef>
+                  <a:spcPts val="300"/>
+                </a:spcBef>
+                <a:buChar char="&#8226;"/>
+              </a:pPr>
+              <a:r>
+                <a:rPr sz="1000">
+                  <a:solidFill>
+                    <a:schemeClr val="dk1"/>
+                  </a:solidFill>
+                  <a:latin typeface="Arial"/>
+                </a:rPr>
+                <a:t>Simple and convenient</a:t>
+              </a:r>
+            </a:p>
+          </p:txBody>
+        </p:sp>
+        <p:sp>
+          <p:nvSpPr>
+            <p:cNvPr id="747" name="Google Shape;747;p36"/>
+            <p:cNvSpPr/>
+            <p:nvPr/>
+          </p:nvSpPr>
+          <p:spPr>
+            <a:xfrm>
+              <a:off x="5617290" y="4077690"/>
+              <a:ext cx="1849423" cy="582761"/>
+            </a:xfrm>
+            <a:prstGeom prst="rect">
+              <a:avLst/>
+            </a:prstGeom>
+            <a:solidFill>
+              <a:srgbClr val="FED291"/>
+            </a:solidFill>
+            <a:ln>
+              <a:noFill/>
+            </a:ln>
+          </p:spPr>
+          <p:txBody>
+            <a:bodyPr anchorCtr="0" anchor="ctr" bIns="45700" lIns="91425" spcFirstLastPara="1" rIns="91425" wrap="square" tIns="45700">
+              <a:noAutofit/>
+            </a:bodyPr>
+            <a:lstStyle/>
+            <a:p>
+              <a:pPr indent="-101600" marL="203200" marR="0" rtl="0" algn="l">
+                <a:spcBef>
+                  <a:spcPts val="0"/>
+                </a:spcBef>
+                <a:spcAft>
+                  <a:spcPts val="0"/>
+                </a:spcAft>
+                <a:buClr>
+                  <a:schemeClr val="dk1"/>
+                </a:buClr>
+                <a:buSzPts val="1000"/>
+                <a:buChar char="&#8226;"/>
+              </a:pPr>
+              <a:r>
+                <a:rPr sz="1000">
+                  <a:solidFill>
+                    <a:schemeClr val="dk1"/>
+                  </a:solidFill>
+                  <a:latin typeface="Arial"/>
+                </a:rPr>
+                <a:t>Fresh</a:t>
+              </a:r>
+              <a:endParaRPr/>
+            </a:p>
+            <a:p>
+              <a:pPr marL="203200" indent="-101600" algn="l">
+                <a:spcBef>
+                  <a:spcPts val="300"/>
+                </a:spcBef>
+                <a:buChar char="&#8226;"/>
+              </a:pPr>
+              <a:r>
+                <a:rPr sz="1000">
+                  <a:solidFill>
+                    <a:schemeClr val="dk1"/>
+                  </a:solidFill>
+                  <a:latin typeface="Arial"/>
+                </a:rPr>
+                <a:t>Traceable</a:t>
+              </a:r>
+            </a:p>
+          </p:txBody>
+        </p:sp>
+      </p:grpSp>
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="748" name="Google Shape;748;p36"/>
+          <p:cNvSpPr/>
+          <p:nvPr/>
+        </p:nvSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="1611708" y="2238293"/>
+            <a:ext cx="511791" cy="524359"/>
+          </a:xfrm>
+          <a:prstGeom prst="rect">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:solidFill>
+            <a:schemeClr val="lt1"/>
+          </a:solidFill>
+          <a:ln cap="flat" cmpd="sng" w="25400">
+            <a:solidFill>
+              <a:schemeClr val="dk1"/>
+            </a:solidFill>
+            <a:prstDash val="solid"/>
+            <a:round/>
+            <a:headEnd len="sm" w="sm" type="none"/>
+            <a:tailEnd len="sm" w="sm" type="none"/>
+          </a:ln>
+        </p:spPr>
+        <p:txBody>
+          <a:bodyPr anchorCtr="0" anchor="ctr" bIns="45700" lIns="91425" spcFirstLastPara="1" rIns="91425" wrap="square" tIns="45700">
+            <a:noAutofit/>
+          </a:bodyPr>
+          <a:lstStyle/>
+          <a:p>
+            <a:pPr indent="0" lvl="0" marL="0" marR="0" rtl="0" algn="ctr">
+              <a:buNone/>
+              <a:spcBef>
+                <a:spcPts val="0"/>
+              </a:spcBef>
+              <a:spcAft>
+                <a:spcPts val="0"/>
+              </a:spcAft>
+            </a:pPr>
+            <a:r>
+              <a:rPr b="1" sz="800">
+                <a:solidFill>
+                  <a:schemeClr val="dk1"/>
+                </a:solidFill>
+                <a:latin typeface="Arial"/>
+              </a:rPr>
+              <a:t>Sanitised</a:t>
+            </a:r>
+            <a:endParaRPr b="1" sz="800">
+              <a:solidFill>
+                <a:schemeClr val="dk1"/>
+              </a:solidFill>
+              <a:latin typeface="Arial"/>
+              <a:ea typeface="Arial"/>
+              <a:cs typeface="Arial"/>
+              <a:sym typeface="Arial"/>
+            </a:endParaRPr>
+          </a:p>
+        </p:txBody>
+      </p:sp>
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="749" name="Google Shape;749;p36"/>
+          <p:cNvSpPr/>
+          <p:nvPr/>
+        </p:nvSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="1611708" y="4149865"/>
+            <a:ext cx="511791" cy="524359"/>
+          </a:xfrm>
+          <a:prstGeom prst="rect">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:solidFill>
+            <a:schemeClr val="lt1"/>
+          </a:solidFill>
+          <a:ln cap="flat" cmpd="sng" w="25400">
+            <a:solidFill>
+              <a:schemeClr val="dk1"/>
+            </a:solidFill>
+            <a:prstDash val="solid"/>
+            <a:round/>
+            <a:headEnd len="sm" w="sm" type="none"/>
+            <a:tailEnd len="sm" w="sm" type="none"/>
+          </a:ln>
+        </p:spPr>
+        <p:txBody>
+          <a:bodyPr anchorCtr="0" anchor="ctr" bIns="45700" lIns="91425" spcFirstLastPara="1" rIns="91425" wrap="square" tIns="45700">
+            <a:noAutofit/>
+          </a:bodyPr>
+          <a:lstStyle/>
+          <a:p>
+            <a:pPr indent="0" lvl="0" marL="0" marR="0" rtl="0" algn="ctr">
+              <a:buNone/>
+              <a:spcBef>
+                <a:spcPts val="0"/>
+              </a:spcBef>
+              <a:spcAft>
+                <a:spcPts val="0"/>
+              </a:spcAft>
+            </a:pPr>
+            <a:r>
+              <a:rPr b="1" sz="800">
+                <a:solidFill>
+                  <a:schemeClr val="dk1"/>
+                </a:solidFill>
+                <a:latin typeface="Arial"/>
+              </a:rPr>
+              <a:t>Sanitised</a:t>
+            </a:r>
+            <a:endParaRPr b="1" sz="800">
+              <a:solidFill>
+                <a:schemeClr val="dk1"/>
+              </a:solidFill>
+              <a:latin typeface="Arial"/>
+              <a:ea typeface="Arial"/>
+              <a:cs typeface="Arial"/>
+              <a:sym typeface="Arial"/>
+            </a:endParaRPr>
+          </a:p>
+        </p:txBody>
+      </p:sp>
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="750" name="Google Shape;750;p36"/>
+          <p:cNvSpPr/>
+          <p:nvPr/>
+        </p:nvSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="2697414" y="3475774"/>
+            <a:ext cx="511791" cy="524359"/>
+          </a:xfrm>
+          <a:prstGeom prst="rect">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:solidFill>
+            <a:schemeClr val="lt1"/>
+          </a:solidFill>
+          <a:ln cap="flat" cmpd="sng" w="25400">
+            <a:solidFill>
+              <a:schemeClr val="dk1"/>
+            </a:solidFill>
+            <a:prstDash val="solid"/>
+            <a:round/>
+            <a:headEnd len="sm" w="sm" type="none"/>
+            <a:tailEnd len="sm" w="sm" type="none"/>
+          </a:ln>
+        </p:spPr>
+        <p:txBody>
+          <a:bodyPr anchorCtr="0" anchor="ctr" bIns="45700" lIns="91425" spcFirstLastPara="1" rIns="91425" wrap="square" tIns="45700">
+            <a:noAutofit/>
+          </a:bodyPr>
+          <a:lstStyle/>
+          <a:p>
+            <a:pPr indent="0" lvl="0" marL="0" marR="0" rtl="0" algn="ctr">
+              <a:buNone/>
+              <a:spcBef>
+                <a:spcPts val="0"/>
+              </a:spcBef>
+              <a:spcAft>
+                <a:spcPts val="0"/>
+              </a:spcAft>
+            </a:pPr>
+            <a:r>
+              <a:rPr b="1" sz="800">
+                <a:solidFill>
+                  <a:schemeClr val="dk1"/>
+                </a:solidFill>
+                <a:latin typeface="Arial"/>
+              </a:rPr>
+              <a:t>Sanitised</a:t>
+            </a:r>
+            <a:endParaRPr b="1" sz="800">
+              <a:solidFill>
+                <a:schemeClr val="dk1"/>
+              </a:solidFill>
+              <a:latin typeface="Arial"/>
+              <a:ea typeface="Arial"/>
+              <a:cs typeface="Arial"/>
+              <a:sym typeface="Arial"/>
+            </a:endParaRPr>
+          </a:p>
+        </p:txBody>
+      </p:sp>
+    </p:spTree>
+  </p:cSld>
+  <p:clrMapOvr>
+    <a:masterClrMapping/>
+  </p:clrMapOvr>
+</p:sld>

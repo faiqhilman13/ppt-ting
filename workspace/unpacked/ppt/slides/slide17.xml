@@ -1,0 +1,1783 @@
+<?xml version="1.0" encoding="ascii"?>
+<p:sld xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mv="urn:schemas-microsoft-com:mac:vml" xmlns:p="http://schemas.openxmlformats.org/presentationml/2006/main" xmlns:c="http://schemas.openxmlformats.org/drawingml/2006/chart" xmlns:dgm="http://schemas.openxmlformats.org/drawingml/2006/diagram" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:pvml="urn:schemas-microsoft-com:office:powerpoint" xmlns:com="http://schemas.openxmlformats.org/drawingml/2006/compatibility" xmlns:p14="http://schemas.microsoft.com/office/powerpoint/2010/main" xmlns:p15="http://schemas.microsoft.com/office/powerpoint/2012/main" xmlns:ahyp="http://schemas.microsoft.com/office/drawing/2018/hyperlinkcolor">
+  <p:cSld>
+    <p:spTree>
+      <p:nvGrpSpPr>
+        <p:cNvPr id="939" name="Shape 939"/>
+        <p:cNvGrpSpPr/>
+        <p:nvPr/>
+      </p:nvGrpSpPr>
+      <p:grpSpPr>
+        <a:xfrm>
+          <a:off x="0" y="0"/>
+          <a:ext cx="0" cy="0"/>
+          <a:chOff x="0" y="0"/>
+          <a:chExt cx="0" cy="0"/>
+        </a:xfrm>
+      </p:grpSpPr>
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="940" name="Google Shape;940;p41"/>
+          <p:cNvSpPr txBox="1"/>
+          <p:nvPr>
+            <p:ph type="title"/>
+          </p:nvPr>
+        </p:nvSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="309562" y="222576"/>
+            <a:ext cx="8524875" cy="615553"/>
+          </a:xfrm>
+          <a:prstGeom prst="rect">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:noFill/>
+          <a:ln>
+            <a:noFill/>
+          </a:ln>
+        </p:spPr>
+        <p:txBody>
+          <a:bodyPr anchorCtr="0" anchor="b" bIns="0" lIns="0" spcFirstLastPara="1" rIns="0" wrap="square" tIns="0">
+            <a:spAutoFit/>
+          </a:bodyPr>
+          <a:lstStyle/>
+          <a:p>
+            <a:pPr indent="0" lvl="0" marL="0" rtl="0" algn="l">
+              <a:spcBef>
+                <a:spcPts val="0"/>
+              </a:spcBef>
+              <a:spcAft>
+                <a:spcPts val="0"/>
+              </a:spcAft>
+              <a:buClr>
+                <a:schemeClr val="dk1"/>
+              </a:buClr>
+              <a:buSzPts val="2000"/>
+              <a:buFont typeface="Georgia"/>
+              <a:buNone/>
+            </a:pPr>
+            <a:r>
+              <a:rPr lang="en-US"/>
+              <a:t>Merchants could leverage on NewCo&#8217;s digital merchant solutions to support day-to-day operational needs</a:t>
+            </a:r>
+            <a:endParaRPr/>
+          </a:p>
+        </p:txBody>
+      </p:sp>
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="941" name="Google Shape;941;p41"/>
+          <p:cNvSpPr txBox="1"/>
+          <p:nvPr>
+            <p:ph idx="11" type="ftr"/>
+          </p:nvPr>
+        </p:nvSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="311944" y="4901878"/>
+            <a:ext cx="2895600" cy="92333"/>
+          </a:xfrm>
+          <a:prstGeom prst="rect">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:noFill/>
+          <a:ln>
+            <a:noFill/>
+          </a:ln>
+        </p:spPr>
+        <p:txBody>
+          <a:bodyPr anchorCtr="0" anchor="ctr" bIns="0" lIns="0" spcFirstLastPara="1" rIns="0" wrap="square" tIns="0">
+            <a:spAutoFit/>
+          </a:bodyPr>
+          <a:lstStyle/>
+          <a:p>
+            <a:pPr indent="0" lvl="0" marL="0" rtl="0" algn="l">
+              <a:spcBef>
+                <a:spcPts val="0"/>
+              </a:spcBef>
+              <a:spcAft>
+                <a:spcPts val="0"/>
+              </a:spcAft>
+              <a:buNone/>
+            </a:pPr>
+            <a:r>
+              <a:rPr lang="en-US"/>
+              <a:t>Confidential information for the sole benefit and use of PwC&#8217;s client.</a:t>
+            </a:r>
+            <a:endParaRPr/>
+          </a:p>
+        </p:txBody>
+      </p:sp>
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="942" name="Google Shape;942;p41"/>
+          <p:cNvSpPr txBox="1"/>
+          <p:nvPr>
+            <p:ph idx="12" type="sldNum"/>
+          </p:nvPr>
+        </p:nvSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="6700838" y="4770007"/>
+            <a:ext cx="2133600" cy="123111"/>
+          </a:xfrm>
+          <a:prstGeom prst="rect">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:noFill/>
+          <a:ln>
+            <a:noFill/>
+          </a:ln>
+        </p:spPr>
+        <p:txBody>
+          <a:bodyPr anchorCtr="0" anchor="ctr" bIns="0" lIns="0" spcFirstLastPara="1" rIns="0" wrap="square" tIns="0">
+            <a:spAutoFit/>
+          </a:bodyPr>
+          <a:lstStyle/>
+          <a:p>
+            <a:pPr indent="0" lvl="0" marL="0" rtl="0" algn="r">
+              <a:spcBef>
+                <a:spcPts val="0"/>
+              </a:spcBef>
+              <a:spcAft>
+                <a:spcPts val="0"/>
+              </a:spcAft>
+              <a:buNone/>
+            </a:pPr>
+            <a:fld id="{00000000-1234-1234-1234-123412341234}" type="slidenum">
+              <a:rPr lang="en-US"/>
+              <a:t>&#8249;#&#8250;</a:t>
+            </a:fld>
+            <a:endParaRPr/>
+          </a:p>
+        </p:txBody>
+      </p:sp>
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="943" name="Google Shape;943;p41"/>
+          <p:cNvSpPr/>
+          <p:nvPr/>
+        </p:nvSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="2340244" y="1439705"/>
+            <a:ext cx="6494194" cy="506404"/>
+          </a:xfrm>
+          <a:prstGeom prst="rect">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:solidFill>
+            <a:srgbClr val="EAE8E2"/>
+          </a:solidFill>
+          <a:ln>
+            <a:noFill/>
+          </a:ln>
+        </p:spPr>
+        <p:txBody>
+          <a:bodyPr anchorCtr="0" anchor="ctr" bIns="45700" lIns="91425" spcFirstLastPara="1" rIns="91425" wrap="square" tIns="45700">
+            <a:noAutofit/>
+          </a:bodyPr>
+          <a:lstStyle/>
+          <a:p>
+            <a:pPr indent="0" lvl="0" marL="0" marR="0" rtl="0" algn="l">
+              <a:lnSpc>
+                <a:spcPct val="100000"/>
+              </a:lnSpc>
+              <a:spcBef>
+                <a:spcPts val="0"/>
+              </a:spcBef>
+              <a:spcAft>
+                <a:spcPts val="0"/>
+              </a:spcAft>
+              <a:buClr>
+                <a:srgbClr val="000000"/>
+              </a:buClr>
+              <a:buSzPts val="1200"/>
+              <a:buFont typeface="Arial"/>
+              <a:buNone/>
+            </a:pPr>
+            <a:r>
+              <a:rPr b="1" lang="en-US" sz="1200">
+                <a:solidFill>
+                  <a:srgbClr val="000000"/>
+                </a:solidFill>
+                <a:latin typeface="Arial"/>
+                <a:ea typeface="Arial"/>
+                <a:cs typeface="Arial"/>
+                <a:sym typeface="Arial"/>
+              </a:rPr>
+              <a:t>Merchant services </a:t>
+            </a:r>
+            <a:r>
+              <a:rPr lang="en-US" sz="1200">
+                <a:solidFill>
+                  <a:srgbClr val="000000"/>
+                </a:solidFill>
+                <a:latin typeface="Arial"/>
+                <a:ea typeface="Arial"/>
+                <a:cs typeface="Arial"/>
+                <a:sym typeface="Arial"/>
+              </a:rPr>
+              <a:t>enable overlay digital solutions that cater to merchants&#8217; day-to-day operational needs</a:t>
+            </a:r>
+            <a:endParaRPr b="0" i="0" sz="1200" u="none" cap="none" strike="noStrike">
+              <a:solidFill>
+                <a:srgbClr val="000000"/>
+              </a:solidFill>
+              <a:latin typeface="Arial"/>
+              <a:ea typeface="Arial"/>
+              <a:cs typeface="Arial"/>
+              <a:sym typeface="Arial"/>
+            </a:endParaRPr>
+          </a:p>
+        </p:txBody>
+      </p:sp>
+      <p:grpSp>
+        <p:nvGrpSpPr>
+          <p:cNvPr id="944" name="Google Shape;944;p41"/>
+          <p:cNvGrpSpPr/>
+          <p:nvPr/>
+        </p:nvGrpSpPr>
+        <p:grpSpPr>
+          <a:xfrm>
+            <a:off x="2340244" y="2024076"/>
+            <a:ext cx="6494194" cy="841511"/>
+            <a:chOff x="2340244" y="3734520"/>
+            <a:chExt cx="6494194" cy="841511"/>
+          </a:xfrm>
+        </p:grpSpPr>
+        <p:sp>
+          <p:nvSpPr>
+            <p:cNvPr id="945" name="Google Shape;945;p41"/>
+            <p:cNvSpPr/>
+            <p:nvPr/>
+          </p:nvSpPr>
+          <p:spPr>
+            <a:xfrm>
+              <a:off x="2340244" y="3734520"/>
+              <a:ext cx="1170122" cy="838783"/>
+            </a:xfrm>
+            <a:prstGeom prst="rect">
+              <a:avLst/>
+            </a:prstGeom>
+            <a:solidFill>
+              <a:srgbClr val="968C6D"/>
+            </a:solidFill>
+            <a:ln>
+              <a:noFill/>
+            </a:ln>
+          </p:spPr>
+          <p:txBody>
+            <a:bodyPr anchorCtr="0" anchor="ctr" bIns="45700" lIns="91425" spcFirstLastPara="1" rIns="91425" wrap="square" tIns="45700">
+              <a:noAutofit/>
+            </a:bodyPr>
+            <a:lstStyle/>
+            <a:p>
+              <a:pPr indent="0" lvl="0" marL="0" marR="0" rtl="0" algn="ctr">
+                <a:lnSpc>
+                  <a:spcPct val="100000"/>
+                </a:lnSpc>
+                <a:spcBef>
+                  <a:spcPts val="0"/>
+                </a:spcBef>
+                <a:spcAft>
+                  <a:spcPts val="0"/>
+                </a:spcAft>
+                <a:buClr>
+                  <a:srgbClr val="FFFFFF"/>
+                </a:buClr>
+                <a:buSzPts val="1200"/>
+                <a:buFont typeface="Arial"/>
+                <a:buNone/>
+              </a:pPr>
+              <a:r>
+                <a:rPr b="1" i="0" lang="en-US" sz="1200" u="none" cap="none" strike="noStrike">
+                  <a:solidFill>
+                    <a:srgbClr val="FFFFFF"/>
+                  </a:solidFill>
+                  <a:latin typeface="Arial"/>
+                  <a:ea typeface="Arial"/>
+                  <a:cs typeface="Arial"/>
+                  <a:sym typeface="Arial"/>
+                </a:rPr>
+                <a:t>Who does it serve?</a:t>
+              </a:r>
+              <a:endParaRPr/>
+            </a:p>
+          </p:txBody>
+        </p:sp>
+        <p:sp>
+          <p:nvSpPr>
+            <p:cNvPr id="946" name="Google Shape;946;p41"/>
+            <p:cNvSpPr/>
+            <p:nvPr/>
+          </p:nvSpPr>
+          <p:spPr>
+            <a:xfrm>
+              <a:off x="3595608" y="3737248"/>
+              <a:ext cx="5238830" cy="838783"/>
+            </a:xfrm>
+            <a:prstGeom prst="rect">
+              <a:avLst/>
+            </a:prstGeom>
+            <a:solidFill>
+              <a:srgbClr val="EAE8E2"/>
+            </a:solidFill>
+            <a:ln>
+              <a:noFill/>
+            </a:ln>
+          </p:spPr>
+          <p:txBody>
+            <a:bodyPr anchorCtr="0" anchor="ctr" bIns="45700" lIns="91425" spcFirstLastPara="1" rIns="91425" wrap="square" tIns="45700">
+              <a:noAutofit/>
+            </a:bodyPr>
+            <a:lstStyle/>
+            <a:p>
+              <a:pPr indent="0" lvl="0" marL="0" marR="0" rtl="0" algn="l">
+                <a:lnSpc>
+                  <a:spcPct val="100000"/>
+                </a:lnSpc>
+                <a:spcBef>
+                  <a:spcPts val="0"/>
+                </a:spcBef>
+                <a:spcAft>
+                  <a:spcPts val="0"/>
+                </a:spcAft>
+                <a:buClr>
+                  <a:srgbClr val="000000"/>
+                </a:buClr>
+                <a:buSzPts val="1100"/>
+                <a:buFont typeface="Arial"/>
+                <a:buNone/>
+              </a:pPr>
+              <a:r>
+                <a:rPr b="1" lang="en-US" sz="1100">
+                  <a:solidFill>
+                    <a:srgbClr val="000000"/>
+                  </a:solidFill>
+                  <a:latin typeface="Arial"/>
+                  <a:ea typeface="Arial"/>
+                  <a:cs typeface="Arial"/>
+                  <a:sym typeface="Arial"/>
+                </a:rPr>
+                <a:t>Merchants</a:t>
+              </a:r>
+              <a:r>
+                <a:rPr lang="en-US" sz="1100">
+                  <a:solidFill>
+                    <a:srgbClr val="000000"/>
+                  </a:solidFill>
+                  <a:latin typeface="Arial"/>
+                  <a:ea typeface="Arial"/>
+                  <a:cs typeface="Arial"/>
+                  <a:sym typeface="Arial"/>
+                </a:rPr>
+                <a:t>, acquired by NewCo, who want to digitise their business operations, enabling operational efficiency (e.g. e-invoicing and billing, auto reconciliation, inventory management, accounting and tax reporting, reporting and analytics)</a:t>
+              </a:r>
+              <a:endParaRPr b="0" i="0" sz="1100" u="none" cap="none" strike="noStrike">
+                <a:solidFill>
+                  <a:srgbClr val="000000"/>
+                </a:solidFill>
+                <a:latin typeface="Arial"/>
+                <a:ea typeface="Arial"/>
+                <a:cs typeface="Arial"/>
+                <a:sym typeface="Arial"/>
+              </a:endParaRPr>
+            </a:p>
+          </p:txBody>
+        </p:sp>
+      </p:grpSp>
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="947" name="Google Shape;947;p41"/>
+          <p:cNvSpPr/>
+          <p:nvPr/>
+        </p:nvSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="2340244" y="2931168"/>
+            <a:ext cx="1170122" cy="1478272"/>
+          </a:xfrm>
+          <a:prstGeom prst="rect">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:solidFill>
+            <a:srgbClr val="968C6D"/>
+          </a:solidFill>
+          <a:ln>
+            <a:noFill/>
+          </a:ln>
+        </p:spPr>
+        <p:txBody>
+          <a:bodyPr anchorCtr="0" anchor="ctr" bIns="45700" lIns="91425" spcFirstLastPara="1" rIns="91425" wrap="square" tIns="45700">
+            <a:noAutofit/>
+          </a:bodyPr>
+          <a:lstStyle/>
+          <a:p>
+            <a:pPr indent="0" lvl="0" marL="0" marR="0" rtl="0" algn="ctr">
+              <a:lnSpc>
+                <a:spcPct val="100000"/>
+              </a:lnSpc>
+              <a:spcBef>
+                <a:spcPts val="0"/>
+              </a:spcBef>
+              <a:spcAft>
+                <a:spcPts val="0"/>
+              </a:spcAft>
+              <a:buClr>
+                <a:srgbClr val="FFFFFF"/>
+              </a:buClr>
+              <a:buSzPts val="1200"/>
+              <a:buFont typeface="Arial"/>
+              <a:buNone/>
+            </a:pPr>
+            <a:r>
+              <a:rPr b="1" i="0" lang="en-US" sz="1200" u="none" cap="none" strike="noStrike">
+                <a:solidFill>
+                  <a:srgbClr val="FFFFFF"/>
+                </a:solidFill>
+                <a:latin typeface="Arial"/>
+                <a:ea typeface="Arial"/>
+                <a:cs typeface="Arial"/>
+                <a:sym typeface="Arial"/>
+              </a:rPr>
+              <a:t>How does it work?</a:t>
+            </a:r>
+            <a:endParaRPr/>
+          </a:p>
+        </p:txBody>
+      </p:sp>
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="948" name="Google Shape;948;p41"/>
+          <p:cNvSpPr/>
+          <p:nvPr/>
+        </p:nvSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="3595608" y="2931168"/>
+            <a:ext cx="5238830" cy="1478272"/>
+          </a:xfrm>
+          <a:prstGeom prst="rect">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:solidFill>
+            <a:srgbClr val="EAE8E2"/>
+          </a:solidFill>
+          <a:ln>
+            <a:noFill/>
+          </a:ln>
+        </p:spPr>
+        <p:txBody>
+          <a:bodyPr anchorCtr="0" anchor="t" bIns="45700" lIns="91425" spcFirstLastPara="1" rIns="91425" wrap="square" tIns="45700">
+            <a:noAutofit/>
+          </a:bodyPr>
+          <a:lstStyle/>
+          <a:p>
+            <a:pPr indent="-171450" lvl="0" marL="171450" marR="0" rtl="0" algn="l">
+              <a:lnSpc>
+                <a:spcPct val="100000"/>
+              </a:lnSpc>
+              <a:spcBef>
+                <a:spcPts val="0"/>
+              </a:spcBef>
+              <a:spcAft>
+                <a:spcPts val="0"/>
+              </a:spcAft>
+              <a:buClr>
+                <a:srgbClr val="000000"/>
+              </a:buClr>
+              <a:buSzPts val="1100"/>
+              <a:buFont typeface="Arial"/>
+              <a:buChar char="&#8226;"/>
+            </a:pPr>
+            <a:r>
+              <a:rPr lang="en-US" sz="1100">
+                <a:solidFill>
+                  <a:srgbClr val="000000"/>
+                </a:solidFill>
+                <a:latin typeface="Arial"/>
+                <a:ea typeface="Arial"/>
+                <a:cs typeface="Arial"/>
+                <a:sym typeface="Arial"/>
+              </a:rPr>
+              <a:t>Merchants adopt NewCo&#8217;s offering, transacting most or all</a:t>
+            </a:r>
+            <a:r>
+              <a:rPr b="1" lang="en-US" sz="1100">
+                <a:solidFill>
+                  <a:srgbClr val="000000"/>
+                </a:solidFill>
+                <a:latin typeface="Arial"/>
+                <a:ea typeface="Arial"/>
+                <a:cs typeface="Arial"/>
+                <a:sym typeface="Arial"/>
+              </a:rPr>
+              <a:t> </a:t>
+            </a:r>
+            <a:r>
+              <a:rPr lang="en-US" sz="1100">
+                <a:solidFill>
+                  <a:srgbClr val="000000"/>
+                </a:solidFill>
+                <a:latin typeface="Arial"/>
+                <a:ea typeface="Arial"/>
+                <a:cs typeface="Arial"/>
+                <a:sym typeface="Arial"/>
+              </a:rPr>
+              <a:t>payments via NewCo&#8217;s network</a:t>
+            </a:r>
+            <a:endParaRPr/>
+          </a:p>
+          <a:p>
+            <a:pPr indent="-171450" lvl="0" marL="171450" marR="0" rtl="0" algn="l">
+              <a:lnSpc>
+                <a:spcPct val="100000"/>
+              </a:lnSpc>
+              <a:spcBef>
+                <a:spcPts val="550"/>
+              </a:spcBef>
+              <a:spcAft>
+                <a:spcPts val="0"/>
+              </a:spcAft>
+              <a:buClr>
+                <a:srgbClr val="000000"/>
+              </a:buClr>
+              <a:buSzPts val="1100"/>
+              <a:buFont typeface="Arial"/>
+              <a:buChar char="&#8226;"/>
+            </a:pPr>
+            <a:r>
+              <a:rPr lang="en-US" sz="1100">
+                <a:solidFill>
+                  <a:srgbClr val="000000"/>
+                </a:solidFill>
+                <a:latin typeface="Arial"/>
+                <a:ea typeface="Arial"/>
+                <a:cs typeface="Arial"/>
+                <a:sym typeface="Arial"/>
+              </a:rPr>
+              <a:t>Merchants leverage on NewCo to enable digital merchant solutions to support business operations</a:t>
+            </a:r>
+            <a:endParaRPr/>
+          </a:p>
+          <a:p>
+            <a:pPr indent="-171450" lvl="0" marL="171450" marR="0" rtl="0" algn="l">
+              <a:lnSpc>
+                <a:spcPct val="100000"/>
+              </a:lnSpc>
+              <a:spcBef>
+                <a:spcPts val="550"/>
+              </a:spcBef>
+              <a:spcAft>
+                <a:spcPts val="0"/>
+              </a:spcAft>
+              <a:buClr>
+                <a:srgbClr val="000000"/>
+              </a:buClr>
+              <a:buSzPts val="1100"/>
+              <a:buFont typeface="Arial"/>
+              <a:buChar char="&#8226;"/>
+            </a:pPr>
+            <a:r>
+              <a:rPr b="0" i="0" lang="en-US" sz="1100" u="none" cap="none" strike="noStrike">
+                <a:solidFill>
+                  <a:srgbClr val="000000"/>
+                </a:solidFill>
+                <a:latin typeface="Arial"/>
+                <a:ea typeface="Arial"/>
+                <a:cs typeface="Arial"/>
+                <a:sym typeface="Arial"/>
+              </a:rPr>
+              <a:t>NewCo</a:t>
+            </a:r>
+            <a:r>
+              <a:rPr b="0" i="0" lang="en-US" sz="1100" u="none" cap="none" strike="noStrike">
+                <a:solidFill>
+                  <a:srgbClr val="000000"/>
+                </a:solidFill>
+                <a:latin typeface="Arial"/>
+                <a:ea typeface="Arial"/>
+                <a:cs typeface="Arial"/>
+                <a:sym typeface="Arial"/>
+              </a:rPr>
+              <a:t> enables and integrates selected digital solutions for merchants</a:t>
+            </a:r>
+            <a:endParaRPr b="0" i="0" sz="1100" u="none" cap="none" strike="noStrike">
+              <a:solidFill>
+                <a:srgbClr val="000000"/>
+              </a:solidFill>
+              <a:latin typeface="Arial"/>
+              <a:ea typeface="Arial"/>
+              <a:cs typeface="Arial"/>
+              <a:sym typeface="Arial"/>
+            </a:endParaRPr>
+          </a:p>
+        </p:txBody>
+      </p:sp>
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="949" name="Google Shape;949;p41"/>
+          <p:cNvSpPr/>
+          <p:nvPr/>
+        </p:nvSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="7659394" y="1087414"/>
+            <a:ext cx="1165759" cy="228288"/>
+          </a:xfrm>
+          <a:prstGeom prst="rect">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:solidFill>
+            <a:schemeClr val="dk1"/>
+          </a:solidFill>
+          <a:ln cap="flat" cmpd="sng" w="9525">
+            <a:solidFill>
+              <a:schemeClr val="dk1"/>
+            </a:solidFill>
+            <a:prstDash val="solid"/>
+            <a:miter lim="800000"/>
+            <a:headEnd len="sm" w="sm" type="none"/>
+            <a:tailEnd len="sm" w="sm" type="none"/>
+          </a:ln>
+        </p:spPr>
+        <p:txBody>
+          <a:bodyPr anchorCtr="0" anchor="ctr" bIns="21600" lIns="36000" spcFirstLastPara="1" rIns="36000" wrap="square" tIns="21600">
+            <a:noAutofit/>
+          </a:bodyPr>
+          <a:lstStyle/>
+          <a:p>
+            <a:pPr indent="0" lvl="0" marL="0" marR="0" rtl="0" algn="r">
+              <a:lnSpc>
+                <a:spcPct val="100000"/>
+              </a:lnSpc>
+              <a:spcBef>
+                <a:spcPts val="0"/>
+              </a:spcBef>
+              <a:spcAft>
+                <a:spcPts val="0"/>
+              </a:spcAft>
+              <a:buClr>
+                <a:srgbClr val="FFFFFF"/>
+              </a:buClr>
+              <a:buSzPts val="1200"/>
+              <a:buFont typeface="Arial"/>
+              <a:buNone/>
+            </a:pPr>
+            <a:r>
+              <a:rPr b="1" i="0" lang="en-US" sz="1200" u="none" cap="none" strike="noStrike">
+                <a:solidFill>
+                  <a:srgbClr val="FFFFFF"/>
+                </a:solidFill>
+                <a:latin typeface="Arial"/>
+                <a:ea typeface="Arial"/>
+                <a:cs typeface="Arial"/>
+                <a:sym typeface="Arial"/>
+              </a:rPr>
+              <a:t>ILLUSTRATIVE</a:t>
+            </a:r>
+            <a:endParaRPr b="1" i="0" sz="1200" u="none" cap="none" strike="noStrike">
+              <a:solidFill>
+                <a:srgbClr val="FFFFFF"/>
+              </a:solidFill>
+              <a:latin typeface="Arial"/>
+              <a:ea typeface="Arial"/>
+              <a:cs typeface="Arial"/>
+              <a:sym typeface="Arial"/>
+            </a:endParaRPr>
+          </a:p>
+        </p:txBody>
+      </p:sp>
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="950" name="Google Shape;950;p41"/>
+          <p:cNvSpPr txBox="1"/>
+          <p:nvPr/>
+        </p:nvSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="352236" y="1138144"/>
+            <a:ext cx="8140700" cy="212725"/>
+          </a:xfrm>
+          <a:prstGeom prst="rect">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:noFill/>
+          <a:ln>
+            <a:noFill/>
+          </a:ln>
+        </p:spPr>
+        <p:txBody>
+          <a:bodyPr anchorCtr="0" anchor="t" bIns="0" lIns="0" spcFirstLastPara="1" rIns="0" wrap="square" tIns="0">
+            <a:noAutofit/>
+          </a:bodyPr>
+          <a:lstStyle/>
+          <a:p>
+            <a:pPr indent="0" lvl="0" marL="0" marR="0" rtl="0" algn="l">
+              <a:lnSpc>
+                <a:spcPct val="90000"/>
+              </a:lnSpc>
+              <a:spcBef>
+                <a:spcPts val="0"/>
+              </a:spcBef>
+              <a:spcAft>
+                <a:spcPts val="0"/>
+              </a:spcAft>
+              <a:buClr>
+                <a:srgbClr val="000000"/>
+              </a:buClr>
+              <a:buSzPts val="1400"/>
+              <a:buFont typeface="Arial"/>
+              <a:buNone/>
+            </a:pPr>
+            <a:r>
+              <a:rPr b="1" i="0" lang="en-US" sz="1400" u="none" cap="none" strike="noStrike">
+                <a:solidFill>
+                  <a:srgbClr val="000000"/>
+                </a:solidFill>
+                <a:latin typeface="Arial"/>
+                <a:ea typeface="Arial"/>
+                <a:cs typeface="Arial"/>
+                <a:sym typeface="Arial"/>
+              </a:rPr>
+              <a:t>Overview of </a:t>
+            </a:r>
+            <a:r>
+              <a:rPr b="1" lang="en-US" sz="1400">
+                <a:solidFill>
+                  <a:srgbClr val="000000"/>
+                </a:solidFill>
+                <a:latin typeface="Arial"/>
+                <a:ea typeface="Arial"/>
+                <a:cs typeface="Arial"/>
+                <a:sym typeface="Arial"/>
+              </a:rPr>
+              <a:t>Merchant Services</a:t>
+            </a:r>
+            <a:endParaRPr b="0" i="0" sz="1200" u="none" cap="none" strike="noStrike">
+              <a:solidFill>
+                <a:srgbClr val="000000"/>
+              </a:solidFill>
+              <a:latin typeface="Arial"/>
+              <a:ea typeface="Arial"/>
+              <a:cs typeface="Arial"/>
+              <a:sym typeface="Arial"/>
+            </a:endParaRPr>
+          </a:p>
+        </p:txBody>
+      </p:sp>
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="951" name="Google Shape;951;p41"/>
+          <p:cNvSpPr/>
+          <p:nvPr/>
+        </p:nvSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="768480" y="1589691"/>
+            <a:ext cx="1046704" cy="1905393"/>
+          </a:xfrm>
+          <a:custGeom>
+            <a:rect b="b" l="l" r="r" t="t"/>
+            <a:pathLst>
+              <a:path extrusionOk="0" h="201" w="114">
+                <a:moveTo>
+                  <a:pt x="96" y="89"/>
+                </a:moveTo>
+                <a:cubicBezTo>
+                  <a:pt x="18" y="89"/>
+                  <a:pt x="18" y="89"/>
+                  <a:pt x="18" y="89"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="15" y="89"/>
+                  <a:pt x="13" y="92"/>
+                  <a:pt x="13" y="95"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="13" y="105"/>
+                  <a:pt x="13" y="105"/>
+                  <a:pt x="13" y="105"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="13" y="108"/>
+                  <a:pt x="15" y="111"/>
+                  <a:pt x="18" y="111"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="96" y="111"/>
+                  <a:pt x="96" y="111"/>
+                  <a:pt x="96" y="111"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="99" y="111"/>
+                  <a:pt x="101" y="108"/>
+                  <a:pt x="101" y="105"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="101" y="95"/>
+                  <a:pt x="101" y="95"/>
+                  <a:pt x="101" y="95"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="101" y="92"/>
+                  <a:pt x="99" y="89"/>
+                  <a:pt x="96" y="89"/>
+                </a:cubicBezTo>
+                <a:close/>
+                <a:moveTo>
+                  <a:pt x="95" y="106"/>
+                </a:moveTo>
+                <a:cubicBezTo>
+                  <a:pt x="77" y="106"/>
+                  <a:pt x="77" y="106"/>
+                  <a:pt x="77" y="106"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="76" y="106"/>
+                  <a:pt x="75" y="105"/>
+                  <a:pt x="75" y="104"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="75" y="103"/>
+                  <a:pt x="76" y="102"/>
+                  <a:pt x="77" y="102"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="95" y="102"/>
+                  <a:pt x="95" y="102"/>
+                  <a:pt x="95" y="102"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="96" y="102"/>
+                  <a:pt x="97" y="103"/>
+                  <a:pt x="97" y="104"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="97" y="105"/>
+                  <a:pt x="96" y="106"/>
+                  <a:pt x="95" y="106"/>
+                </a:cubicBezTo>
+                <a:close/>
+                <a:moveTo>
+                  <a:pt x="96" y="64"/>
+                </a:moveTo>
+                <a:cubicBezTo>
+                  <a:pt x="18" y="64"/>
+                  <a:pt x="18" y="64"/>
+                  <a:pt x="18" y="64"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="15" y="64"/>
+                  <a:pt x="13" y="66"/>
+                  <a:pt x="13" y="70"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="13" y="80"/>
+                  <a:pt x="13" y="80"/>
+                  <a:pt x="13" y="80"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="13" y="83"/>
+                  <a:pt x="15" y="85"/>
+                  <a:pt x="18" y="85"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="96" y="85"/>
+                  <a:pt x="96" y="85"/>
+                  <a:pt x="96" y="85"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="99" y="85"/>
+                  <a:pt x="101" y="83"/>
+                  <a:pt x="101" y="80"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="101" y="70"/>
+                  <a:pt x="101" y="70"/>
+                  <a:pt x="101" y="70"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="101" y="66"/>
+                  <a:pt x="99" y="64"/>
+                  <a:pt x="96" y="64"/>
+                </a:cubicBezTo>
+                <a:close/>
+                <a:moveTo>
+                  <a:pt x="95" y="81"/>
+                </a:moveTo>
+                <a:cubicBezTo>
+                  <a:pt x="77" y="81"/>
+                  <a:pt x="77" y="81"/>
+                  <a:pt x="77" y="81"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="76" y="81"/>
+                  <a:pt x="75" y="80"/>
+                  <a:pt x="75" y="79"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="75" y="78"/>
+                  <a:pt x="76" y="77"/>
+                  <a:pt x="77" y="77"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="95" y="77"/>
+                  <a:pt x="95" y="77"/>
+                  <a:pt x="95" y="77"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="96" y="77"/>
+                  <a:pt x="97" y="78"/>
+                  <a:pt x="97" y="79"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="97" y="80"/>
+                  <a:pt x="96" y="81"/>
+                  <a:pt x="95" y="81"/>
+                </a:cubicBezTo>
+                <a:close/>
+                <a:moveTo>
+                  <a:pt x="96" y="115"/>
+                </a:moveTo>
+                <a:cubicBezTo>
+                  <a:pt x="18" y="115"/>
+                  <a:pt x="18" y="115"/>
+                  <a:pt x="18" y="115"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="15" y="115"/>
+                  <a:pt x="13" y="117"/>
+                  <a:pt x="13" y="120"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="13" y="130"/>
+                  <a:pt x="13" y="130"/>
+                  <a:pt x="13" y="130"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="13" y="133"/>
+                  <a:pt x="15" y="136"/>
+                  <a:pt x="18" y="136"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="96" y="136"/>
+                  <a:pt x="96" y="136"/>
+                  <a:pt x="96" y="136"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="99" y="136"/>
+                  <a:pt x="101" y="133"/>
+                  <a:pt x="101" y="130"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="101" y="120"/>
+                  <a:pt x="101" y="120"/>
+                  <a:pt x="101" y="120"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="101" y="117"/>
+                  <a:pt x="99" y="115"/>
+                  <a:pt x="96" y="115"/>
+                </a:cubicBezTo>
+                <a:close/>
+                <a:moveTo>
+                  <a:pt x="95" y="131"/>
+                </a:moveTo>
+                <a:cubicBezTo>
+                  <a:pt x="77" y="131"/>
+                  <a:pt x="77" y="131"/>
+                  <a:pt x="77" y="131"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="76" y="131"/>
+                  <a:pt x="75" y="131"/>
+                  <a:pt x="75" y="130"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="75" y="129"/>
+                  <a:pt x="76" y="128"/>
+                  <a:pt x="77" y="128"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="95" y="128"/>
+                  <a:pt x="95" y="128"/>
+                  <a:pt x="95" y="128"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="96" y="128"/>
+                  <a:pt x="97" y="129"/>
+                  <a:pt x="97" y="130"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="97" y="131"/>
+                  <a:pt x="96" y="131"/>
+                  <a:pt x="95" y="131"/>
+                </a:cubicBezTo>
+                <a:close/>
+                <a:moveTo>
+                  <a:pt x="96" y="140"/>
+                </a:moveTo>
+                <a:cubicBezTo>
+                  <a:pt x="18" y="140"/>
+                  <a:pt x="18" y="140"/>
+                  <a:pt x="18" y="140"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="15" y="140"/>
+                  <a:pt x="13" y="143"/>
+                  <a:pt x="13" y="146"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="13" y="156"/>
+                  <a:pt x="13" y="156"/>
+                  <a:pt x="13" y="156"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="13" y="159"/>
+                  <a:pt x="15" y="161"/>
+                  <a:pt x="18" y="161"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="96" y="161"/>
+                  <a:pt x="96" y="161"/>
+                  <a:pt x="96" y="161"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="99" y="161"/>
+                  <a:pt x="101" y="159"/>
+                  <a:pt x="101" y="156"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="101" y="146"/>
+                  <a:pt x="101" y="146"/>
+                  <a:pt x="101" y="146"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="101" y="143"/>
+                  <a:pt x="99" y="140"/>
+                  <a:pt x="96" y="140"/>
+                </a:cubicBezTo>
+                <a:close/>
+                <a:moveTo>
+                  <a:pt x="95" y="157"/>
+                </a:moveTo>
+                <a:cubicBezTo>
+                  <a:pt x="77" y="157"/>
+                  <a:pt x="77" y="157"/>
+                  <a:pt x="77" y="157"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="76" y="157"/>
+                  <a:pt x="75" y="156"/>
+                  <a:pt x="75" y="155"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="75" y="154"/>
+                  <a:pt x="76" y="153"/>
+                  <a:pt x="77" y="153"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="95" y="153"/>
+                  <a:pt x="95" y="153"/>
+                  <a:pt x="95" y="153"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="96" y="153"/>
+                  <a:pt x="97" y="154"/>
+                  <a:pt x="97" y="155"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="97" y="156"/>
+                  <a:pt x="96" y="157"/>
+                  <a:pt x="95" y="157"/>
+                </a:cubicBezTo>
+                <a:close/>
+                <a:moveTo>
+                  <a:pt x="96" y="165"/>
+                </a:moveTo>
+                <a:cubicBezTo>
+                  <a:pt x="18" y="165"/>
+                  <a:pt x="18" y="165"/>
+                  <a:pt x="18" y="165"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="15" y="165"/>
+                  <a:pt x="13" y="168"/>
+                  <a:pt x="13" y="171"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="13" y="181"/>
+                  <a:pt x="13" y="181"/>
+                  <a:pt x="13" y="181"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="13" y="184"/>
+                  <a:pt x="15" y="187"/>
+                  <a:pt x="18" y="187"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="96" y="187"/>
+                  <a:pt x="96" y="187"/>
+                  <a:pt x="96" y="187"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="99" y="187"/>
+                  <a:pt x="101" y="184"/>
+                  <a:pt x="101" y="181"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="101" y="171"/>
+                  <a:pt x="101" y="171"/>
+                  <a:pt x="101" y="171"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="101" y="168"/>
+                  <a:pt x="99" y="165"/>
+                  <a:pt x="96" y="165"/>
+                </a:cubicBezTo>
+                <a:close/>
+                <a:moveTo>
+                  <a:pt x="95" y="182"/>
+                </a:moveTo>
+                <a:cubicBezTo>
+                  <a:pt x="77" y="182"/>
+                  <a:pt x="77" y="182"/>
+                  <a:pt x="77" y="182"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="76" y="182"/>
+                  <a:pt x="75" y="181"/>
+                  <a:pt x="75" y="180"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="75" y="179"/>
+                  <a:pt x="76" y="179"/>
+                  <a:pt x="77" y="179"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="95" y="179"/>
+                  <a:pt x="95" y="179"/>
+                  <a:pt x="95" y="179"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="96" y="179"/>
+                  <a:pt x="97" y="179"/>
+                  <a:pt x="97" y="180"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="97" y="181"/>
+                  <a:pt x="96" y="182"/>
+                  <a:pt x="95" y="182"/>
+                </a:cubicBezTo>
+                <a:close/>
+                <a:moveTo>
+                  <a:pt x="96" y="13"/>
+                </a:moveTo>
+                <a:cubicBezTo>
+                  <a:pt x="18" y="13"/>
+                  <a:pt x="18" y="13"/>
+                  <a:pt x="18" y="13"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="15" y="13"/>
+                  <a:pt x="13" y="16"/>
+                  <a:pt x="13" y="19"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="13" y="29"/>
+                  <a:pt x="13" y="29"/>
+                  <a:pt x="13" y="29"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="13" y="32"/>
+                  <a:pt x="15" y="34"/>
+                  <a:pt x="18" y="34"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="96" y="34"/>
+                  <a:pt x="96" y="34"/>
+                  <a:pt x="96" y="34"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="99" y="34"/>
+                  <a:pt x="101" y="32"/>
+                  <a:pt x="101" y="29"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="101" y="19"/>
+                  <a:pt x="101" y="19"/>
+                  <a:pt x="101" y="19"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="101" y="16"/>
+                  <a:pt x="99" y="13"/>
+                  <a:pt x="96" y="13"/>
+                </a:cubicBezTo>
+                <a:close/>
+                <a:moveTo>
+                  <a:pt x="95" y="30"/>
+                </a:moveTo>
+                <a:cubicBezTo>
+                  <a:pt x="77" y="30"/>
+                  <a:pt x="77" y="30"/>
+                  <a:pt x="77" y="30"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="76" y="30"/>
+                  <a:pt x="75" y="29"/>
+                  <a:pt x="75" y="28"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="75" y="27"/>
+                  <a:pt x="76" y="26"/>
+                  <a:pt x="77" y="26"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="95" y="26"/>
+                  <a:pt x="95" y="26"/>
+                  <a:pt x="95" y="26"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="96" y="26"/>
+                  <a:pt x="97" y="27"/>
+                  <a:pt x="97" y="28"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="97" y="29"/>
+                  <a:pt x="96" y="30"/>
+                  <a:pt x="95" y="30"/>
+                </a:cubicBezTo>
+                <a:close/>
+                <a:moveTo>
+                  <a:pt x="104" y="0"/>
+                </a:moveTo>
+                <a:cubicBezTo>
+                  <a:pt x="10" y="0"/>
+                  <a:pt x="10" y="0"/>
+                  <a:pt x="10" y="0"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="4" y="0"/>
+                  <a:pt x="0" y="4"/>
+                  <a:pt x="0" y="10"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="0" y="191"/>
+                  <a:pt x="0" y="191"/>
+                  <a:pt x="0" y="191"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="0" y="196"/>
+                  <a:pt x="4" y="201"/>
+                  <a:pt x="10" y="201"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="104" y="201"/>
+                  <a:pt x="104" y="201"/>
+                  <a:pt x="104" y="201"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="110" y="201"/>
+                  <a:pt x="114" y="196"/>
+                  <a:pt x="114" y="191"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="114" y="10"/>
+                  <a:pt x="114" y="10"/>
+                  <a:pt x="114" y="10"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="114" y="4"/>
+                  <a:pt x="110" y="0"/>
+                  <a:pt x="104" y="0"/>
+                </a:cubicBezTo>
+                <a:close/>
+                <a:moveTo>
+                  <a:pt x="106" y="191"/>
+                </a:moveTo>
+                <a:cubicBezTo>
+                  <a:pt x="106" y="192"/>
+                  <a:pt x="105" y="193"/>
+                  <a:pt x="104" y="193"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="10" y="193"/>
+                  <a:pt x="10" y="193"/>
+                  <a:pt x="10" y="193"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="9" y="193"/>
+                  <a:pt x="8" y="192"/>
+                  <a:pt x="8" y="191"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="8" y="10"/>
+                  <a:pt x="8" y="10"/>
+                  <a:pt x="8" y="10"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="8" y="9"/>
+                  <a:pt x="9" y="8"/>
+                  <a:pt x="10" y="8"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="104" y="8"/>
+                  <a:pt x="104" y="8"/>
+                  <a:pt x="104" y="8"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="105" y="8"/>
+                  <a:pt x="106" y="9"/>
+                  <a:pt x="106" y="10"/>
+                </a:cubicBezTo>
+                <a:lnTo>
+                  <a:pt x="106" y="191"/>
+                </a:lnTo>
+                <a:close/>
+                <a:moveTo>
+                  <a:pt x="96" y="39"/>
+                </a:moveTo>
+                <a:cubicBezTo>
+                  <a:pt x="18" y="39"/>
+                  <a:pt x="18" y="39"/>
+                  <a:pt x="18" y="39"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="15" y="39"/>
+                  <a:pt x="13" y="41"/>
+                  <a:pt x="13" y="44"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="13" y="54"/>
+                  <a:pt x="13" y="54"/>
+                  <a:pt x="13" y="54"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="13" y="57"/>
+                  <a:pt x="15" y="60"/>
+                  <a:pt x="18" y="60"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="96" y="60"/>
+                  <a:pt x="96" y="60"/>
+                  <a:pt x="96" y="60"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="99" y="60"/>
+                  <a:pt x="101" y="57"/>
+                  <a:pt x="101" y="54"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="101" y="44"/>
+                  <a:pt x="101" y="44"/>
+                  <a:pt x="101" y="44"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="101" y="41"/>
+                  <a:pt x="99" y="39"/>
+                  <a:pt x="96" y="39"/>
+                </a:cubicBezTo>
+                <a:close/>
+                <a:moveTo>
+                  <a:pt x="95" y="55"/>
+                </a:moveTo>
+                <a:cubicBezTo>
+                  <a:pt x="77" y="55"/>
+                  <a:pt x="77" y="55"/>
+                  <a:pt x="77" y="55"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="76" y="55"/>
+                  <a:pt x="75" y="54"/>
+                  <a:pt x="75" y="53"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="75" y="52"/>
+                  <a:pt x="76" y="52"/>
+                  <a:pt x="77" y="52"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="95" y="52"/>
+                  <a:pt x="95" y="52"/>
+                  <a:pt x="95" y="52"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="96" y="52"/>
+                  <a:pt x="97" y="52"/>
+                  <a:pt x="97" y="53"/>
+                </a:cubicBezTo>
+                <a:cubicBezTo>
+                  <a:pt x="97" y="54"/>
+                  <a:pt x="96" y="55"/>
+                  <a:pt x="95" y="55"/>
+                </a:cubicBezTo>
+                <a:close/>
+              </a:path>
+            </a:pathLst>
+          </a:custGeom>
+          <a:solidFill>
+            <a:srgbClr val="000000"/>
+          </a:solidFill>
+          <a:ln>
+            <a:noFill/>
+          </a:ln>
+        </p:spPr>
+        <p:txBody>
+          <a:bodyPr anchorCtr="0" anchor="t" bIns="45700" lIns="91425" spcFirstLastPara="1" rIns="91425" wrap="square" tIns="45700">
+            <a:noAutofit/>
+          </a:bodyPr>
+          <a:lstStyle/>
+          <a:p>
+            <a:pPr indent="0" lvl="0" marL="0" marR="0" rtl="0" algn="l">
+              <a:spcBef>
+                <a:spcPts val="0"/>
+              </a:spcBef>
+              <a:spcAft>
+                <a:spcPts val="0"/>
+              </a:spcAft>
+              <a:buNone/>
+            </a:pPr>
+            <a:r>
+              <a:rPr lang="en-US" sz="1800">
+                <a:solidFill>
+                  <a:srgbClr val="000000"/>
+                </a:solidFill>
+                <a:latin typeface="Arial"/>
+                <a:ea typeface="Arial"/>
+                <a:cs typeface="Arial"/>
+                <a:sym typeface="Arial"/>
+              </a:rPr>
+              <a:t> 	</a:t>
+            </a:r>
+            <a:endParaRPr sz="1800">
+              <a:solidFill>
+                <a:srgbClr val="000000"/>
+              </a:solidFill>
+              <a:latin typeface="Arial"/>
+              <a:ea typeface="Arial"/>
+              <a:cs typeface="Arial"/>
+              <a:sym typeface="Arial"/>
+            </a:endParaRPr>
+          </a:p>
+        </p:txBody>
+      </p:sp>
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="952" name="Google Shape;952;p41"/>
+          <p:cNvSpPr txBox="1"/>
+          <p:nvPr/>
+        </p:nvSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="403657" y="3655728"/>
+            <a:ext cx="1776350" cy="338554"/>
+          </a:xfrm>
+          <a:prstGeom prst="rect">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:noFill/>
+          <a:ln>
+            <a:noFill/>
+          </a:ln>
+        </p:spPr>
+        <p:txBody>
+          <a:bodyPr anchorCtr="0" anchor="t" bIns="0" lIns="0" spcFirstLastPara="1" rIns="0" wrap="square" tIns="0">
+            <a:spAutoFit/>
+          </a:bodyPr>
+          <a:lstStyle/>
+          <a:p>
+            <a:pPr indent="0" lvl="0" marL="0" marR="0" rtl="0" algn="ctr">
+              <a:lnSpc>
+                <a:spcPct val="100000"/>
+              </a:lnSpc>
+              <a:spcBef>
+                <a:spcPts val="0"/>
+              </a:spcBef>
+              <a:spcAft>
+                <a:spcPts val="0"/>
+              </a:spcAft>
+              <a:buClr>
+                <a:srgbClr val="000000"/>
+              </a:buClr>
+              <a:buSzPts val="1100"/>
+              <a:buFont typeface="Arial"/>
+              <a:buNone/>
+            </a:pPr>
+            <a:r>
+              <a:rPr b="1" lang="en-US" sz="1100">
+                <a:solidFill>
+                  <a:srgbClr val="000000"/>
+                </a:solidFill>
+                <a:latin typeface="Arial"/>
+                <a:ea typeface="Arial"/>
+                <a:cs typeface="Arial"/>
+                <a:sym typeface="Arial"/>
+              </a:rPr>
+              <a:t>Merchant Services &#8211; Overlay Digital Solutions</a:t>
+            </a:r>
+            <a:endParaRPr b="1" sz="1100" u="none" cap="none" strike="noStrike">
+              <a:solidFill>
+                <a:srgbClr val="000000"/>
+              </a:solidFill>
+              <a:latin typeface="Arial"/>
+              <a:ea typeface="Arial"/>
+              <a:cs typeface="Arial"/>
+              <a:sym typeface="Arial"/>
+            </a:endParaRPr>
+          </a:p>
+        </p:txBody>
+      </p:sp>
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="953" name="Google Shape;953;p41"/>
+          <p:cNvSpPr/>
+          <p:nvPr/>
+        </p:nvSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="3629197" y="2991154"/>
+            <a:ext cx="189332" cy="189332"/>
+          </a:xfrm>
+          <a:prstGeom prst="ellipse">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:solidFill>
+            <a:schemeClr val="dk1"/>
+          </a:solidFill>
+          <a:ln>
+            <a:noFill/>
+          </a:ln>
+        </p:spPr>
+        <p:txBody>
+          <a:bodyPr anchorCtr="0" anchor="ctr" bIns="0" lIns="0" spcFirstLastPara="1" rIns="0" wrap="square" tIns="0">
+            <a:noAutofit/>
+          </a:bodyPr>
+          <a:lstStyle/>
+          <a:p>
+            <a:pPr indent="0" lvl="0" marL="0" marR="0" rtl="0" algn="ctr">
+              <a:lnSpc>
+                <a:spcPct val="100000"/>
+              </a:lnSpc>
+              <a:spcBef>
+                <a:spcPts val="0"/>
+              </a:spcBef>
+              <a:spcAft>
+                <a:spcPts val="0"/>
+              </a:spcAft>
+              <a:buClr>
+                <a:schemeClr val="lt1"/>
+              </a:buClr>
+              <a:buSzPts val="1100"/>
+              <a:buFont typeface="Arial"/>
+              <a:buNone/>
+            </a:pPr>
+            <a:r>
+              <a:rPr b="1" i="0" lang="en-US" sz="1100" u="none" cap="none" strike="noStrike">
+                <a:solidFill>
+                  <a:schemeClr val="lt1"/>
+                </a:solidFill>
+                <a:latin typeface="Arial"/>
+                <a:ea typeface="Arial"/>
+                <a:cs typeface="Arial"/>
+                <a:sym typeface="Arial"/>
+              </a:rPr>
+              <a:t>1</a:t>
+            </a:r>
+            <a:endParaRPr/>
+          </a:p>
+        </p:txBody>
+      </p:sp>
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="954" name="Google Shape;954;p41"/>
+          <p:cNvSpPr/>
+          <p:nvPr/>
+        </p:nvSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="3629197" y="3393072"/>
+            <a:ext cx="189332" cy="189332"/>
+          </a:xfrm>
+          <a:prstGeom prst="ellipse">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:solidFill>
+            <a:schemeClr val="dk1"/>
+          </a:solidFill>
+          <a:ln>
+            <a:noFill/>
+          </a:ln>
+        </p:spPr>
+        <p:txBody>
+          <a:bodyPr anchorCtr="0" anchor="ctr" bIns="0" lIns="0" spcFirstLastPara="1" rIns="0" wrap="square" tIns="0">
+            <a:noAutofit/>
+          </a:bodyPr>
+          <a:lstStyle/>
+          <a:p>
+            <a:pPr indent="0" lvl="0" marL="0" marR="0" rtl="0" algn="ctr">
+              <a:lnSpc>
+                <a:spcPct val="100000"/>
+              </a:lnSpc>
+              <a:spcBef>
+                <a:spcPts val="0"/>
+              </a:spcBef>
+              <a:spcAft>
+                <a:spcPts val="0"/>
+              </a:spcAft>
+              <a:buClr>
+                <a:schemeClr val="lt1"/>
+              </a:buClr>
+              <a:buSzPts val="1100"/>
+              <a:buFont typeface="Arial"/>
+              <a:buNone/>
+            </a:pPr>
+            <a:r>
+              <a:rPr b="1" i="0" lang="en-US" sz="1100" u="none" cap="none" strike="noStrike">
+                <a:solidFill>
+                  <a:schemeClr val="lt1"/>
+                </a:solidFill>
+                <a:latin typeface="Arial"/>
+                <a:ea typeface="Arial"/>
+                <a:cs typeface="Arial"/>
+                <a:sym typeface="Arial"/>
+              </a:rPr>
+              <a:t>2</a:t>
+            </a:r>
+            <a:endParaRPr/>
+          </a:p>
+        </p:txBody>
+      </p:sp>
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="955" name="Google Shape;955;p41"/>
+          <p:cNvSpPr/>
+          <p:nvPr/>
+        </p:nvSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="3629197" y="3801215"/>
+            <a:ext cx="189332" cy="189332"/>
+          </a:xfrm>
+          <a:prstGeom prst="ellipse">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:solidFill>
+            <a:schemeClr val="dk1"/>
+          </a:solidFill>
+          <a:ln>
+            <a:noFill/>
+          </a:ln>
+        </p:spPr>
+        <p:txBody>
+          <a:bodyPr anchorCtr="0" anchor="ctr" bIns="0" lIns="0" spcFirstLastPara="1" rIns="0" wrap="square" tIns="0">
+            <a:noAutofit/>
+          </a:bodyPr>
+          <a:lstStyle/>
+          <a:p>
+            <a:pPr indent="0" lvl="0" marL="0" marR="0" rtl="0" algn="ctr">
+              <a:lnSpc>
+                <a:spcPct val="100000"/>
+              </a:lnSpc>
+              <a:spcBef>
+                <a:spcPts val="0"/>
+              </a:spcBef>
+              <a:spcAft>
+                <a:spcPts val="0"/>
+              </a:spcAft>
+              <a:buClr>
+                <a:schemeClr val="lt1"/>
+              </a:buClr>
+              <a:buSzPts val="1100"/>
+              <a:buFont typeface="Arial"/>
+              <a:buNone/>
+            </a:pPr>
+            <a:r>
+              <a:rPr b="1" i="0" lang="en-US" sz="1100" u="none" cap="none" strike="noStrike">
+                <a:solidFill>
+                  <a:schemeClr val="lt1"/>
+                </a:solidFill>
+                <a:latin typeface="Arial"/>
+                <a:ea typeface="Arial"/>
+                <a:cs typeface="Arial"/>
+                <a:sym typeface="Arial"/>
+              </a:rPr>
+              <a:t>3</a:t>
+            </a:r>
+            <a:endParaRPr/>
+          </a:p>
+        </p:txBody>
+      </p:sp>
+      <p:sp>
+        <p:nvSpPr>
+          <p:cNvPr id="956" name="Google Shape;956;p41"/>
+          <p:cNvSpPr txBox="1"/>
+          <p:nvPr/>
+        </p:nvSpPr>
+        <p:spPr>
+          <a:xfrm>
+            <a:off x="306157" y="4696026"/>
+            <a:ext cx="8135175" cy="92333"/>
+          </a:xfrm>
+          <a:prstGeom prst="rect">
+            <a:avLst/>
+          </a:prstGeom>
+          <a:noFill/>
+          <a:ln>
+            <a:noFill/>
+          </a:ln>
+        </p:spPr>
+        <p:txBody>
+          <a:bodyPr anchorCtr="0" anchor="b" bIns="0" lIns="0" spcFirstLastPara="1" rIns="0" wrap="square" tIns="0">
+            <a:spAutoFit/>
+          </a:bodyPr>
+          <a:lstStyle/>
+          <a:p>
+            <a:pPr indent="0" lvl="0" marL="0" marR="0" rtl="0" algn="l">
+              <a:lnSpc>
+                <a:spcPct val="100000"/>
+              </a:lnSpc>
+              <a:spcBef>
+                <a:spcPts val="0"/>
+              </a:spcBef>
+              <a:spcAft>
+                <a:spcPts val="0"/>
+              </a:spcAft>
+              <a:buClr>
+                <a:srgbClr val="000000"/>
+              </a:buClr>
+              <a:buSzPts val="600"/>
+              <a:buFont typeface="Arial"/>
+              <a:buNone/>
+            </a:pPr>
+            <a:r>
+              <a:rPr b="0" i="1" lang="en-US" sz="600" u="none" cap="none" strike="noStrike">
+                <a:solidFill>
+                  <a:srgbClr val="000000"/>
+                </a:solidFill>
+                <a:latin typeface="Arial"/>
+                <a:ea typeface="Arial"/>
+                <a:cs typeface="Arial"/>
+                <a:sym typeface="Arial"/>
+              </a:rPr>
+              <a:t>Source: PwC Strategy&amp; analysis</a:t>
+            </a:r>
+            <a:endParaRPr b="0" i="1" sz="600" u="none" cap="none" strike="noStrike">
+              <a:solidFill>
+                <a:srgbClr val="000000"/>
+              </a:solidFill>
+              <a:latin typeface="Arial"/>
+              <a:ea typeface="Arial"/>
+              <a:cs typeface="Arial"/>
+              <a:sym typeface="Arial"/>
+            </a:endParaRPr>
+          </a:p>
+        </p:txBody>
+      </p:sp>
+    </p:spTree>
+  </p:cSld>
+  <p:clrMapOvr>
+    <a:masterClrMapping/>
+  </p:clrMapOvr>
+</p:sld>
