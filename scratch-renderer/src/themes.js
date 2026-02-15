@@ -43,8 +43,48 @@ const themes = {
   },
 };
 
-function getTheme(name) {
-  return themes[(name || "").toLowerCase()] || themes.midnight_executive;
+const THEME_KEYS = [
+  "primary", "secondary", "accent", "background", "darkBackground",
+  "text", "textLight", "muted", "cardFill", "cardBorder",
+  "headerFont", "bodyFont",
+];
+
+const HEX6_RE = /^[0-9A-Fa-f]{6}$/;
+
+const ALLOWED_FONTS = new Set([
+  "Arial", "Calibri", "Georgia", "Cambria",
+  "Trebuchet MS", "Verdana", "Tahoma", "Times New Roman",
+]);
+
+/**
+ * Resolve a theme from either a preset name string or a full theme object.
+ * Missing/invalid properties are filled from midnight_executive defaults.
+ */
+function resolveTheme(input) {
+  if (!input || typeof input === "string") {
+    return themes[(input || "").toLowerCase()] || themes.midnight_executive;
+  }
+
+  if (typeof input === "object" && !Array.isArray(input)) {
+    const fallback = themes.midnight_executive;
+    const result = {};
+    for (const key of THEME_KEYS) {
+      const value = (input[key] || "").toString().trim();
+      if (key === "headerFont" || key === "bodyFont") {
+        result[key] = ALLOWED_FONTS.has(value) ? value : fallback[key];
+      } else {
+        const cleaned = value.replace(/^#/, "");
+        result[key] = HEX6_RE.test(cleaned) ? cleaned : fallback[key];
+      }
+    }
+    return result;
+  }
+
+  return themes.midnight_executive;
 }
 
-module.exports = { themes, getTheme };
+function getTheme(name) {
+  return resolveTheme(name);
+}
+
+module.exports = { themes, getTheme, resolveTheme };

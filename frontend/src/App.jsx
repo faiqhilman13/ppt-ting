@@ -24,7 +24,6 @@ export default function App() {
   const [docFile, setDocFile] = useState(null);
   const [prompt, setPrompt] = useState("Create a 12-slide strategy deck about AI agents for enterprise operations.");
   const [creationMode, setCreationMode] = useState("template");
-  const [scratchTheme, setScratchTheme] = useState("default");
   const [selectedTemplateId, setSelectedTemplateId] = useState("");
   const [selectedDocIds, setSelectedDocIds] = useState([]);
   const [slideCount, setSlideCount] = useState(12);
@@ -42,6 +41,7 @@ export default function App() {
   const [error, setError] = useState("");
   const [busy, setBusy] = useState(false);
   const [editorMountReady, setEditorMountReady] = useState(false);
+
   const latestVersionInfo = useMemo(() => {
     if (!deck?.versions?.length) return null;
     return deck.versions.find((row) => row.version === deck.latest_version) || deck.versions[0];
@@ -170,7 +170,7 @@ export default function App() {
           prompt,
           creation_mode: creationMode,
           template_id: creationMode === "template" ? selectedTemplateId : null,
-          scratch_theme: creationMode === "scratch" ? scratchTheme : null,
+          scratch_theme: null,
           doc_ids: selectedDocIds,
           slide_count: Number(slideCount),
           provider,
@@ -283,75 +283,126 @@ export default function App() {
     <div className="page">
       <header>
         <h1>PowerPoint Agent</h1>
-        <p>Prompt → Research + Citations → PPTX → Revision Loop</p>
+        <p>AI-powered deck generation with template fidelity</p>
       </header>
 
       {error && <div className="error">{error}</div>}
 
       <section className="grid">
         <div className="card">
-          <h2>1) Upload Template</h2>
+          <h2>Upload Template</h2>
           <form onSubmit={uploadTemplate}>
-            <input value={templateName} onChange={(e) => setTemplateName(e.target.value)} placeholder="Template name" />
-            <input type="file" accept=".pptx" onChange={(e) => setTemplateFile(e.target.files?.[0] || null)} />
-            <button disabled={busy || !templateFile}>Upload Template</button>
+            <label>Template Name</label>
+            <input
+              type="text"
+              value={templateName}
+              onChange={(e) => setTemplateName(e.target.value)}
+              placeholder="Enter template name"
+            />
+            <label style={{ marginTop: "12px" }}>PPTX File</label>
+            <input
+              type="file"
+              accept=".pptx"
+              onChange={(e) => setTemplateFile(e.target.files?.[0] || null)}
+            />
+            <div className="row">
+              <button type="submit" disabled={busy || !templateFile} className="btn-primary">
+                {busy ? "Uploading..." : "Upload Template"}
+              </button>
+            </div>
           </form>
-          <ul>
-            {templates.map((t) => (
-              <li key={t.id}>
-                <span>{t.name} ({t.status})</span>
-                <button type="button" disabled={busy} onClick={() => deleteTemplate(t.id, t.name)}>
-                  Delete
-                </button>
-              </li>
-            ))}
-          </ul>
-          <div className="row">
-            <button type="button" disabled={busy} onClick={() => cleanupTemplates(true)}>
+          
+          {templates.length > 0 && (
+            <div className="template-list">
+              <label style={{ marginBottom: "8px" }}>Your Templates</label>
+              {templates.map((t) => (
+                <div key={t.id} className="template-item">
+                  <span className="template-name">{t.name}</span>
+                  <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                    <span className="template-status">{t.status}</span>
+                    <button
+                      type="button"
+                      className="btn-ghost btn-sm"
+                      disabled={busy}
+                      onClick={() => deleteTemplate(t.id, t.name)}
+                    >
+                      Delete
+                    </button>
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
+
+          <div className="row" style={{ marginTop: "16px" }}>
+            <button type="button" className="btn-secondary btn-sm" disabled={busy} onClick={() => cleanupTemplates(true)}>
               Preview Cleanup
             </button>
-            <button type="button" disabled={busy} onClick={() => cleanupTemplates(false)}>
-              Cleanup Hidden/Test Templates
+            <button type="button" className="btn-secondary btn-sm" disabled={busy} onClick={() => cleanupTemplates(false)}>
+              Cleanup Hidden
             </button>
           </div>
           {cleanupReport && (
-            <p>
-              {cleanupReport.dry_run ? "Dry run" : "Cleanup"}: matched {cleanupReport.matched_ids.length}, deleted{" "}
-              {cleanupReport.deleted_ids.length}, skipped {cleanupReport.skipped.length}.
+            <p style={{ fontSize: "0.85rem", color: "var(--color-text-secondary)", marginTop: "12px" }}>
+              {cleanupReport.dry_run ? "Dry run" : "Cleanup"}: matched {cleanupReport.matched_ids.length}, deleted {cleanupReport.deleted_ids.length}, skipped {cleanupReport.skipped.length}.
             </p>
           )}
         </div>
 
         <div className="card">
-          <h2>2) Upload Reference Docs</h2>
+          <h2>Reference Documents</h2>
           <form onSubmit={uploadDoc}>
-            <input type="file" accept=".txt,.md,.pdf,.docx" onChange={(e) => setDocFile(e.target.files?.[0] || null)} />
-            <button disabled={busy || !docFile}>Upload Doc</button>
+            <input
+              type="file"
+              accept=".txt,.md,.pdf,.docx"
+              onChange={(e) => setDocFile(e.target.files?.[0] || null)}
+            />
+            <div className="row">
+              <button type="submit" disabled={busy || !docFile} className="btn-primary">
+                {busy ? "Uploading..." : "Upload Document"}
+              </button>
+            </div>
           </form>
-          <div className="doc-list">
-            {docs.map((doc) => (
-              <label key={doc.id}>
-                <input type="checkbox" checked={selectedDocIds.includes(doc.id)} onChange={() => toggleDoc(doc.id)} />
-                {doc.filename}
-              </label>
-            ))}
-          </div>
+          
+          {docs.length > 0 ? (
+            <div className="doc-list">
+              {docs.map((doc) => (
+                <label key={doc.id}>
+                  <input
+                    type="checkbox"
+                    checked={selectedDocIds.includes(doc.id)}
+                    onChange={() => toggleDoc(doc.id)}
+                  />
+                  {doc.filename}
+                </label>
+              ))}
+            </div>
+          ) : (
+            <p className="empty-state">No documents uploaded yet</p>
+          )}
         </div>
       </section>
 
-      <section className="card">
-        <h2>3) Generate Deck</h2>
-        <textarea value={prompt} onChange={(e) => setPrompt(e.target.value)} rows={4} />
-        <div className="row">
-          <label>
-            Mode
+      <section className="card section">
+        <h2>Generate Deck</h2>
+        <label>Your Prompt</label>
+        <textarea
+          value={prompt}
+          onChange={(e) => setPrompt(e.target.value)}
+          placeholder="Describe the deck you want to create..."
+        />
+        
+        <div className="form-row">
+          <div>
+            <label>Creation Mode</label>
             <select value={creationMode} onChange={(e) => setCreationMode(e.target.value)}>
-              <option value="template">template</option>
-              <option value="scratch">scratch</option>
+              <option value="template">Use Template</option>
+              <option value="scratch">From Scratch</option>
             </select>
-          </label>
-          <label>
-            Template
+          </div>
+          
+          <div>
+            <label>Template</label>
             <select
               value={selectedTemplateId}
               onChange={(e) => setSelectedTemplateId(e.target.value)}
@@ -364,58 +415,62 @@ export default function App() {
                 </option>
               ))}
             </select>
-          </label>
-          <label>
-            Scratch Theme
-            <select
-              value={scratchTheme}
-              onChange={(e) => setScratchTheme(e.target.value)}
-              disabled={creationMode !== "scratch"}
-            >
-              <option value="default">default</option>
-              <option value="dark">dark</option>
-              <option value="corporate">corporate</option>
-            </select>
-          </label>
-          <label>
-            Slides
-            <input type="number" value={slideCount} min={1} max={30} onChange={(e) => setSlideCount(e.target.value)} />
-          </label>
-          <label>
-            Provider
+          </div>
+          
+          <div>
+            <label>Slide Count</label>
+            <input
+              type="number"
+              value={slideCount}
+              min={1}
+              max={30}
+              onChange={(e) => setSlideCount(Number(e.target.value))}
+            />
+          </div>
+          
+          <div>
+            <label>Provider</label>
             <select value={provider} onChange={(e) => setProvider(e.target.value)}>
-              <option value="mock">mock</option>
-              <option value="openai">openai</option>
-              <option value="anthropic">anthropic</option>
+              <option value="mock">Mock</option>
+              <option value="openai">OpenAI</option>
+              <option value="anthropic">Anthropic</option>
             </select>
-          </label>
-          <label>
-            Agent Mode
+          </div>
+        </div>
+        
+        <div className="form-row">
+          <div>
+            <label>Agent Mode</label>
             <select value={agentMode} onChange={(e) => setAgentMode(e.target.value)}>
-              <option value="bounded">bounded</option>
-              <option value="off">off</option>
+              <option value="bounded">Bounded</option>
+              <option value="off">Off</option>
             </select>
-          </label>
-          <label>
-            Quality Profile
+          </div>
+          
+          <div>
+            <label>Quality Profile</label>
             <select value={qualityProfile} onChange={(e) => setQualityProfile(e.target.value)}>
-              <option value="fast">fast</option>
-              <option value="balanced">balanced</option>
-              <option value="high_fidelity">high_fidelity</option>
+              <option value="fast">Fast</option>
+              <option value="balanced">Balanced</option>
+              <option value="high_fidelity">High Fidelity</option>
             </select>
-          </label>
-          <label>
-            Max Corrections
+          </div>
+          
+          <div>
+            <label>Max Corrections</label>
             <input
               type="number"
               min={0}
               max={2}
               value={maxCorrectionPasses}
-              onChange={(e) => setMaxCorrectionPasses(e.target.value)}
+              onChange={(e) => setMaxCorrectionPasses(Number(e.target.value))}
             />
-          </label>
+          </div>
         </div>
-        <button disabled={busy || !canGenerate} onClick={runGeneration}>Generate</button>
+        
+        <button disabled={busy || !canGenerate} onClick={runGeneration} className="btn-primary" style={{ width: "100%", marginTop: "8px" }}>
+          {busy ? "Generating..." : "Generate Deck"}
+        </button>
       </section>
 
       <section className="grid">
@@ -423,17 +478,39 @@ export default function App() {
           <h2>Job Status</h2>
           {job ? (
             <>
-              <p><strong>{job.status}</strong> | {job.phase}</p>
-              <progress max="100" value={job.progress_pct} />
-              <p>{job.progress_pct}%</p>
-              {job.error_message && <p className="error">{job.error_message}</p>}
+              <div className="job-info">
+                <div className="job-info-item">
+                  <span className="job-info-label">Status</span>
+                  <span className={`status status-${job.status}`}>{job.status}</span>
+                </div>
+                <div className="job-info-item">
+                  <span className="job-info-label">Phase</span>
+                  <span className="job-info-value">{job.phase}</span>
+                </div>
+                <div className="job-info-item">
+                  <span className="job-info-label">Progress</span>
+                  <span className="job-info-value">{job.progress_pct}%</span>
+                </div>
+              </div>
+              
+              <div className="progress-wrapper">
+                <progress max="100" value={job.progress_pct} />
+              </div>
+              
+              {job.error_message && (
+                <div className="error" style={{ marginTop: "12px" }}>
+                  {job.error_message}
+                </div>
+              )}
+              
               {jobEvents.length > 0 && (
                 <details>
                   <summary>Trace Events ({jobEvents.length})</summary>
                   <ul>
                     {jobEvents.slice(-40).map((event) => (
-                      <li key={`${event.id}-${event.event_type}`}>
-                        [{event.stage}] {event.event_type}
+                      <li key={`${event.id}-${event.event_type}`} style={{ fontFamily: "var(--font-mono)", fontSize: "0.75rem" }}>
+                        <span style={{ color: "var(--color-text-secondary)" }}>[{event.stage}]</span>
+                        <span>{event.event_type}</span>
                       </li>
                     ))}
                   </ul>
@@ -441,18 +518,27 @@ export default function App() {
               )}
             </>
           ) : (
-            <p>No active job.</p>
+            <p className="empty-state">No active job</p>
           )}
         </div>
 
         <div className="card">
-          <h2>4) Output + Revision</h2>
+          <h2>Output & Revision</h2>
           {deck ? (
             <>
-              <p>Deck ID: {deck.id}</p>
-              <p>Latest Version: {deck.latest_version}</p>
+              <div className="job-info">
+                <div className="job-info-item">
+                  <span className="job-info-label">Deck ID</span>
+                  <span className="job-info-value">{deck.id.slice(0, 8)}...</span>
+                </div>
+                <div className="job-info-item">
+                  <span className="job-info-label">Version</span>
+                  <span className="job-info-value">v{deck.latest_version}</span>
+                </div>
+              </div>
+              
               {latestVersionInfo?.warnings?.length > 0 && (
-                <div className="error">
+                <div className="warning-box">
                   <strong>Warnings:</strong>
                   <ul>
                     {latestVersionInfo.warnings.map((w, idx) => (
@@ -461,42 +547,64 @@ export default function App() {
                   </ul>
                 </div>
               )}
+              
               {qualityReport && (
                 <div>
-                  <p>
-                    Quality Score: <strong>{qualityReport.score ?? "n/a"}</strong> | Passes Used:{" "}
-                    <strong>{qualityReport.passes_used ?? 0}</strong>
-                  </p>
+                  <div className="quality-badge">
+                    <span className="quality-badge-value">{qualityReport.score ?? "N/A"}</span>
+                    <span style={{ color: "#b45309", fontSize: "0.8rem" }}>Quality Score</span>
+                  </div>
+                  
                   {(qualityReport.issues?.qa_issues || []).length > 0 && (
                     <details>
                       <summary>QA Issues ({qualityReport.issues.qa_issues.length})</summary>
-                      <pre>{JSON.stringify(qualityReport.issues.qa_issues.slice(0, 20), null, 2)}</pre>
+                      <pre>{JSON.stringify(qualityReport.issues.qa_issues.slice(0, 10), null, 2)}</pre>
                     </details>
                   )}
                 </div>
               )}
-              <a href={`${API_BASE}/decks/${deck.id}/download`} target="_blank" rel="noreferrer">
-                Download .pptx
+              
+              <a
+                href={`${API_BASE}/decks/${deck.id}/download`}
+                target="_blank"
+                rel="noreferrer"
+                className="btn-primary"
+                style={{ display: "block", textAlign: "center", marginTop: "16px", textDecoration: "none" }}
+              >
+                Download PPTX
               </a>
-              <textarea value={revisePrompt} onChange={(e) => setRevisePrompt(e.target.value)} rows={3} />
-              <button disabled={busy} onClick={runRevision}>Run Revision Prompt</button>
-              <button onClick={openEditorSession}>Create Editor Session Config</button>
+              
+              <label style={{ marginTop: "16px" }}>Revision Prompt</label>
+              <textarea
+                value={revisePrompt}
+                onChange={(e) => setRevisePrompt(e.target.value)}
+                rows={2}
+              />
+              
+              <div className="row">
+                <button disabled={busy} onClick={runRevision} className="btn-secondary">
+                  Run Revision
+                </button>
+                <button onClick={openEditorSession} className="btn-ghost">
+                  Editor Config
+                </button>
+              </div>
+              
               {editorConfig && (
                 <>
-                  <div id="onlyoffice-editor" style={{ height: "560px", marginTop: 12, border: "1px solid #e5e7eb" }} />
-                  <details>
-                    <summary>ONLYOFFICE Config JSON</summary>
+                  <div id="onlyoffice-editor" />
+                  <details style={{ marginTop: "12px" }}>
+                    <summary>ONLYOFFICE Config</summary>
                     <pre>{JSON.stringify(editorConfig, null, 2)}</pre>
                   </details>
                 </>
               )}
             </>
           ) : (
-            <p>No generated deck yet.</p>
+            <p className="empty-state">Generate a deck to see output here</p>
           )}
         </div>
       </section>
     </div>
   );
 }
-

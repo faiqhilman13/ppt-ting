@@ -2,7 +2,7 @@ const express = require("express");
 const pptxgen = require("pptxgenjs");
 const fs = require("fs");
 const path = require("path");
-const { getTheme } = require("./themes");
+const { resolveTheme } = require("./themes");
 const { dispatch } = require("./builders");
 
 const app = express();
@@ -14,12 +14,12 @@ app.get("/health", (_req, res) => {
 
 app.post("/render", async (req, res) => {
   try {
-    const { slides, title, theme: themeName, outputPath } = req.body;
+    const { slides, title, theme: themeInput, outputPath } = req.body;
     if (!slides || !outputPath) {
       return res.status(400).json({ error: "slides and outputPath are required" });
     }
 
-    const theme = getTheme(themeName);
+    const theme = resolveTheme(themeInput);
     const pres = new pptxgen();
     pres.layout = "LAYOUT_16x9";
     pres.author = "PPT Ting";

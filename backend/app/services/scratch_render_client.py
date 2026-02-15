@@ -22,18 +22,25 @@ def render_scratch_pptx(
     slides_payload: list[dict],
     output_path: Path,
     title: str,
-    theme: str = "default",
+    theme: str | dict = "default",
 ) -> None:
     """Render a scratch deck via the PptxGenJS scratch-renderer service.
 
     Falls back to the built-in python-pptx builder when the service is unavailable.
+
+    Args:
+        theme: Either a preset name string (mapped via _THEME_MAP) or a full
+               theme dict with all 12 properties (passed through directly).
     """
-    mapped_theme = _THEME_MAP.get(theme, theme)
+    if isinstance(theme, dict):
+        resolved_theme = theme
+    else:
+        resolved_theme = _THEME_MAP.get(theme, theme)
 
     payload = {
         "slides": slides_payload,
         "title": title,
-        "theme": mapped_theme,
+        "theme": resolved_theme,
         "outputPath": str(output_path),
     }
 
@@ -50,9 +57,10 @@ def render_scratch_pptx(
             "scratch-renderer unavailable, falling back to python-pptx builder",
             exc_info=True,
         )
+        fallback_theme = theme if isinstance(theme, str) else "default"
         build_scratch_pptx(
             slides_payload=slides_payload,
             output_path=output_path,
             title=title,
-            theme=theme,
+            theme=fallback_theme,
         )

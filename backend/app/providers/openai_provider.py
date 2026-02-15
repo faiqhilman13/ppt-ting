@@ -274,28 +274,26 @@ class OpenAIProvider(BaseLLMProvider):
             return self._fallback(template_manifest, len(existing_slides), f"OpenAI fallback: {exc}")
 
     def generate_text(self, *, system_prompt: str, user_prompt: str, max_tokens: int = 180) -> str:
+        schema = {
+            "type": "object",
+            "properties": {
+                "text": {"type": "string"},
+            },
+            "required": ["text"],
+            "additionalProperties": False,
+        }
         try:
-            started = perf_counter()
-            logger.info(
-                "openai_request_start label=generate_text model=%s input_chars=%d",
-                settings.openai_model,
-                len(system_prompt) + len(user_prompt),
+            payload = self._run_structured_request(
+                system=system_prompt,
+                user=user_prompt,
+                output_schema=schema,
+                request_label="generate_text",
+                retries=1,
             )
-            response = self.client.responses.create(
-                model=settings.openai_model,
-                input=[
-                    {"role": "system", "content": system_prompt},
-                    {"role": "user", "content": user_prompt},
-                ],
-                max_output_tokens=max_tokens,
-            )
-            output = (response.output_text or "").strip()
-            logger.info(
-                "openai_request_done label=generate_text duration_sec=%.2f output_chars=%d",
-                perf_counter() - started,
-                len(output),
-            )
-            return output
+            output = str(payload.get("text", "")).strip()
+            if output:
+                return output
+            raise ValueError("OpenAI generate_text returned empty text field")
         except Exception as exc:
             self.last_warnings.append(f"OpenAI text generation failed ({exc}).")
             return user_prompt.strip()

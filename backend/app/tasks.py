@@ -31,6 +31,7 @@ from app.services.job_trace import record_job_event, upsert_quality_report
 from app.services.research_service import combine_research
 from app.services.render_client import render_pptx
 from app.services.scratch_render_client import render_scratch_pptx
+from app.services.theme_generator import generate_theme_from_description, is_preset
 from app.services.template_service import extract_current_slot_values, parse_template_manifest
 from app.storage import make_file_path, read_json, write_json
 from app.tools.base import ToolContext
@@ -1220,7 +1221,25 @@ def run_generation_job(job_id: str):
         requested_slide_count = int(payload.get("slide_count", 20))
         provider_name = payload.get("provider")
         extra_instructions = payload.get("extra_instructions")
-        scratch_theme = str(payload.get("scratch_theme") or settings.scratch_theme).strip() or settings.scratch_theme
+        scratch_theme = (payload.get("scratch_theme") or "").strip()
+        resolved_theme: str | dict = scratch_theme or settings.scratch_theme
+        if creation_mode == "scratch":
+            if scratch_theme and is_preset(scratch_theme):
+                resolved_theme = scratch_theme
+            else:
+                style_source = scratch_theme or prompt
+                _job_log(job.id, "theme_generation_start", description=_preview_text(style_source))
+                resolved_theme = generate_theme_from_description(
+                    style_description=style_source,
+                    provider_name=provider_name,
+                )
+                _job_log(
+                    job.id,
+                    "theme_generation_complete",
+                    primary=resolved_theme.get("primary"),
+                    accent=resolved_theme.get("accent"),
+                    headerFont=resolved_theme.get("headerFont"),
+                )
         requested_outline = payload.get("outline")
         agent_mode = str(payload.get("agent_mode") or settings.default_agent_mode).lower()
         if agent_mode not in {"off", "bounded"}:
@@ -1500,6 +1519,7 @@ def run_generation_job(job_id: str):
                 "agent_mode": agent_mode,
                 "quality_profile": quality_profile,
                 "max_correction_passes": max_correction_passes,
+                "resolved_theme": resolved_theme if creation_mode == "scratch" else None,
             },
         )
         write_json(citations_path, {"sources": research_chunks, "assets": _collect_assets(research_chunks)})
@@ -1509,7 +1529,7 @@ def run_generation_job(job_id: str):
                 slides_payload=slides_payload,
                 output_path=output_path,
                 title=prompt,
-                theme=scratch_theme,
+                theme=resolved_theme,
             )
         else:
             render_pptx(
@@ -1651,6 +1671,7 @@ def run_revision_job(job_id: str):
             raise ValueError("Template for deck not found")
         template_manifest = _load_template_manifest(template)
 
+        content = {}
         if Path(latest.content_json_path).exists():
             content = read_json(Path(latest.content_json_path))
             existing_slides = content.get("slides", [])
@@ -1847,11 +1868,22 @@ def run_revision_job(job_id: str):
 
         _set_job_state(db, job, status="running", phase="rendering", progress=75)
         if (template.status or "").startswith("scratch"):
+            revision_theme_raw = _scratch_theme_from_template(template)
+            cached_theme = content.get("resolved_theme") if content else None
+            if cached_theme and isinstance(cached_theme, dict):
+                revision_theme = cached_theme
+            elif is_preset(revision_theme_raw):
+                revision_theme = revision_theme_raw
+            else:
+                revision_theme = generate_theme_from_description(
+                    style_description=revision_theme_raw or prompt,
+                    provider_name=provider_name,
+                )
             render_scratch_pptx(
                 slides_payload=slides_payload,
                 output_path=output_path,
                 title=prompt,
-                theme=_scratch_theme_from_template(template),
+                theme=revision_theme,
             )
         else:
             render_pptx(
