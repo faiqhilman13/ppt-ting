@@ -34,12 +34,17 @@ The system uses a strict separation of concerns:
 - Docker Desktop running
 - `docker compose` available
 - Optional API keys in `backend/.env`:
+  - `MINIMAX_API_KEY=...` (for MiniMax generation via Anthropic-compatible API)
+  - `MINIMAX_MODEL=MiniMax-M2.5` (default)
+  - `MINIMAX_MAX_TOKENS=8192` (default)
+  - `MINIMAX_BASE_URL=https://api.minimax.io/anthropic` (default)
   - `OPENAI_API_KEY=...` (for OpenAI generation)
   - `ANTHROPIC_API_KEY=...` (for Anthropic generation)
   - `EXA_API_KEY=...` (for Exa web research + asset metadata)
   - `OPENAI_MODEL=gpt-5-mini` (default)
   - `ANTHROPIC_MODEL=claude-sonnet-4-20250514` (default)
   - `ANTHROPIC_MAX_TOKENS=8192` (default)
+  - `DEFAULT_LLM_PROVIDER=minimax` (recommended when using MiniMax)
   - `SCRATCH_THEME=default` (`default`/`dark`/`corporate`)
   - `PPTX_SKILL_ROOT=...` (optional override path to a local `pptx` skill folder)
 

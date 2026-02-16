@@ -26,6 +26,10 @@ class Settings(BaseSettings):
     anthropic_api_key: str | None = None
     anthropic_model: str = "claude-sonnet-4-20250514"
     anthropic_max_tokens: int = 8192
+    minimax_api_key: str | None = None
+    minimax_model: str = "MiniMax-M2.5"
+    minimax_max_tokens: int = 16384
+    minimax_base_url: str = "https://api.minimax.io/anthropic"
     exa_api_key: str | None = None
     exa_search_url: str = "https://api.exa.ai/search"
     pptx_skill_root: str | None = None

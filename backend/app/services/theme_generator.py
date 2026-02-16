@@ -60,6 +60,7 @@ FALLBACK_THEME: dict[str, str] = {
 }
 
 _HEX6_RE = re.compile(r"^[0-9A-Fa-f]{6}$")
+_FENCE_STRIP_RE = re.compile(r"^```(?:json)?\s*|\s*```$", re.IGNORECASE)
 
 _SYSTEM_PROMPT = """\
 You are a presentation design expert. You will receive either a direct style \
@@ -147,6 +148,65 @@ def _validate_theme(obj: dict[str, Any]) -> dict[str, str]:
     return result
 
 
+def _escape_newlines_in_json_strings(text: str) -> str:
+    out: list[str] = []
+    in_string = False
+    escaped = False
+    for ch in text:
+        if escaped:
+            out.append(ch)
+            escaped = False
+            continue
+        if ch == "\\":
+            out.append(ch)
+            escaped = True
+            continue
+        if ch == '"':
+            out.append(ch)
+            in_string = not in_string
+            continue
+        if in_string and ch in ("\r", "\n"):
+            if not out or out[-1] != "\\n":
+                out.append("\\n")
+            continue
+        out.append(ch)
+    return "".join(out)
+
+
+def _repair_json_candidate(text: str) -> str:
+    repaired = _escape_newlines_in_json_strings(text)
+    repaired = re.sub(r",(\s*[}\]])", r"\1", repaired)
+    return repaired
+
+
+def _extract_json_payload(text: str) -> dict[str, Any] | None:
+    raw = (text or "").strip()
+    if not raw:
+        return None
+
+    candidates: list[str] = [raw]
+    cleaned = _FENCE_STRIP_RE.sub("", raw).strip()
+    if cleaned and cleaned not in candidates:
+        candidates.append(cleaned)
+
+    first = cleaned.find("{")
+    last = cleaned.rfind("}")
+    if first >= 0 and last > first:
+        span = cleaned[first : last + 1].strip()
+        if span and span not in candidates:
+            candidates.append(span)
+
+    for candidate in candidates:
+        for attempt in (candidate, _repair_json_candidate(candidate)):
+            try:
+                payload = json.loads(attempt)
+                if isinstance(payload, dict):
+                    return payload
+            except Exception:
+                continue
+    return None
+
+
 def generate_theme_from_description(
     style_description: str,
     provider_name: str | None = None,
@@ -160,13 +220,11 @@ def generate_theme_from_description(
         raw = provider.generate_text(
             system_prompt=_SYSTEM_PROMPT,
             user_prompt=f"Style description: {style_description}",
-            max_tokens=500,
+            max_tokens=1600,
         )
-        cleaned = raw.strip()
-        if cleaned.startswith("```"):
-            cleaned = re.sub(r"^```(?:json)?\s*", "", cleaned)
-            cleaned = re.sub(r"\s*```$", "", cleaned)
-        theme_obj = json.loads(cleaned)
+        theme_obj = _extract_json_payload(raw)
+        if not theme_obj:
+            raise ValueError("Theme response was not valid JSON")
         validated = _validate_theme(theme_obj)
         logger.info(
             "theme_generated description=%s primary=%s accent=%s headerFont=%s",

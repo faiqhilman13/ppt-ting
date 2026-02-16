@@ -673,6 +673,7 @@ def _select_slides(template_manifest: dict, slide_count: int, outline: dict | No
 
     by_index = {int(row.get("index", i)): row for i, row in enumerate(all_slides)}
     selected: list[dict] = []
+    selected_indices: set[int] = set()
 
     if outline and isinstance(outline.get("slides"), list):
         for row in outline["slides"]:
@@ -683,17 +684,27 @@ def _select_slides(template_manifest: dict, slide_count: int, outline: dict | No
             except Exception:
                 continue
             base = by_index.get(idx)
-            if not base:
+            if not base or idx in selected_indices:
                 continue
             enriched = dict(base)
             enriched["narrative_role"] = str(row.get("narrative_role") or "").strip()
             enriched["key_message"] = str(row.get("key_message") or "").strip()
             selected.append(enriched)
+            selected_indices.add(idx)
             if len(selected) >= max(1, slide_count):
                 break
 
-    if not selected:
-        selected = [dict(row) for row in all_slides[: max(1, slide_count)]]
+    # If the outline yields too few valid/unique slides, backfill from remaining
+    # template slides so we still honor requested slide_count.
+    if len(selected) < max(1, slide_count):
+        for row in all_slides:
+            idx = int(row.get("index", -1))
+            if idx in selected_indices:
+                continue
+            selected.append(dict(row))
+            selected_indices.add(idx)
+            if len(selected) >= max(1, slide_count):
+                break
 
     return selected
 

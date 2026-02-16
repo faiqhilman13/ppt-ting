@@ -116,6 +116,9 @@ def _is_test_template(row: Template) -> bool:
 
 
 def _is_hidden_template(row: Template) -> bool:
+    status = str(row.status or "").lower()
+    if status in {"archived", "deleted"}:
+        return True
     return _is_internal_template(row) or _is_test_template(row)
 
 
@@ -173,10 +176,13 @@ def delete_template(template_id: str, db: Session = Depends(get_db)):
         select(func.count()).select_from(Deck).where(Deck.template_id == template_id)
     ) or 0
     if deck_count:
-        raise HTTPException(
-            status_code=409,
-            detail=f"Template is in use by {deck_count} deck(s) and cannot be deleted.",
-        )
+        # Keep referenced templates for revision/history integrity, but archive them
+        # so they disappear from the default template list.
+        if str(row.status or "").lower() != "archived":
+            row.status = "archived"
+            db.add(row)
+            db.commit()
+        return TemplateDeleteOut(template_id=template_id, deleted=False, archived=True, deleted_files=[])
 
     file_path = row.file_path
     manifest_path = row.manifest_path
@@ -184,7 +190,7 @@ def delete_template(template_id: str, db: Session = Depends(get_db)):
     db.commit()
 
     deleted_files = _delete_template_files(file_path, manifest_path)
-    return TemplateDeleteOut(template_id=template_id, deleted=True, deleted_files=deleted_files)
+    return TemplateDeleteOut(template_id=template_id, deleted=True, archived=False, deleted_files=deleted_files)
 
 
 @app.post(f"{settings.api_prefix}/templates/cleanup", response_model=TemplateCleanupOut)

@@ -38,7 +38,7 @@ flowchart LR
     TR --> T3[qa.visual_check]
     TR --> T4[render.thumbnail_grid]
 
-    W --> LLM[Providers: OpenAI/Anthropic/Mock]
+    W --> LLM[Providers: MiniMax/OpenAI/Anthropic/Mock]
     W --> QL[Deterministic Quality Rewrite]
     W --> REN[Renderer API python-pptx]
     REN --> FS

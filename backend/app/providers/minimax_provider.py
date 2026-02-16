@@ -1,5 +1,6 @@
 import json
 import logging
+import os
 import re
 import time
 from time import perf_counter
@@ -64,6 +65,7 @@ def _escape_newlines_in_json_strings(text: str) -> str:
 
 def _repair_json_candidate(text: str) -> str:
     repaired = _escape_newlines_in_json_strings(text)
+    # Remove trailing commas before object/array close.
     repaired = re.sub(r",(\s*[}\]])", r"\1", repaired)
     return repaired
 
@@ -74,10 +76,13 @@ def _extract_payload(text: str) -> dict | None:
         return None
 
     candidates: list[str] = [raw]
+
+    # Try direct fenced cleanup first.
     cleaned = _FENCE_STRIP_RE.sub("", raw).strip()
     if cleaned and cleaned not in candidates:
         candidates.append(cleaned)
 
+    # Try extracting a JSON object span from noisy wrappers.
     first = cleaned.find("{")
     last = cleaned.rfind("}")
     if first >= 0 and last > first:
@@ -110,12 +115,17 @@ def _response_text(response: object) -> str:
     return "".join(parts)
 
 
-class AnthropicProvider(BaseLLMProvider):
-    name = "anthropic"
+class MiniMaxProvider(BaseLLMProvider):
+    name = "minimax"
 
     def __init__(self, api_key: str):
         super().__init__()
-        self.client = Anthropic(api_key=api_key)
+        # Keep compatibility with older/newer anthropic SDK signatures.
+        try:
+            self.client = Anthropic(api_key=api_key, base_url=settings.minimax_base_url)
+        except TypeError:
+            os.environ["ANTHROPIC_BASE_URL"] = settings.minimax_base_url
+            self.client = Anthropic(api_key=api_key)
 
     def _messages_create_with_retry(
         self,
@@ -132,9 +142,9 @@ class AnthropicProvider(BaseLLMProvider):
         for attempt in range(retries + 1):
             started = perf_counter()
             logger.info(
-                "anthropic_request_start label=%s model=%s attempt=%d/%d input_chars=%d max_tokens=%d system_preview=%s user_preview=%s",
+                "minimax_request_start label=%s model=%s attempt=%d/%d input_chars=%d max_tokens=%d system_preview=%s user_preview=%s",
                 request_label,
-                settings.anthropic_model,
+                settings.minimax_model,
                 attempt + 1,
                 retries + 1,
                 len(system) + len(user),
@@ -144,7 +154,7 @@ class AnthropicProvider(BaseLLMProvider):
             )
             try:
                 response = self.client.messages.create(
-                    model=settings.anthropic_model,
+                    model=settings.minimax_model,
                     max_tokens=current_max_tokens,
                     temperature=temperature,
                     system=system,
@@ -152,12 +162,12 @@ class AnthropicProvider(BaseLLMProvider):
                 )
                 text = _response_text(response)
                 if not text.strip():
-                    raise ValueError("Anthropic returned empty text output")
+                    raise ValueError("MiniMax returned empty text output")
                 stop_reason = str(getattr(response, "stop_reason", "") or "")
                 if stop_reason == "max_tokens" and attempt < retries:
-                    current_max_tokens = min(current_max_tokens * 2, settings.anthropic_max_tokens)
+                    current_max_tokens = min(current_max_tokens * 2, settings.minimax_max_tokens)
                     logger.warning(
-                        "anthropic_request_retry label=%s attempt=%d/%d reason=max_tokens next_max_tokens=%d",
+                        "minimax_request_retry label=%s attempt=%d/%d reason=max_tokens next_max_tokens=%d",
                         request_label,
                         attempt + 1,
                         retries + 1,
@@ -166,7 +176,7 @@ class AnthropicProvider(BaseLLMProvider):
                     time.sleep(0.6 * (2**attempt))
                     continue
                 logger.info(
-                    "anthropic_request_done label=%s duration_sec=%.2f stop_reason=%s output_chars=%d output_preview=%s",
+                    "minimax_request_done label=%s duration_sec=%.2f stop_reason=%s output_chars=%d output_preview=%s",
                     request_label,
                     perf_counter() - started,
                     stop_reason or "unknown",
@@ -177,7 +187,7 @@ class AnthropicProvider(BaseLLMProvider):
             except Exception as exc:
                 last_error = exc
                 logger.warning(
-                    "anthropic_request_error label=%s attempt=%d/%d duration_sec=%.2f reason=%s",
+                    "minimax_request_error label=%s attempt=%d/%d duration_sec=%.2f reason=%s",
                     request_label,
                     attempt + 1,
                     retries + 1,
@@ -189,7 +199,7 @@ class AnthropicProvider(BaseLLMProvider):
 
         if last_error:
             raise last_error
-        raise RuntimeError("Anthropic request failed with unknown error")
+        raise RuntimeError("MiniMax request failed with unknown error")
 
     @staticmethod
     def _fallback(template_manifest: dict, fallback_count: int, text: str) -> list[SlideContent]:
@@ -219,7 +229,7 @@ class AnthropicProvider(BaseLLMProvider):
             if parsed:
                 return parsed, False
 
-        return AnthropicProvider._fallback(template_manifest, fallback_count, text), True
+        return MiniMaxProvider._fallback(template_manifest, fallback_count, text), True
 
     def generate_slides(self, prompt, research_chunks, template_manifest, slide_count, extra_instructions=None, deck_thesis=None):
         self.reset_warnings()
@@ -237,23 +247,23 @@ class AnthropicProvider(BaseLLMProvider):
                 request_label="generate_slides",
                 system=system,
                 user=user,
-                max_tokens=settings.anthropic_max_tokens,
+                max_tokens=settings.minimax_max_tokens,
                 temperature=0.35,
             )
             text = _response_text(msg)
             parsed, used_fallback = self._parse(text, template_manifest, len(selected))
             if used_fallback:
-                self.last_warnings.append("Anthropic returned invalid JSON payload; fallback content was used.")
+                self.last_warnings.append("MiniMax returned invalid JSON payload; fallback content was used.")
             logger.info(
-                "anthropic_generate_parsed slides=%d fallback=%s preview=%s",
+                "minimax_generate_parsed slides=%d fallback=%s preview=%s",
                 len(parsed),
                 used_fallback,
                 _slides_preview(parsed),
             )
             return parsed
         except Exception as exc:
-            self.last_warnings.append(f"Anthropic request failed; fallback content was used ({exc}).")
-            return self._fallback(template_manifest, len(selected), f"Anthropic fallback: {exc}")
+            self.last_warnings.append(f"MiniMax request failed; fallback content was used ({exc}).")
+            return self._fallback(template_manifest, len(selected), f"MiniMax fallback: {exc}")
 
     def revise_slides(self, prompt, existing_slides, research_chunks, template_manifest):
         self.reset_warnings()
@@ -268,23 +278,23 @@ class AnthropicProvider(BaseLLMProvider):
                 request_label="revise_slides",
                 system=system,
                 user=user,
-                max_tokens=settings.anthropic_max_tokens,
+                max_tokens=settings.minimax_max_tokens,
                 temperature=0.3,
             )
             text = _response_text(msg)
             parsed, used_fallback = self._parse(text, template_manifest, len(existing_slides))
             if used_fallback:
-                self.last_warnings.append("Anthropic returned invalid JSON payload during revision; fallback content was used.")
+                self.last_warnings.append("MiniMax returned invalid JSON payload during revision; fallback content was used.")
             logger.info(
-                "anthropic_revise_parsed slides=%d fallback=%s preview=%s",
+                "minimax_revise_parsed slides=%d fallback=%s preview=%s",
                 len(parsed),
                 used_fallback,
                 _slides_preview(parsed),
             )
             return parsed
         except Exception as exc:
-            self.last_warnings.append(f"Anthropic revision request failed; fallback content was used ({exc}).")
-            return self._fallback(template_manifest, len(existing_slides), f"Anthropic fallback: {exc}")
+            self.last_warnings.append(f"MiniMax revision request failed; fallback content was used ({exc}).")
+            return self._fallback(template_manifest, len(existing_slides), f"MiniMax fallback: {exc}")
 
     def generate_text(self, *, system_prompt: str, user_prompt: str, max_tokens: int = 180) -> str:
         try:
@@ -297,7 +307,7 @@ class AnthropicProvider(BaseLLMProvider):
             )
             return _response_text(msg).strip()
         except Exception as exc:
-            self.last_warnings.append(f"Anthropic text generation failed ({exc}).")
+            self.last_warnings.append(f"MiniMax text generation failed ({exc}).")
             return user_prompt.strip()
 
     def generate_outline(
@@ -340,13 +350,13 @@ class AnthropicProvider(BaseLLMProvider):
                 request_label="generate_outline",
                 system=system,
                 user=user,
-                max_tokens=min(settings.anthropic_max_tokens, 2000),
+                max_tokens=min(settings.minimax_max_tokens, 2000),
                 temperature=0.25,
             )
             text = _response_text(msg)
             payload = _extract_payload(text)
             if not payload:
-                raise ValueError("Anthropic outline response was not valid JSON")
+                raise ValueError("MiniMax outline response was not valid JSON")
             thesis = str(payload.get("thesis", "")).strip()
             slides = payload.get("slides", [])
             if thesis and isinstance(slides, list) and slides:
@@ -362,7 +372,7 @@ class AnthropicProvider(BaseLLMProvider):
                         break
                 if trimmed:
                     logger.info(
-                        "anthropic_outline_parsed thesis=%s slides=%d preview=%s",
+                        "minimax_outline_parsed thesis=%s slides=%d preview=%s",
                         _preview_text(thesis),
                         len(trimmed),
                         [
@@ -375,9 +385,9 @@ class AnthropicProvider(BaseLLMProvider):
                         ],
                     )
                     return {"thesis": thesis, "slides": trimmed}
-            self.last_warnings.append("Anthropic outline payload was incomplete; fallback outline used.")
+            self.last_warnings.append("MiniMax outline payload was incomplete; fallback outline used.")
         except Exception as exc:
-            self.last_warnings.append(f"Anthropic outline generation failed; fallback outline used ({exc}).")
+            self.last_warnings.append(f"MiniMax outline generation failed; fallback outline used ({exc}).")
 
         fallback_slides = []
         for idx, row in enumerate(all_slides[: max(1, slide_count)], start=1):

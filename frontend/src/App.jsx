@@ -27,7 +27,7 @@ export default function App() {
   const [selectedTemplateId, setSelectedTemplateId] = useState("");
   const [selectedDocIds, setSelectedDocIds] = useState([]);
   const [slideCount, setSlideCount] = useState(12);
-  const [provider, setProvider] = useState("openai");
+  const [provider, setProvider] = useState("minimax");
   const [agentMode, setAgentMode] = useState("bounded");
   const [qualityProfile, setQualityProfile] = useState("balanced");
   const [maxCorrectionPasses, setMaxCorrectionPasses] = useState(1);
@@ -432,6 +432,7 @@ export default function App() {
             <label>Provider</label>
             <select value={provider} onChange={(e) => setProvider(e.target.value)}>
               <option value="mock">Mock</option>
+              <option value="minimax">MiniMax</option>
               <option value="openai">OpenAI</option>
               <option value="anthropic">Anthropic</option>
             </select>

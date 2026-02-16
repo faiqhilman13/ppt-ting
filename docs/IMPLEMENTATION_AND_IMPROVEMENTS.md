@@ -29,7 +29,7 @@ Status date: February 15, 2026
 
 ### 4. LLM provider abstraction
 
-- Providers: `mock`, `openai`
+- Providers: `mock`, `minimax`, `openai`, `anthropic`
 - Shared output contract:
   - `{"slides": [{"template_slide_index": int, "slots": {...}}]}`
 

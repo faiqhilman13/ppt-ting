@@ -15,6 +15,7 @@ class TemplateOut(BaseModel):
 class TemplateDeleteOut(BaseModel):
     template_id: str
     deleted: bool
+    archived: bool = False
     deleted_files: list[str] = Field(default_factory=list)
 
 
