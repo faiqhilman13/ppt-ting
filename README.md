@@ -82,6 +82,18 @@ docker compose --profile editor up --build
 - Renderer health: `http://localhost:3001/health`
 - ONLYOFFICE (optional): `http://localhost:8080`
 
+## View Logs
+
+```bash
+docker compose logs -f --tail=200
+```
+
+To view one service only:
+
+```bash
+docker compose logs -f backend
+```
+
 ## Service Ports
 
 - `frontend`: `5173`

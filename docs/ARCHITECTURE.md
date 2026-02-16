@@ -1,6 +1,6 @@
 # Architecture
 
-Status date: February 15, 2026
+Status date: February 16, 2026
 
 This document reflects the current runtime architecture in code (backend, worker, renderer, frontend).
 
@@ -17,7 +17,7 @@ Core behavior:
 
 Two creation modes:
 - `template`: mutate a real uploaded template.
-- `scratch`: compose a new deck with themed layouts/components in backend.
+- `scratch`: generate themed slide payloads, then render via `scratch-renderer` (Node/PptxGenJS), with python-pptx fallback if unavailable.
 
 ## Runtime Components
 
@@ -40,8 +40,10 @@ flowchart LR
 
     W --> LLM[Providers: MiniMax/OpenAI/Anthropic/Mock]
     W --> QL[Deterministic Quality Rewrite]
+    W --> SR[Scratch Renderer API Node/PptxGenJS]
     W --> REN[Renderer API python-pptx]
     REN --> FS
+    SR --> FS
 
     B --> OO[ONLYOFFICE Optional]
     OO --> B
@@ -67,6 +69,7 @@ High-level flow in `app.tasks.run_generation_job`:
 4. Resolve deck thesis:
    - outline thesis or provider thesis generation
 5. Select slides and build generation manifest.
+   - If outline returns fewer unique slides than requested, backend backfills from remaining template slides.
 6. Parallel per-slide generation (`ThreadPoolExecutor`):
    - slide-level research routing (tool-backed)
    - provider call per slide
@@ -79,8 +82,9 @@ High-level flow in `app.tasks.run_generation_job`:
    - if critical issues, regenerate targeted slides only
    - rerun quality + QA tools
 10. Render output:
-   - `template` mode -> renderer service
-   - `scratch` mode -> backend scratch builder
+   - `template` mode -> renderer service (`renderer`)
+   - `scratch` mode -> `scratch-renderer` service via `render_scratch_pptx()`
+   - fallback: if `scratch-renderer` fails, worker falls back to python-pptx scratch builder
 11. Persist artifacts:
    - `Deck`, `DeckVersion`
    - content/citations manifests
@@ -132,7 +136,9 @@ sequenceDiagram
         WK->>REN: POST /render
         REN-->>WK: output pptx
     else scratch mode
-        WK->>WK: build_scratch_pptx()
+        WK->>SR: POST /render
+        SR-->>WK: output pptx
+        Note over WK: fallback to build_scratch_pptx() if SR unavailable
     end
     WK->>DB: Persist deck/version/content/citations/quality/trace
 
@@ -201,6 +207,10 @@ Core:
 - `GET /api/decks/{deck_id}`
 - `GET /api/decks/{deck_id}/download`
 
+Template deletion semantics:
+- unreferenced template: hard delete row + files
+- referenced template: archive (`status=archived`) to preserve deck history/revision integrity
+
 Outline:
 - `POST /api/decks/outline`
 - `GET /api/decks/outline/{job_id}`
@@ -227,6 +237,18 @@ Execution model:
 - schema validation + standardized `ToolResult`
 - audit persisted to `tool_runs`
 
+## Provider Selection and Reliability
+
+Provider resolution:
+- Runtime provider is selected by request payload `provider` or `DEFAULT_LLM_PROVIDER`.
+- Factory supports `minimax`, `openai`, `anthropic`, and `mock`.
+- Current frontend default is `minimax`; backend config default remains env-driven.
+
+Reliability controls (MiniMax and Anthropic providers):
+- JSON extraction tolerates fenced/noisy wrappers and repairs common malformed JSON patterns.
+- Empty text outputs trigger retry.
+- `stop_reason=max_tokens` triggers retry with increased token budget (bounded by configured max).
+
 ## Prompt and Skill Context
 
 Prompt system includes:
@@ -244,14 +266,14 @@ Note:
 
 ## Scratch Rendering Strategy
 
-Scratch mode uses backend composition with theme-aware styling:
-- themes: `default`, `dark`, `corporate`
-- archetype-aware layout selection
-- content-density layout adjustments
-- visual treatment (backgrounds, accent strip, card fills, typography)
+Scratch mode is service-first:
+- worker calls `backend/app/services/scratch_render_client.py`
+- renderer endpoint: `scratch-renderer:3002/render`
+- supports theme input as preset string or full 12-key theme object
+- backend generates theme from natural-language prompt when explicit theme is absent
 
-Goal:
-- avoid plain white text-only outputs in scratch decks.
+Fallback behavior:
+- if scratch renderer is unavailable, worker logs warning and falls back to `build_scratch_pptx()` (python-pptx).
 
 ## Logging and Traceability
 
@@ -274,9 +296,15 @@ User-visible trace:
 - `storage/outputs/`
 - `storage/app.db`
 
+## Developer Runtime Notes
+
+- Frontend runs Vite in Docker with polling-based watch (`CHOKIDAR_USEPOLLING=true`, Vite `server.watch.usePolling=true`) to ensure HMR works on Windows bind mounts.
+- When changing watcher-related frontend env/config, recreate frontend container (`docker compose up -d --force-recreate frontend`).
+
 ## Current Limitations
 
 - Agent loop is bounded and deterministic, not open-ended autonomy.
 - QA visual check is heuristic (content/fit risk), not image-diff vision analysis.
 - Runtime toolset does not yet include full OOXML unpack/patch/validate/pack pipeline.
 - SQLite/local storage remains local-dev oriented for scale and HA.
+- Template deletion is conservative: templates referenced by existing decks are archived (hidden from default list) rather than physically deleted.

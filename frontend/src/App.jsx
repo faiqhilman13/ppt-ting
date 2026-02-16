@@ -283,14 +283,14 @@ export default function App() {
     <div className="page">
       <header>
         <h1>PowerPoint Agent</h1>
-        <p>AI-powered deck generation with template fidelity</p>
+        <p>AI-powered presentation generation with template fidelity</p>
       </header>
 
       {error && <div className="error">{error}</div>}
 
       <section className="grid">
         <div className="card">
-          <h2>Upload Template</h2>
+          <h2>Template Management</h2>
           <form onSubmit={uploadTemplate}>
             <label>Template Name</label>
             <input
@@ -299,7 +299,7 @@ export default function App() {
               onChange={(e) => setTemplateName(e.target.value)}
               placeholder="Enter template name"
             />
-            <label style={{ marginTop: "12px" }}>PPTX File</label>
+            <label style={{ marginTop: "10px" }}>PPTX File</label>
             <input
               type="file"
               accept=".pptx"
@@ -314,7 +314,7 @@ export default function App() {
           
           {templates.length > 0 && (
             <div className="template-list">
-              <label style={{ marginBottom: "8px" }}>Your Templates</label>
+              <label style={{ marginBottom: "6px" }}>Available Templates</label>
               {templates.map((t) => (
                 <div key={t.id} className="template-item">
                   <span className="template-name">{t.name}</span>
@@ -326,7 +326,7 @@ export default function App() {
                       disabled={busy}
                       onClick={() => deleteTemplate(t.id, t.name)}
                     >
-                      Delete
+                      Remove
                     </button>
                   </div>
                 </div>
@@ -334,7 +334,7 @@ export default function App() {
             </div>
           )}
 
-          <div className="row" style={{ marginTop: "16px" }}>
+          <div className="row" style={{ marginTop: "14px" }}>
             <button type="button" className="btn-secondary btn-sm" disabled={busy} onClick={() => cleanupTemplates(true)}>
               Preview Cleanup
             </button>
@@ -343,7 +343,7 @@ export default function App() {
             </button>
           </div>
           {cleanupReport && (
-            <p style={{ fontSize: "0.85rem", color: "var(--color-text-secondary)", marginTop: "12px" }}>
+            <p style={{ fontSize: "0.8rem", color: "var(--color-text-secondary)", marginTop: "10px" }}>
               {cleanupReport.dry_run ? "Dry run" : "Cleanup"}: matched {cleanupReport.matched_ids.length}, deleted {cleanupReport.deleted_ids.length}, skipped {cleanupReport.skipped.length}.
             </p>
           )}
@@ -378,7 +378,7 @@ export default function App() {
               ))}
             </div>
           ) : (
-            <p className="empty-state">No documents uploaded yet</p>
+            <p className="empty-state">No documents uploaded</p>
           )}
         </div>
       </section>
@@ -389,7 +389,7 @@ export default function App() {
         <textarea
           value={prompt}
           onChange={(e) => setPrompt(e.target.value)}
-          placeholder="Describe the deck you want to create..."
+          placeholder="Describe the presentation you want to create..."
         />
         
         <div className="form-row">
@@ -469,7 +469,7 @@ export default function App() {
           </div>
         </div>
         
-        <button disabled={busy || !canGenerate} onClick={runGeneration} className="btn-primary" style={{ width: "100%", marginTop: "8px" }}>
+        <button disabled={busy || !canGenerate} onClick={runGeneration} className="btn-primary" style={{ width: "100%", marginTop: "6px" }}>
           {busy ? "Generating..." : "Generate Deck"}
         </button>
       </section>
@@ -499,7 +499,7 @@ export default function App() {
               </div>
               
               {job.error_message && (
-                <div className="error" style={{ marginTop: "12px" }}>
+                <div className="error" style={{ marginTop: "10px" }}>
                   {job.error_message}
                 </div>
               )}
@@ -509,8 +509,8 @@ export default function App() {
                   <summary>Trace Events ({jobEvents.length})</summary>
                   <ul>
                     {jobEvents.slice(-40).map((event) => (
-                      <li key={`${event.id}-${event.event_type}`} style={{ fontFamily: "var(--font-mono)", fontSize: "0.75rem" }}>
-                        <span style={{ color: "var(--color-text-secondary)" }}>[{event.stage}]</span>
+                      <li key={`${event.id}-${event.event_type}`} style={{ fontFamily: "var(--font-mono)", fontSize: "0.7rem" }}>
+                        <span style={{ color: "var(--color-text-muted)" }}>[{event.stage}]</span>
                         <span>{event.event_type}</span>
                       </li>
                     ))}
@@ -553,7 +553,7 @@ export default function App() {
                 <div>
                   <div className="quality-badge">
                     <span className="quality-badge-value">{qualityReport.score ?? "N/A"}</span>
-                    <span style={{ color: "#b45309", fontSize: "0.8rem" }}>Quality Score</span>
+                    <span style={{ color: "var(--color-success)", fontSize: "0.75rem" }}>Quality Score</span>
                   </div>
                   
                   {(qualityReport.issues?.qa_issues || []).length > 0 && (
@@ -570,12 +570,12 @@ export default function App() {
                 target="_blank"
                 rel="noreferrer"
                 className="btn-primary"
-                style={{ display: "block", textAlign: "center", marginTop: "16px", textDecoration: "none" }}
+                style={{ display: "block", textAlign: "center", marginTop: "14px", textDecoration: "none" }}
               >
                 Download PPTX
               </a>
               
-              <label style={{ marginTop: "16px" }}>Revision Prompt</label>
+              <label style={{ marginTop: "14px" }}>Revision Prompt</label>
               <textarea
                 value={revisePrompt}
                 onChange={(e) => setRevisePrompt(e.target.value)}
@@ -594,7 +594,7 @@ export default function App() {
               {editorConfig && (
                 <>
                   <div id="onlyoffice-editor" />
-                  <details style={{ marginTop: "12px" }}>
+                  <details style={{ marginTop: "10px" }}>
                     <summary>ONLYOFFICE Config</summary>
                     <pre>{JSON.stringify(editorConfig, null, 2)}</pre>
                   </details>
@@ -602,7 +602,7 @@ export default function App() {
               )}
             </>
           ) : (
-            <p className="empty-state">Generate a deck to see output here</p>
+            <p className="empty-state">Generate a deck to see output</p>
           )}
         </div>
       </section>
