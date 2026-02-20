@@ -108,6 +108,23 @@ class SearchResult(BaseModel):
     snippet: str
 
 
+class JsonRenderDemoQueryRequest(BaseModel):
+    query: str = Field(min_length=2, max_length=500)
+    max_points: int = Field(default=12, ge=6, le=24)
+    provider: str | None = None
+    agentic: bool = True
+
+
+class JsonRenderDemoQueryOut(BaseModel):
+    query: str
+    intent: str
+    narrative: str
+    data_sources: list[str] = Field(default_factory=list)
+    state: dict[str, Any] = Field(default_factory=dict)
+    spec: dict[str, Any] = Field(default_factory=dict)
+    suggested_followups: list[str] = Field(default_factory=list)
+
+
 class EditorSessionRequest(BaseModel):
     deck_id: str
 

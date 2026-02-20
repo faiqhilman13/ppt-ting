@@ -628,3 +628,264 @@ a:hover {
   background: var(--color-accent);
   margin-top: 8px;
 }
+
+/* JSON Render demo module */
+.jr-demo-shell {
+  border-left: 4px solid var(--color-accent);
+}
+
+.jr-demo-header p {
+  margin: 0 0 12px;
+  color: var(--color-text-secondary);
+  font-size: 0.82rem;
+}
+
+.jr-demo-header .jr-provider {
+  margin-top: -4px;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--color-text-muted);
+}
+
+.jr-demo-output {
+  margin-top: 14px;
+}
+
+.jr-demo-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.jr-sources {
+  color: var(--color-text-muted);
+  font-size: 0.75rem;
+  font-family: var(--font-mono);
+}
+
+.jr-narrative {
+  margin: 0 0 10px;
+  color: var(--color-text-secondary);
+  font-size: 0.82rem;
+}
+
+.jr-panel {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface-alt);
+  padding: 14px;
+}
+
+.jr-panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.jr-panel-header h3 {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--color-primary);
+}
+
+.jr-panel-header p {
+  margin: 3px 0 0;
+  font-size: 0.78rem;
+  color: var(--color-text-secondary);
+}
+
+.jr-asof {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 0.68rem;
+  color: var(--color-text-muted);
+  font-family: var(--font-mono);
+}
+
+.jr-panel-body {
+  display: grid;
+  gap: 10px;
+}
+
+.jr-kpi-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 8px;
+}
+
+.jr-kpi {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.jr-kpi-label {
+  color: var(--color-text-muted);
+  font-size: 0.67rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.jr-kpi-value {
+  color: var(--color-text);
+  font-size: 0.9rem;
+}
+
+.jr-kpi-delta {
+  color: var(--color-accent);
+  font-size: 0.72rem;
+  font-family: var(--font-mono);
+}
+
+.jr-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 12px;
+}
+
+.jr-card h4 {
+  margin: 0 0 8px;
+  font-size: 0.8rem;
+  color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.jr-empty {
+  margin: 6px 0 0;
+  color: var(--color-text-muted);
+  font-size: 0.78rem;
+}
+
+.jr-chart-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.jr-chart-head span {
+  color: var(--color-text-muted);
+  font-size: 0.72rem;
+  font-family: var(--font-mono);
+}
+
+.jr-line-svg {
+  width: 100%;
+  display: block;
+}
+
+.jr-line-grid {
+  fill: #f7f9fc;
+  stroke: var(--color-border);
+  stroke-width: 1;
+}
+
+.jr-line-path {
+  fill: none;
+  stroke: var(--color-accent);
+  stroke-width: 2;
+}
+
+.jr-line-dot {
+  fill: var(--color-primary);
+}
+
+.jr-axis-labels {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18px, 1fr));
+  gap: 2px;
+  margin-top: 4px;
+}
+
+.jr-axis-labels span {
+  color: var(--color-text-muted);
+  font-size: 0.62rem;
+  text-align: center;
+}
+
+.jr-bars {
+  display: grid;
+  gap: 7px;
+}
+
+.jr-bar-row {
+  display: grid;
+  grid-template-columns: 80px 1fr 60px;
+  gap: 8px;
+  align-items: center;
+}
+
+.jr-bar-label,
+.jr-bar-value {
+  font-size: 0.72rem;
+  font-family: var(--font-mono);
+  color: var(--color-text-secondary);
+}
+
+.jr-bar-value {
+  text-align: right;
+}
+
+.jr-bar-track {
+  background: #ecf1f7;
+  border-radius: 999px;
+  height: 8px;
+  overflow: hidden;
+}
+
+.jr-bar-fill {
+  background: linear-gradient(90deg, var(--color-accent), var(--color-primary));
+  height: 100%;
+  border-radius: 999px;
+}
+
+.jr-table-wrap {
+  overflow-x: auto;
+}
+
+.jr-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.jr-table th,
+.jr-table td {
+  border-bottom: 1px solid var(--color-border);
+  padding: 7px 8px;
+  text-align: left;
+  font-size: 0.73rem;
+}
+
+.jr-table th {
+  background: #f7f9fc;
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.jr-insight p {
+  margin: 0;
+  color: var(--color-text-secondary);
+  font-size: 0.8rem;
+}
+
+.jr-followups {
+  margin: 0;
+}
+
+.jr-followups li {
+  justify-content: flex-start;
+  font-size: 0.75rem;
+  padding: 6px 10px;
+}

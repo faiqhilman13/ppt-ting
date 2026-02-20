@@ -15,7 +15,7 @@ from sqlalchemy import func, select
 from sqlalchemy.orm import Session
 
 from app.config import settings
-from app.db import Base, engine, get_db
+from app.db import Base, SessionLocal, engine, get_db
 from app.models import Deck, DeckJob, DeckOutline, DeckVersion, DocumentAsset, JobEvent, QualityReport, Template
 from app.schemas import (
     DeckDetailOut,
@@ -27,6 +27,8 @@ from app.schemas import (
     GenerateDeckRequest,
     JobEventOut,
     JobOut,
+    JsonRenderDemoQueryOut,
+    JsonRenderDemoQueryRequest,
     OutlineDeckRequest,
     OutlineResultOut,
     QualityReportOut,
@@ -41,6 +43,8 @@ from app.schemas import (
 from app.services.doc_extractor import SUPPORTED_EXTENSIONS, extract_text
 from app.services.editor_service import build_editor_config
 from app.services.job_trace import decode_payload
+from app.services.json_render_agent_service import run_agentic_json_render_query
+from app.services.json_render_demo_service import ensure_json_render_demo_seeded, run_json_render_demo_query
 from app.services.research_service import search_web
 from app.services.template_service import parse_template_manifest
 from app.storage import make_file_path, read_json, write_json
@@ -81,6 +85,7 @@ def _configure_runtime_logging() -> None:
     logging.getLogger("ppt_agent").setLevel(level)
     logging.getLogger("ppt_agent.jobs").setLevel(level)
     logging.getLogger("ppt_agent.providers").setLevel(level)
+    logging.getLogger("ppt_agent.json_render_agent").setLevel(level)
 
     if settings.suppress_httpx_info_logs:
         logging.getLogger("httpx").setLevel(logging.WARNING)
@@ -100,6 +105,11 @@ def on_startup():
     _configure_runtime_logging()
     register_builtin_tools()
     Base.metadata.create_all(bind=engine)
+    db = SessionLocal()
+    try:
+        ensure_json_render_demo_seeded(db)
+    finally:
+        db.close()
 
 
 @app.get("/health")
@@ -501,6 +511,20 @@ def get_quality_report(deck_id: str, version: int, db: Session = Depends(get_db)
 def search(req: SearchRequest):
     rows = search_web(req.query, req.max_results)
     return [SearchResult(**{k: row[k] for k in ["source_id", "title", "url", "snippet"]}) for row in rows]
+
+
+@app.post(f"{settings.api_prefix}/demo/json-render/query", response_model=JsonRenderDemoQueryOut)
+def query_json_render_demo(req: JsonRenderDemoQueryRequest, db: Session = Depends(get_db)):
+    if req.agentic:
+        result = run_agentic_json_render_query(
+            db,
+            query=req.query,
+            max_points=req.max_points,
+            provider_name=req.provider,
+        )
+    else:
+        result = run_json_render_demo_query(db, query=req.query, max_points=req.max_points)
+    return JsonRenderDemoQueryOut(**result)
 
 
 @app.post(f"{settings.api_prefix}/editor/session", response_model=EditorSessionOut)

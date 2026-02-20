@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
+import JsonRenderDemo from "./jsonRenderDemo/JsonRenderDemo";
 
 const API_BASE = import.meta.env.VITE_API_BASE || "http://localhost:8000/api";
 const ONLYOFFICE_BASE = import.meta.env.VITE_ONLYOFFICE_URL || "http://localhost:8080";
@@ -287,6 +288,8 @@ export default function App() {
       </header>
 
       {error && <div className="error">{error}</div>}
+
+      <JsonRenderDemo apiBase={API_BASE} provider={provider} />
 
       <section className="grid">
         <div className="card">

@@ -3,10 +3,11 @@
 ## Project Structure & Module Organization
 - `backend/app/`: FastAPI API, Celery jobs, providers, agent logic, tools, and services.
   - Key folders: `providers/`, `services/`, `agent/`, `tools/`.
-  - Notable runtime files: `tasks.py`, `providers/minimax_provider.py`, `services/scratch_render_client.py`.
+  - Notable runtime files: `tasks.py`, `providers/minimax_provider.py`, `services/scratch_render_client.py`, `services/json_render_agent_service.py`, `services/json_render_demo_service.py`.
 - `renderer/app/`: template-fidelity PPTX renderer (`python-pptx`) for token/shape/table mutations.
 - `scratch-renderer/src/`: Node + PptxGenJS scratch deck renderer (`builders/`, `themes.js`, `server.js`).
 - `frontend/src/`: React + Vite UI.
+  - JSON-render demo UI lives in `frontend/src/jsonRenderDemo/` (`JsonRenderDemo.jsx`, `registry.jsx`, `catalog.js`).
 - `docs/`: architecture and upgrade docs.
 - `storage/` and `workspace/`: runtime/generated artifacts; treat as non-source output.
 
@@ -19,6 +20,10 @@
 - Frontend local: `cd frontend && npm install && npm run dev`
 - Scratch renderer local: `cd scratch-renderer && npm install && npm start`
 - Fast compile smoke check: `python -m compileall backend/app renderer/app`
+- JSON-render demo API smoke test (PowerShell):
+  - `Invoke-RestMethod -Method POST http://localhost:8000/api/demo/json-render/query -ContentType 'application/json' -Body '{"query":"Give me a fundamentals table for DBS and MAYBANK with revenue, EBIT margin, and free cash flow.","max_points":12,"provider":"minimax","agentic":true}'`
+- Live logs across services:
+  - `docker compose logs -f backend worker frontend renderer scratch-renderer`
 
 ## Coding Style & Naming Conventions
 - Python: PEP 8, 4-space indentation, type hints, `snake_case` for functions/files, `PascalCase` for classes.
@@ -34,6 +39,10 @@
   - `template_ready` (`slide_count` vs `manifest_slides`)
   - `selection_ready` (`selected_slides`)
   - `generation_payload_ready` and `render_complete`.
+- When touching JSON-render agent flow:
+  - exercise `/api/demo/json-render/query` with `agentic=true` and at least one fundamentals query.
+  - confirm backend logs include `json_render_agent_*` step/tool events and no unexpected fallback.
+  - verify chart/table state is fresh per query in the UI (no stale previous result while loading).
 
 ## Commit & Pull Request Guidelines
 - Follow Conventional Commit style used in repo history (`feat:`, `fix:`, `docs:`, `chore:`).
