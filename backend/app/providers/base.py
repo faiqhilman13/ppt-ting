@@ -37,7 +37,14 @@ class BaseLLMProvider:
     ) -> list[SlideContent]:
         raise NotImplementedError
 
-    def generate_text(self, *, system_prompt: str, user_prompt: str, max_tokens: int = 180) -> str:
+    def generate_text(
+        self,
+        *,
+        system_prompt: str,
+        user_prompt: str,
+        max_tokens: int = 180,
+        retries: int | None = None,
+    ) -> str:
         return user_prompt.strip()
 
     def generate_outline(

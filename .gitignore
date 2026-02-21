@@ -3,11 +3,18 @@ backend/.venv/
 **/__pycache__/
 *.pyc
 .pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
 
 # Node
 frontend/node_modules/
 renderer/node_modules/
+scratch-renderer/node_modules/
 frontend/dist/
+**/node_modules/
 
 # Local env
 backend/.env
@@ -18,7 +25,14 @@ storage/outputs/
 storage/uploads/
 storage/citations/
 storage/manifests/
+storage/thumbnails/
 storage/*.db
+*.db-shm
+*.db-wal
+*.sqlite3
+
+# Runtime workspace artifacts
+workspace/
 
 # Logs
 *.log
@@ -26,3 +40,13 @@ storage/*.db
 # Local tooling / OS
 .vincent/
 .DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Temp files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~

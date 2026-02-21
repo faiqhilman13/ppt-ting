@@ -23,6 +23,8 @@ async function queryDemo(apiBase, payload) {
 export default function JsonRenderDemo({ apiBase, provider }) {
   const [query, setQuery] = useState("Show a trend chart for DBS and include a small data table.");
   const [maxPoints, setMaxPoints] = useState(12);
+  const [maxSteps, setMaxSteps] = useState(1);
+  const [useCache, setUseCache] = useState(true);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState("");
   const [result, setResult] = useState(null);
@@ -40,6 +42,8 @@ export default function JsonRenderDemo({ apiBase, provider }) {
         max_points: Number(maxPoints),
         provider: provider || null,
         agentic: true,
+        max_steps: Number(maxSteps),
+        use_cache: Boolean(useCache),
       });
       setResult(next);
       setRenderKey((prev) => prev + 1);
@@ -79,15 +83,46 @@ export default function JsonRenderDemo({ apiBase, provider }) {
             onChange={(event) => setMaxPoints(Number(event.target.value))}
           />
         </div>
+        <div>
+          <label>Max Steps</label>
+          <input
+            type="number"
+            value={maxSteps}
+            min={1}
+            max={3}
+            onChange={(event) => setMaxSteps(Number(event.target.value))}
+          />
+        </div>
       </div>
 
       <div className="row">
         <button type="button" className="btn-accent" disabled={!canRun} onClick={run}>
           {busy ? "Querying..." : "Run JSON Render Query"}
         </button>
+        <label className="jr-inline-check">
+          <input
+            type="checkbox"
+            checked={useCache}
+            onChange={(event) => setUseCache(event.target.checked)}
+          />
+          Use cache
+        </label>
       </div>
 
       {error && <div className="error" style={{ marginTop: "14px" }}>{error}</div>}
+      {busy && (
+        <div className="jr-loading" role="status" aria-live="polite">
+          <div className="jr-loading-title">Running query...</div>
+          <div className="jr-loading-subtitle">
+            Fetching data, building chart/table spec, and composing summary.
+          </div>
+          <div className="jr-loading-bars">
+            <span />
+            <span />
+            <span />
+          </div>
+        </div>
+      )}
 
       {result && (
         <div className="jr-demo-output">

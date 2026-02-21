@@ -33,6 +33,19 @@ class Settings(BaseSettings):
     exa_api_key: str | None = None
     exa_search_url: str = "https://api.exa.ai/search"
     pptx_skill_root: str | None = None
+    pptx_skill_strict: bool = False
+    pptx_html2pptx_script: str | None = None
+    scratch_html_spec_mode: str = "llm_then_template"
+    scratch_html_spec_max_tokens: int = 9000
+    scratch_html_spec_retries: int = 1
+    scratch_html_spec_repair_attempts: int = 2
+    scratch_html_spec_repair_max_tokens: int = 7000
+    scratch_html_spec_local_repair_attempts: int = 2
+    scratch_html_spec_local_tighten_levels: int = 2
+    pptx_ooxml_validate_mode: str = "off"
+    pptx_ooxml_fail_closed: bool = False
+    pptx_replace_timeout_seconds: int = 180
+    pptx_ooxml_timeout_seconds: int = 120
     scratch_theme: str = "default"
 
     onlyoffice_document_server_url: str = "http://localhost:8080"
@@ -40,6 +53,7 @@ class Settings(BaseSettings):
     suppress_job_poll_access_logs: bool = True
     suppress_httpx_info_logs: bool = True
     verbose_ai_trace: bool = True
+    json_render_full_payload_logs: bool = False
     log_preview_chars: int = 180
     persist_job_events: bool = True
     persist_tool_runs: bool = True
@@ -49,6 +63,16 @@ class Settings(BaseSettings):
     max_tool_runtime_seconds: int = 45
     max_correction_passes_server: int = 2
     job_events_page_size: int = 400
+    json_render_fast_path_enabled: bool = True
+    json_render_fast_path_refine_narrative: bool = False
+    json_render_cache_ttl_seconds: int = 180
+    json_render_tool_cache_ttl_seconds: int = 180
+    json_render_agent_deadline_seconds: float = 30.0
+    json_render_agent_default_max_steps: int = 1
+    json_render_agent_step_max_tokens: int = 1200
+    json_render_agent_finalize_max_tokens: int = 1600
+    json_render_agent_observation_max_items: int = 8
+    json_render_llm_call_timeout_seconds: float = 12.0
 
     model_config = SettingsConfigDict(env_file=".env", env_file_encoding="utf-8", extra="ignore")
 

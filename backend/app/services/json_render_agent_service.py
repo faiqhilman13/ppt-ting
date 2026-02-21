@@ -5,8 +5,11 @@ import logging
 import re
 import ast
 import textwrap
+import time
 from collections import defaultdict
+from concurrent.futures import ThreadPoolExecutor, TimeoutError as FuturesTimeoutError
 from datetime import date, datetime
+from threading import Lock
 from typing import Any
 from uuid import uuid4
 
@@ -76,6 +79,12 @@ _FINAL_SYSTEM = (
     "Do not include markdown fences. Use only observed data."
 )
 
+_FAST_NARRATIVE_SYSTEM = (
+    "You are a quantitative analyst. Rewrite the dashboard narrative in 2-3 concise sentences. "
+    "Use only facts present in the provided context and do not invent numbers. "
+    "Return plain text only."
+)
+
 _LOG_BOX_INNER_WIDTH = 136
 _LOG_BODY_MAX_LINES = 8
 _ANSI_RESET = "\033[0m"
@@ -94,6 +103,10 @@ _STEP_COLORS = (
     "\033[38;5;214m",
     "\033[38;5;82m",
 )
+
+_FINAL_RESPONSE_CACHE: dict[str, tuple[float, dict[str, Any]]] = {}
+_TOOL_RESPONSE_CACHE: dict[str, tuple[float, dict[str, Any]]] = {}
+_CACHE_LOCK = Lock()
 
 
 def _as_int(value: Any) -> int | None:
@@ -210,34 +223,355 @@ def _log_agent(event: str, *, force: bool = False, full: bool = False, **details
         logger.warning(boxed)
 
 
+def _clone_json_payload(payload: dict[str, Any]) -> dict[str, Any]:
+    try:
+        return json.loads(json.dumps(payload, ensure_ascii=False))
+    except Exception:
+        return payload
+
+
+def _normalize_query_for_cache(query: str) -> str:
+    return " ".join(str(query or "").lower().split())
+
+
+def _cache_get(cache: dict[str, tuple[float, dict[str, Any]]], key: str) -> dict[str, Any] | None:
+    now = time.monotonic()
+    with _CACHE_LOCK:
+        row = cache.get(key)
+        if not row:
+            return None
+        expires_at, value = row
+        if expires_at <= now:
+            cache.pop(key, None)
+            return None
+        return _clone_json_payload(value)
+
+
+def _cache_set(
+    cache: dict[str, tuple[float, dict[str, Any]]],
+    key: str,
+    value: dict[str, Any],
+    *,
+    ttl_seconds: int,
+) -> None:
+    ttl = max(1, int(ttl_seconds))
+    expires_at = time.monotonic() + ttl
+    with _CACHE_LOCK:
+        cache[key] = (expires_at, _clone_json_payload(value))
+
+
+def _generate_text_with_timeout(
+    *,
+    provider: Any,
+    system_prompt: str,
+    user_prompt: str,
+    max_tokens: int,
+    retries: int,
+    timeout_seconds: float,
+    trace_id: str,
+    phase: str,
+    step: int | None = None,
+) -> str:
+    timeout = max(0.1, float(timeout_seconds))
+    executor = ThreadPoolExecutor(max_workers=1, thread_name_prefix="jr-llm")
+    future = executor.submit(
+        provider.generate_text,
+        system_prompt=system_prompt,
+        user_prompt=user_prompt,
+        max_tokens=max_tokens,
+        retries=retries,
+    )
+    try:
+        return str(future.result(timeout=timeout) or "")
+    except FuturesTimeoutError:
+        _log_agent(
+            "llm_call_timeout",
+            force=True,
+            trace_id=trace_id,
+            phase=phase,
+            step=step,
+            timeout_sec=round(timeout, 2),
+        )
+        return ""
+    except Exception as exc:
+        _log_agent(
+            "llm_call_error",
+            force=True,
+            trace_id=trace_id,
+            phase=phase,
+            step=step,
+            reason=str(exc),
+        )
+        return ""
+    finally:
+        future.cancel()
+        executor.shutdown(wait=False, cancel_futures=True)
+
+
+def _detect_confident_intent(query: str) -> str | None:
+    lowered = str(query or "").lower()
+    if any(token in lowered for token in ("fundamental", "ebit", "cash flow", "revenue", "table")):
+        return "fundamentals_table"
+    if any(token in lowered for token in ("compare", "comparison", "vs", "versus", "ranking")):
+        return "sector_compare"
+    if any(token in lowered for token in ("trend", "history", "line", "over time", "timeline", "performance")):
+        return "price_trend"
+    if any(token in lowered for token in ("snapshot", "overview", "market", "top movers", "watchlist")):
+        return "market_snapshot"
+    return None
+
+
+def _summarize_tool_data_for_llm(data: dict[str, Any]) -> dict[str, Any]:
+    summary: dict[str, Any] = {}
+    for key, value in data.items():
+        if isinstance(value, list):
+            summary[f"{key}_count"] = len(value)
+            summary[f"{key}_sample"] = value[:2]
+        elif isinstance(value, dict):
+            summary[f"{key}_keys"] = sorted(list(value.keys()))[:12]
+        elif isinstance(value, (str, int, float, bool)) or value is None:
+            summary[key] = value
+    return summary
+
+
+def _summarize_observations_for_llm(observations: list[dict[str, Any]], *, limit: int) -> list[dict[str, Any]]:
+    trimmed = observations[-max(1, int(limit)) :]
+    out: list[dict[str, Any]] = []
+    for row in trimmed:
+        if not isinstance(row, dict):
+            continue
+        data = row.get("data") if isinstance(row.get("data"), dict) else {}
+        out.append(
+            {
+                "tool": str(row.get("tool", "")),
+                "ok": bool(row.get("ok", False)),
+                "summary": str(row.get("summary", "")),
+                "data_summary": _summarize_tool_data_for_llm(data),
+            }
+        )
+    return out
+
+
+def _observations_sufficient_for_intent(intent: str | None, observations: list[dict[str, Any]]) -> bool:
+    if not intent:
+        return False
+    for row in reversed(observations):
+        if not isinstance(row, dict) or not bool(row.get("ok", False)):
+            continue
+        tool = str(row.get("tool", "")).strip()
+        data = row.get("data") if isinstance(row.get("data"), dict) else {}
+        if intent == "price_trend" and tool == "get_price_history":
+            points = data.get("points") if isinstance(data.get("points"), list) else []
+            if len(points) >= 2:
+                return True
+        if intent == "fundamentals_table" and tool == "get_fundamentals":
+            rows = data.get("rows") if isinstance(data.get("rows"), list) else []
+            if len(rows) >= 1:
+                return True
+        if intent in {"sector_compare", "market_snapshot"} and tool in {"get_latest_snapshot", "sql_query"}:
+            rows = data.get("rows") if isinstance(data.get("rows"), list) else []
+            if len(rows) >= 1:
+                return True
+        if tool == "sql_query":
+            rows = data.get("rows") if isinstance(data.get("rows"), list) else []
+            if len(rows) >= 1:
+                return True
+    return False
+
+
+def _refine_fast_path_narrative(
+    *,
+    provider: Any,
+    query: str,
+    result: dict[str, Any],
+    trace_id: str,
+) -> None:
+    if not settings.json_render_fast_path_refine_narrative:
+        return
+    if getattr(provider, "name", "mock") == "mock":
+        return
+
+    state = result.get("state") if isinstance(result.get("state"), dict) else {}
+    context = {
+        "query": query,
+        "intent": result.get("intent"),
+        "current_narrative": result.get("narrative"),
+        "meta": state.get("meta"),
+        "kpis": (state.get("kpis") or [])[:4],
+        "chart": {
+            "type": ((state.get("chart") or {}).get("type")),
+            "title": ((state.get("chart") or {}).get("title")),
+            "points_sample": ((state.get("chart") or {}).get("points") or [])[:4],
+            "bars_sample": ((state.get("chart") or {}).get("bars") or [])[:4],
+        },
+        "table": {
+            "title": ((state.get("table") or {}).get("title")),
+            "columns": ((state.get("table") or {}).get("columns") or [])[:8],
+            "rows_sample": ((state.get("table") or {}).get("rows") or [])[:4],
+        },
+    }
+    context_json = json.dumps(context, ensure_ascii=False)
+    _log_agent(
+        "fastpath_narrative_request",
+        trace_id=trace_id,
+        request_chars=len(context_json),
+        request_preview=context_json,
+    )
+    if settings.json_render_full_payload_logs:
+        _log_agent(
+            "fastpath_narrative_request_full",
+            trace_id=trace_id,
+            request_json=context,
+            full=True,
+        )
+    try:
+        refined = _generate_text_with_timeout(
+            provider=provider,
+            system_prompt=_FAST_NARRATIVE_SYSTEM,
+            user_prompt=context_json,
+            max_tokens=220,
+            retries=0,
+            timeout_seconds=float(settings.json_render_llm_call_timeout_seconds),
+            trace_id=trace_id,
+            phase="fastpath_narrative",
+        ).strip()
+    except Exception as exc:
+        _log_agent("fastpath_narrative_failed", force=True, trace_id=trace_id, reason=str(exc))
+        return
+    _log_agent(
+        "fastpath_narrative_response",
+        trace_id=trace_id,
+        output_chars=len(refined),
+        output_preview=refined,
+    )
+    if settings.json_render_full_payload_logs:
+        _log_agent(
+            "fastpath_narrative_response_full",
+            trace_id=trace_id,
+            output_text=refined,
+            full=True,
+        )
+    if not refined:
+        return
+    lowered = refined.lstrip()
+    if refined == context_json or lowered.startswith("{") or len(refined) > 600:
+        _log_agent(
+            "fastpath_narrative_skipped",
+            trace_id=trace_id,
+            reason="invalid_or_echo_response",
+            output_chars=len(refined),
+        )
+        return
+    result["narrative"] = refined
+    if isinstance(state, dict):
+        state["narrative"] = refined
+
+
+def _run_fast_path_query(
+    db: Session,
+    *,
+    provider: Any,
+    query: str,
+    max_points: int,
+    trace_id: str,
+    refine_narrative: bool = True,
+) -> dict[str, Any]:
+    result = run_json_render_demo_query(db, query=query, max_points=max_points)
+    if refine_narrative:
+        _refine_fast_path_narrative(provider=provider, query=query, result=result, trace_id=trace_id)
+    _log_agent(
+        "fastpath_complete",
+        trace_id=trace_id,
+        intent=result.get("intent"),
+        sources=result.get("data_sources", []),
+    )
+    return result
+
+
 def run_agentic_json_render_query(
     db: Session,
     *,
     query: str,
     max_points: int = 12,
     provider_name: str | None = None,
-    max_steps: int = 2,
+    max_steps: int | None = None,
+    use_cache: bool = True,
 ) -> dict[str, Any]:
     ensure_json_render_demo_seeded(db)
     provider = get_provider(provider_name)
-    tool_registry = _build_tool_registry(db=db, default_max_points=max_points)
-    observations: list[dict[str, Any]] = []
-    data_sources_seen: set[str] = set()
     trace_id = f"jr-{uuid4().hex[:8]}"
+    provider_id = getattr(provider, "name", "unknown")
+    cache_key = f"{provider_id}|{max_points}|{_normalize_query_for_cache(query)}"
+
+    if use_cache and settings.json_render_cache_ttl_seconds > 0:
+        cached = _cache_get(_FINAL_RESPONSE_CACHE, cache_key)
+        if cached:
+            _log_agent(
+                "cache_hit",
+                force=True,
+                trace_id=trace_id,
+                cache_key=cache_key,
+                intent=cached.get("intent"),
+            )
+            return cached
 
     _log_agent(
         "start",
         force=True,
         trace_id=trace_id,
-        provider=getattr(provider, "name", "unknown"),
+        provider=provider_id,
         query=query,
         max_points=max_points,
         max_steps=max_steps,
+        use_cache=use_cache,
     )
 
+    confident_intent = _detect_confident_intent(query)
+    fastpath_reason: str | None = None
+    if settings.json_render_fast_path_enabled:
+        if confident_intent:
+            fastpath_reason = "confident_intent"
+        else:
+            requested_steps = int(max_steps) if max_steps is not None else int(settings.json_render_agent_default_max_steps)
+            if requested_steps <= 1:
+                fastpath_reason = "default_low_latency"
+
+    if fastpath_reason:
+        _log_agent(
+            "fastpath_selected",
+            trace_id=trace_id,
+            intent=confident_intent or _detect_intent_from_query(query),
+            reason=fastpath_reason,
+        )
+        fast = _run_fast_path_query(
+            db,
+            provider=provider,
+            query=query,
+            max_points=max_points,
+            trace_id=trace_id,
+        )
+        if use_cache and settings.json_render_cache_ttl_seconds > 0:
+            _cache_set(
+                _FINAL_RESPONSE_CACHE,
+                cache_key,
+                fast,
+                ttl_seconds=settings.json_render_cache_ttl_seconds,
+            )
+        return fast
+
+    tool_registry = _build_tool_registry(db=db, default_max_points=max_points)
+    observations: list[dict[str, Any]] = []
+    data_sources_seen: set[str] = set()
+    deadline_at = time.monotonic() + max(5.0, float(settings.json_render_agent_deadline_seconds))
+    requested_steps = int(max_steps) if max_steps is not None else int(settings.json_render_agent_default_max_steps)
+    dynamic_max_steps = max(1, min(requested_steps, 3))
     final_candidate: dict[str, Any] | None = None
-    for step in range(max(1, int(max_steps))):
-        step_num = step + 1
+
+    step_num = 1
+    while step_num <= dynamic_max_steps:
+        if time.monotonic() >= deadline_at:
+            _log_agent("deadline_reached", force=True, trace_id=trace_id, step=step_num)
+            break
         _log_agent(
             "step_begin",
             trace_id=trace_id,
@@ -252,6 +586,7 @@ def run_agentic_json_render_query(
             observations=observations,
             trace_id=trace_id,
             step=step_num,
+            deadline_at=deadline_at,
         )
         if not step_payload:
             _log_agent("step_no_payload", force=True, trace_id=trace_id, step=step_num)
@@ -306,7 +641,12 @@ def run_agentic_json_render_query(
                 tool=tool_name,
                 args=args,
             )
-            result = _run_tool(tool_registry=tool_registry, tool_name=tool_name, args=args)
+            result = _run_tool(
+                tool_registry=tool_registry,
+                tool_name=tool_name,
+                args=args,
+                trace_id=trace_id,
+            )
             for source in result.get("sources", []):
                 data_sources_seen.add(str(source))
             observations.append(
@@ -339,20 +679,43 @@ def run_agentic_json_render_query(
         if not executed_any:
             _log_agent("step_halt_no_execution", force=True, trace_id=trace_id, step=step_num)
             break
+        if _observations_sufficient_for_intent(confident_intent, observations):
+            _log_agent(
+                "step_early_stop",
+                trace_id=trace_id,
+                step=step_num,
+                reason="sufficient_observations",
+                intent=confident_intent,
+            )
+            break
+        if step_num >= dynamic_max_steps and dynamic_max_steps < 2 and executed_any:
+            dynamic_max_steps = 2
+            _log_agent(
+                "step_escalated",
+                trace_id=trace_id,
+                previous_max_steps=1,
+                new_max_steps=dynamic_max_steps,
+                reason="needs_more_context",
+            )
+        step_num += 1
 
     if final_candidate is None:
-        _log_agent(
-            "finalize_begin",
-            trace_id=trace_id,
-            observation_count=len(observations),
-        )
-        final_candidate = _agent_finalize(
-            provider=provider,
-            query=query,
-            max_points=max_points,
-            observations=observations,
-            trace_id=trace_id,
-        )
+        if time.monotonic() >= deadline_at:
+            _log_agent("finalize_skipped_deadline", force=True, trace_id=trace_id)
+        else:
+            _log_agent(
+                "finalize_begin",
+                trace_id=trace_id,
+                observation_count=len(observations),
+            )
+            final_candidate = _agent_finalize(
+                provider=provider,
+                query=query,
+                max_points=max_points,
+                observations=observations,
+                trace_id=trace_id,
+                deadline_at=deadline_at,
+            )
 
     if isinstance(final_candidate, dict):
         normalized = _normalize_final_payload(
@@ -366,10 +729,17 @@ def run_agentic_json_render_query(
                 "complete",
                 force=True,
                 trace_id=trace_id,
-                provider=getattr(provider, "name", "unknown"),
+                provider=provider_id,
                 intent=normalized.get("intent"),
                 sources=normalized.get("data_sources", []),
             )
+            if use_cache and settings.json_render_cache_ttl_seconds > 0:
+                _cache_set(
+                    _FINAL_RESPONSE_CACHE,
+                    cache_key,
+                    normalized,
+                    ttl_seconds=settings.json_render_cache_ttl_seconds,
+                )
             return normalized
 
     _log_agent(
@@ -380,7 +750,22 @@ def run_agentic_json_render_query(
         observation_count=len(observations),
     )
     logger.warning("json_render_agent_fallback trace_id=%s reason=invalid_or_empty_model_output", trace_id)
-    return run_json_render_demo_query(db, query=query, max_points=max_points)
+    fallback = _run_fast_path_query(
+        db,
+        provider=provider,
+        query=query,
+        max_points=max_points,
+        trace_id=trace_id,
+        refine_narrative=False,
+    )
+    if use_cache and settings.json_render_cache_ttl_seconds > 0:
+        _cache_set(
+            _FINAL_RESPONSE_CACHE,
+            cache_key,
+            fallback,
+            ttl_seconds=settings.json_render_cache_ttl_seconds,
+        )
+    return fallback
 
 
 def _agent_step(
@@ -392,13 +777,15 @@ def _agent_step(
     observations: list[dict[str, Any]],
     trace_id: str,
     step: int,
+    deadline_at: float | None = None,
 ) -> dict[str, Any] | None:
     tool_specs = {name: row["description"] for name, row in tools.items()}
+    obs_limit = max(1, int(settings.json_render_agent_observation_max_items))
     payload = {
         "query": query,
         "max_points": int(max_points),
         "tools": tool_specs,
-        "observations": observations[-8:],
+        "observations": _summarize_observations_for_llm(observations, limit=obs_limit),
         "instruction": (
             "If more data is needed, return tool_calls only. "
             "If enough data is present, return final payload."
@@ -412,17 +799,27 @@ def _agent_step(
         request_chars=len(request_json),
         request_preview=request_json,
     )
-    _log_agent(
-        "llm_step_request_full",
-        trace_id=trace_id,
-        step=step,
-        request_json=payload,
-        full=True,
-    )
-    raw = provider.generate_text(
+    if settings.json_render_full_payload_logs:
+        _log_agent(
+            "llm_step_request_full",
+            trace_id=trace_id,
+            step=step,
+            request_json=payload,
+            full=True,
+        )
+    timeout_seconds = float(settings.json_render_llm_call_timeout_seconds)
+    if deadline_at is not None:
+        timeout_seconds = min(timeout_seconds, max(0.1, deadline_at - time.monotonic()))
+    raw = _generate_text_with_timeout(
+        provider=provider,
         system_prompt=_AGENT_STEP_SYSTEM,
         user_prompt=request_json,
-        max_tokens=2500,
+        max_tokens=int(settings.json_render_agent_step_max_tokens),
+        retries=0,
+        timeout_seconds=timeout_seconds,
+        trace_id=trace_id,
+        phase="step",
+        step=step,
     )
     _log_agent(
         "llm_step_response",
@@ -431,26 +828,30 @@ def _agent_step(
         output_chars=len(raw or ""),
         output_preview=str(raw or ""),
     )
-    _log_agent(
-        "llm_step_response_full",
-        trace_id=trace_id,
-        step=step,
-        output_text=str(raw or ""),
-        full=True,
-    )
+    if settings.json_render_full_payload_logs:
+        _log_agent(
+            "llm_step_response_full",
+            trace_id=trace_id,
+            step=step,
+            output_text=str(raw or ""),
+            full=True,
+        )
     parsed = _extract_payload(raw)
     if parsed is None:
         _log_agent("llm_step_parse_failed", force=True, trace_id=trace_id, step=step)
         return None
+    if "tool_calls" not in parsed and "final" not in parsed:
+        parsed = {"tool_calls": [], "final": parsed}
     if "tool_calls" not in parsed:
         parsed["tool_calls"] = []
-    _log_agent(
-        "llm_step_parse_payload_full",
-        trace_id=trace_id,
-        step=step,
-        parsed_payload=parsed,
-        full=True,
-    )
+    if settings.json_render_full_payload_logs:
+        _log_agent(
+            "llm_step_parse_payload_full",
+            trace_id=trace_id,
+            step=step,
+            parsed_payload=parsed,
+            full=True,
+        )
     _log_agent(
         "llm_step_parse_ok",
         trace_id=trace_id,
@@ -468,11 +869,13 @@ def _agent_finalize(
     max_points: int,
     observations: list[dict[str, Any]],
     trace_id: str,
+    deadline_at: float | None = None,
 ) -> dict[str, Any] | None:
+    obs_limit = max(1, int(settings.json_render_agent_observation_max_items))
     payload = {
         "query": query,
         "max_points": int(max_points),
-        "observations": observations[-10:],
+        "observations": _summarize_observations_for_llm(observations, limit=obs_limit),
         "required": [
             "intent",
             "narrative",
@@ -491,16 +894,25 @@ def _agent_finalize(
         request_chars=len(request_json),
         request_preview=request_json,
     )
-    _log_agent(
-        "llm_finalize_request_full",
-        trace_id=trace_id,
-        request_json=payload,
-        full=True,
-    )
-    raw = provider.generate_text(
+    if settings.json_render_full_payload_logs:
+        _log_agent(
+            "llm_finalize_request_full",
+            trace_id=trace_id,
+            request_json=payload,
+            full=True,
+        )
+    timeout_seconds = float(settings.json_render_llm_call_timeout_seconds)
+    if deadline_at is not None:
+        timeout_seconds = min(timeout_seconds, max(0.1, deadline_at - time.monotonic()))
+    raw = _generate_text_with_timeout(
+        provider=provider,
         system_prompt=_FINAL_SYSTEM,
         user_prompt=request_json,
-        max_tokens=3500,
+        max_tokens=int(settings.json_render_agent_finalize_max_tokens),
+        retries=0,
+        timeout_seconds=timeout_seconds,
+        trace_id=trace_id,
+        phase="finalize",
     )
     _log_agent(
         "llm_finalize_response",
@@ -508,22 +920,26 @@ def _agent_finalize(
         output_chars=len(raw or ""),
         output_preview=str(raw or ""),
     )
-    _log_agent(
-        "llm_finalize_response_full",
-        trace_id=trace_id,
-        output_text=str(raw or ""),
-        full=True,
-    )
+    if settings.json_render_full_payload_logs:
+        _log_agent(
+            "llm_finalize_response_full",
+            trace_id=trace_id,
+            output_text=str(raw or ""),
+            full=True,
+        )
     parsed = _extract_payload(raw)
     if parsed is None:
         _log_agent("llm_finalize_parse_failed", force=True, trace_id=trace_id)
     else:
-        _log_agent(
-            "llm_finalize_parse_payload_full",
-            trace_id=trace_id,
-            parsed_payload=parsed,
-            full=True,
-        )
+        if isinstance(parsed.get("final"), dict):
+            parsed = parsed["final"]
+        if settings.json_render_full_payload_logs:
+            _log_agent(
+                "llm_finalize_parse_payload_full",
+                trace_id=trace_id,
+                parsed_payload=parsed,
+                full=True,
+            )
         _log_agent(
             "llm_finalize_parse_ok",
             trace_id=trace_id,
@@ -576,9 +992,43 @@ def _build_tool_registry(*, db: Session, default_max_points: int) -> dict[str, d
     }
 
 
-def _run_tool(*, tool_registry: dict[str, dict[str, Any]], tool_name: str, args: dict[str, Any]) -> dict[str, Any]:
+def _run_tool(
+    *,
+    tool_registry: dict[str, dict[str, Any]],
+    tool_name: str,
+    args: dict[str, Any],
+    trace_id: str | None = None,
+) -> dict[str, Any]:
+    cache_key = ""
+    if settings.json_render_tool_cache_ttl_seconds > 0:
+        try:
+            cache_key = f"{tool_name}|{json.dumps(args, sort_keys=True, ensure_ascii=False)}"
+        except Exception:
+            cache_key = f"{tool_name}|{str(args)}"
+        cached = _cache_get(_TOOL_RESPONSE_CACHE, cache_key)
+        if cached is not None:
+            _log_agent(
+                "tool_cache_hit",
+                trace_id=trace_id or "",
+                tool=tool_name,
+                cache_key=cache_key,
+            )
+            return cached
     try:
-        return tool_registry[tool_name]["runner"](args)
+        result = tool_registry[tool_name]["runner"](args)
+        if (
+            cache_key
+            and settings.json_render_tool_cache_ttl_seconds > 0
+            and isinstance(result, dict)
+            and bool(result.get("ok", False))
+        ):
+            _cache_set(
+                _TOOL_RESPONSE_CACHE,
+                cache_key,
+                result,
+                ttl_seconds=settings.json_render_tool_cache_ttl_seconds,
+            )
+        return result
     except Exception as exc:
         logger.warning("json_render_agent_tool_error tool=%s reason=%s", tool_name, exc)
         return {"ok": False, "summary": f"{tool_name} failed: {exc}", "data": {}, "sources": []}

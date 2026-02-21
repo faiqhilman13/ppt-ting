@@ -47,7 +47,17 @@ class GenerateDeckRequest(BaseModel):
     doc_ids: list[str] = Field(default_factory=list)
     slide_count: int = Field(default=20, ge=1, le=30)
     provider: str | None = None
+    render_engine: Literal[
+        "scratch_native",
+        "scratch_html",
+        "template_renderer",
+        "template_replace",
+        "template_ooxml",
+    ] | None = None
     scratch_theme: str | None = None
+    html_spec: dict[str, Any] | None = None
+    slide_sequence: list[int] | None = None
+    ooxml_patch_mode: Literal["none", "normalize"] | None = None
     extra_instructions: str | None = None
     outline: dict[str, Any] | None = None
     agent_mode: Literal["off", "bounded"] = "bounded"
@@ -64,6 +74,16 @@ class GenerateDeckRequest(BaseModel):
 class ReviseDeckRequest(BaseModel):
     prompt: str = Field(min_length=3)
     provider: str | None = None
+    render_engine: Literal[
+        "scratch_native",
+        "scratch_html",
+        "template_renderer",
+        "template_replace",
+        "template_ooxml",
+    ] | None = None
+    html_spec: dict[str, Any] | None = None
+    slide_sequence: list[int] | None = None
+    ooxml_patch_mode: Literal["none", "normalize"] | None = None
     slide_indices: list[int] | None = None
     agent_mode: Literal["off", "bounded"] = "bounded"
     quality_profile: Literal["fast", "balanced", "high_fidelity"] = "balanced"
@@ -113,6 +133,8 @@ class JsonRenderDemoQueryRequest(BaseModel):
     max_points: int = Field(default=12, ge=6, le=24)
     provider: str | None = None
     agentic: bool = True
+    max_steps: int | None = Field(default=None, ge=1, le=3)
+    use_cache: bool = True
 
 
 class JsonRenderDemoQueryOut(BaseModel):

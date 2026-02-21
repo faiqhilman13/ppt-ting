@@ -1,9 +1,10 @@
-FROM node:20-alpine
+FROM node:20-bookworm-slim
 
 WORKDIR /app
 
 COPY package.json package-lock.json* ./
-RUN npm install --production
+RUN npm install --omit=dev
+RUN npx playwright install --with-deps chromium
 
 COPY src ./src
 

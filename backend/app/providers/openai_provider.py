@@ -273,7 +273,14 @@ class OpenAIProvider(BaseLLMProvider):
             self.last_warnings.append(f"OpenAI revision request failed; fallback content was used ({exc}).")
             return self._fallback(template_manifest, len(existing_slides), f"OpenAI fallback: {exc}")
 
-    def generate_text(self, *, system_prompt: str, user_prompt: str, max_tokens: int = 180) -> str:
+    def generate_text(
+        self,
+        *,
+        system_prompt: str,
+        user_prompt: str,
+        max_tokens: int = 180,
+        retries: int | None = None,
+    ) -> str:
         schema = {
             "type": "object",
             "properties": {
@@ -288,7 +295,7 @@ class OpenAIProvider(BaseLLMProvider):
                 user=user_prompt,
                 output_schema=schema,
                 request_label="generate_text",
-                retries=1,
+                retries=max(0, int(retries)) if retries is not None else 1,
             )
             output = str(payload.get("text", "")).strip()
             if output:

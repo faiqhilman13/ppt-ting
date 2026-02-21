@@ -15,8 +15,15 @@ services:
     build: ./scratch-renderer
     expose:
       - "3002"
+    env_file:
+      - ./backend/.env
+    environment:
+      - PPTX_SKILL_ROOT=/opt/pptx-skill
+      - PPTX_SKILL_STRICT=true
+      - NODE_PATH=/app/node_modules
     volumes:
       - ./storage:/app/storage
+      - "C:/Users/faiqh/.codex/skills/pptx:/opt/pptx-skill:ro"
 
   backend:
     build: ./backend
@@ -28,6 +35,8 @@ services:
       - REDIS_URL=redis://redis:6379/0
       - RENDERER_URL=http://renderer:3001
       - SCRATCH_RENDERER_URL=http://scratch-renderer:3002
+      - PPTX_SKILL_ROOT=/opt/pptx-skill
+      - PPTX_SKILL_STRICT=true
       - PUBLIC_BASE_URL=http://localhost:8000
       - FRONTEND_ORIGIN=http://localhost:5173
       - DATABASE_URL=sqlite:////app/storage/app.db
@@ -35,6 +44,7 @@ services:
     volumes:
       - ./backend/app:/app/app
       - ./storage:/app/storage
+      - "C:/Users/faiqh/.codex/skills/pptx:/opt/pptx-skill:ro"
     depends_on:
       - redis
       - renderer
@@ -48,12 +58,15 @@ services:
       - REDIS_URL=redis://redis:6379/0
       - RENDERER_URL=http://renderer:3001
       - SCRATCH_RENDERER_URL=http://scratch-renderer:3002
+      - PPTX_SKILL_ROOT=/opt/pptx-skill
+      - PPTX_SKILL_STRICT=true
       - DATABASE_URL=sqlite:////app/storage/app.db
       - STORAGE_ROOT=/app/storage
     command: celery -A app.celery_app.celery_app worker --loglevel=info --include app.tasks
     volumes:
       - ./backend/app:/app/app
       - ./storage:/app/storage
+      - "C:/Users/faiqh/.codex/skills/pptx:/opt/pptx-skill:ro"
     depends_on:
       - redis
       - renderer

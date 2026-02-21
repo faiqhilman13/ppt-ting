@@ -521,6 +521,8 @@ def query_json_render_demo(req: JsonRenderDemoQueryRequest, db: Session = Depend
             query=req.query,
             max_points=req.max_points,
             provider_name=req.provider,
+            max_steps=req.max_steps,
+            use_cache=req.use_cache,
         )
     else:
         result = run_json_render_demo_query(db, query=req.query, max_points=req.max_points)

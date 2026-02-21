@@ -296,7 +296,14 @@ class MiniMaxProvider(BaseLLMProvider):
             self.last_warnings.append(f"MiniMax revision request failed; fallback content was used ({exc}).")
             return self._fallback(template_manifest, len(existing_slides), f"MiniMax fallback: {exc}")
 
-    def generate_text(self, *, system_prompt: str, user_prompt: str, max_tokens: int = 180) -> str:
+    def generate_text(
+        self,
+        *,
+        system_prompt: str,
+        user_prompt: str,
+        max_tokens: int = 180,
+        retries: int | None = None,
+    ) -> str:
         try:
             msg = self._messages_create_with_retry(
                 request_label="generate_text",
@@ -304,6 +311,7 @@ class MiniMaxProvider(BaseLLMProvider):
                 user=user_prompt,
                 max_tokens=max_tokens,
                 temperature=0.2,
+                retries=max(0, int(retries)) if retries is not None else 1,
             )
             return _response_text(msg).strip()
         except Exception as exc:

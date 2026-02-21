@@ -29,6 +29,7 @@ export default function App() {
   const [selectedDocIds, setSelectedDocIds] = useState([]);
   const [slideCount, setSlideCount] = useState(12);
   const [provider, setProvider] = useState("minimax");
+  const [scratchRenderEngine, setScratchRenderEngine] = useState("scratch_native");
   const [agentMode, setAgentMode] = useState("bounded");
   const [qualityProfile, setQualityProfile] = useState("balanced");
   const [maxCorrectionPasses, setMaxCorrectionPasses] = useState(1);
@@ -171,6 +172,7 @@ export default function App() {
           prompt,
           creation_mode: creationMode,
           template_id: creationMode === "template" ? selectedTemplateId : null,
+          render_engine: creationMode === "scratch" ? scratchRenderEngine : null,
           scratch_theme: null,
           doc_ids: selectedDocIds,
           slide_count: Number(slideCount),
@@ -440,6 +442,19 @@ export default function App() {
               <option value="anthropic">Anthropic</option>
             </select>
           </div>
+
+          {creationMode === "scratch" && (
+            <div>
+              <label>Scratch Renderer</label>
+              <select
+                value={scratchRenderEngine}
+                onChange={(e) => setScratchRenderEngine(e.target.value)}
+              >
+                <option value="scratch_native">Native (PptxGenJS)</option>
+                <option value="scratch_html">HTML (html2pptx)</option>
+              </select>
+            </div>
+          )}
         </div>
         
         <div className="form-row">
@@ -471,7 +486,7 @@ export default function App() {
             />
           </div>
         </div>
-        
+
         <button disabled={busy || !canGenerate} onClick={runGeneration} className="btn-primary" style={{ width: "100%", marginTop: "6px" }}>
           {busy ? "Generating..." : "Generate Deck"}
         </button>

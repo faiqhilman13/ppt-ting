@@ -651,6 +651,63 @@ a:hover {
   margin-top: 14px;
 }
 
+.jr-inline-check {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: 10px;
+  font-size: 0.76rem;
+  color: var(--color-text-muted);
+}
+
+.jr-loading {
+  margin-top: 12px;
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface-alt);
+  padding: 10px 12px;
+}
+
+.jr-loading-title {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.jr-loading-subtitle {
+  margin-top: 2px;
+  font-size: 0.72rem;
+  color: var(--color-text-muted);
+}
+
+.jr-loading-bars {
+  margin-top: 8px;
+  display: flex;
+  gap: 6px;
+}
+
+.jr-loading-bars span {
+  height: 6px;
+  flex: 1;
+  background: linear-gradient(90deg, var(--color-surface), var(--color-accent), var(--color-surface));
+  background-size: 200% 100%;
+  border-radius: 999px;
+  animation: jrPulse 1.2s linear infinite;
+}
+
+.jr-loading-bars span:nth-child(2) {
+  animation-delay: 120ms;
+}
+
+.jr-loading-bars span:nth-child(3) {
+  animation-delay: 240ms;
+}
+
+@keyframes jrPulse {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
 .jr-demo-meta {
   display: flex;
   align-items: center;

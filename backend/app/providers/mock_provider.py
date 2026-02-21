@@ -74,7 +74,14 @@ class MockProvider(BaseLLMProvider):
 
         return revised
 
-    def generate_text(self, *, system_prompt: str, user_prompt: str, max_tokens: int = 180) -> str:
+    def generate_text(
+        self,
+        *,
+        system_prompt: str,
+        user_prompt: str,
+        max_tokens: int = 180,
+        retries: int | None = None,
+    ) -> str:
         text = user_prompt.strip().rstrip(".")
         if not text:
             return "This deck presents a clear, decision-oriented recommendation."

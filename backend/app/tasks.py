@@ -3,6 +3,7 @@ from __future__ import annotations
 import json
 import logging
 import re
+import shutil
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime
 from pathlib import Path
@@ -28,9 +29,12 @@ from app.models import Deck, DeckJob, DeckOutline, DeckVersion, DocumentAsset, T
 from app.providers.factory import get_provider
 from app.services.content_quality import validate_and_rewrite_slides
 from app.services.job_trace import record_job_event, upsert_quality_report
+from app.services.ooxml_service import run_ooxml_roundtrip, run_ooxml_validation_gate
 from app.services.research_service import combine_research
 from app.services.render_client import render_pptx
+from app.services.scratch_render_html_client import render_scratch_html_pptx
 from app.services.scratch_render_client import render_scratch_pptx
+from app.services.template_replace_service import render_template_with_replace
 from app.services.theme_generator import generate_theme_from_description, is_preset
 from app.services.template_service import extract_current_slot_values, parse_template_manifest
 from app.storage import make_file_path, read_json, write_json
@@ -436,6 +440,278 @@ def _max_correction_passes_for_request(
     profile_default = 0 if profile == "fast" else (2 if profile == "high_fidelity" else 1)
     value = profile_default if requested is None else int(max(0, requested))
     return min(value, int(settings.max_correction_passes_server))
+
+
+def _resolve_render_engine(*, creation_mode: str, requested_engine: str | None) -> str:
+    creation = str(creation_mode or "template").lower()
+    requested = str(requested_engine or "").strip().lower()
+    allowed = {
+        "scratch": {"scratch_native", "scratch_html"},
+        "template": {"template_renderer", "template_replace", "template_ooxml"},
+    }
+    default_by_mode = {
+        "scratch": "scratch_native",
+        "template": "template_renderer",
+    }
+    if creation not in allowed:
+        return "template_renderer"
+    if requested in allowed[creation]:
+        return requested
+    return default_by_mode[creation]
+
+
+def _normalize_slide_sequence(values: list[int] | None) -> list[int]:
+    seq: list[int] = []
+    for raw in values or []:
+        try:
+            idx = int(raw)
+        except Exception:
+            continue
+        if idx < 0:
+            continue
+        seq.append(idx)
+    return seq
+
+
+def _default_template_slide_sequence(template_manifest: dict) -> list[int]:
+    out: list[int] = []
+    for row in template_manifest.get("slides", []) or []:
+        try:
+            idx = int(row.get("index"))
+        except Exception:
+            continue
+        if idx < 0:
+            continue
+        out.append(idx)
+    return out
+
+
+def _maybe_run_template_validation_gate(
+    *,
+    job_id: str,
+    output_path: Path,
+    template_path: Path,
+) -> dict:
+    mode = str(settings.pptx_ooxml_validate_mode or "off").strip().lower()
+    if mode not in {"monitor", "enforce"}:
+        return {"enabled": False}
+
+    try:
+        validation = run_ooxml_validation_gate(
+            pptx_path=output_path,
+            original_pptx_path=template_path,
+        )
+        _job_log(
+            job_id,
+            "ooxml_validate_complete",
+            validation_ok=bool(validation.get("ok", False)),
+            stdout_preview=_preview_text(validation.get("stdout")),
+            stderr_preview=_preview_text(validation.get("stderr")),
+            mode=mode,
+        )
+        if not bool(validation.get("ok", False)) and (mode == "enforce" or settings.pptx_ooxml_fail_closed):
+            raise RuntimeError("OOXML validation failed in enforce mode")
+        return {"enabled": True, **validation}
+    except FileNotFoundError as exc:
+        _job_log(job_id, "ooxml_validation_skipped", reason=str(exc))
+        return {"enabled": False, "skipped": True, "reason": str(exc)}
+    except Exception as exc:
+        if mode == "enforce" or settings.pptx_ooxml_fail_closed:
+            raise
+        _job_log(job_id, "ooxml_validation_warning", reason=str(exc), mode=mode)
+        return {"enabled": True, "ok": False, "reason": str(exc)}
+
+
+def _render_with_engine(
+    *,
+    job_id: str,
+    creation_mode: str,
+    render_engine: str,
+    slides_payload: list[dict],
+    output_path: Path,
+    title: str,
+    theme: str | dict | None,
+    html_spec: dict | None,
+    deck_id: str,
+    version_num: int,
+    template_manifest: dict,
+    template_path: Path,
+    base_pptx_path: Path | None,
+    slide_sequence: list[int],
+    ooxml_patch_mode: str | None,
+    provider=None,
+    deck_prompt: str | None = None,
+) -> tuple[str, dict]:
+    mode = str(creation_mode or "template").lower()
+    engine = _resolve_render_engine(creation_mode=mode, requested_engine=render_engine)
+    details: dict = {"requested_engine": render_engine, "resolved_engine": engine}
+
+    if mode == "scratch":
+        if engine == "scratch_html":
+            _job_log(job_id, "html_render_start", slide_count=len(slides_payload))
+            render_meta = render_scratch_html_pptx(
+                slides_payload=slides_payload,
+                output_path=output_path,
+                title=title,
+                theme=theme or settings.scratch_theme,
+                html_spec=html_spec or {},
+                provider=provider,
+                deck_prompt=deck_prompt,
+            )
+            details["html_render"] = render_meta
+            _job_log(
+                job_id,
+                "html_spec_ready",
+                source=render_meta.get("html_spec_source"),
+                strategy=render_meta.get("html_spec_strategy"),
+                html_slide_count=render_meta.get("html_slide_count"),
+                skill_doc_path=_preview_text(render_meta.get("html_spec_skill_doc_path")),
+                skill_script_path=_preview_text(render_meta.get("html_spec_script_path")),
+                html2pptx_source=render_meta.get("html2pptx_source"),
+                html2pptx_path=_preview_text(render_meta.get("html2pptx_path")),
+                sanitized_slide_count=render_meta.get("html_spec_sanitized_slide_count"),
+                sanitize_changes=render_meta.get("html_spec_sanitize_changes"),
+                repair_attempts=render_meta.get("repair_attempts"),
+                local_repair_attempts=render_meta.get("local_repair_attempts"),
+                template_recovery_used=render_meta.get("template_recovery_used"),
+                last_renderer_error=_preview_text(render_meta.get("last_renderer_error")),
+            )
+            if render_meta.get("fallback"):
+                _job_log(job_id, "html_render_fallback", reason=render_meta.get("reason"))
+                return "scratch_native", details
+            _job_log(job_id, "html_render_complete", slide_count=len(slides_payload))
+            return "scratch_html", details
+
+        render_scratch_pptx(
+            slides_payload=slides_payload,
+            output_path=output_path,
+            title=title,
+            theme=theme or settings.scratch_theme,
+        )
+        return "scratch_native", details
+
+    if engine == "template_replace":
+        _job_log(
+            job_id,
+            "template_replace_inventory_start",
+            slide_sequence=slide_sequence,
+            slide_count=len(slides_payload),
+        )
+        try:
+            replace_meta = render_template_with_replace(
+                source_pptx_path=base_pptx_path or template_path,
+                output_path=output_path,
+                slides_payload=slides_payload,
+                template_manifest=template_manifest,
+                slide_sequence=slide_sequence,
+            )
+            details["template_replace"] = replace_meta
+            _job_log(
+                job_id,
+                "template_replace_apply_complete",
+                replaced_slots=replace_meta.get("replaced_slots"),
+                issue_count=replace_meta.get("issue_count"),
+            )
+            if int(replace_meta.get("issue_count") or 0) > 0:
+                _job_log(
+                    job_id,
+                    "template_replace_issues_detected",
+                    issue_count=replace_meta.get("issue_count"),
+                )
+            details["validation_gate"] = _maybe_run_template_validation_gate(
+                job_id=job_id,
+                output_path=output_path,
+                template_path=template_path,
+            )
+            return "template_replace", details
+        except Exception as exc:
+            _job_log(job_id, "template_replace_fallback", reason=str(exc))
+            render_pptx(
+                deck_id=deck_id,
+                version=version_num,
+                slides=slides_payload,
+                output_path=output_path,
+                template_manifest=template_manifest,
+                template_path=template_path,
+                base_pptx_path=base_pptx_path,
+            )
+            details["fallback_reason"] = str(exc)
+            details["validation_gate"] = _maybe_run_template_validation_gate(
+                job_id=job_id,
+                output_path=output_path,
+                template_path=template_path,
+            )
+            return "template_renderer", details
+
+    if engine == "template_ooxml":
+        base_render_path = output_path.with_name(f"{output_path.stem}-renderer-base{output_path.suffix}")
+        render_pptx(
+            deck_id=deck_id,
+            version=version_num,
+            slides=slides_payload,
+            output_path=base_render_path,
+            template_manifest=template_manifest,
+            template_path=template_path,
+            base_pptx_path=base_pptx_path,
+        )
+        _job_log(job_id, "ooxml_unpack_start", patch_mode=ooxml_patch_mode or "none")
+        try:
+            ooxml_meta = run_ooxml_roundtrip(
+                source_pptx_path=base_render_path,
+                output_path=output_path,
+                original_pptx_path=template_path,
+                patch_mode=ooxml_patch_mode or "none",
+            )
+            details["template_ooxml"] = ooxml_meta
+            _job_log(
+                job_id,
+                "ooxml_pack_complete",
+                patch_mode=ooxml_meta.get("patch_mode"),
+                patch_applied=ooxml_meta.get("patch_applied"),
+            )
+            _job_log(
+                job_id,
+                "ooxml_validate_complete",
+                validation_ok=ooxml_meta.get("validation_ok"),
+                stdout_preview=_preview_text(ooxml_meta.get("validation_stdout")),
+                stderr_preview=_preview_text(ooxml_meta.get("validation_stderr")),
+            )
+            if not bool(ooxml_meta.get("validation_ok", False)) and settings.pptx_ooxml_fail_closed:
+                raise RuntimeError("OOXML roundtrip validation failed with fail-closed mode enabled")
+            return "template_ooxml", details
+        except Exception as exc:
+            _job_log(job_id, "ooxml_fallback", reason=str(exc))
+            if base_render_path.exists():
+                shutil.copy2(base_render_path, output_path)
+            details["fallback_reason"] = str(exc)
+            details["validation_gate"] = _maybe_run_template_validation_gate(
+                job_id=job_id,
+                output_path=output_path,
+                template_path=template_path,
+            )
+            return "template_renderer", details
+        finally:
+            try:
+                if base_render_path.exists():
+                    base_render_path.unlink()
+            except OSError:
+                pass
+
+    render_pptx(
+        deck_id=deck_id,
+        version=version_num,
+        slides=slides_payload,
+        output_path=output_path,
+        template_manifest=template_manifest,
+        template_path=template_path,
+        base_pptx_path=base_pptx_path,
+    )
+    details["validation_gate"] = _maybe_run_template_validation_gate(
+        job_id=job_id,
+        output_path=output_path,
+        template_path=template_path,
+    )
+    return "template_renderer", details
 
 
 def _run_research_routing_tool(
@@ -1217,6 +1493,7 @@ def run_generation_job(job_id: str):
             "generation_job_start",
             provider=payload.get("provider"),
             creation_mode=payload.get("creation_mode"),
+            render_engine=payload.get("render_engine"),
             requested_slide_count=payload.get("slide_count"),
             doc_count=len(payload.get("doc_ids", []) or []),
             has_outline=bool(payload.get("outline")),
@@ -1231,6 +1508,17 @@ def run_generation_job(job_id: str):
         doc_ids = payload.get("doc_ids", [])
         requested_slide_count = int(payload.get("slide_count", 20))
         provider_name = payload.get("provider")
+        provider = get_provider(provider_name)
+        render_engine_requested = payload.get("render_engine")
+        render_engine = _resolve_render_engine(
+            creation_mode=creation_mode,
+            requested_engine=render_engine_requested,
+        )
+        html_spec = payload.get("html_spec") if isinstance(payload.get("html_spec"), dict) else None
+        requested_slide_sequence = _normalize_slide_sequence(payload.get("slide_sequence"))
+        ooxml_patch_mode = str(payload.get("ooxml_patch_mode") or "none").strip().lower()
+        if ooxml_patch_mode not in {"none", "normalize"}:
+            ooxml_patch_mode = "none"
         extra_instructions = payload.get("extra_instructions")
         scratch_theme = (payload.get("scratch_theme") or "").strip()
         resolved_theme: str | dict = scratch_theme or settings.scratch_theme
@@ -1358,6 +1646,11 @@ def run_generation_job(job_id: str):
             selected_slides=len(selected_slides),
             generation_manifest_slides=len(generation_manifest.get("slides", [])),
             selected_slide_plan=_slide_spec_preview(selected_slides),
+        )
+        slide_sequence = (
+            requested_slide_sequence
+            if requested_slide_sequence
+            else _default_template_slide_sequence(generation_manifest)
         )
 
         _set_job_state(db, job, status="running", phase="drafting", progress=45)
@@ -1531,33 +1824,51 @@ def run_generation_job(job_id: str):
                 "quality_profile": quality_profile,
                 "max_correction_passes": max_correction_passes,
                 "resolved_theme": resolved_theme if creation_mode == "scratch" else None,
+                "render_engine": render_engine_requested,
+                "effective_render_engine": render_engine,
+                "html_spec": html_spec if creation_mode == "scratch" else None,
+                "slide_sequence": slide_sequence if creation_mode == "template" else None,
+                "ooxml_patch_mode": ooxml_patch_mode if creation_mode == "template" else None,
             },
         )
         write_json(citations_path, {"sources": research_chunks, "assets": _collect_assets(research_chunks)})
-
-        if creation_mode == "scratch":
-            render_scratch_pptx(
-                slides_payload=slides_payload,
-                output_path=output_path,
-                title=prompt,
-                theme=resolved_theme,
-            )
-        else:
-            render_pptx(
-                deck_id=deck.id,
-                version=version_num,
-                slides=slides_payload,
-                output_path=output_path,
-                template_manifest=generation_manifest,
-                template_path=Path(template.file_path),
-                base_pptx_path=None,
-            )
+        _job_log(
+            job.id,
+            "render_engine_selected",
+            requested_engine=render_engine_requested,
+            resolved_engine=render_engine,
+            creation_mode=creation_mode,
+        )
+        effective_render_engine, render_meta = _render_with_engine(
+            job_id=job.id,
+            creation_mode=creation_mode,
+            render_engine=render_engine,
+            slides_payload=slides_payload,
+            output_path=output_path,
+            title=prompt,
+            theme=resolved_theme,
+            html_spec=html_spec,
+            deck_id=deck.id,
+            version_num=version_num,
+            template_manifest=generation_manifest,
+            template_path=Path(template.file_path),
+            base_pptx_path=None,
+            slide_sequence=slide_sequence,
+            ooxml_patch_mode=ooxml_patch_mode,
+            provider=provider,
+            deck_prompt=prompt,
+        )
         _job_log(
             job.id,
             "render_complete",
             output_path=output_path,
             rendered_slide_count=len(slides_payload),
+            effective_render_engine=effective_render_engine,
         )
+        content_after_render = read_json(content_path)
+        content_after_render["effective_render_engine"] = effective_render_engine
+        content_after_render["render_meta"] = render_meta
+        write_json(content_path, content_after_render)
 
         deck.latest_version = version_num
         deck.updated_at = datetime.utcnow()
@@ -1638,6 +1949,7 @@ def run_revision_job(job_id: str):
             job.id,
             "revision_job_start",
             provider=payload.get("provider"),
+            render_engine=payload.get("render_engine"),
             requested_indices=len(payload.get("slide_indices") or []),
             prompt_preview=_preview_text(payload.get("prompt")),
         )
@@ -1646,8 +1958,14 @@ def run_revision_job(job_id: str):
         deck_id = payload["deck_id"]
         prompt = payload["prompt"]
         provider_name = payload.get("provider")
+        render_engine_requested = payload.get("render_engine")
         requested_indices = payload.get("slide_indices") or []
         requested_set = {int(idx) for idx in requested_indices if isinstance(idx, int) or str(idx).isdigit()}
+        html_spec = payload.get("html_spec") if isinstance(payload.get("html_spec"), dict) else None
+        requested_slide_sequence = _normalize_slide_sequence(payload.get("slide_sequence"))
+        ooxml_patch_mode = str(payload.get("ooxml_patch_mode") or "none").strip().lower()
+        if ooxml_patch_mode not in {"none", "normalize"}:
+            ooxml_patch_mode = "none"
         agent_mode = str(payload.get("agent_mode") or settings.default_agent_mode).lower()
         if agent_mode not in {"off", "bounded"}:
             agent_mode = settings.default_agent_mode
@@ -1866,6 +2184,10 @@ def run_revision_job(job_id: str):
                 "agent_mode": agent_mode,
                 "quality_profile": quality_profile,
                 "max_correction_passes": max_correction_passes,
+                "render_engine": render_engine_requested,
+                "html_spec": html_spec if (template.status or "").startswith("scratch") else None,
+                "slide_sequence": requested_slide_sequence if requested_slide_sequence else None,
+                "ooxml_patch_mode": ooxml_patch_mode,
             },
         )
         write_json(
@@ -1878,6 +2200,23 @@ def run_revision_job(job_id: str):
         )
 
         _set_job_state(db, job, status="running", phase="rendering", progress=75)
+        creation_mode = "scratch" if (template.status or "").startswith("scratch") else "template"
+        render_engine = _resolve_render_engine(
+            creation_mode=creation_mode,
+            requested_engine=render_engine_requested,
+        )
+        slide_sequence = (
+            requested_slide_sequence
+            if requested_slide_sequence
+            else ([] if creation_mode == "template" else _default_template_slide_sequence(template_manifest))
+        )
+        _job_log(
+            job.id,
+            "render_engine_selected",
+            requested_engine=render_engine_requested,
+            resolved_engine=render_engine,
+            creation_mode=creation_mode,
+        )
         if (template.status or "").startswith("scratch"):
             revision_theme_raw = _scratch_theme_from_template(template)
             cached_theme = content.get("resolved_theme") if content else None
@@ -1890,28 +2229,56 @@ def run_revision_job(job_id: str):
                     style_description=revision_theme_raw or prompt,
                     provider_name=provider_name,
                 )
-            render_scratch_pptx(
+            effective_render_engine, render_meta = _render_with_engine(
+                job_id=job.id,
+                creation_mode="scratch",
+                render_engine=render_engine,
                 slides_payload=slides_payload,
                 output_path=output_path,
                 title=prompt,
                 theme=revision_theme,
-            )
-        else:
-            render_pptx(
+                html_spec=html_spec,
                 deck_id=deck.id,
-                version=version_num,
-                slides=slides_payload,
-                output_path=output_path,
+                version_num=version_num,
                 template_manifest=template_manifest,
                 template_path=Path(template.file_path),
                 base_pptx_path=Path(latest.pptx_path),
+                slide_sequence=slide_sequence,
+                ooxml_patch_mode=ooxml_patch_mode,
+                provider=provider,
+                deck_prompt=prompt,
+            )
+        else:
+            effective_render_engine, render_meta = _render_with_engine(
+                job_id=job.id,
+                creation_mode="template",
+                render_engine=render_engine,
+                slides_payload=slides_payload,
+                output_path=output_path,
+                title=prompt,
+                theme=None,
+                html_spec=html_spec,
+                deck_id=deck.id,
+                version_num=version_num,
+                template_manifest=template_manifest,
+                template_path=Path(template.file_path),
+                base_pptx_path=Path(latest.pptx_path),
+                slide_sequence=slide_sequence,
+                ooxml_patch_mode=ooxml_patch_mode,
+                provider=provider,
+                deck_prompt=prompt,
             )
         _job_log(
             job.id,
             "revision_render_complete",
             output_path=output_path,
             rendered_slide_count=len(slides_payload),
+            effective_render_engine=effective_render_engine,
         )
+        revised_content = read_json(content_path)
+        revised_content["effective_render_engine"] = effective_render_engine
+        revised_content["render_meta"] = render_meta
+        write_json(content_path, revised_content)
 
         new_version = DeckVersion(
             deck_id=deck.id,
